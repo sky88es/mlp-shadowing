@@ -1,98 +1,98 @@
 [
   {
-    "id": "247e2e828ffa",
-    "title": "Canterlot Wedding (8과)",
+    "id": "2572e597530a",
+    "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (4과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T08:23:27.673531+00:00",
-    "num_segments": 23
+    "created_at": "2026-08-10T08:49:04.193584+00:00",
+    "num_segments": 73
   },
   {
-    "id": "5432bb602dad",
-    "title": "Canterlot Wedding (7과)",
+    "id": "58e07a437cfd",
+    "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (3과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T08:23:27.673531+00:00",
-    "num_segments": 24
+    "created_at": "2026-08-10T08:49:04.193584+00:00",
+    "num_segments": 58
   },
   {
-    "id": "710607d5a808",
-    "title": "Canterlot Wedding (5과)",
+    "id": "d0acfb2ca3f4",
+    "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (2과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T08:23:27.673531+00:00",
-    "num_segments": 33
+    "created_at": "2026-08-10T08:49:04.183340+00:00",
+    "num_segments": 34
   },
   {
-    "id": "7d470107b3fc",
-    "title": "Canterlot Wedding (4과)",
+    "id": "640b4463b8b6",
+    "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (1과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T08:23:27.673531+00:00",
-    "num_segments": 54
+    "created_at": "2026-08-10T08:48:57.103548+00:00",
+    "num_segments": 58
   },
   {
-    "id": "955b151004cd",
-    "title": "Canterlot Wedding (3과)",
+    "id": "3725750a7a2e",
+    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (4과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T08:23:27.673531+00:00",
+    "created_at": "2026-08-10T08:48:39.204676+00:00",
+    "num_segments": 32
+  },
+  {
+    "id": "41057d8e39d5",
+    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (2과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T08:48:39.204676+00:00",
+    "num_segments": 29
+  },
+  {
+    "id": "5e66afd38513",
+    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (3과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T08:48:39.204676+00:00",
+    "num_segments": 78
+  },
+  {
+    "id": "01f3b295521d",
+    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (1과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T08:47:42.065964+00:00",
+    "num_segments": 67
+  },
+  {
+    "id": "1036346ec3d6",
+    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (4과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T08:46:59.733728+00:00",
+    "num_segments": 41
+  },
+  {
+    "id": "2cd4466a9751",
+    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (3과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T08:46:59.733728+00:00",
     "num_segments": 55
   },
   {
-    "id": "d9a876f4e295",
-    "title": "Canterlot Wedding (6과)",
+    "id": "5a0ee8641b0e",
+    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (2과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T08:23:27.673531+00:00",
-    "num_segments": 39
+    "created_at": "2026-08-10T08:46:59.733728+00:00",
+    "num_segments": 62
   },
   {
-    "id": "47074d869b66",
-    "title": "Canterlot Wedding (2과)",
+    "id": "73320e572c4a",
+    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (1과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T08:23:27.668250+00:00",
-    "num_segments": 56
-  },
-  {
-    "id": "10ce43fede8e",
-    "title": "Canterlot Wedding (1과)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-10T08:22:30.843338+00:00",
-    "num_segments": 39
-  },
-  {
-    "id": "64672faeb3a7",
-    "title": "https://youtu.be/0f5Tu_DHDbA?si=D5fspdnRP6i8CK_j",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-08T05:21:58.648350+00:00",
-    "num_segments": 379
-  },
-  {
-    "id": "d986ba360bb5",
-    "title": "School Daze (스트리밍)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-08T05:18:04.409830+00:00",
-    "num_segments": 752
-  },
-  {
-    "id": "1389e48cadf3",
-    "title": "S2 | Ep. 25 & 26 | A Canterlot Wedding | My Little Pony: Friendship Is Magic [Full HD]",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-07T08:40:31.901749+00:00",
-    "num_segments": 319
-  },
-  {
-    "id": "e795e87ebb7e",
-    "title": "School Daze 🌈 Friendship Is Magic Double Episode! 💜 S8: EP 1 - 2 🦄 My Little Pony",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-07T08:19:49.035674+00:00",
-    "num_segments": 469
+    "created_at": "2026-08-10T08:46:26.993761+00:00",
+    "num_segments": 51
   }
 ]
