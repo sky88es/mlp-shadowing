@@ -1,98 +1,98 @@
 [
   {
-    "id": "a01700e55ea0",
-    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (4과)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-10T13:36:20.464146+00:00",
-    "num_segments": 68
-  },
-  {
-    "id": "49fe53580b5e",
-    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (3과)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-10T13:36:20.461835+00:00",
-    "num_segments": 55
-  },
-  {
-    "id": "2a28d4be023e",
-    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (2과)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-10T13:36:20.458488+00:00",
-    "num_segments": 61
-  },
-  {
-    "id": "827faad57c5d",
-    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (4과)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-10T13:36:11.230771+00:00",
-    "num_segments": 42
-  },
-  {
-    "id": "b9fbf12b3046",
-    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (3과)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-10T13:36:11.226771+00:00",
-    "num_segments": 97
-  },
-  {
-    "id": "0cd31764d726",
-    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (2과)",
-    "source": "youtube_stream",
-    "status": "ready",
-    "created_at": "2026-08-10T13:36:11.224215+00:00",
-    "num_segments": 29
-  },
-  {
-    "id": "305cda298ece",
+    "id": "dbd549b063f9",
     "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (4과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T13:33:22.057208+00:00",
-    "num_segments": 52
+    "created_at": "2026-08-10T14:22:39.006946+00:00",
+    "num_segments": 62
   },
   {
-    "id": "cd391d7ab19a",
+    "id": "cc48e4778964",
     "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (3과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T13:33:22.053528+00:00",
-    "num_segments": 25
+    "created_at": "2026-08-10T14:22:39.005946+00:00",
+    "num_segments": 46
   },
   {
-    "id": "4e9900cd3abc",
+    "id": "ac09430366bb",
     "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (2과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T13:33:22.035257+00:00",
-    "num_segments": 22
+    "created_at": "2026-08-10T14:22:39.004945+00:00",
+    "num_segments": 31
   },
   {
-    "id": "e9cdd8a73e80",
+    "id": "dfcaed3790ed",
     "title": "MLP FIM Season 6 Episode 3 - The Gift of Maud Pie (1과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T13:24:43.713490+00:00",
-    "num_segments": 10
+    "created_at": "2026-08-10T14:21:40.501138+00:00",
+    "num_segments": 57
   },
   {
-    "id": "ed088617993e",
+    "id": "f156615047d9",
+    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (4과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T14:20:26.827479+00:00",
+    "num_segments": 26
+  },
+  {
+    "id": "493cff886fef",
+    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (3과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T14:20:26.826474+00:00",
+    "num_segments": 71
+  },
+  {
+    "id": "40b8e07ca792",
+    "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (2과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T14:20:26.824379+00:00",
+    "num_segments": 31
+  },
+  {
+    "id": "17010de2389e",
     "title": "MLP FIM Season 6 Episode 2 - The Crystalling (Part 2) (1과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T13:24:38.256059+00:00",
-    "num_segments": 79
+    "created_at": "2026-08-10T14:20:20.369756+00:00",
+    "num_segments": 61
   },
   {
-    "id": "d1f1dc07afd7",
+    "id": "448462c57a33",
+    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (3과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T14:19:15.713252+00:00",
+    "num_segments": 45
+  },
+  {
+    "id": "86495e4e40bf",
+    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (4과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T14:19:15.713252+00:00",
+    "num_segments": 29
+  },
+  {
+    "id": "b78ed9fc0ea8",
+    "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (2과)",
+    "source": "youtube_stream",
+    "status": "ready",
+    "created_at": "2026-08-10T14:19:15.711243+00:00",
+    "num_segments": 60
+  },
+  {
+    "id": "7469523adda9",
     "title": "MLP FIM Season 6 Episode 1 - The Crystalling (Part 1) (1과)",
     "source": "youtube_stream",
     "status": "ready",
-    "created_at": "2026-08-10T13:24:32.756674+00:00",
-    "num_segments": 57
+    "created_at": "2026-08-10T14:19:00.223535+00:00",
+    "num_segments": 47
   }
 ]
