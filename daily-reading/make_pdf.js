@@ -24,12 +24,12 @@ mark{background:linear-gradient(transparent 55%,var(--mk) 55%);color:inherit;fon
 .cover h1{font-family:'Source Serif 4',serif;font-size:22pt;line-height:1.2;margin:12px 0 6px}
 .cover .ko{font-size:11pt;opacity:.9}
 .cover .src{font-size:8pt;opacity:.75;margin-top:10px}
-h2{font-size:12.5pt;margin:22px 0 10px;display:flex;align-items:center;gap:8px;break-after:avoid}
+h2{font-size:12pt;margin:16px 0 8px;display:flex;align-items:center;gap:8px;break-after:avoid}
 h2 .n{background:var(--acc);color:#fff;font-size:9pt;width:22px;height:22px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center}
 .box{background:var(--soft);border-radius:8px;padding:12px 14px;font-size:9.5pt}
 .box b{color:var(--acc2)}
 .script{counter-reset:l;margin:0;padding:0;list-style:none}
-.script li{counter-increment:l;display:grid;grid-template-columns:24px 1fr;gap:4px 8px;padding:7px 0;border-bottom:1px dashed var(--line);break-inside:avoid}
+.script li{counter-increment:l;display:grid;grid-template-columns:24px 1fr;gap:2px 8px;padding:5px 0;border-bottom:1px dashed var(--line);break-inside:avoid}
 .script li:before{content:counter(l,decimal-leading-zero);color:var(--acc);font-weight:700;font-size:8.5pt;padding-top:2px}
 .script .en{font-family:'Source Serif 4',serif;font-size:11pt;line-height:1.55}
 .script .ko{grid-column:2;color:var(--sub);font-size:9pt}
@@ -37,7 +37,7 @@ h2 .n{background:var(--acc);color:#fff;font-size:9pt;width:22px;height:22px;bord
 .full{font-family:'Source Serif 4',serif;font-size:11pt;line-height:1.75;text-align:justify}
 table{border-collapse:collapse;width:100%;font-size:9pt}
 th{background:var(--acc2);color:#fff;font-weight:500;text-align:left;padding:6px 8px}
-td{border-bottom:1px solid var(--line);padding:6px 8px;vertical-align:top}
+td{border-bottom:1px solid var(--line);padding:4px 8px;vertical-align:top}
 tr{break-inside:avoid}
 td.w{font-family:'Source Serif 4',serif;font-weight:700;font-size:10.5pt;white-space:nowrap}
 .ipa{display:block;font-family:'Noto Sans KR',sans-serif;font-weight:400;font-size:8pt;color:var(--sub)}
@@ -46,12 +46,12 @@ td.w{font-family:'Source Serif 4',serif;font-weight:700;font-size:10.5pt;white-s
 .key{border-left:4px solid var(--acc);padding:8px 12px;margin-bottom:10px;background:#fff7f8;break-inside:avoid}
 .key .en{font-family:'Source Serif 4',serif;font-size:11pt;font-weight:600}
 .key .note{font-size:9pt;color:var(--sub);margin-top:3px}
-ol.q{padding-left:20px}ol.q li{margin-bottom:12px;break-inside:avoid}
+ol.q{padding-left:20px}ol.q li{margin-bottom:8px;break-inside:avoid}
 .opt{font-family:'Source Serif 4',serif;margin-left:4px}
 .blank{font-family:'Source Serif 4',serif;font-size:10.5pt}
 .page{break-before:page}
 .ans li{margin-bottom:6px}
-.foot{margin-top:20px;font-size:8pt;color:var(--sub);border-top:1px solid var(--line);padding-top:8px}
+.foot{margin-top:10px;font-size:8pt;color:var(--sub);border-top:1px solid var(--line);padding-top:8px}
 .pre{white-space:pre-line}
 .routine{border:1.5px solid var(--acc2);border-radius:8px;padding:10px 14px;margin-top:14px;font-size:9pt}
 .routine b{color:var(--acc2)}
@@ -85,11 +85,11 @@ ol.q{padding-left:20px}ol.q li{margin-bottom:12px;break-inside:avoid}
 <h2><span class="n">2</span>Reading · 본문</h2>
 <div class="full">${d.lines.map(l => hl(l.en.replace(/ \/ /g, ' '))).join(' ')}</div>
 
-<h2><span class="n">3</span>Line by Line · 끊어 읽기 & 해석</h2>
+<h2 class="page"><span class="n">3</span>Line by Line · 끊어 읽기 & 해석</h2>
 <div class="box" style="margin-bottom:8px"><span class="sl">/</span> 표시는 의미 단위(청크)입니다. 쉐도잉할 때 이 지점에서 짧게 쉬어 주세요.</div>
 <ol class="script">${d.lines.map(l => `<li><div class="en">${chunk(l.en)}</div><div class="ko">${esc(l.ko)}</div></li>`).join('')}</ol>
 
-<h2><span class="n">4</span>Vocabulary · 주요 단어</h2>
+<h2 class="page"><span class="n">4</span>Vocabulary · 주요 단어</h2>
 <table><tr><th style="width:24%">Word</th><th style="width:22%">뜻</th><th>Example</th></tr>
 ${d.words.map(w => `<tr><td class="w">${esc(w.word)}<span class="ipa">${esc(w.ipa)} · ${esc(w.pos)}</span></td><td>${esc(w.meaning)}${w.synonym ? `<div class="syn">≒ ${esc(w.synonym)}</div>` : ''}</td><td class="ex">${hl(w.example)}</td></tr>`).join('')}</table>
 
@@ -100,7 +100,7 @@ ${d.idioms.map(i => `<tr><td class="w">${esc(i.phrase)}</td><td>${esc(i.meaning)
 <h2><span class="n">6</span>Key Sentences · 핵심 문장 & 문법</h2>
 ${d.key_sentences.map(k => `<div class="key"><div class="en">${hl(k.en)}</div><div class="note">${esc(k.note)}</div></div>`).join('')}
 
-<h2><span class="n">7</span>Check-up · 확인 문제</h2>
+<h2 class="page"><span class="n">7</span>Check-up · 확인 문제</h2>
 <ol class="q">${d.questions.map(q => `<li class="serif">${esc(q.q)}${q.options ? `<div>${q.options.map((o, i) => `<div class="opt">${'ⓐⓑⓒⓓ'[i]} ${esc(o)}</div>`).join('')}</div>` : ''}</li>`).join('')}</ol>
 
 <h2><span class="n">8</span>Fill in the Blanks · 빈칸 채우기</h2>
@@ -110,12 +110,11 @@ ${d.key_sentences.map(k => `<div class="key"><div class="en">${hl(k.en)}</div><d
 <h2><span class="n">9</span>Speak & Write · 말하기 · 쓰기</h2>
 <div class="box pre">${esc(d.output_task)}</div>
 
-<h2 class="page"><span class="n">✓</span>Answer Key · 정답</h2>
+<h2><span class="n">✓</span>Answer Key · 정답</h2>
 <div class="two"><div><b>확인 문제</b><ol class="ans">${d.questions.map(q => `<li>${esc(q.answer)}</li>`).join('')}</ol></div>
 <div><b>빈칸 채우기</b><ol class="ans">${d.blanks.map(b => `<li>${esc(b.answer)}</li>`).join('')}</ol></div></div>
 
-<div class="foot">Source: ${esc(d.source.outlet)}, “${esc(d.source.title)}” — ${esc(d.source.url)}<br>
-본문은 원문 기사의 내용을 바탕으로 학습용으로 새로 쓴 글입니다. 원문은 위 링크에서 읽을 수 있습니다.</div>
+<div class="foot">Source: ${esc(d.source.outlet)}, “${esc(d.source.title)}” — ${esc(d.source.url)} · 원문 기사를 바탕으로 학습용으로 새로 쓴 글입니다.</div>
 </body></html>`;
 
 (async () => {
