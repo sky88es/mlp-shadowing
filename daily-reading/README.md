@@ -10,10 +10,11 @@
 2. 기사 내용을 바탕으로 **15줄** 학습용 지문을 새로 쓴다(원문을 복사하지 않음). 수준은 Intermediate(중3~고1): 짧고 쉬운 문장, 어려운 어휘 최소화. 단어 8개, 숙어 5개, 핵심 문장 3개. PDF는 4쪽(최대 5쪽).
    - 각 줄은 의미 단위를 ` / `로 끊고, 주요 단어·숙어는 `**굵게**` 표시한다.
 3. 아래 스키마로 `lessons/YYYY-MM-DD.json`을 쓴다. DAY 번호는 기존 lesson 수 + 1.
-4. `node daily-reading/make_pdf.js lessons/YYYY-MM-DD.json <out>.pdf`
-5. PDF를 첨부해 이메일 발송: 받는 사람 `sangwon.park@jbam.co.kr`,
-   제목 `[Daily English] DAY n · <title>`, 본문에 오늘 제목·주제·원문 링크와 15줄 지문.
-6. JSON을 커밋하고 이 브랜치에 push한다.
+4. `node daily-reading/make_pdf.js daily-reading/lessons/YYYY-MM-DD.json daily-reading/pdf/YYYY-MM-DD.pdf` → 4쪽(최대 5쪽)인지 `pdfinfo`로 확인.
+5. JSON과 PDF를 커밋하고 `ccr-7681b3cb-dx280m` 브랜치에 push한다.
+6. `node daily-reading/make_email.js daily-reading/lessons/YYYY-MM-DD.json` 출력(HTML)을 htmlBody로 Gmail `send_message` 발송.
+   받는 사람 `sangwon.park@jbam.co.kr`, 제목 `[Daily English] DAY n · <title>`.
+   (PDF는 첨부 대신 본문의 다운로드 링크: https://raw.githubusercontent.com/sky88es/mlp-shadowing/ccr-7681b3cb-dx280m/daily-reading/pdf/YYYY-MM-DD.pdf)
 
 ## JSON 스키마
 `lessons/2026-11-09.json` 참고. 필드:
