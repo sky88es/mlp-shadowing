@@ -30,7 +30,7 @@
      본문에 PDF 링크 포함: https://raw.githubusercontent.com/sky88es/mlp-shadowing/ccr-7681b3cb-dx280m/daily-reading/pdf/YYYY-MM-DD.pdf
 
 ## JSON 스키마
-`lessons/2026-11-09.json` 참고. 필드:
+`lessons/2026-11-08.json` 참고. 필드:
 day, date, category, level, title, title_ko, source{outlet,title,url}, background_ko, warmup_q,
 lines[15]{en,ko}, words[8]{word,ipa,pos,meaning,synonym,example}, idioms[5]{phrase,meaning,example},
 key_sentences[3]{en,note}, questions[4]{q,options?,answer}, blanks[5]{sentence,answer}, output_task
