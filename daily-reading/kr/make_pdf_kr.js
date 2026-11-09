@@ -110,7 +110,7 @@ h1{font-family:'Nanum Myeongjo',serif;font-weight:800;font-size:28pt;line-height
     ? `<div class="poemwrap"><div class="poem">${esc(d.text)}</div></div>`
     : `<div class="prose">${paras(d.text)}</div>`}
   <div class="orn">· · ·</div>
-  <div class="src">${esc(d.text_source)}</div>
+  <div class="src">${esc(d.text_source)}${d.full_text_url ? `<br>전문 읽기: ${esc(d.full_text_label || '')} ${esc(d.full_text_url)}` : ''}</div>
   <div class="folio"><span>매일의 문장 · No. ${no}</span><span>I</span></div>
 </section>
 

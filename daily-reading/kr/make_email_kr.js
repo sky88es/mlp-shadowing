@@ -22,6 +22,7 @@ ${d.text_type === 'poem'
   : `<div style="font-family:${SERIF};font-size:16px;line-height:2">${paras(d.text)}</div>`}
 <p style="text-align:center;color:#c9a27a;letter-spacing:12px;margin:18px 0 4px">· · ·</p>
 <p style="font-size:11px;color:#7a7368">${esc(d.text_source)}</p>
+${d.full_text_url ? `<p style="text-align:center;margin:10px 0"><a href="${esc(d.full_text_url)}" style="color:#8c2f1b;font-size:14px;font-weight:bold">📖 전문 읽기 — ${esc(d.full_text_label || '원문 페이지')}</a></p>` : ''}
 ${sec('I', '함께 읽기', 'Commentary')}
 <div style="font-family:${SERIF};font-size:15px;line-height:1.95">${paras(d.notes)}</div>
 ${d.words?.length ? `<div style="background:#f3eee3;padding:14px 18px;margin-top:10px"><div style="font-size:11px;letter-spacing:5px;color:#2f4f3e;font-weight:bold;margin-bottom:6px">낱말 풀이</div>${d.words.map(w => `<div style="font-size:13px;margin:3px 0"><b style="font-family:${SERIF};font-size:15px">${esc(w.word)}</b> &nbsp;${esc(w.meaning)}</div>`).join('')}</div>` : ''}
