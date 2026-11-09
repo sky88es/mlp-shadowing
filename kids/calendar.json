@@ -1,0 +1,145 @@
+{
+ "note": "영어는 Bricks Reading처럼 같은 주제를 Fiction(F)과 Nonfiction(NF)으로 이틀씩 짝지어 읽어요(레벨 100·120·200 섞기). 국어는 어린이신문(소년한국일보·내친구서울) 소재로 정보글·이야기·기사문·서평·동시를 돌려요. 그주 새 기사가 더 재미있으면 바꿀 수 있어요.",
+ "days": [
+  {
+   "date": "2026-11-09",
+   "en": "[NF] Squirrels Plant Trees!",
+   "ko": "[정보글] 11월 9일은 왜 '소방의 날'일까?"
+  },
+  {
+   "date": "2026-11-10",
+   "en": "[F] Where Is My Acorn?",
+   "ko": "[정보글·지구촌뉴스] 새도 시차를 겪는다고?"
+  },
+  {
+   "date": "2026-11-11",
+   "en": "[NF] Why Is a Soccer Ball Black and White?",
+   "ko": "[이야기] 빼빼로 대신 가래떡?"
+  },
+  {
+   "date": "2026-11-12",
+   "en": "[F] Mina's Left Foot",
+   "ko": "[정보글] 나무는 왜 가을에 잎을 떨어뜨릴까?"
+  },
+  {
+   "date": "2026-11-13",
+   "en": "[F] Grandpa's Rainbow Soup",
+   "ko": "[정보글] 귤은 비타민C가 사과의 20배?"
+  },
+  {
+   "date": "2026-11-14",
+   "en": "[NF] Is Iceland an Ice Land?",
+   "ko": "[기사문] 잠실 한강 자전거장, 오늘 문 열어요"
+  },
+  {
+   "date": "2026-11-15",
+   "en": "[F] The Bottle Band",
+   "ko": "[서평] 『강아지똥』을 읽고"
+  },
+  {
+   "date": "2026-11-16",
+   "en": "[NF] Penguins: Birds That Swim",
+   "ko": "[정보글] 겨울 철새는 왜 우리나라로 올까?"
+  },
+  {
+   "date": "2026-11-17",
+   "en": "[F] Pip Can't Fly!",
+   "ko": "[정보글·과학뉴스] 보이저 1호, 빛으로 하루 걸리는 곳까지!"
+  },
+  {
+   "date": "2026-11-18",
+   "en": "[NF] Eight Spinning Planets",
+   "ko": "[이야기] 우주로 보낸 편지"
+  },
+  {
+   "date": "2026-11-19",
+   "en": "[F] Leo's Trip to the Moon",
+   "ko": "[정보글] 한지는 어떻게 만들까?"
+  },
+  {
+   "date": "2026-11-20",
+   "en": "[NF] Where Does Chocolate Come From?",
+   "ko": "[정보글] 떡볶이는 원래 빨갛지 않았다?"
+  },
+  {
+   "date": "2026-11-21",
+   "en": "[F] The Piñata Party",
+   "ko": "[기사문] 어린이 기자, 국립스포츠박물관에 가다"
+  },
+  {
+   "date": "2026-11-22",
+   "en": "[NF] Birthdays Around the World",
+   "ko": "[서평] 『구름빵』을 읽고"
+  },
+  {
+   "date": "2026-11-23",
+   "en": "[NF] Look, Listen, Touch, Smell, and Taste!",
+   "ko": "[속담] 벼는 익을수록 고개를 숙인다"
+  },
+  {
+   "date": "2026-11-24",
+   "en": "[F] Max and the Cookie Smell",
+   "ko": "[정보글] 우리 몸의 뼈는 몇 개일까?"
+  },
+  {
+   "date": "2026-11-25",
+   "en": "[NF] How Do Bees Make Honey?",
+   "ko": "[동시] 겨울 아침 (흉내 내는 말 동시)"
+  },
+  {
+   "date": "2026-11-26",
+   "en": "[F] Busy Bea",
+   "ko": "[정보글] 붕어빵에는 왜 붕어가 없을까?"
+  },
+  {
+   "date": "2026-11-27",
+   "en": "[NF] Noodles Around the World",
+   "ko": "[이야기] 할머니의 김장 날"
+  },
+  {
+   "date": "2026-11-28",
+   "en": "[F] Grandma's Noodle Day",
+   "ko": "[정보글] 피아노 건반은 몇 개일까?"
+  },
+  {
+   "date": "2026-11-29",
+   "en": "[NF] The First People on the Moon",
+   "ko": "[서평] 『팥죽 할멈과 호랑이』를 읽고"
+  },
+  {
+   "date": "2026-11-30",
+   "en": "[NF] Polar Bears Have Black Skin!",
+   "ko": "[정보글] 12월, 한 해의 마지막 달"
+  },
+  {
+   "date": "2026-12-01",
+   "en": "[F] Pola's First Snow",
+   "ko": "[정보글·세계] 핀란드 산타 마을에 가 볼까?"
+  },
+  {
+   "date": "2026-12-02",
+   "en": "[NF] Christmas in Summer in Australia",
+   "ko": "[정보글] 고래는 물고기가 아니다?"
+  },
+  {
+   "date": "2026-12-03",
+   "en": "[F] Santa's Summer Holiday",
+   "ko": "[정보글] 눈은 왜 하얗게 보일까?"
+  },
+  {
+   "date": "2026-12-04",
+   "en": "[NF] Why Is Ice Slippery?",
+   "ko": "[이야기] 호떡 가게 꼬마 손님"
+  },
+  {
+   "date": "2026-12-05",
+   "en": "[F] The Snowflake Hunt",
+   "ko": "[기사문] 겨울 놀이 팽이치기 대회"
+  },
+  {
+   "date": "2026-12-06",
+   "en": "[NF] The Real Story of Santa Claus",
+   "ko": "[옛이야기] 해와 달이 된 오누이"
+  }
+ ]
+}

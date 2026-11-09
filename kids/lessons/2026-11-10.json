@@ -1,0 +1,626 @@
+{
+ "version": 2,
+ "date": "2026-11-10",
+ "day": 2,
+ "weekday": "화",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "Animals",
+  "title": "Where Is My Acorn?",
+  "title_ko": "내 도토리 어디 있지?",
+  "lets_start": {
+   "q": "Do you sometimes forget where you put things?",
+   "q_ko": "물건을 어디에 두었는지 잊어버린 적 있나요?",
+   "options": [
+    "Yes, sometimes!",
+    "No, never."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "hide",
+    "meaning": "숨기다",
+    "emoji": "🙈"
+   },
+   {
+    "word": "hungry",
+    "meaning": "배고픈",
+    "emoji": "😋"
+   },
+   {
+    "word": "remember",
+    "meaning": "기억하다",
+    "emoji": "💭"
+   },
+   {
+    "word": "dig",
+    "meaning": "땅을 파다",
+    "emoji": "⛏️"
+   },
+   {
+    "word": "share",
+    "meaning": "나누다",
+    "emoji": "🤝"
+   },
+   {
+    "word": "sprout",
+    "meaning": "새싹",
+    "emoji": "🌱"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "autumn",
+    "items": [
+     [
+      "🌳",
+      22,
+      50,
+      40
+     ],
+     [
+      "🐿️",
+      60,
+      70,
+      30
+     ],
+     [
+      "🌰",
+      80,
+      84,
+      9
+     ],
+     [
+      "🌰",
+      88,
+      80,
+      8
+     ],
+     [
+      "🍂",
+      40,
+      20,
+      9
+     ],
+     [
+      "🍁",
+      86,
+      24,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "It is fall. Sammy the squirrel **hides** ten acorns. \"One here, two there. Now I have lots of food for winter!\" says Sammy. He runs up the tree, happy and full.",
+    "ko": "가을이에요. 다람쥐 새미는 도토리 열 개를 숨겨요. \"여기 하나, 저기 둘. 이제 겨울에 먹을 게 많아!\" 새미는 기분 좋게 나무 위로 올라가요."
+   },
+   {
+    "text": "Then snow falls. Sammy is **hungry**. But where are the acorns? He can't **remember**! Sammy **digs** and digs. \"Oh no! Only snow!\"",
+    "ko": "그러다 눈이 내려요. 새미는 배가 고파요. 그런데 도토리가 어디 있지? 기억이 안 나요! 새미는 파고 또 파요. \"이런! 눈뿐이잖아!\"",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🌲",
+       18,
+       52,
+       34
+      ],
+      [
+       "🐿️",
+       56,
+       70,
+       28
+      ],
+      [
+       "❓",
+       74,
+       36,
+       12
+      ],
+      [
+       "❄️",
+       40,
+       16,
+       8
+      ],
+      [
+       "❄️",
+       84,
+       14,
+       7
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Bella the bird flies down. \"I saw you by the big rock!\" Sammy digs by the rock. One, two, three acorns! \"Thank you, Bella! Let's **share**.\"",
+    "ko": "새 벨라가 날아 내려와요. \"너 저 큰 바위 옆에 있었잖아!\" 새미가 바위 옆을 파요. 하나, 둘, 셋, 도토리! \"고마워, 벨라! 우리 나눠 먹자.\"",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🪨",
+       30,
+       74,
+       26
+      ],
+      [
+       "🐿️",
+       54,
+       70,
+       24
+      ],
+      [
+       "🐦",
+       76,
+       52,
+       20,
+       true
+      ],
+      [
+       "🌰",
+       40,
+       88,
+       8
+      ],
+      [
+       "🌰",
+       48,
+       88,
+       8
+      ],
+      [
+       "🌰",
+       56,
+       88,
+       8
+      ],
+      [
+       "💛",
+       66,
+       30,
+       10
+      ]
+     ]
+    }
+   },
+   {
+    "text": "In spring, Sammy sees something green by the rock. It is a little **sprout**! \"Look, Bella! My lost acorn is a baby tree!\"",
+    "ko": "봄이 되자 새미는 바위 옆에서 초록색 무언가를 봐요. 작은 새싹이에요! \"벨라, 봐! 잃어버린 내 도토리가 아기 나무가 됐어!\"",
+    "scene": {
+     "bg": "day",
+     "items": [
+      [
+       "🪨",
+       28,
+       76,
+       22
+      ],
+      [
+       "🌱",
+       50,
+       72,
+       20
+      ],
+      [
+       "🐿️",
+       72,
+       70,
+       22,
+       true
+      ],
+      [
+       "🐦",
+       84,
+       42,
+       14,
+       true
+      ],
+      [
+       "🌸",
+       12,
+       22,
+       9
+      ],
+      [
+       "😮",
+       72,
+       44,
+       9
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "Sammy hides ___ acorns.",
+   "answer": "ten"
+  },
+  "you_know": {
+   "emoji": "🐦",
+   "text": "Birds called jays also bury acorns. They plant trees just like squirrels!",
+   "text_ko": "어치라는 새도 도토리를 땅에 묻어요. 다람쥐처럼 나무를 심는 셈이에요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Sammy losing acorns and finding a baby tree",
+    "Sammy going swimming with Bella"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "Who helps Sammy?",
+    "options": [
+     [
+      "🐦",
+      "Bella the bird"
+     ],
+     [
+      "🐻",
+      "a big bear"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Sammy see in spring?",
+    "options": [
+     [
+      "🌱",
+      "a sprout"
+     ],
+     [
+      "⛄",
+      "a snowman"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Sammy is ___ in winter.",
+    "choices": [
+     "hungry",
+     "sleepy",
+     "angry"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does Sammy find three acorns?",
+    "choices": [
+     "in a tree",
+     "by the big rock",
+     "in the river"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What does Sammy say to Bella?",
+    "choices": [
+     "\"Go away!\"",
+     "\"Thank you! Let's share.\"",
+     "\"Good night!\""
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🍕",
+    "sentence": "I am ___. Can I have some pizza?",
+    "options": [
+     "hungry",
+     "green"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🧸",
+    "sentence": "Let's ___ the toys with our friends.",
+    "options": [
+     "share",
+     "dig"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🐶",
+    "sentence": "The puppy likes to ___ in the sand.",
+    "options": [
+     "dig",
+     "share"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Who?",
+    "Problem",
+    "Ending"
+   ],
+   "choices": [
+    "Sammy and Bella",
+    "Sammy can't remember where his acorns are.",
+    "A lost acorn becomes a baby tree."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "When did a friend help you?",
+   "q_ko": "친구가 나를 도와준 적이 있나요?",
+   "frame": "My friend helped me when ___."
+  },
+  "sources": "창작 이야기 (어치·다람쥐의 도토리 묻기는 실제 사실)"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "지구촌 뉴스",
+  "title": "새도 시차를 겪는다고?",
+  "lets_start": {
+   "q": "비행기를 타고 먼 나라에 가면 낮인데도 졸릴 때가 있대요. 이걸 무엇이라고 할까요?",
+   "options": [
+    "시차",
+    "감기"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "시차",
+    "meaning": "나라마다 시간이 달라 몸이 헷갈리는 것",
+    "emoji": "⏰"
+   },
+   {
+    "word": "생체시계",
+    "meaning": "몸속에서 시간을 알려 주는 시계",
+    "emoji": "🫀"
+   },
+   {
+    "word": "바닷새",
+    "meaning": "바다에서 먹이를 찾는 새",
+    "emoji": "🕊️"
+   },
+   {
+    "word": "나침반",
+    "meaning": "방향을 알려 주는 도구",
+    "emoji": "🧭"
+   },
+   {
+    "word": "방향",
+    "meaning": "어느 쪽으로 가는지",
+    "emoji": "↗️"
+   },
+   {
+    "word": "연구진",
+    "meaning": "함께 연구하는 사람들",
+    "emoji": "🔬"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "sea",
+    "items": [
+     [
+      "☀️",
+      82,
+      18,
+      16
+     ],
+     [
+      "🕊️",
+      30,
+      34,
+      22
+     ],
+     [
+      "🕊️",
+      56,
+      26,
+      14
+     ],
+     [
+      "✈️",
+      74,
+      46,
+      12
+     ],
+     [
+      "⏰",
+      18,
+      70,
+      12
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "비행기를 타고 먼 나라에 가면 낮인데도 졸리고, 밤인데도 잠이 안 올 때가 있어요. 우리 몸속 **생체시계**가 그 나라 시간과 맞지 않아서 생기는 **시차** 때문이에요."
+   },
+   {
+    "text": "그런데 새도 시차를 겪는다는 사실이 밝혀졌어요. 영국의 **연구진**이 '맹크스슴새'라는 **바닷새** 1,000마리가 넘는 새의 비행 기록을 살펴보았어요. 이 새는 해를 **나침반**처럼 보면서 길을 찾아요.",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "☀️",
+       80,
+       18,
+       16
+      ],
+      [
+       "🕊️",
+       40,
+       36,
+       20
+      ],
+      [
+       "🧭",
+       64,
+       46,
+       12
+      ],
+      [
+       "🌊",
+       20,
+       84,
+       12
+      ]
+     ]
+    }
+   },
+   {
+    "text": "그런데 동쪽이나 서쪽으로 아주 빨리 날아가면 몸속 시계가 헷갈려서 **방향**이 조금씩 틀어졌어요. 가장 많이 틀어진 것은 15도나 되었대요. 새도 우리처럼 몸속 시계가 맞아야 길을 잘 찾는 거예요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "맹크스슴새는 ___를 나침반처럼 보며 길을 찾아요.",
+   "answer": "해"
+  },
+  "you_know": {
+   "emoji": "🗺️",
+   "text": "맹크스슴새는 먹이를 찾아 둥지에서 약 960km 떨어진 바다까지 날아가기도 해요. 서울에서 부산까지 갔다가 다시 돌아오는 것보다 먼 거리예요!"
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "새도 시차 때문에 길이 틀어질 수 있다는 연구",
+    "새가 노래를 부르는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "맹크스슴새는 어디에서 먹이를 찾나요?",
+    "options": [
+     [
+      "🌊",
+      "바다"
+     ],
+     [
+      "🏜️",
+      "사막"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "새가 나침반처럼 쓰는 것은?",
+    "options": [
+     [
+      "☀️",
+      "해"
+     ],
+     [
+      "🌧️",
+      "비"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "시차는 왜 생기나요?",
+    "choices": [
+     "몸속 시계와 그 나라 시간이 달라서",
+     "밥을 많이 먹어서",
+     "비가 와서"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "연구진은 무엇을 살펴보았나요?",
+    "choices": [
+     "새의 비행 기록",
+     "새의 노래",
+     "새의 알"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "방향이 가장 많이 틀어진 것은 몇 도인가요?",
+    "choices": [
+     "5도",
+     "15도",
+     "50도"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🧭",
+    "sentence": "___을 보면 북쪽이 어디인지 알 수 있어요.",
+    "options": [
+     "나침반",
+     "시차"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🔬",
+    "sentence": "___이 새로운 사실을 발견했어요.",
+    "options": [
+     "연구진",
+     "바닷새"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "✈️",
+    "sentence": "미국에 가서 ___ 때문에 낮에 졸렸어요.",
+    "options": [
+     "시차",
+     "방향"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "연구 내용 정리",
+   "heads": [
+    "누가?",
+    "무엇을 살폈나?",
+    "알게 된 것"
+   ],
+   "choices": [
+    "영국 연구진",
+    "바닷새 1,000마리가 넘는 새의 비행 기록",
+    "빨리 날면 몸속 시계가 헷갈려 방향이 틀어져요"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "내가 새라면 어디로 날아가 보고 싶나요?",
+   "frame": "나는 ___에 날아가 보고 싶어요. 왜냐하면 ___."
+  },
+  "dictation": [
+   "바닷새",
+   "나침반",
+   "시계",
+   "방향",
+   "비행기"
+  ],
+  "copy": "새도 우리처럼 시차를 겪어요.",
+  "sources": "소년한국일보 지구촌뉴스 「새도 인간처럼 시차 겪는다고?」(2026.11.9)를 쉽게 다시 씀"
+ }
+}

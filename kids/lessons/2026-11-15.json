@@ -1,0 +1,580 @@
+{
+ "version": 2,
+ "date": "2026-11-15",
+ "day": 7,
+ "weekday": "일",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 120",
+  "theme": "Rhythm & Sound",
+  "title": "The Bottle Band",
+  "title_ko": "병 밴드",
+  "lets_start": {
+   "q": "Can you make music without real instruments?",
+   "q_ko": "진짜 악기 없이도 음악을 만들 수 있을까요?",
+   "options": [
+    "Yes! With pots and spoons.",
+    "Hmm, I'm not sure."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "band",
+    "meaning": "밴드, 악단",
+    "emoji": "🎸"
+   },
+   {
+    "word": "bottle",
+    "meaning": "병",
+    "emoji": "🍶"
+   },
+   {
+    "word": "tap",
+    "meaning": "톡톡 두드리다",
+    "emoji": "👆"
+   },
+   {
+    "word": "high",
+    "meaning": "(소리가) 높은",
+    "emoji": "🐭"
+   },
+   {
+    "word": "low",
+    "meaning": "(소리가) 낮은",
+    "emoji": "🐘"
+   },
+   {
+    "word": "concert",
+    "meaning": "음악회",
+    "emoji": "🎤"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "rain",
+    "items": [
+     [
+      "🏠",
+      50,
+      58,
+      40
+     ],
+     [
+      "👧",
+      30,
+      80,
+      14
+     ],
+     [
+      "👦",
+      44,
+      82,
+      12
+     ],
+     [
+      "🎵",
+      70,
+      30,
+      11
+     ],
+     [
+      "🎶",
+      82,
+      44,
+      9
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "It is a rainy Sunday. Ella and her little brother Max are bored. \"Let's start a **band**!\" says Ella. \"But we don't have any instruments,\" says Max.",
+    "ko": "비 오는 일요일이에요. 엘라와 남동생 맥스는 심심해요. \"우리 밴드 하자!\" 엘라가 말해요. \"하지만 우린 악기가 하나도 없잖아.\" 맥스가 말해요."
+   },
+   {
+    "text": "Ella gets five glass **bottles**. She puts a little water in the first bottle and more water in the next one. The last bottle is almost full. Then she **taps** each bottle with a spoon. Ting, tang, tong, tung, tunk!",
+    "ko": "엘라가 유리병 다섯 개를 가져와요. 첫 번째 병에는 물을 조금, 다음 병에는 조금 더 넣어요. 마지막 병은 거의 가득 차요. 그리고 숟가락으로 병을 하나씩 톡톡 두드려요. 팅, 탱, 통, 퉁, 텅!",
+    "scene": {
+     "bg": "house",
+     "items": [
+      [
+       "🍶",
+       18,
+       66,
+       16
+      ],
+      [
+       "🍶",
+       34,
+       66,
+       16
+      ],
+      [
+       "🍶",
+       50,
+       66,
+       16
+      ],
+      [
+       "🍶",
+       66,
+       66,
+       16
+      ],
+      [
+       "🍶",
+       82,
+       66,
+       16
+      ],
+      [
+       "🥄",
+       50,
+       34,
+       12
+      ],
+      [
+       "🎵",
+       80,
+       26,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "text": "\"Listen!\" says Ella. \"More water makes a **low** sound. Less water makes a **high** sound.\" Max taps the bottles and plays a song. Mom and Dad sit down and clap. It's the first Bottle Band **concert**!",
+    "ko": "\"들어 봐!\" 엘라가 말해요. \"물이 많으면 낮은 소리가 나. 물이 적으면 높은 소리가 나.\" 맥스가 병을 두드려 노래를 연주해요. 엄마 아빠가 앉아서 손뼉을 쳐요. 병 밴드의 첫 음악회예요!",
+    "scene": {
+     "bg": "stage",
+     "items": [
+      [
+       "👧",
+       36,
+       62,
+       22
+      ],
+      [
+       "👦",
+       58,
+       64,
+       20
+      ],
+      [
+       "👏",
+       22,
+       88,
+       12
+      ],
+      [
+       "👏",
+       78,
+       88,
+       12
+      ],
+      [
+       "🎶",
+       48,
+       30,
+       13
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "More water makes a ___ sound.",
+   "answer": "low"
+  },
+  "you_know": {
+   "emoji": "🌬️",
+   "text": "If you blow across the top of a bottle instead, it works the other way: more water makes a higher sound!",
+   "text_ko": "병을 두드리지 않고 병 입구에 바람을 불면 반대가 돼요. 물이 많을수록 더 높은 소리가 나요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Ella and Max making music with bottles",
+    "Ella and Max playing outside in the rain"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What do they tap the bottles with?",
+    "options": [
+     [
+      "🥄",
+      "a spoon"
+     ],
+     [
+      "✏️",
+      "a pencil"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What is the weather like?",
+    "options": [
+     [
+      "🌧️",
+      "rainy"
+     ],
+     [
+      "☀️",
+      "sunny"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "How many bottles does Ella get?",
+    "choices": [
+     "three",
+     "five",
+     "ten"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Less water makes a ___ sound.",
+    "choices": [
+     "high",
+     "low",
+     "loud"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who watches the concert?",
+    "choices": [
+     "their friends",
+     "Mom and Dad",
+     "their teacher"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🎸",
+    "sentence": "My uncle plays in a rock ___.",
+    "options": [
+     "band",
+     "bottle"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🐭",
+    "sentence": "A mouse makes a ___ sound: squeak!",
+    "options": [
+     "high",
+     "low"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🐘",
+    "sentence": "An elephant has a ___ voice.",
+    "options": [
+     "low",
+     "high"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Problem",
+    "Idea",
+    "Ending"
+   ],
+   "choices": [
+    "They are bored and have no instruments.",
+    "They make music with water bottles.",
+    "They play a concert for Mom and Dad."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What can you use to make music at home?",
+   "q_ko": "집에서 무엇으로 음악을 만들 수 있을까요?",
+   "frame": "I can make music with ___."
+  },
+  "parent_tip": "유리병은 어른과 함께, 숟가락으로 살살 두드려 주세요.",
+  "sources": "창작 이야기 (물 높이와 소리의 관계는 실제 과학)"
+ },
+ "ko": {
+  "genre": "서평",
+  "level": "초1~2",
+  "theme": "책꽂이",
+  "title": "『강아지똥』을 읽고",
+  "lets_start": {
+   "q": "내가 아무 쓸모가 없다고 느낀 적이 있나요?",
+   "options": [
+    "있어요",
+    "없어요"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "서평",
+    "meaning": "책을 읽고 소개하고 평가하는 글",
+    "emoji": "📝"
+   },
+   {
+    "word": "줄거리",
+    "meaning": "이야기의 중요한 내용",
+    "emoji": "📖"
+   },
+   {
+    "word": "쓸모",
+    "meaning": "쓸 만한 가치",
+    "emoji": "🔧"
+   },
+   {
+    "word": "민들레",
+    "meaning": "노란 꽃이 피는 풀",
+    "emoji": "🌼"
+   },
+   {
+    "word": "스며들다",
+    "meaning": "물 같은 것이 속으로 배어 들어가다",
+    "emoji": "💧"
+   },
+   {
+    "word": "추천",
+    "meaning": "좋은 것을 남에게 권함",
+    "emoji": "👍"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "field",
+    "items": [
+     [
+      "🌼",
+      50,
+      64,
+      30
+     ],
+     [
+      "🌱",
+      30,
+      76,
+      14
+     ],
+     [
+      "🌧️",
+      24,
+      22,
+      14
+     ],
+     [
+      "☀️",
+      80,
+      18,
+      14
+     ],
+     [
+      "💛",
+      66,
+      40,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "제가 소개할 책은 권정생 선생님이 쓰신 『강아지똥』이에요. 골목길 담 밑에 떨어진 작은 강아지똥이 주인공이에요."
+   },
+   {
+    "text": "**줄거리**를 소개할게요. 참새가 강아지똥을 보고 \"똥! 더러워!\" 하고 놀려요. 강아지똥은 '나는 아무 **쓸모**도 없나 봐.' 하고 슬퍼해요. 그러던 어느 봄날, 강아지똥 옆에 **민들레** 싹이 돋아나요. 민들레는 꽃을 피우려면 강아지똥이 거름이 되어 주어야 한다고 말해요.",
+    "scene": {
+     "bg": "field",
+     "items": [
+      [
+       "🧱",
+       18,
+       56,
+       30
+      ],
+      [
+       "💩",
+       46,
+       80,
+       14
+      ],
+      [
+       "🌱",
+       64,
+       76,
+       14
+      ],
+      [
+       "🐦",
+       30,
+       26,
+       14
+      ],
+      [
+       "😢",
+       46,
+       60,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "강아지똥은 비에 녹아 민들레 뿌리로 **스며들고**, 마침내 노란 민들레꽃이 피어나요. 저는 이 장면이 가장 기억에 남아요. 세상에 쓸모없는 것은 하나도 없다는 걸 알게 되었거든요. 자신이 작게 느껴지는 친구에게 이 책을 **추천**해요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "강아지똥은 ___의 거름이 되었어요.",
+   "answer": "민들레"
+  },
+  "you_know": {
+   "emoji": "📚",
+   "text": "『강아지똥』은 1969년에 처음 발표된 동화예요. 지금도 많은 어린이가 읽는 우리나라 대표 그림책이에요."
+  },
+  "main_idea": {
+   "q": "이 서평은 무엇을 소개하나요?",
+   "options": [
+    "책 『강아지똥』과 읽은 느낌",
+    "강아지 키우는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "강아지똥 옆에 돋아난 것은?",
+    "options": [
+     [
+      "🌱",
+      "민들레 싹"
+     ],
+     [
+      "🍄",
+      "버섯"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "강아지똥을 보고 놀린 동물은?",
+    "options": [
+     [
+      "🐦",
+      "참새"
+     ],
+     [
+      "🐳",
+      "고래"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "『강아지똥』을 쓴 사람은?",
+    "choices": [
+     "권정생",
+     "세종대왕",
+     "이순신"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "강아지똥은 어떻게 민들레를 도왔나요?",
+    "choices": [
+     "비에 녹아 거름이 되어서",
+     "물을 길어 와서",
+     "노래를 불러서"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "글쓴이가 이 책을 추천하는 친구는?",
+    "choices": [
+     "자신이 작게 느껴지는 친구",
+     "축구를 좋아하는 친구",
+     "키가 큰 친구"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "📖",
+    "sentence": "책의 ___를 짧게 말해 보세요.",
+    "options": [
+     "줄거리",
+     "민들레"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🧦",
+    "sentence": "구멍 난 양말도 인형을 만들면 ___가 있어요.",
+    "options": [
+     "쓸모",
+     "서평"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "👍",
+    "sentence": "친구에게 재미있는 책을 ___했어요.",
+    "options": [
+     "추천",
+     "줄거리"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "서평의 짜임",
+   "heads": [
+    "책 소개",
+    "줄거리",
+    "느낌과 추천"
+   ],
+   "choices": [
+    "권정생 선생님의 『강아지똥』",
+    "강아지똥이 거름이 되어 민들레꽃이 피어요.",
+    "쓸모없는 것은 없어요. 친구에게 추천해요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "내가 좋아하는 책으로 짧은 서평을 써 보세요.",
+   "frame": "제가 소개할 책은 『___』예요. 이 책을 ___ 친구에게 추천해요."
+  },
+  "dictation": [
+   "강아지똥",
+   "민들레",
+   "거름",
+   "줄거리",
+   "추천해요"
+  ],
+  "copy": "세상에 쓸모없는 것은 하나도 없어요.",
+  "parent_tip": "집에 『강아지똥』이 있다면 함께 읽고, 없다면 아이가 좋아하는 책으로 서평 쓰기를 해 보세요.",
+  "sources": "소년한국일보 '글나라책마을'·내친구서울 어린이 기자 서평 형식을 본떠 새로 쓴 예시 서평"
+ }
+}
