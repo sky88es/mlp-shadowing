@@ -8,14 +8,17 @@ const site = `https://sky88es.github.io/mlp-shadowing/kids/#${d.date}`;
 const pdf = raw(`pdf/${d.date}.pdf`);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const E = d.en, K = d.ko;
+// --attach: PDF attached as att0, photos inline as att1 (en) / att2 (ko) — Gmail send_message attachments order
+const ATT = process.argv.includes('--attach');
+const imgSrc = (B) => ATT ? (B === d.en ? 'cid:att1' : (d.en.photo ? 'cid:att2' : 'cid:att1')) : raw(B.photo.src);
 const WD = ['일', '월', '화', '수', '목', '금', '토'];
 const btn = (href, bg, t) => `<a href="${href}" style="display:inline-block;background:${bg};color:#fff;padding:12px 18px;border-radius:24px;text-decoration:none;font-weight:bold;margin:4px">${t}</a>`;
-const photo = (B, color) => B.photo ? `<img src="${raw(B.photo.src)}" alt="" style="width:100%;border-radius:12px;display:block;margin:8px 0 4px"><div style="font-size:12px;color:#7b7686">📷 ${esc(B.photo.caption_ko)} · ${esc(B.photo.credit)}, ${esc(B.photo.license)}</div>` : '';
+const photo = (B, color) => B.photo ? `<img src="${imgSrc(B)}" alt="" style="width:100%;border-radius:12px;display:block;margin:8px 0 4px"><div style="font-size:12px;color:#7b7686">📷 ${esc(B.photo.caption_ko)} · ${esc(B.photo.credit)}, ${esc(B.photo.license)}</div>` : '';
 const next = cal.days.filter(x => x.date > d.date).slice(0, 6);
 console.log(`<div style="font-family:Arial,'Malgun Gothic',sans-serif;max-width:600px;color:#2b2a33;line-height:1.6;background:#fff8ec;padding:16px;border-radius:16px">
 <div style="text-align:center;font-size:22px;font-weight:bold">🌞 오늘의 아침 리딩</div>
 <div style="text-align:center;font-size:13px;color:#7b7686">DAY ${d.day} · ${d.date} (${d.weekday}) · English 10분 + 국어 10분</div>
-<div style="text-align:center;margin:10px 0">${btn(site, '#2fb26b', '🔊 사이트에서 보고 듣기')}${btn(pdf, '#7b6cf6', '🖨 인쇄용 PDF (4쪽)')}</div>
+<div style="text-align:center;margin:10px 0">${btn(site, '#2fb26b', '🔊 사이트에서 보고 듣기')}${ATT ? `<div style="font-size:13px;color:#7b6cf6;font-weight:bold">📎 인쇄용 PDF(4쪽)가 첨부되어 있어요</div>` : btn(pdf, '#7b6cf6', '🖨 인쇄용 PDF (4쪽)')}</div>
 <div style="background:#fff;border-radius:16px;padding:14px 16px;margin-top:10px">
 <div style="color:#2f7de1;font-weight:bold;font-size:21px">🔤 ${esc(E.title)}</div><div style="color:#7b7686;font-size:13px">${esc(E.title_ko)} · ${esc(E.theme)}</div>
 ${photo(E)}
