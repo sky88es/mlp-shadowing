@@ -128,7 +128,7 @@ h1{font-family:'Nanum Myeongjo',serif;font-weight:800;font-size:28pt;line-height
   <div class="sec"><span class="num">I</span><span class="t">함께 읽기</span><span class="en">Commentary</span></div>
   <div class="cols">${paras(d.notes)}</div>
   ${d.words?.length ? `<div class="gloss"><div class="h">낱말 풀이</div>${d.words.map(w => `<div><b>${esc(w.word)}</b><span>${esc(w.meaning)}</span></div>`).join('')}</div>` : ''}
-  <div class="pull"><div class="pq">${esc(d.quote)}</div><div class="pw">— ${esc(d.work)}</div></div>
+  <div class="pull"><div class="pq">${esc(d.quote)}</div><div class="pw">— ${esc(d.quote_by || d.work)}</div></div>
   <div class="folio"><span>매일의 문장 · No. ${no}</span><span>II</span></div>
 </section>
 
