@@ -61,10 +61,15 @@ key_sentences[3]{en,note}, questions[4]{q,options?,answer}, blanks[5]{sentence,a
 - 시대 균형: 전체적으로 요즘 작가·요즘 책 위주(최근 10~20년). 고전·근대 작품은 수요일(고전 한 구절)과 가끔의 월·토 정도.
 - 사실(연도, 생애 등)은 확실한 것만 쓰고, 불확실하면 빼거나 WebSearch로 확인한다.
 - 톤: 차분하고 따뜻하게. 정답을 주기보다 질문을 남긴다.
+- **생각의 깊이가 핵심**(전문 수록보다 중요). 매일 아래를 꼭 넣는다:
+  - `think`: '오늘의 생각 거리' — 작품/주제를 지금의 일·관계·일상에 연결하는 짧은 글(600~900자). 직장인의 아침에 닿는 구체적 장면 하나로 시작.
+  - `other_view`: '다르게 읽기' — 해설과 반대되거나 다른 관점 한 단락(200~400자). 한쪽으로 결론 내리지 않게.
+  - `questions` 3개는 깊이를 다르게: ① 나를 돌아보는 질문 ② 내 일·관계에 적용하는 질문 ③ 정답 없는 큰 질문.
+  - `action`: '오늘 하루 한 가지' — 오늘 실제로 해볼 수 있는 아주 작은 실천 한 줄.
 
 ## 매일 작업
 1. `daily-reading/kr/lessons/YYYY-MM-DD.json` 작성 (스키마: `kr/lessons/2026-11-09.json` 참고)
-   필드: day, date, category, title, work, intro, text_type("poem"|"prose"), text_heading, text, text_source, notes(문단은 빈 줄로 구분), words[3~6]{word,meaning}, questions[3], quote
+   필드: day, date, category, title, work, intro, text_type("poem"|"prose"), text_heading, text, text_source, full_text_url?, full_text_label?, notes(문단은 빈 줄로 구분), think, other_view, words[3~6]{word,meaning}, questions[3], action, quote
 2. `node daily-reading/kr/make_pdf_kr.js <json> daily-reading/kr/pdf/YYYY-MM-DD.pdf` → 2~4쪽 확인
 3. 커밋·push 후 `node daily-reading/kr/make_email_kr.js <json>` 출력을 Gmail htmlBody로 발송.
    제목 `[Daily 국문] DAY n · <title>`, 받는 사람 `sangwon.park@jbam.co.kr`.

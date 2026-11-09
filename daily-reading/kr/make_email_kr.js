@@ -26,9 +26,12 @@ ${d.full_text_url ? `<p style="text-align:center;margin:10px 0"><a href="${esc(d
 ${sec('I', '함께 읽기', 'Commentary')}
 <div style="font-family:${SERIF};font-size:15px;line-height:1.95">${paras(d.notes)}</div>
 ${d.words?.length ? `<div style="background:#f3eee3;padding:14px 18px;margin-top:10px"><div style="font-size:11px;letter-spacing:5px;color:#2f4f3e;font-weight:bold;margin-bottom:6px">낱말 풀이</div>${d.words.map(w => `<div style="font-size:13px;margin:3px 0"><b style="font-family:${SERIF};font-size:15px">${esc(w.word)}</b> &nbsp;${esc(w.meaning)}</div>`).join('')}</div>` : ''}
-${sec('II', '생각해 볼 질문', 'Reflection')}
+${d.think ? sec('II', '오늘의 생각 거리', 'Thinking') + `<div style="font-family:${SERIF};font-size:15px;line-height:1.95">${paras(d.think)}</div>` : ''}
+${d.other_view ? `<div style="border-left:4px solid #2f4f3e;background:#fffdf7;padding:12px 16px;margin-top:6px"><div style="font-size:11px;letter-spacing:5px;color:#2f4f3e;font-weight:bold;margin-bottom:4px">다르게 읽기</div><div style="font-family:${SERIF};font-size:14px">${paras(d.other_view)}</div></div>` : ''}
+${sec(d.think ? 'III' : 'II', '생각해 볼 질문', 'Reflection')}
 ${d.questions.map((q, i) => `<table width="100%" style="border-collapse:collapse;margin-bottom:12px"><tr><td style="font-family:Georgia,serif;font-size:24px;color:#8c2f1b;width:34px;vertical-align:top;line-height:1.2">${i + 1}</td><td style="font-family:${SERIF};font-size:15px">${hl(q)}</td></tr></table>`).join('')}
-${sec('III', '오늘의 한 문장', 'Transcription')}
+${d.action ? `<div style="background:#1f1d1a;color:#fbf8f1;padding:14px 18px;margin-top:8px;font-family:${SERIF};font-size:15px"><span style="font-family:Arial,sans-serif;font-size:11px;letter-spacing:4px;color:#e3b48c">오늘 하루 한 가지</span><br>${hl(d.action)}</div>` : ''}
+${sec(d.think ? 'IV' : 'III', '오늘의 한 문장', 'Transcription')}
 <div style="text-align:center;font-family:${SERIF};font-weight:bold;font-size:22px;line-height:1.5;border-top:1px solid #1f1d1a;border-bottom:1px solid #1f1d1a;padding:22px 10px">${esc(d.quote)}</div>
 <p style="text-align:center;margin:28px 0 6px"><a href="${pdf}" style="background:#1f1d1a;color:#fbf8f1;padding:12px 26px;text-decoration:none;font-size:14px;letter-spacing:1px">인쇄용 PDF 받기 · 원고지 필사 칸 포함</a></p>
 </div>`);

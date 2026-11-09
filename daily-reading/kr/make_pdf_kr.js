@@ -75,6 +75,16 @@ h1{font-family:'Nanum Myeongjo',serif;font-weight:800;font-size:28pt;line-height
 .gloss div b{font-family:'Nanum Myeongjo',serif;font-size:10.5pt;margin-right:6px}
 .gloss div span{font-size:8.5pt;color:#4a463f}
 
+/* thinking */
+.essay{font-family:'Nanum Myeongjo',serif;font-size:11pt;line-height:2.05;text-align:justify}
+.essay p{margin:0 0 4.5mm;text-indent:1em}
+.other{margin-top:8mm;border:1px solid var(--line);border-left:4px solid var(--leaf);padding:5mm 6mm;background:#fffdf7;font-family:'Nanum Myeongjo',serif;font-size:10pt;line-height:1.9}
+.other .h{font-family:'Noto Sans KR',sans-serif;font-size:7.5pt;letter-spacing:.3em;color:var(--leaf);font-weight:700;margin-bottom:2mm}
+.other p{margin:0 0 2mm}
+.action{display:flex;align-items:center;gap:4mm;background:var(--ink);color:var(--paper);padding:4mm 6mm;margin:2mm 0 0;font-family:'Nanum Myeongjo',serif;font-size:11pt}
+.action em{color:#f0c9a8}
+.action .lb{font-family:'Noto Sans KR',sans-serif;font-size:7.5pt;letter-spacing:.25em;color:#e3b48c;white-space:nowrap}
+.action .ck{margin-left:auto;font-size:14pt}
 /* pull quote */
 .pull{position:absolute;left:20mm;right:20mm;bottom:26mm;text-align:center;border-top:.6px solid var(--ink);border-bottom:.6px solid var(--ink);padding:10mm 8mm}
 .pq{font-family:'Nanum Myeongjo',serif;font-weight:800;font-size:19pt;line-height:1.5;letter-spacing:-.01em}
@@ -122,14 +132,21 @@ h1{font-family:'Nanum Myeongjo',serif;font-weight:800;font-size:28pt;line-height
   <div class="folio"><span>매일의 문장 · No. ${no}</span><span>II</span></div>
 </section>
 
+${d.think ? `<section class="sheet">
+  <div class="sec"><span class="num">II</span><span class="t">오늘의 생각 거리</span><span class="en">Thinking</span></div>
+  <div class="essay">${paras(d.think)}</div>
+  ${d.other_view ? `<div class="other"><div class="h">다르게 읽기</div>${paras(d.other_view)}</div>` : ''}
+  <div class="folio"><span>매일의 문장 · No. ${no}</span><span>III</span></div>
+</section>` : ''}
 <section class="sheet">
-  <div class="sec"><span class="num">II</span><span class="t">생각해 볼 질문</span><span class="en">Reflection</span></div>
+  <div class="sec"><span class="num">${d.think ? 'III' : 'II'}</span><span class="t">생각해 볼 질문</span><span class="en">Reflection</span></div>
   ${d.questions.map((q, i) => `<div class="q"><div class="n">${i + 1}</div><div><div class="txt">${hl(q)}</div><div class="ln"></div><div class="ln"></div></div></div>`).join('')}
-  <div class="sec" style="margin-top:6mm"><span class="num">III</span><span class="t">오늘의 한 문장 · 필사</span><span class="en">Transcription</span></div>
+  ${d.action ? `<div class="action"><span class="lb">오늘 하루 한 가지</span><span class="tx">${hl(d.action)}</span><span class="ck">□</span></div>` : ''}
+  <div class="sec" style="margin-top:6mm"><span class="num">${d.think ? 'IV' : 'III'}</span><span class="t">오늘의 한 문장 · 필사</span><span class="en">Transcription</span></div>
   <div class="quote">${esc(d.quote)}</div>
   <div class="wgrid">${grid}</div>
   <div class="sign">날짜 <span></span> 이름 <span></span></div>
-  <div class="folio"><span>매일의 문장 · No. ${no}</span><span>III</span></div>
+  <div class="folio"><span>매일의 문장 · No. ${no}</span><span>${d.think ? 'IV' : 'III'}</span></div>
 </section>
 </body></html>`;
 
