@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="꼬마 그림책">
-<title>꼬마 그림책</title>
+<meta name="apple-mobile-web-app-title" content="아침 리딩">
+<title>아침 리딩</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
 <script src="./scene.js"></script>
@@ -76,6 +76,12 @@ h2{font-family:'Jua';font-size:24px;margin:26px 4px 10px}
 @keyframes fly{to{transform:translate(var(--dx),var(--dy)) scale(.4);opacity:0}}
 .tip{font-size:15px;color:var(--sub);background:#fff3d6;border-radius:16px;padding:12px 14px;margin-top:20px;line-height:1.6}
 .plan{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14px;margin:0 0 12px}.plan span{background:#fff;border-radius:99px;padding:4px 10px;box-shadow:0 3px 0 rgba(0,0,0,.05)}
+.photo{margin:6px 0 10px;position:relative}.photo img{width:100%;border-radius:20px;display:block;max-height:440px;object-fit:cover}
+.photo .real{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.55);color:#fff;font-family:'Jua';font-size:14px;border-radius:99px;padding:3px 10px}
+.photo figcaption{font-size:15px;text-align:center;margin-top:6px;line-height:1.4}.photo small{color:var(--sub);font-size:11px}.photo a{color:var(--sub)}
+.hook{background:#fff3d6;border-radius:14px;padding:8px 12px;margin:6px 4px 10px;font-size:16px;text-align:center}
+.org{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;background:#fff;border-radius:22px;padding:14px;box-shadow:var(--shadow)}
+.org .st{text-align:center;font-family:'Jua';font-size:16px;min-width:64px}.org .st .e{font-size:44px}.org .ar{font-size:22px;color:#ffb703}
 .empty{text-align:center;color:var(--sub);padding:40px}
 @media (max-width:420px){.txt .main{font-size:27px}.ko .txt .main{font-size:25px}.big.play{width:72px;height:72px}}
 </style>
@@ -123,8 +129,10 @@ function addStar(key, x, y) {
 }
 
 /* ---------- 화면 ---------- */
+let CAL = null;
 async function load() {
   INDEX = await fetch('./lessons/index.json', { cache: 'no-store' }).then(r => r.json()).catch(() => []);
+  CAL = await fetch('./calendar.json', { cache: 'no-store' }).then(r => r.json()).catch(() => null);
   route();
 }
 window.onhashchange = route;
@@ -138,11 +146,19 @@ async function route() {
 }
 function home() {
   const list = [...INDEX].sort((a, b) => b.date.localeCompare(a.date));
-  $('#app').innerHTML = `<div class="top"><h1>🌈 꼬마 그림책</h1><span class="stars">⭐ ${stars()}</span></div>
+  $('#app').innerHTML = `<div class="top"><h1>🌞 아침 리딩</h1><span class="stars">⭐ ${stars()}</span></div>
   ${list.length ? `<div class="grid">${list.map((d, i) => `<a href="#${d.date}" style="text-decoration:none;color:inherit"><div class="day">
-    ${KidsScene.sceneHTML(d.cover)}<div class="d">${i === 0 ? '🆕 오늘 · ' : ''}DAY ${d.day} · ${d.date.slice(5).replace('-', '/')} (${d.weekday})</div>
-    <div class="t en">${esc(d.en_title)}</div><div class="t ko">${esc(d.ko_title)}</div></div></a>`).join('')}</div>` : '<p class="empty">아직 그림책이 없어요.</p>'}
-  <p class="tip">⏱ 하루 20분: <b>English 10분</b>(그림책 듣기 → 따라 읽기 → 단어 → 퀴즈) + <b>국어 10분</b>(듣기 → 소리 내어 읽기 → 낱말·퀴즈 → 받아쓰기).<br>🔊 소리는 기기에 들어 있는 음성으로 읽어 줘요. 아이패드·아이폰은 무음 스위치를 꺼 주세요.</p>`;
+    ${d.photo ? `<img src="./${esc(d.photo)}" alt="" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:22px;display:block">` : KidsScene.sceneHTML(d.cover)}<div class="d">${i === 0 ? '🆕 오늘 · ' : ''}DAY ${d.day} · ${d.date.slice(5).replace('-', '/')} (${d.weekday})</div>
+    <div class="t en">${esc(d.en_title)}</div><div class="t ko">${esc(d.ko_title)}</div></div></a>`).join('')}</div>` : '<p class="empty">아직 지문이 없어요.</p>'}
+  ${calHTML(list[0] && list[0].date)}
+  <p class="tip">⏱ 하루 20분: <b>English 10분</b>(듣기 → 따라 읽기 → 단어 → 문제) + <b>국어 10분</b>(듣기 → 소리 내어 읽기 → 낱말 → 문제·받아쓰기).<br>🔊 소리는 기기에 들어 있는 음성으로 읽어 줘요. 아이패드·아이폰은 무음 스위치를 꺼 주세요.</p>`;
+}
+function calHTML(last) {
+  if (!CAL) return '';
+  const WD = ['일', '월', '화', '수', '목', '금', '토'];
+  const next = CAL.days.filter(x => !last || x.date > last).slice(0, 7);
+  if (!next.length) return '';
+  return `<h2>📅 다음 주제 미리 보기</h2><div class="panel" style="font-size:15px">${next.map(x => `<div style="display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line)"><b style="font-family:'Jua';min-width:72px">${x.date.slice(5).replace('-', '/')} (${WD[new Date(x.date + 'T12:00:00Z').getUTCDay()]})</b><div>🔤 ${esc(x.en)}<br>📖 ${esc(x.ko)}</div></div>`).join('')}</div>`;
 }
 function lesson() {
   const B = L[lang], P = B.pages;
@@ -151,9 +167,11 @@ function lesson() {
   $('#app').innerHTML = `<div class="top"><a href="#" class="back">← 목록</a><h1 style="font-size:20px;text-align:center">DAY ${L.day}</h1><span class="stars">⭐ ${stars()}</span></div>
   <div class="tabs"><button class="tab en ${isEn ? 'on' : ''}" data-l="en">🔤 English</button><button class="tab ko ${!isEn ? 'on' : ''}" data-l="ko">📖 국어</button></div>
   <div class="${lang}">
-  <div class="plan">⏱ <b>오늘의 10분</b> ${(isEn ? ['🎧 그림책 듣기 3분', '🗣 따라 읽기 3분', '🃏 단어·소리 2분', '⭐ 퀴즈 2분'] : ['🎧 듣기 3분', '📢 소리 내어 읽기 3분', '🃏 낱말·퀴즈 2분', '✏️ 받아쓰기·그리기 2분']).map(t => `<span>${t}</span>`).join('')}</div>
+  <div class="plan">⏱ <b>오늘의 10분</b> ${(isEn ? ['🎧 듣기 2분', '🗣 따라 읽기 3분', '🃏 단어 2분', '⭐ 문제 3분'] : ['🎧 듣기 2분', '📢 소리 내어 읽기 3분', '🃏 낱말 2분', '⭐ 문제·받아쓰기 3분']).map(t => `<span>${t}</span>`).join('')}</div>
   <div class="book">
     <div class="title">${esc(B.title)}<small>${esc(isEn ? B.title_ko : B.theme)}</small></div>
+    ${B.photo ? `<figure class="photo"><img src="./${esc(B.photo.src)}" alt="${esc(B.photo.caption_ko)}"><span class="real">📷 진짜 사진</span><figcaption>${isEn && B.photo.caption ? `<b>${esc(B.photo.caption)}</b><br>` : ''}${esc(B.photo.caption_ko)}<small> · 📷 <a href="${esc(B.photo.page)}" target="_blank" rel="noopener">${esc(B.photo.credit)}</a>, ${esc(B.photo.license)}</small></figcaption></figure>` : ''}
+    ${B.hook_ko ? `<div class="hook">${esc(B.hook_ko)}</div>` : ''}
     <div id="pic">${KidsScene.sceneHTML(pg.scene)}</div>
     <div class="txt"><div class="main" id="say">${words(isEn ? pg.en : pg.text)}</div>${isEn ? `<div class="sub">${esc(pg.ko)}</div>` : ''}</div>
     <div class="dots">${P.map((_, i) => `<i class="${i === page ? 'on' : ''}"></i>`).join('')}</div>
@@ -167,18 +185,20 @@ function lesson() {
 }
 function card(w, l) { return `<button class="card" data-say="${esc(w.word)}" data-l="${l}"><div class="e">${w.emoji}</div><div class="wd">${esc(w.word)}</div><div class="m">${esc(w.ko || w.meaning)}</div></button>`; }
 function quiz(B, l) {
-  return `<h2>⭐ 퀴즈</h2>${B.quiz.map((q, i) => `<div class="q"><div class="qt">${q.level ? `<span class="lv">${q.level}</span>` : ''}${esc(q.q)} ${l === 'en' ? `<button class="sayq" data-say="${esc(q.q)}">🔊</button>` : ''}</div>${q.q_ko ? `<div class="qk">${esc(q.q_ko)}</div>` : ''}
+  return `<h2>⭐ ${l === 'en' ? 'Check' : '확인 문제'}</h2>${B.quiz.map((q, i) => `<div class="q"><div class="qt">${q.level || q.type ? `<span class="lv">${esc(q.level || q.type)}</span>` : ''}${esc(q.q)} ${l === 'en' ? `<button class="sayq" data-say="${esc(q.q)}">🔊</button>` : ''}</div>${q.q_ko ? `<div class="qk">${esc(q.q_ko)}</div>` : ''}
     <div class="ch">${q.choices.map((c, j) => `<button data-q="${l}-${i}" data-j="${j}" data-a="${q.answer}">${esc(c)}</button>`).join('')}</div></div>`).join('')}`;
 }
+function org(o) { return `<h2>🧩 한눈에 정리: ${esc(o.title)}</h2><div class="org">${o.steps.map(([e, t], i) => `${i ? '<span class="ar">➜</span>' : ''}<div class="st"><div class="e">${e}</div><div>${esc(t)}</div></div>`).join('')}</div>`; }
 function enExtras(B) {
-  return `<h2>🃏 단어 카드 <small style="font-size:15px;color:var(--sub)">눌러서 들어요</small></h2><div class="cards">${B.words.map(w => card(w, 'en')).join('')}</div>
-  <h2>🔡 오늘의 소리: ${esc(B.phonics.sound)} = '${esc(B.phonics.say)}'</h2><div class="panel">${esc(B.phonics.tip_ko)}<div class="cards" style="margin-top:10px">${B.phonics.words.map(([w, e]) => card({ word: w, emoji: e, ko: '' }, 'en')).join('')}</div></div>
-  <h2>🎵 따라 부르기</h2><div class="panel chant">${B.chant.map(esc).join('<br>')}<div class="ctrl"><button class="big play" data-say="${esc(B.chant.join(' '))}" data-l="en">🎤</button></div></div>
-  ${quiz(B, 'en')}`;
+  return `<h2>🃏 Words <small style="font-size:15px;color:var(--sub)">눌러서 들어요</small></h2><div class="cards">${B.words.map(w => card(w, 'en')).join('')}</div>
+  ${org(B.organizer)}
+  ${quiz(B, 'en')}
+  <h2>🗣 Talk</h2><div class="panel" style="font-family:'Baloo 2';font-weight:700;font-size:20px">${esc(B.talk_en)} <button data-say="${esc(B.talk_en.split('→')[0])}" data-l="en">🔊</button></div>`;
 }
 function koExtras(B) {
   return `<h2>🃏 새 낱말</h2><div class="cards">${B.words.map(w => card(w, 'ko')).join('')}</div>
   <h2>🐾 흉내 내는 말</h2><div class="cards">${B.sound_words.map(w => card(w, 'ko')).join('')}</div>
+  ${org(B.organizer)}
   ${quiz(B, 'ko')}
   <h2>✏️ 받아쓰기 <small style="font-size:15px;color:var(--sub)">듣고 쓴 뒤, 눌러서 정답 확인</small></h2>
   <div class="dict">${B.dictation.map((w, i) => `<button data-d="${esc(w)}">🔊 ${i + 1}번</button>`).join('')}</div>

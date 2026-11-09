@@ -1,51 +1,65 @@
-# 꼬마 그림책 (7세 · 초1 · 하루 20분)
+# 🌞 아침 리딩 (7세 · 초1 · 하루 20분)
 
-매일 **English 그림책 1편 + 국어 그림책 1편**을 만들어 사이트·인쇄용 PDF·메일로 보냅니다.
-대상: 7세(유치원)와 초등 1학년이 **같은 지문**을 함께 보고, 활동만 수준을 나눕니다(⭐7세 / ⭐⭐초1).
+매일 아침 **English 지문 1개 + 국어 지문 1개**를 Brick Reading처럼 짧은 비문학(6문장)으로 만들어
+사이트·인쇄용 PDF·메일로 보냅니다. 매일 새로운 주제, 동물·자연·세계 이야기는 **진짜 사진**과 함께.
 
-- 사이트: `kids/index.html`(GitHub Pages: `https://sky88es.github.io/mlp-shadowing/kids/`). 그림책 넘기기, 문장·단어 🔊 듣기(기기 내장 음성, 읽는 단어 노란색 표시), 🐢 천천히 듣기, 퀴즈 별 모으기, 받아쓰기 듣기, 날짜별 모아 보기.
-- PDF: 2쪽(1쪽 English, 2쪽 국어). 냉장고에 붙이거나 책상에서 쓰기용.
+- 사이트: `kids/index.html` (GitHub Pages가 `main`에 켜져 있으면 `https://sky88es.github.io/mlp-shadowing/kids/`)
+  날짜별 모아 보기, 실사 사진, 장면 그림, 문장·단어 🔊 듣기(기기 음성, 읽는 단어 노란색), 🐢 천천히, 확인 문제 ⭐ 모으기, 받아쓰기 듣기, 다음 주제 미리 보기.
+- PDF 4쪽: ① English 읽기(사진+6장면) ② English 워크북 ③ 국어 읽기 ④ 국어 활동.
+- 메일: 받는 사람 `sangwon.park@jbam.co.kr`, 제목 `[아침 리딩] DAY n · <English 제목> / <국어 제목>`.
 
 ## 하루 20분
 | | English 10분 | 국어 10분 |
 |---|---|---|
-| 1 | 🎧 그림책 듣기 3분 | 🎧 듣기(부모가 읽어 주거나 🔊) 3분 |
-| 2 | 🗣 장면마다 따라 읽기 3분 | 📢 소리 내어 읽기(초1) / 따라 말하기(7세) 3분 |
-| 3 | 🃏 단어 카드·오늘의 소리 2분 | 🃏 새 낱말·흉내 내는 말 2분 |
-| 4 | ⭐ 퀴즈 2분 | ✏️ 받아쓰기(초1)·그림 그리기(7세) 2분 |
+| 1 | 🎧 듣기 2분 | 🎧 듣기 2분 |
+| 2 | 🗣 한 문장씩 따라 읽기 3분 | 📢 소리 내어 읽기 3분 |
+| 3 | 🃏 단어 2분 | 🃏 낱말·흉내 내는 말 2분 |
+| 4 | ⭐ 문제 3분 | ⭐ 문제·받아쓰기 3분 |
 
-## 어디서 가져오나 (출처 원칙)
-아이용이라 뉴스는 쓰지 않습니다. 모든 지문은 **새로 쓴 글**이고, 바탕은 아래 셋 중 하나입니다.
-1. **창작 이야기**: 요일 주제와 계절·행사(할로윈, 추석, 크리스마스, 입학 등)에 맞춘 짧은 이야기.
-2. **공공 영역 고전을 짧게 다시 쓰기**: 이솝 우화, 한국 전래동화(작자 미상). 특정 출판사 그림책 문장은 베끼지 않는다.
-3. **진짜 사실이 들어가는 날**(동물·자연·우주 등): WebSearch로 국립생물자원관, 국립과천과학관, NASA Space Place, National Geographic Kids 같은 곳에서 사실을 확인한 뒤 쉬운 말로 쓴다. 확인 못 한 사실은 쓰지 않는다.
-- 영어 단어: 기초 생활 어휘 + Dolch/Fry 사이트워드 위주. 파닉스는 짧은 모음(a,e,i,o,u) → 자음 → 이중자음 순으로 돌린다.
-- 국어 낱말·받아쓰기: 초1 국어 교과서 수준 어휘, 받침 있는 쉬운 낱말 위주. 흉내 내는 말(의성어·의태어)을 매일 넣는다.
-
-## 요일 주제
+## 주제 (요일 틀 + `calendar.json` 날짜별 계획)
 | 요일 | English | 국어 |
 |---|---|---|
-| 월 | 동물 Animals | 전래동화 |
-| 화 | 음식 Food | 유치원·학교 생활 이야기 |
-| 수 | 가족·친구 Family & Friends | 동물·자연 신기한 사실 |
-| 목 | 날씨·계절 Weather & Seasons | 동시(흉내 내는 말 가득) |
-| 금 | 탈것·직업 Things that go & Jobs | 속담 이야기 |
-| 토 | 놀이·숫자·색깔 Play, Numbers, Colors | 계절·명절·우리 문화 |
-| 일 | 이솝 우화 Aesop's Fables | 마음·감정 이야기 |
+| 월 | 🐾 Animals (실사 사진) | 📅 오늘은 무슨 날? · 계절·절기 |
+| 화 | 🌍 Around the World | ✈️ 세계 여러 나라 이야기 |
+| 수 | ⚽ Sports (축구·운동) | 🐙 신기한 동물 (실사 사진) |
+| 목 | 🔬 Science · Body | 🤔 생활 속 과학 궁금증 |
+| 금 | 🍕 Food · Cooking | 🍜 맛있는 음식 이야기 |
+| 토 | 🎸 Music · Hobbies | 🏃 놀이 · 운동 · 음악 |
+| 일 | 🌟 Amazing True Story | 📜 옛이야기 · 속담 |
+- 그날의 주제는 `calendar.json`의 날짜 항목을 따른다. 기념일·절기가 있으면 그게 먼저.
+- 사실 확인이 안 되면 같은 요일 분야의 다른 재미있는 주제로 바꾸고 `calendar.json`도 고친다.
+- 달력이 7일 이내로 남으면 다음 4주치를 같은 규칙으로 추가한다(최근 60일과 겹치지 않게).
 
-## 분량 (길면 안 봄)
-- English: **6장면**, 장면당 **3~6단어** 한 문장(현재형, 반복 패턴 환영). 단어 카드 6개, 오늘의 소리 1개+예시 4개, 챈트 2줄, 퀴즈 3개(그림·숫자 보기).
-- 국어: **6장면**, 장면당 한두 문장(합쳐서 25단어 안팎, 문장은 짧게). 새 낱말 4개, 흉내 내는 말 3개, 퀴즈 3개(7세 2·초1 1), 받아쓰기 5개, 따라 쓰기 1문장, 이야기 나누기·그림 그리기 각 1개.
-- 무섭거나 슬픈 결말, 폭력, 특정 상표·캐릭터는 쓰지 않는다. 최근 14일 lesson과 주제가 겹치지 않게 한다.
+## 어디서 가져오나
+- **사실**: WebSearch로 확인한 내용만 쓴다. 우선 출처: Britannica, NASA Space Place, National Geographic Kids, Smithsonian, 국립생물자원관, 국립과천과학관, 국립국어원, 한국민족문화대백과, 국가기록원, 정부 보도자료. 문장은 베끼지 않고 새로 쓴다.
+- **사진**: Wikimedia Commons의 무료 라이선스(CC0·PD·CC BY·CC BY-SA)만. 작가·라이선스·원본 링크를 반드시 표시.
+  내셔널지오그래픽·방송사(세계테마기행 등) 사진·영상은 저작권이 있어 쓰지 않는다.
+  - 찾기: `python3 kids/find_photo.py "검색어"` (featured/quality 우선)
+  - 저장: `python3 kids/find_photo.py --save <commons 페이지 URL> kids/photos/YYYY-MM-DD-en.jpg` → 출력된 credit/license/page를 lesson `photo`에 넣는다.
+  - 반드시 저장한 사진을 직접 열어 보고 주제와 맞는지, 아이가 봐도 괜찮은지 확인한다. 맞는 사진이 없으면 `photo`를 빼도 된다.
+- **옛이야기·속담**: 작자 미상 전래동화, 이솝 우화 등 공공 영역만 짧게 다시 쓴다.
+
+## 분량·수준
+- English: **6문장**(문장당 7~12단어, 현재형 위주), 사진 1장, 장면 그림 6개, 단어 8개, 정리 그림(organizer) 4단계,
+  문제 4개(Main Idea / Detail / True·False / Vocabulary), Talk 1개.
+- 국어: **6문장**(초1~2 수준, 짧은 문장), 사진 1장, 장면 그림 6개, 새 낱말 4개, 흉내 내는 말 3개, organizer 4단계,
+  문제 4개(중심 내용 / 내용 / O·X / 낱말), 받아쓰기 5개, 따라 쓰기 1문장, 써 보기 1개, 그려 보기 1개.
+- hook_ko: 아이가 "어? 정말?" 하게 만드는 첫 질문 한 줄.
+- 무섭거나 슬픈 내용, 폭력, 특정 상표 광고성 내용은 피한다.
 
 ## 그림(scene)
 `scene = { bg, items: [[이모지, x%, y%, 크기(가로 대비 %), 좌우반전?], ...] }`, x·y는 중심점.
-bg: `autumn` `field` `snow` `night` `day` `sea` `house` `space`. 장면마다 주인공 이모지를 크게(20~35), 소품을 작게 배치해 문장 내용이 그림만 봐도 보이게 한다.
+bg: `autumn` `field` `snow` `night` `day` `sea` `house` `space`. 주인공을 크게(20~35), 소품을 작게.
+날짜·글자가 박힌 이모지(📅 등)는 쓰지 않는다.
 
 ## 매일 작업 순서
-1. `kids/lessons/`의 최근 14개를 보고 주제 중복을 피한다. DAY = 기존 lesson 수 + 1, 날짜는 Asia/Seoul.
-2. `kids/lessons/YYYY-MM-DD.json` 작성(스키마는 `2026-11-09.json` 참고).
-3. `node kids/build_index.js`
-4. `node kids/make_pdf.js kids/lessons/YYYY-MM-DD.json kids/pdf/YYYY-MM-DD.pdf` 후 `pdfinfo`로 **정확히 2쪽**인지 확인(넘치면 문장을 줄인다).
-5. 커밋하고 push.
-6. `node kids/make_email.js kids/lessons/YYYY-MM-DD.json` 출력 HTML을 Gmail `send_message` htmlBody로 발송. 제목 `[꼬마 그림책] DAY n · <English 제목> / <국어 제목>`.
+1. DAY = 기존 lesson 수 + 1, 날짜는 Asia/Seoul. `calendar.json`에서 오늘 주제 확인.
+2. WebSearch로 사실 확인 → `kids/lessons/YYYY-MM-DD.json` 작성(스키마: `2026-11-09.json`).
+3. 사진 찾기·저장(위 방법) → lesson의 `en.photo`/`ko.photo`.
+4. `node kids/build_index.js`
+5. `node kids/make_pdf.js kids/lessons/YYYY-MM-DD.json kids/pdf/YYYY-MM-DD.pdf` → `pdfinfo`로 **4쪽** 확인,
+   `pdftoppm`으로 그려서 잘린 곳이 없는지 본다(넘치면 문장을 줄인다).
+6. 커밋 후 push.
+7. `node kids/make_email.js kids/lessons/YYYY-MM-DD.json` 출력 HTML을 Gmail `send_message` htmlBody로 발송.
+
+네트워크: 사진에는 `commons.wikimedia.org`, `upload.wikimedia.org`, `thumb.wikimedia.org` 접속이 필요하다(클라우드 환경 `mlp-shadowing`에 허용됨).
