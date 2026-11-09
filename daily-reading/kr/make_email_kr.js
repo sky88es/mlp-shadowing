@@ -13,7 +13,8 @@ console.log(`<div style="background:#fbf8f1;padding:28px 22px;max-width:620px;ma
 <table width="100%" style="border-collapse:collapse;border-bottom:3px double #1f1d1a"><tr>
 <td style="font-family:${SERIF};font-weight:bold;font-size:26px;padding-bottom:6px">매일의 문장 <span style="font-family:Georgia,serif;font-style:italic;font-weight:normal;font-size:14px;color:#8c2f1b">Daily Reading</span></td>
 <td style="text-align:right;font-size:11px;color:#7a7368;letter-spacing:2px;padding-bottom:6px"><span style="font-family:Georgia,serif;font-size:22px;color:#1f1d1a;letter-spacing:0">No. ${no}</span><br>${esc(d.date)}</td></tr></table>
-<div style="margin-top:30px;font-size:11px;letter-spacing:6px;color:#8c2f1b;font-weight:bold">${esc(d.category)}</div>
+<p style="text-align:center;margin:22px 0 4px"><a href="${pdf}" style="background:#8c2f1b;color:#ffffff;padding:12px 26px;border-radius:6px;text-decoration:none;font-size:15px;font-weight:bold">📄 오늘의 국문 PDF 받기 (인쇄용 · 필사 칸 포함)</a></p>
+<div style="margin-top:24px;font-size:11px;letter-spacing:6px;color:#8c2f1b;font-weight:bold">${esc(d.category)}</div>
 <div style="font-family:${SERIF};font-weight:bold;font-size:30px;line-height:1.3;margin:8px 0 6px">${esc(d.title)}</div>
 <div style="font-family:${SERIF};font-size:15px;color:#7a7368">${esc(d.work)}</div>
 <p style="margin:22px 0;font-size:14px;color:#3b3833;border-left:3px solid #8c2f1b;padding-left:14px">${hl(d.intro)}</p>
@@ -33,5 +34,5 @@ ${d.questions.map((q, i) => `<table width="100%" style="border-collapse:collapse
 ${d.action ? `<div style="background:#1f1d1a;color:#fbf8f1;padding:14px 18px;margin-top:8px;font-family:${SERIF};font-size:15px"><span style="font-family:Arial,sans-serif;font-size:11px;letter-spacing:4px;color:#e3b48c">오늘 하루 한 가지</span><br>${hl(d.action).replace(/color:#8c2f1b/g, 'color:#f0c9a8')}</div>` : ''}
 ${sec(d.think ? 'IV' : 'III', '오늘의 한 문장', 'Transcription')}
 <div style="text-align:center;font-family:${SERIF};font-weight:bold;font-size:22px;line-height:1.5;border-top:1px solid #1f1d1a;border-bottom:1px solid #1f1d1a;padding:22px 10px">${esc(d.quote)}</div>
-<p style="text-align:center;margin:28px 0 6px"><a href="${pdf}" style="background:#1f1d1a;color:#fbf8f1;padding:12px 26px;text-decoration:none;font-size:14px;letter-spacing:1px">인쇄용 PDF 받기 · 원고지 필사 칸 포함</a></p>
+<p style="text-align:center;margin:28px 0 6px"><a href="${pdf}" style="background:#1f1d1a;color:#fbf8f1;padding:12px 26px;text-decoration:none;font-size:14px;letter-spacing:1px">📄 인쇄용 PDF 받기 · 원고지 필사 칸 포함</a></p>
 </div>`);
