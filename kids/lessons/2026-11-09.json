@@ -1,631 +1,223 @@
 {
- "day": 1,
+ "version": 2,
  "date": "2026-11-09",
+ "day": 1,
  "weekday": "월",
  "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 100",
   "theme": "Animals",
   "title": "Squirrels Plant Trees!",
   "title_ko": "다람쥐가 나무를 심는다고?",
-  "hook_ko": "다람쥐가 숲을 만드는 정원사라는 거, 알고 있었나요? 🌳",
-  "source_note": "사실 확인: Britannica, Popular Science (다람쥐의 도토리 묻기). 내용을 바탕으로 새로 쓴 글이에요. 사진: Wikimedia Commons (무료 라이선스).",
-  "pages": [
-   {
-    "en": "Squirrels are small animals with big, fluffy tails.",
-    "ko": "다람쥐는 크고 복슬복슬한 꼬리를 가진 작은 동물이에요.",
-    "scene": {
-     "bg": "autumn",
-     "items": [
-      [
-       "🍁",
-       12,
-       16,
-       11
-      ],
-      [
-       "🍂",
-       86,
-       20,
-       10
-      ],
-      [
-       "🌳",
-       26,
-       54,
-       40
-      ],
-      [
-       "🐿️",
-       66,
-       66,
-       34
-      ],
-      [
-       "✨",
-       84,
-       40,
-       9
-      ]
-     ]
-    }
-   },
-   {
-    "en": "In fall, they collect acorns to eat in winter.",
-    "ko": "가을에 다람쥐는 겨울에 먹을 도토리를 모아요.",
-    "scene": {
-     "bg": "autumn",
-     "items": [
-      [
-       "🌳",
-       22,
-       50,
-       38
-      ],
-      [
-       "🌰",
-       50,
-       78,
-       9
-      ],
-      [
-       "🌰",
-       60,
-       82,
-       9
-      ],
-      [
-       "🌰",
-       56,
-       72,
-       9
-      ],
-      [
-       "🐿️",
-       78,
-       66,
-       24,
-       true
-      ],
-      [
-       "❄️",
-       86,
-       22,
-       9
-      ],
-      [
-       "➡️",
-       70,
-       24,
-       8
-      ]
-     ]
-    }
-   },
-   {
-    "en": "They dig small holes and hide the acorns in the ground.",
-    "ko": "작은 구멍을 파서 도토리를 땅속에 숨겨요.",
-    "scene": {
-     "bg": "field",
-     "items": [
-      [
-       "🕳️",
-       40,
-       84,
-       16
-      ],
-      [
-       "🌰",
-       40,
-       76,
-       9
-      ],
-      [
-       "🐿️",
-       66,
-       64,
-       26,
-       true
-      ],
-      [
-       "🤫",
-       82,
-       30,
-       11
-      ],
-      [
-       "🌳",
-       16,
-       50,
-       30
-      ]
-     ]
-    }
-   },
-   {
-    "en": "Later, they use their noses to smell and find them.",
-    "ko": "나중에 코로 냄새를 맡아서 도토리를 찾아내요.",
-    "scene": {
-     "bg": "snow",
-     "items": [
-      [
-       "❄️",
-       14,
-       14,
-       8
-      ],
-      [
-       "❄️",
-       60,
-       10,
-       7
-      ],
-      [
-       "🐿️",
-       36,
-       64,
-       28
-      ],
-      [
-       "👃",
-       58,
-       44,
-       11
-      ],
-      [
-       "💨",
-       66,
-       58,
-       10
-      ],
-      [
-       "🌰",
-       80,
-       82,
-       10
-      ]
-     ]
-    }
-   },
-   {
-    "en": "But they don't eat every acorn they hide.",
-    "ko": "하지만 숨긴 도토리를 모두 먹지는 않아요.",
-    "scene": {
-     "bg": "snow",
-     "items": [
-      [
-       "🐿️",
-       24,
-       64,
-       24
-      ],
-      [
-       "😋",
-       24,
-       34,
-       9
-      ],
-      [
-       "🌰",
-       56,
-       84,
-       9
-      ],
-      [
-       "🌰",
-       72,
-       84,
-       9
-      ],
-      [
-       "🌰",
-       88,
-       84,
-       9
-      ],
-      [
-       "❓",
-       72,
-       56,
-       11
-      ]
-     ]
-    }
-   },
-   {
-    "en": "The leftover acorns grow into new oak trees!",
-    "ko": "남은 도토리는 자라서 새 참나무가 돼요!",
-    "scene": {
-     "bg": "day",
-     "items": [
-      [
-       "☀️",
-       86,
-       14,
-       12
-      ],
-      [
-       "🌱",
-       22,
-       74,
-       16
-      ],
-      [
-       "🌿",
-       46,
-       66,
-       22
-      ],
-      [
-       "🌳",
-       74,
-       50,
-       36
-      ],
-      [
-       "➡️",
-       34,
-       54,
-       7
-      ],
-      [
-       "➡️",
-       60,
-       46,
-       7
-      ],
-      [
-       "🐿️",
-       92,
-       74,
-       12,
-       true
-      ]
-     ]
-    }
-   }
-  ],
-  "words": [
+  "lets_start": {
+   "q": "Have you ever seen a squirrel?",
+   "q_ko": "다람쥐를 본 적 있나요?",
+   "options": [
+    "Yes, in a park!",
+    "No, not yet."
+   ]
+  },
+  "new_words": [
    {
     "word": "fluffy",
-    "ko": "복슬복슬한",
+    "meaning": "복슬복슬한",
     "emoji": "🧸"
    },
    {
-    "word": "collect",
-    "ko": "모으다",
-    "emoji": "🧺"
-   },
-   {
     "word": "acorn",
-    "ko": "도토리",
+    "meaning": "도토리",
     "emoji": "🌰"
    },
    {
-    "word": "dig",
-    "ko": "파다",
+    "word": "bury",
+    "meaning": "땅에 묻다",
     "emoji": "🕳️"
    },
    {
-    "word": "hide",
-    "ko": "숨기다",
-    "emoji": "🙈"
-   },
-   {
     "word": "smell",
-    "ko": "냄새 맡다",
+    "meaning": "냄새를 맡다",
     "emoji": "👃"
    },
    {
-    "word": "leftover",
-    "ko": "남은",
-    "emoji": "🍽️"
+    "word": "forget",
+    "meaning": "잊어버리다",
+    "emoji": "🤔"
    },
    {
-    "word": "grow into",
-    "ko": "자라서 ~이 되다",
-    "emoji": "🌱"
+    "word": "forest",
+    "meaning": "숲",
+    "emoji": "🌲"
    }
   ],
-  "organizer": {
-   "title": "Acorn → Tree",
-   "steps": [
-    [
-     "🧺",
-     "collect"
-    ],
-    [
-     "🕳️",
-     "hide"
-    ],
-    [
-     "👃",
-     "find"
-    ],
-    [
-     "🌱",
-     "grow"
-    ]
-   ]
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-09-en.jpg",
+    "caption": "A red squirrel eats a nut.",
+    "caption_ko": "견과를 먹는 붉은다람쥐"
+   }
   },
-  "quiz": [
+  "passage": [
    {
-    "type": "Main Idea",
-    "q": "What is this story mostly about?",
-    "q_ko": "이 글은 주로 무엇에 관한 글인가요?",
-    "choices": [
-     "How squirrels help grow trees",
-     "How to cook acorns",
-     "Why squirrels sleep"
+    "text": "Squirrels are small animals with big, **fluffy** tails. They live in trees in parks and forests. In fall, squirrels are very busy. They collect **acorns** for the cold winter.",
+    "ko": "다람쥐는 크고 복슬복슬한 꼬리를 가진 작은 동물이에요. 공원과 숲의 나무에 살아요. 가을이 되면 다람쥐는 아주 바빠요. 추운 겨울을 위해 도토리를 모으거든요."
+   },
+   {
+    "text": "A squirrel digs a little hole and **buries** an acorn. Then it digs another hole, and another! In winter, it uses its nose to **smell** the acorns under the ground.",
+    "ko": "다람쥐는 작은 구멍을 파고 도토리를 묻어요. 그리고 또 다른 구멍을 파고, 또 파요! 겨울이 되면 코로 땅속 도토리 냄새를 맡아요.",
+    "photo": {
+     "src": "photos/2026-11-09-en2.jpg",
+     "caption": "Burying a nut",
+     "caption_ko": "견과를 묻는 다람쥐"
+    }
+   },
+   {
+    "text": "But squirrels don't find every acorn. Some acorns stay in the ground. In spring, they grow into little oak trees. So squirrels **forget** some food, but they help plant a **forest**!",
+    "ko": "하지만 다람쥐가 도토리를 모두 찾지는 못해요. 어떤 도토리는 땅속에 남아요. 봄이 되면 그 도토리가 작은 참나무로 자라요. 다람쥐는 먹이를 잊어버리지만, 숲을 심는 걸 돕는 거예요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "Squirrels use their ___ to find acorns.",
+   "answer": "noses"
+  },
+  "you_know": {
+   "emoji": "🦷",
+   "text": "A squirrel's front teeth never stop growing! Chewing hard nuts keeps them short.",
+   "text_ko": "다람쥐 앞니는 평생 계속 자라요! 딱딱한 열매를 갉아 먹어서 길이가 알맞게 유지돼요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "how squirrels help plant trees",
+    "how squirrels build houses"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What do squirrels collect in fall?",
+    "options": [
+     [
+      "🌰",
+      "acorns"
+     ],
+     [
+      "🍎",
+      "apples"
+     ]
     ],
     "answer": 0
    },
    {
-    "type": "Detail",
-    "q": "How do squirrels find their acorns?",
-    "q_ko": "다람쥐는 도토리를 어떻게 찾나요?",
-    "choices": [
-     "with their ears",
-     "with their noses",
-     "with a map"
+    "q": "What grows from a forgotten acorn?",
+    "options": [
+     [
+      "🌳",
+      "an oak tree"
+     ],
+     [
+      "🌻",
+      "a sunflower"
+     ]
     ],
-    "answer": 1
-   },
-   {
-    "type": "True / False",
-    "q": "Squirrels eat every acorn they hide.",
-    "q_ko": "다람쥐는 숨긴 도토리를 모두 먹는다.",
-    "choices": [
-     "True",
-     "False"
-    ],
-    "answer": 1
-   },
-   {
-    "type": "Vocabulary",
-    "q": "\"Collect\" means ___.",
-    "q_ko": "collect의 뜻은?",
-    "choices": [
-     "to throw away",
-     "to gather",
-     "to sleep"
-    ],
-    "answer": 1
+    "answer": 0
    }
   ],
-  "talk_en": "If you were a squirrel, where would you hide your acorns? → I would hide them ___.",
-  "parent_tip_ko": "① 듣기 → ② 한 문장씩 따라 읽기 → ③ 혼자 읽기. 다 읽고 나서 아래 그림 순서(collect → hide → find → grow)만 보고 이야기를 다시 말해 보게 하면 좋아요.",
-  "photo": {
-   "src": "photos/2026-11-09-en.jpg",
-   "caption": "A real red squirrel eating a nut on a tree",
-   "caption_ko": "나무 위에서 견과를 먹는 진짜 붉은다람쥐",
-   "credit": "Evas-naturfotografie",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Red_Squirrel_eating_nut_on_a_tree.jpg"
-  }
+  "choose": [
+   {
+    "q": "Squirrels have big, fluffy ___.",
+    "choices": [
+     "ears",
+     "tails",
+     "feet"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "A squirrel digs a hole and ___ an acorn.",
+    "choices": [
+     "eats",
+     "throws",
+     "buries"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "When do acorns grow into trees?",
+    "choices": [
+     "in spring",
+     "in fall",
+     "at night"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🐕",
+    "sentence": "My dog can ___ the cookie in my bag.",
+    "options": [
+     "smell",
+     "bury"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🎒",
+    "sentence": "Don't ___ your bag at school!",
+    "options": [
+     "forget",
+     "smell"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🌲",
+    "sentence": "Many tall trees grow in the ___.",
+    "options": [
+     "forest",
+     "acorn"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "From Acorn to Tree",
+   "heads": [
+    "Fall 🍂",
+    "Winter ❄️",
+    "Spring 🌸"
+   ],
+   "choices": [
+    "Squirrels bury acorns.",
+    "Squirrels smell and find acorns.",
+    "Forgotten acorns grow into trees."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "If you were a squirrel, where would you hide your food?",
+   "q_ko": "내가 다람쥐라면 먹이를 어디에 숨길까요?",
+   "frame": "I would hide my food ___."
+  },
+  "sources": "Britannica, Popular Science"
  },
  "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
   "theme": "오늘은 무슨 날?",
   "title": "11월 9일은 왜 '소방의 날'일까?",
-  "hook_ko": "오늘 날짜를 숫자로 써 보세요. 11월 9일… 1, 1, 9! 어디서 많이 본 숫자죠? 🚒",
-  "source_note": "사실 확인: 국가기록원, 보안뉴스(소방의 날 유래). 내용을 바탕으로 새로 쓴 글이에요. 사진: Wikimedia Commons (무료 라이선스).",
-  "pages": [
-   {
-    "text": "오늘 11월 9일은 '소방의 날'이에요.",
-    "scene": {
-     "bg": "day",
-     "items": [
-      [
-       "🗓️",
-       26,
-       44,
-       24
-      ],
-      [
-       "🚒",
-       68,
-       66,
-       36
-      ],
-      [
-       "🎉",
-       86,
-       20,
-       11
-      ]
-     ]
-    }
-   },
-   {
-    "text": "불이 났을 때 거는 전화번호 119를 따서 날짜를 정했어요.",
-    "scene": {
-     "bg": "house",
-     "items": [
-      [
-       "1️⃣",
-       22,
-       36,
-       15
-      ],
-      [
-       "1️⃣",
-       44,
-       36,
-       15
-      ],
-      [
-       "9️⃣",
-       66,
-       36,
-       15
-      ],
-      [
-       "📞",
-       84,
-       70,
-       20
-      ],
-      [
-       "🔥",
-       28,
-       74,
-       18
-      ]
-     ]
-    }
-   },
-   {
-    "text": "소방관은 불만 끄는 게 아니라 다친 사람을 구급차로 병원에 데려다주고, 위험에 빠진 사람과 동물도 구해요.",
-    "scene": {
-     "bg": "day",
-     "items": [
-      [
-       "🧑‍🚒",
-       20,
-       64,
-       26
-      ],
-      [
-       "🚑",
-       52,
-       68,
-       26
-      ],
-      [
-       "🏥",
-       82,
-       54,
-       22
-      ],
-      [
-       "🐈",
-       30,
-       30,
-       11
-      ],
-      [
-       "🌳",
-       30,
-       44,
-       18
-      ]
-     ]
-    }
-   },
-   {
-    "text": "춥고 메마른 겨울에는 불이 나기 쉬워서 더 조심해야 해요.",
-    "scene": {
-     "bg": "snow",
-     "items": [
-      [
-       "❄️",
-       16,
-       16,
-       9
-      ],
-      [
-       "🔥",
-       46,
-       64,
-       22
-      ],
-      [
-       "⚠️",
-       76,
-       32,
-       16
-      ],
-      [
-       "🧯",
-       76,
-       72,
-       20
-      ]
-     ]
-    }
-   },
-   {
-    "text": "불이 나면 \"불이야!\" 외치고, 젖은 수건으로 코와 입을 막고, 몸을 낮춰 계단으로 나가요.",
-    "scene": {
-     "bg": "house",
-     "items": [
-      [
-       "📢",
-       16,
-       30,
-       13
-      ],
-      [
-       "😷",
-       40,
-       62,
-       22
-      ],
-      [
-       "🧣",
-       40,
-       82,
-       10
-      ],
-      [
-       "🪜",
-       70,
-       60,
-       24
-      ],
-      [
-       "🚪",
-       90,
-       58,
-       16
-      ],
-      [
-       "💨",
-       50,
-       20,
-       14
-      ]
-     ]
-    }
-   },
-   {
-    "text": "오늘 소방관 아저씨, 아주머니께 \"고맙습니다!\" 하고 마음을 전해 볼까요?",
-    "scene": {
-     "bg": "day",
-     "items": [
-      [
-       "🧑‍🚒",
-       32,
-       62,
-       28
-      ],
-      [
-       "🧒",
-       66,
-       68,
-       22
-      ],
-      [
-       "💌",
-       66,
-       38,
-       12
-      ],
-      [
-       "💖",
-       48,
-       28,
-       10
-      ],
-      [
-       "🚒",
-       88,
-       76,
-       14
-      ]
-     ]
-    }
-   }
-  ],
-  "words": [
+  "lets_start": {
+   "q": "불이 나면 몇 번에 전화할까요?",
+   "options": [
+    "112",
+    "119"
+   ]
+  },
+  "new_words": [
    {
     "word": "소방관",
     "meaning": "불을 끄고 사람을 구하는 사람",
@@ -637,6 +229,11 @@
     "emoji": "🚑"
    },
    {
+    "word": "신고",
+    "meaning": "일어난 일을 알리는 것",
+    "emoji": "📞"
+   },
+   {
     "word": "메마르다",
     "meaning": "물기가 없이 바싹 마르다",
     "emoji": "🍂"
@@ -645,87 +242,191 @@
     "word": "대피",
     "meaning": "위험을 피해 안전한 곳으로 가는 것",
     "emoji": "🏃"
-   }
-  ],
-  "sound_words": [
-   {
-    "word": "앵앵",
-    "meaning": "사이렌이 울리는 소리",
-    "emoji": "🚨"
    },
    {
-    "word": "활활",
-    "meaning": "불이 세게 타오르는 모양",
-    "emoji": "🔥"
-   },
-   {
-    "word": "콜록콜록",
-    "meaning": "기침하는 소리",
-    "emoji": "😷"
+    "word": "감사",
+    "meaning": "고맙게 여기는 마음",
+    "emoji": "💌"
    }
   ],
-  "organizer": {
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-09-ko.jpg",
+    "caption_ko": "서울 소방차들이 한꺼번에 물을 뿜는 훈련 모습"
+   }
+  },
+  "passage": [
+   {
+    "text": "오늘 11월 9일은 **소방의 날**이에요. 왜 하필 11월 9일일까요? 불이 나면 거는 전화번호 **119**와 숫자가 똑같기 때문이에요."
+   },
+   {
+    "text": "**소방관**은 불만 끄지 않아요. 다친 사람을 **구급차**에 태워 병원에 데려가고, 높은 곳에 갇힌 사람이나 물에 빠진 사람, 위험에 빠진 동물도 구해 줘요.",
+    "scene": {
+     "bg": "day",
+     "items": [
+      [
+       "🧑‍🚒",
+       20,
+       64,
+       26
+      ],
+      [
+       "🚑",
+       54,
+       70,
+       28
+      ],
+      [
+       "🏥",
+       84,
+       56,
+       22
+      ],
+      [
+       "🐈",
+       36,
+       26,
+       11
+      ],
+      [
+       "🌳",
+       36,
+       42,
+       18
+      ]
+     ]
+    }
+   },
+   {
+    "text": "춥고 **메마른** 겨울에는 불이 나기 쉬워요. 불이 나면 \"불이야!\" 하고 크게 외친 다음, 젖은 수건으로 코와 입을 막고 몸을 낮춰 계단으로 **대피**해요. 엘리베이터는 타지 않아요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "불이 나면 ___번에 전화해요.",
+   "answer": "119"
+  },
+  "you_know": {
+   "emoji": "📞",
+   "text": "119에는 불이 났을 때뿐 아니라 갑자기 많이 아프거나 크게 다쳤을 때도 전화할 수 있어요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇에 관한 글인가요?",
+   "options": [
+    "소방의 날과 불이 났을 때 할 일",
+    "겨울에 하는 재미있는 놀이"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "소방관이 하는 일은?",
+    "options": [
+     [
+      "🚑",
+      "다친 사람을 병원에 데려가요"
+     ],
+     [
+      "🍰",
+      "케이크를 만들어요"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "불이 나면 어디로 나가요?",
+    "options": [
+     [
+      "🪜",
+      "계단"
+     ],
+     [
+      "🛗",
+      "엘리베이터"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "소방의 날은 언제인가요?",
+    "choices": [
+     "11월 9일",
+     "1월 19일",
+     "9월 11일"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "불이 나기 쉬운 때는?",
+    "choices": [
+     "비가 많은 여름",
+     "춥고 메마른 겨울",
+     "꽃 피는 봄"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "연기가 날 때 코와 입을 막는 것은?",
+    "choices": [
+     "젖은 수건",
+     "마른 종이",
+     "털장갑"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🏃",
+    "sentence": "지진이 나면 넓은 곳으로 ___해요.",
+    "options": [
+     "대피",
+     "청소"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🌵",
+    "sentence": "비가 오지 않아 땅이 ___어요.",
+    "options": [
+     "메말랐",
+     "젖었"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "📞",
+    "sentence": "다친 사람을 보면 119에 ___해요.",
+    "options": [
+     "신고",
+     "노래"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
    "title": "불이 나면 이렇게!",
-   "steps": [
-    [
-     "📢",
-     "불이야! 외치기"
-    ],
-    [
-     "🧣",
-     "코·입 막기"
-    ],
-    [
-     "⬇️",
-     "몸 낮추기"
-    ],
-    [
-     "🪜",
-     "계단으로"
-    ]
+   "heads": [
+    "첫째",
+    "둘째",
+    "셋째"
+   ],
+   "choices": [
+    "\"불이야!\" 크게 외치기",
+    "젖은 수건으로 코와 입 막기",
+    "몸을 낮춰 계단으로 나가기"
+   ],
+   "answers": [
+    0,
+    1,
+    2
    ]
   },
-  "quiz": [
-   {
-    "level": "중심 내용",
-    "q": "이 글은 주로 무엇을 알려 주나요?",
-    "choices": [
-     "소방의 날과 불이 났을 때 할 일",
-     "겨울에 하는 놀이",
-     "구급차 만드는 방법"
-    ],
-    "answer": 0
-   },
-   {
-    "level": "내용",
-    "q": "소방의 날이 11월 9일인 까닭은?",
-    "choices": [
-     "눈이 처음 오는 날이라서",
-     "전화번호 119를 따서",
-     "소방차가 처음 생긴 날이라서"
-    ],
-    "answer": 1
-   },
-   {
-    "level": "O / X",
-    "q": "불이 나면 엘리베이터를 타고 빨리 내려간다.",
-    "choices": [
-     "O",
-     "X"
-    ],
-    "answer": 1
-   },
-   {
-    "level": "낱말",
-    "q": "'대피'와 뜻이 비슷한 말은?",
-    "choices": [
-     "피하다",
-     "싸우다",
-     "기다리다"
-    ],
-    "answer": 0
-   }
-  ],
+  "talk": {
+   "q": "소방관께 짧은 감사 편지를 써 보세요.",
+   "frame": "소방관님, ___ 고맙습니다!"
+  },
   "dictation": [
    "소방의 날",
    "불이야",
@@ -733,16 +434,8 @@
    "계단으로",
    "고맙습니다"
   ],
-  "talk": "소방관께 보내는 짧은 감사 편지를 한두 문장으로 써 보세요.",
-  "copy_sentence": "불이 나면 몸을 낮춰 계단으로 나가요.",
-  "draw": "우리 집에서 밖으로 나가는 길(대피로)을 그려 보세요.",
-  "parent_tip_ko": "읽고 나서 실제로 집 현관까지 '몸 낮춰 대피' 놀이를 1분만 해 보세요. 아이들이 제일 좋아하고 오래 기억해요.",
-  "photo": {
-   "src": "photos/2026-11-09-ko.jpg",
-   "caption_ko": "서울 소방차들이 한꺼번에 물을 뿜는 훈련 모습",
-   "credit": "서울특별시 소방재난본부",
-   "license": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90(%EC%86%8C%EB%B0%A9%EA%B4%80)_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_%EC%A2%85%ED%95%A9%EB%B0%A9%EC%88%98.JPG"
-  }
+  "copy": "불이 나면 몸을 낮춰 계단으로 대피해요.",
+  "parent_tip": "읽고 나서 현관까지 '몸 낮춰 대피' 놀이를 1분만 해 보세요.",
+  "sources": "국가기록원, 보안뉴스 (소방의 날 유래)"
  }
 }

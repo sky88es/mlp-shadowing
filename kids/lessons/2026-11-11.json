@@ -1,0 +1,524 @@
+{
+ "version": 2,
+ "date": "2026-11-11",
+ "day": 3,
+ "weekday": "수",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 120",
+  "theme": "Sports",
+  "title": "Why Is a Soccer Ball Black and White?",
+  "title_ko": "축구공은 왜 검은색과 흰색일까?",
+  "lets_start": {
+   "q": "Close your eyes. Think of a soccer ball. What colors do you see?",
+   "q_ko": "눈을 감고 축구공을 떠올려 보세요. 무슨 색인가요?",
+   "options": [
+    "black and white",
+    "other colors"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "television",
+    "meaning": "텔레비전",
+    "emoji": "📺"
+   },
+   {
+    "word": "pattern",
+    "meaning": "무늬",
+    "emoji": "🔷"
+   },
+   {
+    "word": "panel",
+    "meaning": "조각",
+    "emoji": "⬡"
+   },
+   {
+    "word": "spin",
+    "meaning": "빙글빙글 돌다",
+    "emoji": "🌀"
+   },
+   {
+    "word": "field",
+    "meaning": "경기장, 들판",
+    "emoji": "🏟️"
+   },
+   {
+    "word": "famous",
+    "meaning": "유명한",
+    "emoji": "⭐"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-11-en.jpg",
+    "caption": "Telstar, the official ball of the 1970 World Cup",
+    "caption_ko": "1970년 월드컵 공식 공 '텔스타'"
+   }
+  },
+  "passage": [
+   {
+    "text": "Close your eyes and think of a soccer ball. Is it black and white? Many people picture that ball. But long ago, soccer balls were plain brown!",
+    "ko": "눈을 감고 축구공을 떠올려 보세요. 검은색과 흰색인가요? 많은 사람이 그런 공을 떠올려요. 하지만 옛날 축구공은 그냥 갈색이었어요!"
+   },
+   {
+    "text": "In 1970, people all around the world watched the World Cup on **television**. But most TVs showed only black and white, not colors. A brown ball was hard to see on the green **field**. So a company made a new ball with a black and white **pattern**.",
+    "ko": "1970년, 전 세계 사람들이 텔레비전으로 월드컵을 보았어요. 그런데 대부분의 텔레비전은 색깔 없이 흑백으로만 나왔어요. 갈색 공은 초록 경기장에서 잘 보이지 않았지요. 그래서 한 회사가 검은색과 흰색 무늬가 있는 새 공을 만들었어요.",
+    "scene": {
+     "bg": "house",
+     "items": [
+      [
+       "📺",
+       50,
+       52,
+       40
+      ],
+      [
+       "⚽",
+       50,
+       50,
+       12
+      ],
+      [
+       "👀",
+       50,
+       86,
+       12
+      ]
+     ]
+    }
+   },
+   {
+    "text": "The new ball had 32 **panels**: 12 black ones and 20 white ones. On TV, people could see the ball clearly. They could even see it **spin**! The ball was called Telstar, and it soon became **famous** all over the world.",
+    "ko": "새 공은 32개의 조각으로 되어 있었어요. 검은 조각 12개, 흰 조각 20개였죠. 사람들은 텔레비전에서 공을 또렷하게 볼 수 있었어요. 공이 빙글빙글 도는 것까지 보였어요! 이 공의 이름은 '텔스타'였고, 곧 전 세계에서 유명해졌어요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "The new ball had 12 black panels and ___ white panels.",
+   "answer": "20"
+  },
+  "you_know": {
+   "emoji": "📡",
+   "text": "Telstar was also the name of a satellite that sent TV pictures across the ocean.",
+   "text_ko": "'텔스타'는 바다 건너로 텔레비전 화면을 보낸 인공위성의 이름이기도 해요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "why soccer balls became black and white",
+    "how to kick a soccer ball"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What color were old soccer balls?",
+    "options": [
+     [
+      "🟫",
+      "brown"
+     ],
+     [
+      "🟪",
+      "purple"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How did people watch the 1970 World Cup?",
+    "options": [
+     [
+      "📺",
+      "on TV"
+     ],
+     [
+      "📱",
+      "on phones"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Most TVs in 1970 showed ___.",
+    "choices": [
+     "only black and white",
+     "many colors",
+     "only red"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How many white panels did Telstar have?",
+    "choices": [
+     "12",
+     "20",
+     "32"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why was the new ball easy to see on TV?",
+    "choices": [
+     "It was very big.",
+     "It had a black and white pattern.",
+     "It could fly."
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🦓",
+    "sentence": "A zebra has a black and white ___.",
+    "options": [
+     "pattern",
+     "panel"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🪀",
+    "sentence": "My top can ___ for a long time.",
+    "options": [
+     "spin",
+     "watch"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🎤",
+    "sentence": "She is a ___ singer. Everyone knows her!",
+    "options": [
+     "famous",
+     "brown"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Telstar Facts",
+   "heads": [
+    "When?",
+    "Problem",
+    "Answer"
+   ],
+   "choices": [
+    "the 1970 World Cup",
+    "A brown ball was hard to see on black-and-white TV.",
+    "a ball with 12 black and 20 white panels"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "If you made a new soccer ball, what would it look like?",
+   "q_ko": "내가 새 축구공을 만든다면 어떤 모양일까요?",
+   "frame": "My ball would be ___ with ___."
+  },
+  "sources": "99% Invisible, Core77, beIN Sports (Telstar 1970)"
+ },
+ "ko": {
+  "genre": "이야기",
+  "level": "초1~2",
+  "theme": "오늘은 무슨 날?",
+  "title": "빼빼로 대신 가래떡?",
+  "lets_start": {
+   "q": "11월 11일 하면 무엇이 떠오르나요?",
+   "options": [
+    "빼빼로",
+    "가래떡"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "방앗간",
+    "meaning": "곡식을 빻거나 떡을 만드는 곳",
+    "emoji": "🏭"
+   },
+   {
+    "word": "가래떡",
+    "meaning": "길고 둥글게 뽑은 흰 떡",
+    "emoji": "🍡"
+   },
+   {
+    "word": "농업인",
+    "meaning": "농사를 짓는 사람",
+    "emoji": "🧑‍🌾"
+   },
+   {
+    "word": "흙",
+    "meaning": "식물이 자라는 땅의 겉부분",
+    "emoji": "🟫"
+   },
+   {
+    "word": "쌀",
+    "meaning": "벼의 껍질을 벗긴 알맹이",
+    "emoji": "🍚"
+   },
+   {
+    "word": "정성",
+    "meaning": "온 마음을 다하는 것",
+    "emoji": "💖"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "house",
+    "items": [
+     [
+      "👵",
+      28,
+      58,
+      30
+     ],
+     [
+      "👦",
+      56,
+      64,
+      24
+     ],
+     [
+      "🍡",
+      80,
+      62,
+      16
+     ],
+     [
+      "❓",
+      56,
+      30,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "11월 11일 아침, 하준이는 빼빼로를 사러 가자고 졸랐어요. 할머니가 웃으며 말씀하셨어요. \"오늘은 **가래떡** 데이이기도 하단다. 할머니랑 **방앗간**에 가 볼까?\""
+   },
+   {
+    "text": "방앗간에서는 하얀 가래떡이 길게 쭉쭉 나왔어요. \"할머니, 왜 오늘이 가래떡 데이예요?\" \"오늘은 **농업인**의 날이거든. **흙** 토(土) 자를 나누면 열 십(十)과 한 일(一), 11이 되지? 그래서 11월 11일이 된 거란다.\"",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🏭",
+       22,
+       50,
+       28
+      ],
+      [
+       "🍡",
+       54,
+       62,
+       16
+      ],
+      [
+       "🍡",
+       66,
+       62,
+       16
+      ],
+      [
+       "🍡",
+       78,
+       62,
+       16
+      ],
+      [
+       "✨",
+       66,
+       34,
+       10
+      ],
+      [
+       "👦",
+       88,
+       80,
+       14
+      ]
+     ]
+    }
+   },
+   {
+    "text": "하준이는 말랑말랑한 가래떡을 한 입 먹었어요. \"이 떡은 **쌀**로 만들었지요?\" \"그럼. 농부들이 봄부터 가을까지 **정성**껏 키운 쌀이란다.\" 하준이는 가래떡을 하나 더 챙겼어요. 친구에게 나눠 줄 거래요.",
+    "scene": {
+     "bg": "autumn",
+     "items": [
+      [
+       "🌾",
+       16,
+       62,
+       18
+      ],
+      [
+       "🌾",
+       32,
+       60,
+       18
+      ],
+      [
+       "🧑‍🌾",
+       54,
+       64,
+       22
+      ],
+      [
+       "👦",
+       78,
+       66,
+       20
+      ],
+      [
+       "🍡",
+       90,
+       52,
+       10
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "흙 토(土)를 나누면 열 ___(十)과 한 일(一)이 돼요.",
+   "answer": "십"
+  },
+  "you_know": {
+   "emoji": "🌾",
+   "text": "농업인의 날은 1964년 강원도 원주의 농민들이 11월 11일 11시에 연 행사에서 시작되었고, 1996년에 나라의 기념일이 되었어요."
+  },
+  "main_idea": {
+   "q": "이 이야기는 무엇에 관한 이야기인가요?",
+   "options": [
+    "하준이가 가래떡 데이와 농업인의 날을 알게 된 이야기",
+    "하준이가 축구 시합에 나간 이야기"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "하준이와 할머니는 어디에 갔나요?",
+    "options": [
+     [
+      "🏭",
+      "방앗간"
+     ],
+     [
+      "🏊",
+      "수영장"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "가래떡은 무엇으로 만드나요?",
+    "options": [
+     [
+      "🍚",
+      "쌀"
+     ],
+     [
+      "🍫",
+      "초콜릿"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "11월 11일은 무슨 날인가요?",
+    "choices": [
+     "농업인의 날",
+     "소방의 날",
+     "한글날"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "가래떡이 나오는 모양은?",
+    "choices": [
+     "동글동글",
+     "길게 쭉쭉",
+     "네모반듯"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "하준이가 가래떡을 하나 더 챙긴 까닭은?",
+    "choices": [
+     "친구에게 나눠 주려고",
+     "버리려고",
+     "강아지에게 주려고"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🧑‍🌾",
+    "sentence": "___은 논과 밭에서 곡식을 길러요.",
+    "options": [
+     "농업인",
+     "소방관"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍱",
+    "sentence": "엄마가 ___껏 도시락을 싸 주셨어요.",
+    "options": [
+     "정성",
+     "방앗간"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍚",
+    "sentence": "___로 밥도 짓고 떡도 만들어요.",
+    "options": [
+     "쌀",
+     "흙"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "이야기 지도",
+   "heads": [
+    "누가?",
+    "어디서?",
+    "알게 된 것"
+   ],
+   "choices": [
+    "하준이와 할머니",
+    "방앗간",
+    "11월 11일이 농업인의 날인 까닭"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "쌀로 만든 음식 중 무엇을 가장 좋아하나요?",
+   "frame": "나는 ___을/를 가장 좋아해요. 왜냐하면 ___."
+  },
+  "dictation": [
+   "가래떡",
+   "방앗간",
+   "농업인",
+   "말랑말랑",
+   "쭉쭉"
+  ],
+  "copy": "흙 토 자를 나누면 십일이 돼요.",
+  "sources": "창작 이야기 · 사실 확인: 아시아경제, 정책브리핑 (농업인의 날 유래)"
+ }
+}

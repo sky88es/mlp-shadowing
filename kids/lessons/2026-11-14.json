@@ -1,0 +1,445 @@
+{
+ "version": 2,
+ "date": "2026-11-14",
+ "day": 6,
+ "weekday": "토",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 200",
+  "theme": "Exploring the World",
+  "title": "Is Iceland an Ice Land?",
+  "title_ko": "아이슬란드는 얼음 나라일까?",
+  "lets_start": {
+   "q": "What do you think you can see in Iceland?",
+   "q_ko": "아이슬란드에서는 무엇을 볼 수 있을까요?",
+   "options": [
+    "lots of ice",
+    "hot water from the ground"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "island",
+    "meaning": "섬",
+    "emoji": "🏝️"
+   },
+   {
+    "word": "glacier",
+    "meaning": "빙하",
+    "emoji": "🧊"
+   },
+   {
+    "word": "volcano",
+    "meaning": "화산",
+    "emoji": "🌋"
+   },
+   {
+    "word": "steam",
+    "meaning": "김, 증기",
+    "emoji": "💨"
+   },
+   {
+    "word": "hot spring",
+    "meaning": "온천",
+    "emoji": "♨️"
+   },
+   {
+    "word": "heat",
+    "meaning": "따뜻하게 하다",
+    "emoji": "🔥"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-14-en.jpg",
+    "caption": "Ice from the Vatnajökull glacier floats on a lake.",
+    "caption_ko": "바트나이외쿠틀 빙하에서 떨어져 나온 얼음이 호수에 떠 있어요"
+   }
+  },
+  "passage": [
+   {
+    "text": "Iceland is a small **island** country near the top of the world. With a name like Iceland, it must be full of ice, right? Well, yes and no!",
+    "ko": "아이슬란드는 지구 꼭대기 가까이에 있는 작은 섬나라예요. 이름이 '얼음 나라'니까 얼음으로 가득하겠죠? 글쎄요, 맞기도 하고 아니기도 해요!"
+   },
+   {
+    "text": "About one tenth of Iceland is covered with **glaciers**. A glacier is a huge river of ice that moves very, very slowly. The biggest one, Vatnajökull, is more than twelve times bigger than Seoul!",
+    "ko": "아이슬란드 땅의 약 10분의 1은 빙하로 덮여 있어요. 빙하는 아주아주 천천히 움직이는 거대한 얼음 강이에요. 가장 큰 빙하인 바트나이외쿠틀은 서울보다 열두 배도 더 커요!"
+   },
+   {
+    "text": "But Iceland is also a land of fire! It has many **volcanoes**. Deep under the ground, there are hot rocks and hot water. In some places, hot water and **steam** shoot high into the air. People even swim in warm **hot springs** when it snows!",
+    "ko": "그런데 아이슬란드는 불의 나라이기도 해요! 화산이 많거든요. 땅속 깊은 곳에는 뜨거운 바위와 뜨거운 물이 있어요. 어떤 곳에서는 뜨거운 물과 김이 하늘 높이 솟아올라요. 사람들은 눈이 내릴 때도 따뜻한 온천에서 수영을 해요!",
+    "photo": {
+     "src": "photos/2026-11-14-en2.jpg",
+     "caption": "Hot water shoots up at Strokkur.",
+     "caption_ko": "뜨거운 물이 솟아오르는 스트로퀴르"
+    }
+   },
+   {
+    "text": "Icelanders use the hot water from the ground to **heat** most of their homes. That's why people call Iceland \"the land of fire and ice.\"",
+    "ko": "아이슬란드 사람들은 땅속 뜨거운 물로 대부분의 집을 따뜻하게 데워요. 그래서 사람들은 아이슬란드를 '불과 얼음의 나라'라고 불러요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "About one ___ of Iceland is covered with glaciers.",
+   "answer": "tenth"
+  },
+  "you_know": {
+   "emoji": "⛲",
+   "text": "A hot spring called Strokkur shoots water into the sky every few minutes!",
+   "text_ko": "스트로퀴르라는 간헐천은 몇 분마다 하늘로 물을 뿜어 올려요!"
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "Iceland having both ice and fire",
+    "Iceland always being hot"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What is a glacier?",
+    "options": [
+     [
+      "🧊",
+      "a huge river of ice"
+     ],
+     [
+      "🌊",
+      "a warm sea"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where do people swim, even in snow?",
+    "options": [
+     [
+      "♨️",
+      "in hot springs"
+     ],
+     [
+      "🧊",
+      "in ice water"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Iceland is ___.",
+    "choices": [
+     "an island country",
+     "a big desert",
+     "a city in Korea"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Vatnajökull is more than ___ times bigger than Seoul.",
+    "choices": [
+     "two",
+     "twelve",
+     "one hundred"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What heats most homes in Iceland?",
+    "choices": [
+     "firewood",
+     "hot water from the ground",
+     "the sun"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🌋",
+    "sentence": "Hot rock comes out of the ___.",
+    "options": [
+     "volcano",
+     "island"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🫖",
+    "sentence": "Look! ___ is coming out of the kettle.",
+    "options": [
+     "Steam",
+     "Glacier"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏝️",
+    "sentence": "Jeju is a beautiful ___ in Korea.",
+    "options": [
+     "island",
+     "steam"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "The Land of Fire and Ice",
+   "heads": [
+    "Ice 🧊",
+    "Fire 🔥",
+    "People 🏠"
+   ],
+   "choices": [
+    "Glaciers cover about one tenth of the land.",
+    "There are many volcanoes and hot springs.",
+    "Hot water from the ground heats most homes."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "Would you like to visit Iceland? What would you do there?",
+   "q_ko": "아이슬란드에 가 보고 싶나요? 가서 무엇을 하고 싶나요?",
+   "frame": "In Iceland, I would like to ___."
+  },
+  "sources": "European Environment Agency, Guide to Iceland, Arctic Institute"
+ },
+ "ko": {
+  "genre": "기사문",
+  "level": "초1~2",
+  "theme": "어린이 기자 수첩",
+  "title": "잠실 한강 자전거장, 오늘 문 열어요",
+  "lets_start": {
+   "q": "신문 기사에는 꼭 들어가야 하는 것이 있어요. 무엇일까요?",
+   "options": [
+    "누가, 언제, 어디서, 무엇을…",
+    "좋아하는 노래 가사"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "기사",
+    "meaning": "있었던 일을 알리는 글",
+    "emoji": "📰"
+   },
+   {
+    "word": "개방",
+    "meaning": "문을 열어 누구나 들어오게 함",
+    "emoji": "🚪"
+   },
+   {
+    "word": "무료",
+    "meaning": "돈을 내지 않음",
+    "emoji": "🆓"
+   },
+   {
+    "word": "선착장",
+    "meaning": "배가 닿는 곳",
+    "emoji": "⛴️"
+   },
+   {
+    "word": "정비",
+    "meaning": "고장 나지 않게 손보는 것",
+    "emoji": "🔧"
+   },
+   {
+    "word": "육하원칙",
+    "meaning": "기사에 들어가는 여섯 가지",
+    "emoji": "✋"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-14-ko.jpg",
+    "caption_ko": "한강 공원에서 자전거를 타는 사람들"
+   }
+  },
+  "passage": [
+   {
+    "text": "서울 한강에 자전거를 타는 사람들을 위한 쉼터가 생겨요. 서울시는 잠실 한강버스 **선착장** 바로 앞에 '잠실 한강 자전거장'을 만들고, 11월 14일 토요일부터 **개방**한다고 밝혔어요."
+   },
+   {
+    "text": "이곳은 자전거를 타다가 쉬어 가거나, 자전거를 **정비**할 수 있는 곳이에요. 매일 오전 9시부터 밤 10시까지 문을 열고, 누구나 **무료**로 이용할 수 있어요. 주말에 가족과 함께 한강에서 자전거를 타는 어린이도 들를 수 있어요.",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "🚲",
+       26,
+       70,
+       26
+      ],
+      [
+       "🔧",
+       46,
+       62,
+       12
+      ],
+      [
+       "⛴️",
+       76,
+       60,
+       22
+      ],
+      [
+       "🆓",
+       52,
+       26,
+       12
+      ],
+      [
+       "🕘",
+       22,
+       24,
+       10
+      ]
+     ]
+    }
+   },
+   {
+    "text": "이 **기사**에는 '누가, 언제, 어디서, 무엇을, 어떻게, 왜'가 모두 들어 있어요. 이 여섯 가지를 **육하원칙**이라고 해요. 기사를 쓸 때 육하원칙에 맞춰 쓰면 읽는 사람이 쉽게 알 수 있어요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "자전거장은 매일 오전 9시부터 밤 ___시까지 열어요.",
+   "answer": "10"
+  },
+  "you_know": {
+   "emoji": "⛴️",
+   "text": "한강에는 물 위를 다니는 '한강버스'도 있어요. 자전거장이 선착장 바로 앞이라 자전거를 타다가 한강버스로 갈아탈 수도 있어요."
+  },
+  "main_idea": {
+   "q": "이 기사는 무엇을 알려 주나요?",
+   "options": [
+    "잠실 한강 자전거장이 문을 연다는 소식",
+    "자전거를 처음 배우는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "자전거장은 무엇을 하는 곳인가요?",
+    "options": [
+     [
+      "🔧",
+      "쉬고 자전거를 손보는 곳"
+     ],
+     [
+      "🍦",
+      "아이스크림 가게"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "이용하려면 돈을 내야 하나요?",
+    "options": [
+     [
+      "🆓",
+      "무료예요"
+     ],
+     [
+      "💰",
+      "만 원을 내요"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "자전거장은 언제부터 열리나요?",
+    "choices": [
+     "11월 14일",
+     "12월 25일",
+     "3월 1일"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "자전거장은 어디에 있나요?",
+    "choices": [
+     "잠실 한강버스 선착장 앞",
+     "제주도",
+     "학교 운동장"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "육하원칙은 모두 몇 가지인가요?",
+    "choices": [
+     "세 가지",
+     "네 가지",
+     "여섯 가지"
+    ],
+    "answer": 2
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🚪",
+    "sentence": "학교 운동장을 주말에도 ___해요.",
+    "options": [
+     "개방",
+     "정비"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🎫",
+    "sentence": "오늘 박물관은 ___로 들어갈 수 있어요.",
+    "options": [
+     "무료",
+     "기사"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "📰",
+    "sentence": "우리 반 소식을 ___로 써 보았어요.",
+    "options": [
+     "기사",
+     "선착장"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "육하원칙으로 정리하기",
+   "heads": [
+    "언제?",
+    "어디서?",
+    "무엇을?"
+   ],
+   "choices": [
+    "11월 14일부터",
+    "잠실 한강버스 선착장 앞",
+    "자전거장을 개방해요"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "우리 집이나 학교 소식을 짧은 기사로 써 보세요.",
+   "frame": "(언제) ___, (어디서) ___에서 (누가) ___이/가 (무엇을) ___."
+  },
+  "dictation": [
+   "자전거",
+   "선착장",
+   "무료",
+   "토요일",
+   "기사"
+  ],
+  "copy": "누구나 무료로 이용할 수 있어요.",
+  "parent_tip": "내친구서울 '어린이 기자'처럼 오늘 있었던 일을 육하원칙으로 말해 보게 해 주세요.",
+  "sources": "소년한국일보 「'잠실 한강 자전거장' 14일부터 개방」(2026.11.9)을 쉽게 다시 씀"
+ }
+}

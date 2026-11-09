@@ -47,7 +47,7 @@ def search(q, n=20):
     return [o for _, o in sorted(out, key=lambda x: -x[0])]
 
 
-def save(page_url, out_path, width=1280):
+def save(page_url, out_path, width=1280, keep=1000):
     """Download a Commons file (by its page URL) resized to `width`, print the photo JSON for the lesson."""
     title = urllib.parse.unquote(page_url.rsplit("/File:", 1)[1]).replace("_", " ")
     params = {"action": "query", "format": "json", "titles": "File:" + title, "prop": "imageinfo",
@@ -60,11 +60,17 @@ def save(page_url, out_path, width=1280):
     from io import BytesIO
     from PIL import Image
     im = Image.open(BytesIO(data)).convert("RGB")
-    if im.width > width:
-        im = im.resize((width, round(im.height * width / im.width)))
-    im.save(out_path, "JPEG", quality=82, optimize=True)
-    print(json.dumps({"src": out_path.split("kids/", 1)[-1], "credit": g("Artist")[:80] or "Unknown",
-                      "license": g("LicenseShortName"), "page": ii["descriptionurl"]}, ensure_ascii=False))
+    if im.width > keep:  # keep files small: the email (with PDF) must stay under ~3 MB
+        im = im.resize((keep, round(im.height * keep / im.width)))
+    im.save(out_path, "JPEG", quality=78, optimize=True, progressive=True)
+    rec = {"credit": g("Artist")[:80] or "Unknown", "license": g("LicenseShortName"), "page": ii["descriptionurl"]}
+    src = out_path.split("kids/", 1)[-1]
+    import os
+    cpath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "photos", "credits.json")
+    credits = json.load(open(cpath)) if os.path.exists(cpath) else {}
+    credits[src] = rec
+    json.dump(credits, open(cpath, "w"), ensure_ascii=False, indent=1)
+    print(json.dumps({"src": src, **rec}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

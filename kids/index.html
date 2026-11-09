@@ -7,132 +7,173 @@
 <meta name="apple-mobile-web-app-title" content="아침 리딩">
 <title>아침 리딩</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Fredoka:wght@500;600&family=Andika:wght@400;700&display=swap" rel="stylesheet">
 <script src="./scene.js"></script>
 <style>
-:root{--bg:#fff8ec;--card:#fff;--ink:#2b2a33;--sub:#7b7686;--en:#2f7de1;--ko:#ff7a45;--ok:#2fb26b;--line:#f0e6d6;--shadow:0 6px 0 rgba(0,0,0,.07)}
+:root{--bg:#fff8ec;--card:#fff;--ink:#262433;--sub:#7b7686;--en:#2f9ee1;--ko:#ff7a45;--ok:#2fb26b;--line:#efe7da;--shadow:0 1px 0 #ece6db, 0 0 0 1px #f1ebe1;--g:#2f9ee1}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Gowun Dodum',-apple-system,sans-serif}
 button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
-.wrap{max-width:760px;margin:0 auto;padding:16px 16px 60px}
-.top{display:flex;align-items:center;gap:10px;margin:4px 0 14px}
-.top h1{font-family:'Jua';font-size:28px;margin:0;flex:1}
-.stars{font-family:'Jua';font-size:20px;background:#fff;border-radius:99px;padding:6px 14px;box-shadow:var(--shadow)}
-.back{text-decoration:none;color:var(--ink);font-family:'Jua';font-size:18px;background:#fff;border-radius:99px;padding:8px 14px;box-shadow:var(--shadow)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
-.day{background:var(--card);border-radius:22px;padding:10px;box-shadow:var(--shadow);text-align:left}
-.day .d{font-family:'Jua';font-size:15px;color:var(--sub);margin:8px 4px 2px}
-.day .t{font-family:'Jua';font-size:17px;margin:0 4px}
-.day .t.en{color:var(--en);font-family:'Baloo 2';font-weight:700}
-.day .t.ko{color:var(--ko)}
-.today{position:absolute}
+a{color:inherit}
+.wrap{max-width:780px;margin:0 auto;padding:14px 16px 70px}
+.top{display:flex;align-items:center;gap:10px;margin:2px 0 12px}
+.top h1{font-family:'Jua';font-size:27px;margin:0;flex:1}
+.pill{font-family:'Jua';font-size:16px;background:#fff;border-radius:99px;padding:7px 14px;box-shadow:var(--shadow);text-decoration:none;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.day{background:var(--card);border-radius:22px;padding:10px;box-shadow:var(--shadow);text-decoration:none;display:block}
+.day img,.day .scene{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:16px;display:block}
+.day .d{font-family:'Jua';font-size:14px;color:var(--sub);margin:8px 4px 2px}
+.day .t{font-family:'Jua';font-size:16px;margin:2px 4px;line-height:1.3}
+.day .t.en{color:var(--en)}.day .t.ko{color:var(--ko)}
 .tabs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
-.tab{font-family:'Jua';font-size:22px;padding:14px;border-radius:20px;background:#fff;box-shadow:var(--shadow)}
-.tab.on.en{background:var(--en);color:#fff}.tab.on.ko{background:var(--ko);color:#fff}
-.book{background:var(--card);border-radius:28px;padding:12px;box-shadow:var(--shadow)}
-.title{font-family:'Jua';font-size:26px;text-align:center;margin:6px 0 2px}
-.title small{display:block;font-size:15px;color:var(--sub);font-family:'Gowun Dodum'}
-.txt{min-height:96px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px 8px 6px}
-.txt .main{font-size:32px;line-height:1.35;word-break:keep-all}
-.en .txt .main{font-family:'Baloo 2';font-weight:700}
-.ko .txt .main{font-family:'Jua';font-size:30px}
-.txt .sub{color:var(--sub);font-size:17px;margin-top:6px}
-.w{border-radius:8px;padding:0 2px;transition:background .15s}
-.w.hi{background:#ffe066}
-.ctrl{display:flex;align-items:center;justify-content:center;gap:12px;padding:8px 0 4px}
-.big{width:64px;height:64px;border-radius:50%;background:#f4efe6;font-size:28px;display:flex;align-items:center;justify-content:center}
-.big.play{width:84px;height:84px;font-size:38px;color:#fff}
-.en .big.play{background:var(--en)}.ko .big.play{background:var(--ko)}
-.big:disabled{opacity:.3}
-.dots{display:flex;gap:6px;justify-content:center;margin:6px 0}
-.dots i{width:10px;height:10px;border-radius:50%;background:#e7dfd2}.dots i.on{background:#ffb703}
-.opts{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:8px}
-.pill{font-family:'Jua';font-size:15px;padding:8px 14px;border-radius:99px;background:#f4efe6}
-.pill.on{background:#ffd166}
-.it{animation:bob 3s ease-in-out infinite}
-@keyframes bob{50%{margin-top:-1.2%}}
-h2{font-family:'Jua';font-size:24px;margin:26px 4px 10px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
-.card{background:#fff;border-radius:22px;padding:14px 8px;box-shadow:var(--shadow);text-align:center}
-.card .e{font-size:64px;line-height:1.1}
-.card .wd{font-family:'Baloo 2';font-weight:700;font-size:26px;color:var(--en)}
-.ko .card .wd{font-family:'Jua';color:var(--ko)}
-.card .m{font-size:15px;color:var(--sub);min-height:20px}
-.panel{background:#fff;border-radius:22px;padding:16px;box-shadow:var(--shadow);font-size:18px;line-height:1.6}
-.chant{font-family:'Baloo 2';font-weight:700;font-size:24px;text-align:center}
-.q{background:#fff;border-radius:22px;padding:16px;box-shadow:var(--shadow);margin-bottom:12px}
-.q .qt{font-family:'Jua';font-size:21px}
-.q .qk{color:var(--sub);font-size:16px}
-.q .lv{font-size:13px;font-family:'Jua';background:#eef6ff;color:var(--en);border-radius:99px;padding:2px 8px;margin-right:6px}
-.ch{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-.ch button{flex:1;min-width:90px;font-size:22px;word-break:keep-all;padding:12px;border-radius:18px;background:#f4efe6;font-family:'Jua'}
-.ko .ch{flex-direction:column}.ko .ch button{font-size:20px;text-align:left;padding:12px 16px}
+.tab{font-family:'Jua';font-size:21px;padding:13px;border-radius:20px;background:#fff;box-shadow:var(--shadow)}
+.tab.on{color:#fff;background:var(--g)}
+.en{--fh:'Fredoka';--fb:'Andika'}.ko{--fh:'Jua';--fb:'Gowun Dodum'}
+.head{display:flex;gap:12px;align-items:center;margin:4px 0 10px}
+.dtab{background:var(--g);color:#fff;border-radius:18px;padding:10px 12px;text-align:center;font-family:'Jua';min-width:72px}
+.dtab b{font-size:22px;display:block;line-height:1}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-family:'Jua';font-size:13px;background:#f1eef7;color:#5a5470;border-radius:99px;padding:3px 10px}.chip.g{background:var(--g);color:#fff}
+h1.tt{font-family:var(--fh);font-weight:600;font-size:30px;line-height:1.12;margin:4px 0 0;color:var(--g)}
+.ko h1.tt{font-weight:400}
+.subt{color:var(--sub);font-size:15px}
+.card{background:#fff;border-radius:22px;padding:14px;box-shadow:var(--shadow);margin-bottom:14px}
+.lab{font-family:'Jua';font-size:17px;color:#fff;background:var(--g);display:inline-block;border-radius:99px;padding:3px 13px;margin-bottom:10px}
+.start .lab{background:var(--g)}
+.start .q{font-family:var(--fb);font-weight:700;font-size:19px;line-height:1.4}
+.qk{color:var(--sub);font-size:14px;margin-top:2px}
+.opts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.opt{font-family:var(--fb);font-size:17px;padding:10px 14px;border-radius:16px;background:#fff;border:2px solid #f0dfe3}
+.opt.sel{background:#ffe1e6;border-color:#ff8fa3}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px}
+.tile{background:#faf8f4;border-radius:18px;padding:12px 6px;text-align:center}
+.tile .e{font-size:44px;line-height:1.1}
+.tile b{display:block;font-family:var(--fh);font-size:20px;font-weight:600;color:var(--ink)}.ko .tile b{font-weight:400}
+.tile i{font-style:normal;font-size:13px;color:var(--sub)}
+figure{margin:0 0 12px}
+.ph{position:relative}.ph img{width:100%;border-radius:20px;display:block;max-height:460px;object-fit:cover}
+.real{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.55);color:#fff;font-family:'Jua';font-size:13px;border-radius:99px;padding:3px 10px}
+figcaption{font-size:13px;color:var(--sub);text-align:center;margin-top:5px}
+.para{position:relative;padding:10px 6px 10px 50px;border-bottom:1px dashed var(--line)}
+.para:last-child{border-bottom:0}
+.para .say{position:absolute;left:0;top:10px;width:40px;height:40px;border-radius:50%;background:var(--g);color:#fff;font-size:18px}
+.para .tx{font-family:var(--fb);font-size:21px;line-height:1.65;word-break:keep-all}
+.ko .para .tx{font-size:20px;line-height:1.8}
+.para .tr{display:none;color:var(--sub);font-size:15px;margin-top:4px;line-height:1.5}
+.showtr .para .tr{display:block}
+.para figure{margin:10px 0 0}
+.para .scene{max-width:520px;margin:auto}
+mark{background:linear-gradient(transparent 55%,#ffe46b 55%);color:inherit;font-weight:700}
+.w{border-radius:6px;transition:background .12s}.w.hi{background:#ffd43b}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 6px}
+.btn{font-family:'Jua';font-size:15px;padding:8px 14px;border-radius:99px;background:#f4efe6}
+.btn.on{background:#ffd166}
+.btn.main{background:var(--g);color:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+.pop{border-left:5px solid var(--g)}
+.know{background:#fbf8ef}
+.know .lab{background:#c9a227}
+.bt{font-family:var(--fb);font-size:18px;line-height:1.55}
+.reveal{font-family:'Jua';color:#2f9e5a;margin-top:6px;font-size:18px}
+h2{font-family:'Jua';font-size:24px;margin:24px 4px 10px;color:var(--g)}
+.qz{margin-bottom:12px}
+.qz .q{font-family:var(--fb);font-weight:700;font-size:18px;margin-bottom:8px;line-height:1.5}
+.ch{display:flex;gap:8px;flex-wrap:wrap}
+.ch button{flex:1;min-width:120px;font-family:var(--fb);font-size:17px;padding:11px 12px;border-radius:16px;background:#f4efe6;text-align:left;line-height:1.35}
+.ch button .e{font-size:30px;display:block;text-align:center}
 .ch button.ok{background:var(--ok);color:#fff}.ch button.no{background:#ffd6d6;animation:shake .35s}
 @keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
-.dict{display:flex;gap:10px;flex-wrap:wrap}
-.dict button{font-family:'Jua';font-size:22px;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);min-width:96px}
-.copy{font-family:'Jua';font-size:28px;letter-spacing:4px;border:3px dashed #ffcfb4;border-radius:16px;padding:14px;text-align:center;color:#c9b8ad}
-.burst{position:fixed;pointer-events:none;font-size:42px;z-index:9;animation:fly 1s ease-out forwards}
+.blank{display:inline-block;min-width:70px;border-bottom:2px solid #444;text-align:center;font-weight:700;color:#2f9e5a}
+.wz{display:flex;gap:12px;align-items:center}.wz .e{font-size:40px}
+.org{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media (max-width:560px){.org{grid-template-columns:1fr}}
+.slot{border:2px solid var(--g);border-radius:16px;overflow:hidden;background:#fff;min-height:96px;display:flex;flex-direction:column}
+.slot .hd{background:var(--g);color:#fff;font-family:'Jua';text-align:center;padding:6px}
+.slot .in{flex:1;padding:8px;font-family:var(--fb);font-size:15px;display:flex;align-items:center;justify-content:center;text-align:center}
+.slot.ok .in{background:#e7f8ec}.slot.no .in{background:#ffe3e3}
+.chs{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.chs button{font-family:var(--fb);font-size:16px;text-align:left;background:#f8f6fc;border-radius:14px;padding:10px 12px}
+.chs button.used{opacity:.35}
+.talk{background:#f2fbf4}
+.dict{display:flex;gap:8px;flex-wrap:wrap}.dict button{font-family:'Jua';font-size:20px;background:#fff;border:2px solid #ffd6c2;border-radius:16px;padding:10px 14px;min-width:90px}
+.trace{font-family:'Jua';font-size:26px;letter-spacing:3px;border:3px dashed #ffcfb4;border-radius:16px;padding:14px;text-align:center;color:#c9b8ad}
+.foot{font-size:12px;color:var(--sub);line-height:1.6;margin-top:18px}
+.burst{position:fixed;pointer-events:none;font-size:40px;z-index:9;animation:fly 1s ease-out forwards}
 @keyframes fly{to{transform:translate(var(--dx),var(--dy)) scale(.4);opacity:0}}
-.tip{font-size:15px;color:var(--sub);background:#fff3d6;border-radius:16px;padding:12px 14px;margin-top:20px;line-height:1.6}
-.plan{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14px;margin:0 0 12px}.plan span{background:#fff;border-radius:99px;padding:4px 10px;box-shadow:0 3px 0 rgba(0,0,0,.05)}
-.photo{margin:6px 0 10px;position:relative}.photo img{width:100%;border-radius:20px;display:block;max-height:440px;object-fit:cover}
-.photo .real{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.55);color:#fff;font-family:'Jua';font-size:14px;border-radius:99px;padding:3px 10px}
-.photo figcaption{font-size:15px;text-align:center;margin-top:6px;line-height:1.4}.photo small{color:var(--sub);font-size:11px}.photo a{color:var(--sub)}
-.hook{background:#fff3d6;border-radius:14px;padding:8px 12px;margin:6px 4px 10px;font-size:16px;text-align:center}
-.org{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;background:#fff;border-radius:22px;padding:14px;box-shadow:var(--shadow)}
-.org .st{text-align:center;font-family:'Jua';font-size:16px;min-width:64px}.org .st .e{font-size:44px}.org .ar{font-size:22px;color:#ffb703}
+.cal .r{display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:15px}.cal .r b{font-family:'Jua';min-width:76px}
+.tip{font-size:14px;color:var(--sub);background:#fff3d6;border-radius:16px;padding:12px 14px;margin-top:18px;line-height:1.6}
+.hero{position:relative;border-radius:22px;overflow:hidden;margin-bottom:6px;aspect-ratio:4/3;max-height:480px;width:100%}
+.hero img,.hero .scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0;aspect-ratio:auto}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.55))}
+.hero .ttl{position:absolute;left:16px;right:16px;bottom:14px;color:#fff}
+.hero h1.tt{color:#fff;margin:0;font-size:32px;text-shadow:0 2px 6px rgba(0,0,0,.35)}.hero .subt{color:#fff;opacity:.95}
+.hcap{font-size:12px;color:var(--sub);text-align:center;margin:0 0 14px}
 .empty{text-align:center;color:var(--sub);padding:40px}
-@media (max-width:420px){.txt .main{font-size:27px}.ko .txt .main{font-size:25px}.big.play{width:72px;height:72px}}
 </style>
 </head>
 <body>
 <div class="wrap" id="app"><p class="empty">불러오는 중…</p></div>
 <script>
 document.head.insertAdjacentHTML('beforeend', `<style>${KidsScene.SCENE_CSS}</style>`);
-const $ = s => document.querySelector(s);
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch { return d } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)) } catch {} } };
-let INDEX = [], L = null, lang = 'en', page = 0, rate = store.get('rate', 0.8), auto = store.get('auto', true);
+const GENRE = { Fiction: ['📖 Fiction', '#ff6f86'], Nonfiction: ['🔎 Nonfiction', '#2f9ee1'], '이야기': ['📖 이야기', '#ff6f86'], '정보글': ['🔎 정보글', '#2f9ee1'], '기사문': ['📰 기사문', '#8a63d2'], '서평': ['📚 서평', '#2fb26b'] };
+const WD = ['일', '월', '화', '수', '목', '금', '토'];
+let INDEX = [], CAL = null, CRED = {}, L = null, lang = 'en', rate = store.get('rate', 0.85), showTr = store.get('tr', false);
 
-/* ---------- 소리 (기기 내장 음성) ---------- */
+/* ---------- 소리: 기기 내장 음성 ---------- */
 const synth = window.speechSynthesis;
 function voice(l) {
   const vs = synth ? synth.getVoices() : [];
   const pref = l === 'en' ? ['Samantha', 'Google US English', 'Microsoft Aria', 'Karen'] : ['Yuna', 'Google 한국의', 'Microsoft SunHi', 'Sora'];
-  const code = l === 'en' ? 'en' : 'ko';
-  return pref.map(p => vs.find(v => v.name.includes(p))).find(Boolean) || vs.find(v => v.lang.replace('_', '-').startsWith(code + '-US')) || vs.find(v => v.lang.startsWith(code));
+  return pref.map(p => vs.find(v => v.name.includes(p))).find(Boolean) || vs.find(v => v.lang.replace('_', '-').startsWith(l === 'en' ? 'en-US' : 'ko')) || vs.find(v => v.lang.startsWith(l === 'en' ? 'en' : 'ko'));
 }
 if (synth) synth.onvoiceschanged = () => {};
+const plain = t => String(t).replace(/\*\*/g, '').replace(/___/g, 'blank');
 function speak(text, l, el) {
   return new Promise(res => {
     if (!synth) return res();
     synth.cancel();
-    const u = new SpeechSynthesisUtterance(text.replace(/[🌰-🫶]/gu, ''));
+    const u = new SpeechSynthesisUtterance(plain(text).replace(/\p{Extended_Pictographic}/gu, ''));
     u.lang = l === 'en' ? 'en-US' : 'ko-KR'; u.rate = rate; const v = voice(l); if (v) u.voice = v;
     const ws = el ? [...el.querySelectorAll('.w')] : [];
-    u.onboundary = e => { if (!ws.length) return; ws.forEach(w => w.classList.toggle('hi', +w.dataset.s <= e.charIndex && e.charIndex < +w.dataset.e)); };
+    u.onboundary = e => ws.forEach(w => w.classList.toggle('hi', +w.dataset.s <= e.charIndex && e.charIndex < +w.dataset.e));
     u.onend = u.onerror = () => { ws.forEach(w => w.classList.remove('hi')); res(); };
     synth.speak(u);
   });
 }
-function words(t) { let i = 0; return t.split(/(\s+)/).map(p => { const s = i; i += p.length; return /\s/.test(p) ? p : `<span class="w" data-s="${s}" data-e="${i}">${esc(p)}</span>`; }).join(''); }
+// wrap each word (keeping **bold** marks) so the word being read can light up
+function words(t) {
+  let i = 0, bold = false, out = '';
+  for (const part of String(t).split(/(\*\*|\s+)/)) {
+    if (part === '**') { bold = !bold; continue; }
+    if (!part) continue;
+    if (/^\s+$/.test(part)) { out += part; i += part.length; continue; }
+    const s = i; i += part.length;
+    const w = `<span class="w" data-s="${s}" data-e="${i}">${esc(part)}</span>`;
+    out += bold ? `<mark>${w}</mark>` : w;
+  }
+  return out;
+}
+const blank = s => esc(s).replace(/___/g, '<span class="blank">&nbsp;</span>');
 
 /* ---------- 별 ---------- */
-function stars() { return Object.values(store.get('stars', {})).reduce((a, b) => a + b, 0); }
+const stars = () => Object.keys(store.get('stars', {})).length;
 function addStar(key, x, y) {
   const s = store.get('stars', {}); if (s[key]) return; s[key] = 1; store.set('stars', s);
   for (let i = 0; i < 8; i++) { const b = document.createElement('span'); b.className = 'burst'; b.textContent = ['⭐', '🌟', '✨'][i % 3];
     b.style.left = x + 'px'; b.style.top = y + 'px'; const a = i / 8 * 6.28; b.style.setProperty('--dx', Math.cos(a) * 110 + 'px'); b.style.setProperty('--dy', Math.sin(a) * 110 + 'px');
     document.body.appendChild(b); setTimeout(() => b.remove(), 1000); }
-  const st = $('.stars'); if (st) st.textContent = '⭐ ' + stars();
+  $$('.stars').forEach(e => e.textContent = '⭐ ' + stars());
 }
 
-/* ---------- 화면 ---------- */
-let CAL = null;
+/* ---------- 데이터 ---------- */
+const getJSON = u => fetch(u, { cache: 'no-store' }).then(r => r.json()).catch(() => null);
 async function load() {
-  INDEX = await fetch('./lessons/index.json', { cache: 'no-store' }).then(r => r.json()).catch(() => []);
-  CAL = await fetch('./calendar.json', { cache: 'no-store' }).then(r => r.json()).catch(() => null);
+  [INDEX, CAL, CRED] = await Promise.all([getJSON('./lessons/index.json'), getJSON('./calendar.json'), getJSON('./photos/credits.json')]);
+  INDEX = INDEX || []; CRED = CRED || {};
   route();
 }
 window.onhashchange = route;
@@ -140,94 +181,131 @@ async function route() {
   synth && synth.cancel();
   const m = location.hash.match(/^#(\d{4}-\d\d-\d\d)(?:\/(en|ko))?/);
   if (!m) return home();
-  L = await fetch(`./lessons/${m[1]}.json`, { cache: 'no-store' }).then(r => r.json()).catch(() => null);
-  if (!L) return home();
-  lang = m[2] || 'en'; page = 0; lesson(); scrollTo(0, 0);
+  L = await getJSON(`./lessons/${m[1]}.json`);
+  if (!L || !L.en || !L.en.passage) return home();
+  lang = m[2] || 'en'; render(); scrollTo(0, 0);
 }
+
+/* ---------- 목록 ---------- */
 function home() {
+  document.documentElement.style.setProperty('--g', '#2f9ee1');
   const list = [...INDEX].sort((a, b) => b.date.localeCompare(a.date));
-  $('#app').innerHTML = `<div class="top"><h1>🌞 아침 리딩</h1><span class="stars">⭐ ${stars()}</span></div>
-  ${list.length ? `<div class="grid">${list.map((d, i) => `<a href="#${d.date}" style="text-decoration:none;color:inherit"><div class="day">
-    ${d.photo ? `<img src="./${esc(d.photo)}" alt="" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:22px;display:block">` : KidsScene.sceneHTML(d.cover)}<div class="d">${i === 0 ? '🆕 오늘 · ' : ''}DAY ${d.day} · ${d.date.slice(5).replace('-', '/')} (${d.weekday})</div>
-    <div class="t en">${esc(d.en_title)}</div><div class="t ko">${esc(d.ko_title)}</div></div></a>`).join('')}</div>` : '<p class="empty">아직 지문이 없어요.</p>'}
+  const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  $('#app').innerHTML = `<div class="top"><h1>🌞 아침 리딩</h1><span class="pill stars">⭐ ${stars()}</span></div>
+  ${list.length ? `<div class="grid">${list.map(d => `<a class="day" href="#${d.date}">
+    ${d.photo ? `<img src="./${esc(d.photo)}" alt="" loading="lazy">` : KidsScene.sceneHTML(d.cover)}
+    <div class="d">${d.date === today ? '🆕 오늘 · ' : ''}DAY ${d.day} · ${d.date.slice(5).replace('-', '/')} (${d.weekday})</div>
+    <div class="t en">🔤 ${esc(d.en_title)}</div><div class="t ko">📖 ${esc(d.ko_title)}</div></a>`).join('')}</div>` : '<p class="empty">아직 지문이 없어요.</p>'}
   ${calHTML(list[0] && list[0].date)}
-  <p class="tip">⏱ 하루 20분: <b>English 10분</b>(듣기 → 따라 읽기 → 단어 → 문제) + <b>국어 10분</b>(듣기 → 소리 내어 읽기 → 낱말 → 문제·받아쓰기).<br>🔊 소리는 기기에 들어 있는 음성으로 읽어 줘요. 아이패드·아이폰은 무음 스위치를 꺼 주세요.</p>`;
+  <p class="tip">⏱ 하루 20분: <b>English 10분</b> + <b>국어 10분</b> — ① 생각 열기·새 낱말 → ② 본문 🔊 듣고 따라 읽기 → ③ 문제 풀고 ⭐ 모으기<br>🔊 소리는 기기에 들어 있는 음성으로 읽어 줘요. 아이폰·아이패드는 무음 스위치를 꺼 주세요.</p>`;
 }
 function calHTML(last) {
   if (!CAL) return '';
-  const WD = ['일', '월', '화', '수', '목', '금', '토'];
   const next = CAL.days.filter(x => !last || x.date > last).slice(0, 7);
   if (!next.length) return '';
-  return `<h2>📅 다음 주제 미리 보기</h2><div class="panel" style="font-size:15px">${next.map(x => `<div style="display:flex;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line)"><b style="font-family:'Jua';min-width:72px">${x.date.slice(5).replace('-', '/')} (${WD[new Date(x.date + 'T12:00:00Z').getUTCDay()]})</b><div>🔤 ${esc(x.en)}<br>📖 ${esc(x.ko)}</div></div>`).join('')}</div>`;
+  return `<h2 style="color:var(--ink)">📅 다음 주제 미리 보기</h2><div class="card cal">${next.map(x => `<div class="r"><b>${x.date.slice(5).replace('-', '/')} (${WD[new Date(x.date + 'T12:00:00Z').getUTCDay()]})</b><div>🔤 ${esc(x.en)}<br>📖 ${esc(x.ko)}</div></div>`).join('')}</div>`;
 }
-function lesson() {
-  const B = L[lang], P = B.pages;
-  const isEn = lang === 'en';
-  const pg = P[page];
-  $('#app').innerHTML = `<div class="top"><a href="#" class="back">← 목록</a><h1 style="font-size:20px;text-align:center">DAY ${L.day}</h1><span class="stars">⭐ ${stars()}</span></div>
-  <div class="tabs"><button class="tab en ${isEn ? 'on' : ''}" data-l="en">🔤 English</button><button class="tab ko ${!isEn ? 'on' : ''}" data-l="ko">📖 국어</button></div>
-  <div class="${lang}">
-  <div class="plan">⏱ <b>오늘의 10분</b> ${(isEn ? ['🎧 듣기 2분', '🗣 따라 읽기 3분', '🃏 단어 2분', '⭐ 문제 3분'] : ['🎧 듣기 2분', '📢 소리 내어 읽기 3분', '🃏 낱말 2분', '⭐ 문제·받아쓰기 3분']).map(t => `<span>${t}</span>`).join('')}</div>
-  <div class="book">
-    <div class="title">${esc(B.title)}<small>${esc(isEn ? B.title_ko : B.theme)}</small></div>
-    ${B.photo ? `<figure class="photo"><img src="./${esc(B.photo.src)}" alt="${esc(B.photo.caption_ko)}"><span class="real">📷 진짜 사진</span><figcaption>${isEn && B.photo.caption ? `<b>${esc(B.photo.caption)}</b><br>` : ''}${esc(B.photo.caption_ko)}<small> · 📷 <a href="${esc(B.photo.page)}" target="_blank" rel="noopener">${esc(B.photo.credit)}</a>, ${esc(B.photo.license)}</small></figcaption></figure>` : ''}
-    ${B.hook_ko ? `<div class="hook">${esc(B.hook_ko)}</div>` : ''}
-    <div id="pic">${KidsScene.sceneHTML(pg.scene)}</div>
-    <div class="txt"><div class="main" id="say">${words(isEn ? pg.en : pg.text)}</div>${isEn ? `<div class="sub">${esc(pg.ko)}</div>` : ''}</div>
-    <div class="dots">${P.map((_, i) => `<i class="${i === page ? 'on' : ''}"></i>`).join('')}</div>
-    <div class="ctrl"><button class="big" id="prev" ${page === 0 ? 'disabled' : ''}>◀</button><button class="big play" id="play">🔊</button><button class="big" id="next">${page === P.length - 1 ? '🏁' : '▶'}</button></div>
-    <div class="opts"><button class="pill ${rate < 0.8 ? 'on' : ''}" data-r="0.6">🐢 천천히</button><button class="pill ${rate >= 0.8 ? 'on' : ''}" data-r="0.85">🐰 보통</button><button class="pill ${auto ? 'on' : ''}" id="auto">자동 읽기 ${auto ? 'ON' : 'OFF'}</button><button class="pill" id="all">▶ 처음부터 다 듣기</button></div>
+
+/* ---------- 학습 화면 ---------- */
+function fig(f) {
+  if (!f) return '';
+  if (f.photo) { const c = CRED[f.photo.src]; return `<figure><div class="ph"><img src="./${esc(f.photo.src)}" alt="${esc(f.photo.caption_ko || '')}"><span class="real">📷 진짜 사진</span></div><figcaption>${esc(f.photo.caption || '')}${f.photo.caption && f.photo.caption_ko ? ' · ' : ''}${esc(f.photo.caption_ko || '')}${c ? ` <br><small>📷 <a href="${esc(c.page)}" target="_blank" rel="noopener">${esc(c.credit)}</a>, ${esc(c.license)}</small>` : ''}</figcaption></figure>`; }
+  if (f.scene) return `<figure>${KidsScene.sceneHTML(f.scene)}</figure>`;
+  return '';
+}
+function heroHTML(U) {
+  const h = U.hero || {}, c = h.photo && CRED[h.photo.src];
+  const pic = h.photo ? `<img src="./${esc(h.photo.src)}" alt="${esc(h.photo.caption_ko || '')}">` : h.scene ? KidsScene.sceneHTML(h.scene) : '';
+  return `<div class="hero">${pic}<div class="shade"></div><div class="ttl"><h1 class="tt">${esc(U.title)}</h1>${U.title_ko ? `<div class="subt">${esc(U.title_ko)}</div>` : ''}</div>${h.photo ? '<span class="real">📷 진짜 사진</span>' : ''}</div>
+  ${h.photo ? `<div class="hcap">${esc(h.photo.caption || '')}${h.photo.caption && h.photo.caption_ko ? ' · ' : ''}${esc(h.photo.caption_ko || '')}${c ? ` · 📷 <a href="${esc(c.page)}" target="_blank" rel="noopener">${esc(c.credit)}</a>, ${esc(c.license)}` : ''}</div>` : ''}`;
+}
+function render() {
+  const U = L[lang], isEn = lang === 'en';
+  const [gl, gc] = GENRE[U.genre] || [U.genre, '#888'];
+  const T = isEn ? { start: "Let's Start", words: 'New Words', read: 'Read & Listen', pop: 'Pop Quiz', know: 'You Know What?', comp: 'Comprehension Zone', a: 'Main Idea', b: 'Check', c: 'Choose', word: 'Word Zone', wrap: 'Story Wrap Up', talk: 'Talk! Your Turn' }
+                  : { start: '생각 열기', words: '새 낱말', read: '본문 읽기', pop: '깜짝 퀴즈', know: '알고 있나요?', comp: '내용 확인', a: '중심 내용', b: '알맞은 것', c: '알맞은 답', word: '낱말 놀이', wrap: '내용 정리', talk: '내 생각 말하기' };
+  document.documentElement.style.setProperty('--g', gc);
+  $('#app').innerHTML = `<div class="top"><a href="#" class="pill">← 목록</a><span style="flex:1"></span><span class="pill stars">⭐ ${stars()}</span></div>
+  <div class="tabs"><button class="tab ${isEn ? 'on' : ''}" data-l="en">🔤 English</button><button class="tab ${!isEn ? 'on' : ''}" data-l="ko">📖 국어</button></div>
+  <div class="${lang} ${showTr ? 'showtr' : ''}" id="unit">
+  <div class="head"><div class="dtab"><b>DAY ${L.day}</b>${L.date.slice(5).replace('-', '/')} (${L.weekday})</div>
+    <div><div class="chips"><span class="chip g">${gl}</span><span class="chip">${esc(U.level)}</span><span class="chip">${esc(U.theme)}</span></div>
+    </div></div>
+
+  ${heroHTML(U)}
+  <div class="card start"><div class="lab">💬 ${T.start}</div><div class="q">${esc(U.lets_start.q)} ${isEn ? `<button data-say="${esc(U.lets_start.q)}">🔊</button>` : ''}</div>${U.lets_start.q_ko ? `<div class="qk">${esc(U.lets_start.q_ko)}</div>` : ''}
+    <div class="opts">${U.lets_start.options.map(o => `<button class="opt">${esc(o)}</button>`).join('')}</div></div>
+
+  <div class="card"><div class="lab">🃏 ${T.words}</div><div class="tiles">${U.new_words.map(w => `<button class="tile" data-say="${esc(w.word)}"><div class="e">${w.emoji}</div><b>${esc(w.word)}</b><i>${esc(w.meaning)}</i></button>`).join('')}</div></div>
+
+  <div class="card"><div class="lab">📖 ${T.read}</div>
+    <div class="bar"><button class="btn main" id="all">▶ 처음부터 다 듣기</button><button class="btn ${rate < 0.8 ? 'on' : ''}" data-r="0.65">🐢 천천히</button><button class="btn ${rate >= 0.8 ? 'on' : ''}" data-r="0.85">🐰 보통</button>${isEn ? `<button class="btn ${showTr ? 'on' : ''}" id="tr">해석 ${showTr ? '숨기기' : '보기'}</button>` : ''}</div>
+    ${U.passage.map((p, i) => `<div class="para"><button class="say" data-p="${i}">🔊</button><div class="tx" id="p${i}">${words(p.text)}</div>${p.ko ? `<div class="tr">${esc(p.ko)}</div>` : ''}${fig(p.photo ? { photo: p.photo } : p.scene ? { scene: p.scene } : null)}</div>`).join('')}
   </div>
-  ${isEn ? enExtras(B) : koExtras(B)}
-  <div class="tip">👪 ${esc(B.parent_tip_ko)}<br><span style="font-size:13px">${esc(B.source_note)}</span></div>
+
+  <div class="two">
+    <div class="card pop"><div class="lab">✏️ ${T.pop}</div><div class="bt">${blank(U.pop_quiz.q)}</div><button class="btn" id="popbtn" style="margin-top:8px">정답 보기</button><div class="reveal" id="pop" hidden>👉 ${esc(U.pop_quiz.answer)}</div></div>
+    <div class="card know"><div class="lab">${U.you_know.emoji || '💡'} ${T.know}</div><div class="bt">${esc(U.you_know.text)}</div>${U.you_know.text_ko ? `<div class="qk">${esc(U.you_know.text_ko)}</div>` : ''}</div>
+  </div>
+
+  <h2>⭐ ${T.comp}</h2>
+  ${quiz('a', T.a, U.main_idea.q, U.main_idea.options.map(o => [null, o]), U.main_idea.answer)}
+  ${U.check.map((c, i) => quiz('b' + i, T.b, c.q, c.options, c.answer)).join('')}
+  ${U.choose.map((c, i) => quiz('c' + i, T.c, c.q, c.choices.map(x => [null, x]), c.answer)).join('')}
+
+  <h2>🧩 ${T.word}</h2>
+  ${U.word_zone.map((w, i) => `<div class="card qz"><div class="wz"><span class="e">${w.emoji}</span><div class="q" id="wzq${i}">${blank(w.sentence)}</div></div><div class="ch">${w.options.map((o, j) => `<button data-wz="${i}" data-j="${j}" data-a="${w.answer}">${esc(o)}</button>`).join('')}</div></div>`).join('')}
+
+  <h2>🗂 ${T.wrap}</h2>
+  <div class="card"><div style="font-family:'Jua';font-size:18px;margin-bottom:8px">${esc(U.wrap_up.title)} <small style="color:var(--sub);font-family:'Gowun Dodum'">· 문장을 눌러 순서대로 채워요 (칸을 누르면 지워져요)</small></div>
+    <div class="org">${U.wrap_up.heads.map((h, i) => `<div class="slot" data-slot="${i}"><div class="hd">${esc(h)}</div><div class="in"></div></div>`).join('')}</div>
+    <div class="chs">${U.wrap_up.choices.map((c, j) => `<button data-wc="${j}">${'abc'[j]}. ${esc(c)}</button>`).join('')}</div></div>
+
+  ${isEn ? '' : `<h2>✏️ 받아쓰기 <small style="font-size:14px;color:var(--sub)">한 번 누르면 들려주고, 한 번 더 누르면 정답</small></h2>
+    <div class="dict">${U.dictation.map((w, i) => `<button data-d="${esc(w)}">🔊 ${i + 1}번</button>`).join('')}</div>
+    <h2>✍️ 따라 쓰기</h2><div class="trace">${esc(U.copy)}</div>`}
+
+  <h2>🗣 ${T.talk}</h2>
+  <div class="card talk"><div class="bt"><b>${esc(U.talk.q)}</b> ${isEn ? `<button data-say="${esc(U.talk.q)}">🔊</button>` : ''}</div>${U.talk.q_ko ? `<div class="qk">${esc(U.talk.q_ko)}</div>` : ''}<div class="bt" style="margin-top:6px">${blank(U.talk.frame)}</div></div>
+
+  <div class="foot">${U.parent_tip ? `👪 ${esc(U.parent_tip)}<br>` : ''}출처: ${esc(U.sources || '')} · 사진: Wikimedia Commons (무료 라이선스)</div>
   </div>`;
   bind();
 }
-function card(w, l) { return `<button class="card" data-say="${esc(w.word)}" data-l="${l}"><div class="e">${w.emoji}</div><div class="wd">${esc(w.word)}</div><div class="m">${esc(w.ko || w.meaning)}</div></button>`; }
-function quiz(B, l) {
-  return `<h2>⭐ ${l === 'en' ? 'Check' : '확인 문제'}</h2>${B.quiz.map((q, i) => `<div class="q"><div class="qt">${q.level || q.type ? `<span class="lv">${esc(q.level || q.type)}</span>` : ''}${esc(q.q)} ${l === 'en' ? `<button class="sayq" data-say="${esc(q.q)}">🔊</button>` : ''}</div>${q.q_ko ? `<div class="qk">${esc(q.q_ko)}</div>` : ''}
-    <div class="ch">${q.choices.map((c, j) => `<button data-q="${l}-${i}" data-j="${j}" data-a="${q.answer}">${esc(c)}</button>`).join('')}</div></div>`).join('')}`;
+function quiz(key, label, q, opts, ans) {
+  return `<div class="card qz"><div class="q"><span class="chip g" style="margin-right:6px">${esc(label)}</span>${blank(q)} ${lang === 'en' ? `<button data-say="${esc(q)}">🔊</button>` : ''}</div>
+  <div class="ch">${opts.map(([e, t], j) => `<button data-q="${key}" data-j="${j}" data-a="${ans}">${e ? `<span class="e">${e}</span>` : ''}${esc(t)}</button>`).join('')}</div></div>`;
 }
-function org(o) { return `<h2>🧩 한눈에 정리: ${esc(o.title)}</h2><div class="org">${o.steps.map(([e, t], i) => `${i ? '<span class="ar">➜</span>' : ''}<div class="st"><div class="e">${e}</div><div>${esc(t)}</div></div>`).join('')}</div>`; }
-function enExtras(B) {
-  return `<h2>🃏 Words <small style="font-size:15px;color:var(--sub)">눌러서 들어요</small></h2><div class="cards">${B.words.map(w => card(w, 'en')).join('')}</div>
-  ${org(B.organizer)}
-  ${quiz(B, 'en')}
-  <h2>🗣 Talk</h2><div class="panel" style="font-family:'Baloo 2';font-weight:700;font-size:20px">${esc(B.talk_en)} <button data-say="${esc(B.talk_en.split('→')[0])}" data-l="en">🔊</button></div>`;
-}
-function koExtras(B) {
-  return `<h2>🃏 새 낱말</h2><div class="cards">${B.words.map(w => card(w, 'ko')).join('')}</div>
-  <h2>🐾 흉내 내는 말</h2><div class="cards">${B.sound_words.map(w => card(w, 'ko')).join('')}</div>
-  ${org(B.organizer)}
-  ${quiz(B, 'ko')}
-  <h2>✏️ 받아쓰기 <small style="font-size:15px;color:var(--sub)">듣고 쓴 뒤, 눌러서 정답 확인</small></h2>
-  <div class="dict">${B.dictation.map((w, i) => `<button data-d="${esc(w)}">🔊 ${i + 1}번</button>`).join('')}</div>
-  <h2>💬 이야기 나누기</h2><div class="panel">${esc(B.talk)}</div>
-  <h2>✍️ 따라 쓰기</h2><div class="copy">${esc(B.copy_sentence)}</div>
-  <h2>🖍 그림 그리기</h2><div class="panel">${esc(B.draw)}</div>`;
-}
+const praise = ok => ok ? (lang === 'en' ? 'Great job!' : '딩동댕! 잘했어요!') : (lang === 'en' ? 'Try again!' : '다시 해 볼까?');
 function bind() {
-  const B = L[lang], P = B.pages;
-  const read = () => speak(lang === 'en' ? P[page].en : P[page].text, lang, $('#say'));
-  const go = d => { page = Math.max(0, Math.min(P.length - 1, page + d)); lesson(); if (auto) read(); };
-  document.querySelectorAll('.tab').forEach(b => b.onclick = () => { location.hash = `${L.date}/${b.dataset.l}`; });
-  $('#play').onclick = read;
-  $('#prev').onclick = () => go(-1);
-  $('#next').onclick = e => { if (page === P.length - 1) { addStar(`${L.date}-${lang}-book`, e.clientX, e.clientY); $('#app').querySelector('h2')?.scrollIntoView({ behavior: 'smooth' }); } else go(1); };
-  document.querySelectorAll('[data-r]').forEach(b => b.onclick = () => { rate = +b.dataset.r; store.set('rate', rate); lesson(); });
-  $('#auto').onclick = () => { auto = !auto; store.set('auto', auto); lesson(); };
-  $('#all').onclick = async () => { for (let i = 0; i < P.length; i++) { page = i; lesson(); await read(); await new Promise(r => setTimeout(r, 500)); if (!location.hash.includes(L.date)) break; } };
-  document.querySelectorAll('[data-say]').forEach(b => b.onclick = () => speak(b.dataset.say, b.dataset.l || 'en'));
-  document.querySelectorAll('[data-q]').forEach(b => b.onclick = e => {
-    const ok = +b.dataset.j === +b.dataset.a;
-    b.classList.remove('no'); void b.offsetWidth; b.classList.add(ok ? 'ok' : 'no');
-    speak(ok ? (lang === 'en' ? 'Great job!' : '딩동댕! 잘했어요!') : (lang === 'en' ? 'Try again!' : '다시 해 볼까?'), lang);
-    if (ok) addStar(`${L.date}-q-${b.dataset.q}`, e.clientX, e.clientY);
+  const U = L[lang];
+  $$('.tab').forEach(b => b.onclick = () => { location.hash = `${L.date}/${b.dataset.l}`; });
+  $$('[data-say]').forEach(b => b.onclick = e => { e.stopPropagation(); speak(b.dataset.say, lang); });
+  $$('.opt').forEach(b => b.onclick = () => { $$('.opt').forEach(x => x.classList.remove('sel')); b.classList.add('sel'); });
+  $$('[data-p]').forEach(b => b.onclick = () => { const i = +b.dataset.p; speak(U.passage[i].text, lang, $('#p' + i)); });
+  $('#all').onclick = async () => { for (let i = 0; i < U.passage.length; i++) { $('#p' + i).scrollIntoView({ behavior: 'smooth', block: 'center' }); await speak(U.passage[i].text, lang, $('#p' + i)); await new Promise(r => setTimeout(r, 400)); if (!location.hash.includes(L.date)) break; } };
+  $$('[data-r]').forEach(b => b.onclick = () => { rate = +b.dataset.r; store.set('rate', rate); $$('[data-r]').forEach(x => x.classList.toggle('on', x === b)); });
+  const tr = $('#tr'); if (tr) tr.onclick = () => { showTr = !showTr; store.set('tr', showTr); $('#unit').classList.toggle('showtr', showTr); tr.textContent = `해석 ${showTr ? '숨기기' : '보기'}`; tr.classList.toggle('on', showTr); };
+  $('#popbtn').onclick = () => { $('#pop').hidden = false; };
+  $$('[data-q]').forEach(b => b.onclick = e => {
+    const ok = +b.dataset.j === +b.dataset.a; b.classList.remove('no'); void b.offsetWidth; b.classList.add(ok ? 'ok' : 'no');
+    speak(praise(ok), lang); if (ok) addStar(`${L.date}-${lang}-${b.dataset.q}`, e.clientX, e.clientY);
   });
-  document.querySelectorAll('[data-d]').forEach(b => { let n = 0; b.onclick = () => { n++; if (n === 1) speak(b.dataset.d, 'ko'); else { b.textContent = b.dataset.d; b.style.background = '#e9fbe9'; } }; });
-  let sx = null; const bk = $('.book');
-  bk.addEventListener('touchstart', e => sx = e.touches[0].clientX, { passive: true });
-  bk.addEventListener('touchend', e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1); sx = null; });
+  $$('[data-wz]').forEach(b => b.onclick = e => {
+    const i = +b.dataset.wz, ok = +b.dataset.j === +b.dataset.a; b.classList.remove('no'); void b.offsetWidth; b.classList.add(ok ? 'ok' : 'no');
+    if (ok) { const bl = $('#wzq' + i + ' .blank'); if (bl) bl.textContent = b.textContent; addStar(`${L.date}-${lang}-wz${i}`, e.clientX, e.clientY); speak($('#wzq' + i).textContent, lang); }
+    else speak(praise(false), lang);
+  });
+  // story wrap up: tap a sentence -> it fills the next empty box; tap a box to empty it
+  const slots = $$('[data-slot]'), fill = new Array(slots.length).fill(null);
+  const draw = () => { slots.forEach((s, i) => { s.querySelector('.in').textContent = fill[i] === null ? '' : U.wrap_up.choices[fill[i]]; s.classList.remove('ok', 'no'); });
+    $$('[data-wc]').forEach(b => b.classList.toggle('used', fill.includes(+b.dataset.wc))); };
+  const check = (x, y) => { if (fill.some(v => v === null)) return; let all = true;
+    slots.forEach((s, i) => { const ok = fill[i] === U.wrap_up.answers[i]; all = all && ok; s.classList.toggle('ok', ok); s.classList.toggle('no', !ok); });
+    speak(praise(all), lang); if (all) addStar(`${L.date}-${lang}-wrap`, x, y); };
+  $$('[data-wc]').forEach(b => b.onclick = e => { const j = +b.dataset.wc; if (fill.includes(j)) return; const k = fill.indexOf(null); if (k < 0) return; fill[k] = j; draw(); check(e.clientX, e.clientY); });
+  slots.forEach((s, i) => s.onclick = () => { fill[i] = null; draw(); });
+  $$('[data-d]').forEach(b => { let n = 0; b.onclick = () => { n++; if (n === 1) speak(b.dataset.d, 'ko'); else { b.textContent = b.dataset.d; b.style.background = '#e9fbe9'; } }; });
 }
 load();
 </script>

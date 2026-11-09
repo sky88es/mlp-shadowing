@@ -1,0 +1,536 @@
+{
+ "version": 2,
+ "date": "2026-11-13",
+ "day": 5,
+ "weekday": "금",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "Food & Cooking",
+  "title": "Grandpa's Rainbow Soup",
+  "title_ko": "할아버지의 무지개 수프",
+  "lets_start": {
+   "q": "Do you like to help cook at home?",
+   "q_ko": "집에서 요리를 돕는 걸 좋아하나요?",
+   "options": [
+    "Yes, I love it!",
+    "I want to try."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "soup",
+    "meaning": "수프, 국",
+    "emoji": "🍲"
+   },
+   {
+    "word": "wash",
+    "meaning": "씻다",
+    "emoji": "🚿"
+   },
+   {
+    "word": "cut",
+    "meaning": "자르다",
+    "emoji": "🔪"
+   },
+   {
+    "word": "pot",
+    "meaning": "냄비",
+    "emoji": "🫕"
+   },
+   {
+    "word": "stir",
+    "meaning": "휘젓다",
+    "emoji": "🥄"
+   },
+   {
+    "word": "delicious",
+    "meaning": "아주 맛있는",
+    "emoji": "😋"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "kitchen",
+    "items": [
+     [
+      "👴",
+      26,
+      50,
+      30
+     ],
+     [
+      "👦",
+      52,
+      58,
+      24
+     ],
+     [
+      "🍲",
+      78,
+      58,
+      22
+     ],
+     [
+      "🌈",
+      78,
+      26,
+      18
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Leo and Grandpa want to make **soup**. \"Let's make rainbow soup!\" says Grandpa. Leo laughs. \"Soup can't be a rainbow, Grandpa!\"",
+    "ko": "레오와 할아버지는 수프를 만들고 싶어요. \"무지개 수프를 만들자!\" 할아버지가 말해요. 레오가 웃어요. \"할아버지, 수프가 무지개일 수는 없어요!\""
+   },
+   {
+    "text": "First, they **wash** a red tomato, an orange carrot, and yellow corn. Grandpa **cuts** the green beans and a purple onion. Leo puts everything into a big **pot**.",
+    "ko": "먼저 빨간 토마토, 주황 당근, 노란 옥수수를 씻어요. 할아버지가 초록 콩과 보라색 양파를 잘라요. 레오는 모두 큰 냄비에 넣어요.",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🍅",
+       14,
+       56,
+       14
+      ],
+      [
+       "🥕",
+       30,
+       56,
+       14
+      ],
+      [
+       "🌽",
+       46,
+       56,
+       14
+      ],
+      [
+       "🫛",
+       62,
+       56,
+       14
+      ],
+      [
+       "🧅",
+       78,
+       56,
+       14
+      ],
+      [
+       "🫕",
+       50,
+       86,
+       20
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Leo **stirs** the soup slowly. It smells so good! Leo looks into the pot. He sees red, orange, yellow, green, and purple. \"It IS a rainbow!\" The soup is **delicious**.",
+    "ko": "레오가 수프를 천천히 저어요. 냄새가 정말 좋아요! 레오가 냄비 속을 들여다봐요. 빨강, 주황, 노랑, 초록, 보라가 보여요. \"진짜 무지개다!\" 수프는 정말 맛있어요.",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🍲",
+       50,
+       66,
+       30
+      ],
+      [
+       "🌈",
+       50,
+       26,
+       26
+      ],
+      [
+       "👦",
+       18,
+       60,
+       22
+      ],
+      [
+       "😋",
+       18,
+       30,
+       10
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "Grandpa cuts the green beans and a ___ onion.",
+   "answer": "purple"
+  },
+  "you_know": {
+   "emoji": "🥦",
+   "text": "Eating vegetables of many colors is good for you. Each color gives your body different good things!",
+   "text_ko": "여러 가지 색깔 채소를 먹으면 몸에 좋아요. 색깔마다 몸에 주는 좋은 것이 다르거든요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Leo and Grandpa making colorful soup",
+    "Leo painting a rainbow"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What color is the carrot?",
+    "options": [
+     [
+      "🥕",
+      "orange"
+     ],
+     [
+      "🫐",
+      "blue"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who cuts the vegetables?",
+    "options": [
+     [
+      "👴",
+      "Grandpa"
+     ],
+     [
+      "🐱",
+      "the cat"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Leo thinks soup can't be a ___.",
+    "choices": [
+     "rainbow",
+     "pot",
+     "tomato"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does Leo put the vegetables?",
+    "choices": [
+     "in a box",
+     "in a big pot",
+     "on a plate"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How does the soup taste?",
+    "choices": [
+     "bad",
+     "delicious",
+     "too salty"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🧼",
+    "sentence": "___ your hands before you eat.",
+    "options": [
+     "Wash",
+     "Stir"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🥛",
+    "sentence": "Please ___ the milk with a spoon.",
+    "options": [
+     "stir",
+     "wash"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍓",
+    "sentence": "This strawberry is ___!",
+    "options": [
+     "delicious",
+     "purple"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "How to Make Rainbow Soup",
+   "heads": [
+    "First",
+    "Next",
+    "Last"
+   ],
+   "choices": [
+    "Wash the vegetables.",
+    "Cut them and put them in a pot.",
+    "Stir the soup and eat!"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What would you put in your rainbow soup?",
+   "q_ko": "내 무지개 수프에는 무엇을 넣을까요?",
+   "frame": "I would put ___ and ___ in my soup."
+  },
+  "sources": "창작 이야기"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "맛있는 음식 이야기",
+  "title": "귤은 비타민C가 사과의 20배?",
+  "lets_start": {
+   "q": "귤을 먹을 때 하얀 실 같은 것을 떼고 먹나요?",
+   "options": [
+    "떼고 먹어요",
+    "그냥 먹어요"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "수확",
+    "meaning": "다 익은 곡식이나 과일을 거두는 것",
+    "emoji": "🧺"
+   },
+   {
+    "word": "고장",
+    "meaning": "어떤 것이 많이 나는 곳",
+    "emoji": "🗺️"
+   },
+   {
+    "word": "비타민",
+    "meaning": "몸을 튼튼하게 해 주는 영양소",
+    "emoji": "💪"
+   },
+   {
+    "word": "섬유질",
+    "meaning": "배 속을 편하게 해 주는 영양소",
+    "emoji": "🧵"
+   },
+   {
+    "word": "품종",
+    "meaning": "같은 과일 안에서 나뉘는 종류",
+    "emoji": "🏷️"
+   },
+   {
+    "word": "묵직하다",
+    "meaning": "꽤 무겁다",
+    "emoji": "⚖️"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-13-ko.jpg",
+    "caption_ko": "새콤달콤 잘 익은 귤"
+   }
+  },
+  "passage": [
+   {
+    "text": "겨울이 다가오면 제주도에서는 노랗게 익은 귤을 **수확**하느라 바빠요. 제주도는 오래전부터 귤의 **고장**이었어요. 지금 우리가 많이 먹는 귤은 1911년에 한 신부님이 일본에서 들여와 제주에 심은 것에서 시작되었다고 해요."
+   },
+   {
+    "text": "귤은 '비타민 덩어리'라고 불려요. 몸을 튼튼하게 해 주는 **비타민**C가 사과보다 20배나 많대요. 귤 껍질 안쪽의 하얀 실에는 **섬유질**이 많아서 떼지 않고 먹는 게 좋아요.",
+    "scene": {
+     "bg": "house",
+     "items": [
+      [
+       "🍊",
+       32,
+       62,
+       26
+      ],
+      [
+       "🍎",
+       70,
+       68,
+       14
+      ],
+      [
+       "💪",
+       32,
+       28,
+       12
+      ],
+      [
+       "✖️",
+       52,
+       64,
+       8
+      ],
+      [
+       "2️⃣",
+       46,
+       34,
+       9
+      ],
+      [
+       "0️⃣",
+       56,
+       34,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "text": "귤에도 여러 **품종**이 있어요. 꼭지가 볼록 튀어나온 한라봉, 껍질이 빨간 레드향도 모두 귤의 친구들이에요. 맛있는 귤을 고르려면 껍질 색이 고르게 진하고, 손에 쥐었을 때 **묵직**한 것을 고르면 돼요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "귤은 비타민C가 사과보다 ___배나 많아요.",
+   "answer": "20"
+  },
+  "you_know": {
+   "emoji": "📅",
+   "text": "12월 1일은 '감귤데이'예요. '12월의 1등 과일'이라는 뜻이 담겨 있대요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "귤이 많이 나는 곳과 좋은 점, 고르는 법",
+    "귤나무를 집에서 기르는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "귤이 많이 나는 곳은?",
+    "options": [
+     [
+      "🏝️",
+      "제주도"
+     ],
+     [
+      "🏔️",
+      "남극"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "꼭지가 볼록 튀어나온 귤은?",
+    "options": [
+     [
+      "🍊",
+      "한라봉"
+     ],
+     [
+      "🍋",
+      "레몬"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "귤 껍질 안쪽 하얀 실에 많은 것은?",
+    "choices": [
+     "섬유질",
+     "설탕",
+     "소금"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "맛있는 귤을 고르는 방법은?",
+    "choices": [
+     "가벼운 것",
+     "손에 쥐었을 때 묵직한 것",
+     "초록색인 것"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "감귤데이는 언제인가요?",
+    "choices": [
+     "11월 11일",
+     "12월 1일",
+     "1월 1일"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🌾",
+    "sentence": "가을은 벼를 ___하는 계절이에요.",
+    "options": [
+     "수확",
+     "품종"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍎",
+    "sentence": "사과에도 여러 ___이 있어요.",
+    "options": [
+     "품종",
+     "고장"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🎒",
+    "sentence": "책을 많이 넣었더니 가방이 ___해요.",
+    "options": [
+     "묵직",
+     "말랑"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "귤 알아보기",
+   "heads": [
+    "어디서?",
+    "좋은 점",
+    "고르는 법"
+   ],
+   "choices": [
+    "제주도에서 많이 나요.",
+    "비타민C와 섬유질이 많아요.",
+    "색이 진하고 묵직한 것을 골라요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "귤로 어떤 음식을 만들 수 있을까요?",
+   "frame": "귤로 ___을/를 만들면 맛있을 것 같아요."
+  },
+  "dictation": [
+   "제주도",
+   "껍질",
+   "비타민",
+   "한라봉",
+   "묵직해요"
+  ],
+  "copy": "귤은 비타민 덩어리예요.",
+  "parent_tip": "귤 두 개를 손에 쥐어 보고 더 묵직한 것을 골라 맛을 비교해 보세요.",
+  "sources": "소년한국일보 스페셜뉴스 「'국민 비타민' 감귤, 비타민C 함량이 사과의 20배라고?」를 쉽게 다시 씀"
+ }
+}

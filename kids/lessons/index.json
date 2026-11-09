@@ -5,41 +5,205 @@
   "weekday": "월",
   "en_title": "Squirrels Plant Trees!",
   "ko_title": "11월 9일은 왜 '소방의 날'일까?",
+  "en_genre": "Nonfiction",
+  "ko_genre": "정보글",
+  "cover": null,
+  "photo": "photos/2026-11-09-en.jpg"
+ },
+ {
+  "date": "2026-11-10",
+  "day": 2,
+  "weekday": "화",
+  "en_title": "Where Is My Acorn?",
+  "ko_title": "새도 시차를 겪는다고?",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
   "cover": {
    "bg": "autumn",
    "items": [
     [
-     "🍁",
-     12,
-     16,
-     11
-    ],
-    [
-     "🍂",
-     86,
-     20,
-     10
-    ],
-    [
      "🌳",
-     26,
-     54,
+     22,
+     50,
      40
     ],
     [
      "🐿️",
-     66,
-     66,
-     34
+     60,
+     70,
+     30
     ],
     [
-     "✨",
+     "🌰",
+     80,
      84,
+     9
+    ],
+    [
+     "🌰",
+     88,
+     80,
+     8
+    ],
+    [
+     "🍂",
      40,
+     20,
+     9
+    ],
+    [
+     "🍁",
+     86,
+     24,
+     10
+    ]
+   ]
+  },
+  "photo": null
+ },
+ {
+  "date": "2026-11-11",
+  "day": 3,
+  "weekday": "수",
+  "en_title": "Why Is a Soccer Ball Black and White?",
+  "ko_title": "빼빼로 대신 가래떡?",
+  "en_genre": "Nonfiction",
+  "ko_genre": "이야기",
+  "cover": null,
+  "photo": "photos/2026-11-11-en.jpg"
+ },
+ {
+  "date": "2026-11-12",
+  "day": 4,
+  "weekday": "목",
+  "en_title": "Mina's Left Foot",
+  "ko_title": "나무는 왜 가을에 잎을 떨어뜨릴까?",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "pitch",
+   "items": [
+    [
+     "👧",
+     32,
+     62,
+     30
+    ],
+    [
+     "⚽",
+     52,
+     82,
+     12
+    ],
+    [
+     "👟",
+     40,
+     86,
+     9
+    ],
+    [
+     "⭐",
+     70,
+     26,
      9
     ]
    ]
   },
-  "photo": "photos/2026-11-09-en.jpg"
+  "photo": "photos/2026-11-12-ko.jpg"
+ },
+ {
+  "date": "2026-11-13",
+  "day": 5,
+  "weekday": "금",
+  "en_title": "Grandpa's Rainbow Soup",
+  "ko_title": "귤은 비타민C가 사과의 20배?",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "kitchen",
+   "items": [
+    [
+     "👴",
+     26,
+     50,
+     30
+    ],
+    [
+     "👦",
+     52,
+     58,
+     24
+    ],
+    [
+     "🍲",
+     78,
+     58,
+     22
+    ],
+    [
+     "🌈",
+     78,
+     26,
+     18
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-13-ko.jpg"
+ },
+ {
+  "date": "2026-11-14",
+  "day": 6,
+  "weekday": "토",
+  "en_title": "Is Iceland an Ice Land?",
+  "ko_title": "잠실 한강 자전거장, 오늘 문 열어요",
+  "en_genre": "Nonfiction",
+  "ko_genre": "기사문",
+  "cover": null,
+  "photo": "photos/2026-11-14-en.jpg"
+ },
+ {
+  "date": "2026-11-15",
+  "day": 7,
+  "weekday": "일",
+  "en_title": "The Bottle Band",
+  "ko_title": "『강아지똥』을 읽고",
+  "en_genre": "Fiction",
+  "ko_genre": "서평",
+  "cover": {
+   "bg": "rain",
+   "items": [
+    [
+     "🏠",
+     50,
+     58,
+     40
+    ],
+    [
+     "👧",
+     30,
+     80,
+     14
+    ],
+    [
+     "👦",
+     44,
+     82,
+     12
+    ],
+    [
+     "🎵",
+     70,
+     30,
+     11
+    ],
+    [
+     "🎶",
+     82,
+     44,
+     9
+    ]
+   ]
+  },
+  "photo": null
  }
 ]
