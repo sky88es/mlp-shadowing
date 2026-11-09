@@ -24,7 +24,7 @@
 3. 아래 스키마로 `lessons/YYYY-MM-DD.json`을 쓴다. DAY 번호는 기존 lesson 수 + 1.
 4. `node daily-reading/make_pdf.js daily-reading/lessons/YYYY-MM-DD.json daily-reading/pdf/YYYY-MM-DD.pdf` → 4쪽(최대 5쪽)인지 `pdfinfo`로 확인.
 5. JSON과 PDF를 커밋하고 `ccr-7681b3cb-dx280m` 브랜치에 push한다.
-6. 이메일 발송 (받는 사람 `sangwon.park@jbam.co.kr`, 제목 `[Daily English] DAY n · <title>`):
+6. 이메일 발송 (받는 사람 `sangwon.park@jbam.co.kr`, `kkh206022@jbam.co.kr`, 제목 `[Daily English] DAY n · <title>`):
    - Brevo 키가 환경에 저장돼 있으면: `daily-reading/send_email.sh <json> <pdf>` → PDF 첨부 발송.
    - 아니면: `node daily-reading/make_email.js <json>` 출력(HTML, 학습 내용 전체 포함)을 그대로 Gmail `send_message`의 htmlBody로 발송.
      본문에 PDF 링크 포함: https://raw.githubusercontent.com/sky88es/mlp-shadowing/ccr-7681b3cb-dx280m/daily-reading/pdf/YYYY-MM-DD.pdf
@@ -72,4 +72,4 @@ key_sentences[3]{en,note}, questions[4]{q,options?,answer}, blanks[5]{sentence,a
    필드: day, date, category, title, work, intro, text_type("poem"|"prose"), text_heading, text, text_source, full_text_url?, full_text_label?, notes(문단은 빈 줄로 구분), think, other_view, words[3~6]{word,meaning}, questions[3], action, quote
 2. `node daily-reading/kr/make_pdf_kr.js <json> daily-reading/kr/pdf/YYYY-MM-DD.pdf` → 2~4쪽 확인
 3. 커밋·push 후 `node daily-reading/kr/make_email_kr.js <json>` 출력을 Gmail htmlBody로 발송.
-   제목 `[Daily 국문] DAY n · <title>`, 받는 사람 `sangwon.park@jbam.co.kr`.
+   제목 `[Daily 국문] DAY n · <title>`, 받는 사람 `sangwon.park@jbam.co.kr`, `kkh206022@jbam.co.kr`.
