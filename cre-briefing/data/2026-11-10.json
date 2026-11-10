@@ -17,6 +17,11 @@
    {
     "tag": "Office",
     "text": "10월 서울 빌딩 거래량은 52.9%, 금액은 15.5% 줄었습니다. 건수는 줄고 대형 딜에 금액이 쏠리고 있습니다.",
+    "ref": "05"
+   },
+   {
+    "tag": "Research",
+    "text": "3분기 서울 A급 오피스 공실률은 하우스별로 3.1%(CBRE)에서 5.0%(C&W)까지 갈립니다. 호텔·리조트 RevPAR는 +10.1%로 객실단가가 실적을 이끌었습니다(야놀자리서치).",
     "ref": "04"
    },
    {
@@ -27,11 +32,6 @@
    {
     "tag": "REITs",
     "text": "리츠주가 52주 신저가를 기록하는 가운데 삼성FN리츠 903억원 유상증자 납입일(11/11)이 다가왔습니다.",
-    "ref": "04"
-   },
-   {
-    "tag": "Regulation",
-    "text": "부동산개발사업관리법 개정이 11/13 시행됩니다(D-3). PF 자기자본 20% 룰은 2027년부터 단계적으로 적용됩니다.",
     "ref": "05"
    }
   ]
@@ -792,5 +792,300 @@
   "name": "부동산플래닛 간추린 뉴스",
   "date": "2026.11.10",
   "url": "https://inside.bdsplanet.com/news"
+ },
+ "research": {
+  "intro": "자문사·리서치센터·증권사·상장리츠의 최신 발표를 모았습니다. 하우스마다 조사 대상과 정의가 달라 수치를 그대로 비교할 수 없습니다. 원문 링크를 확인하세요.",
+  "chart": {
+   "title": "하우스별 서울 A급 오피스 공실률",
+   "sub": "진한 막대는 3Q26 발표, 연한 막대는 2Q26 최신치입니다. 조사 대상(프라임·A급·전체)과 권역 정의가 달라 단순 비교는 어렵습니다.",
+   "max": 8.0,
+   "bars": [
+    {
+     "name": "CBRE (3Q)",
+     "value": 3.1,
+     "hl": true,
+     "note": "A급 3대 권역"
+    },
+    {
+     "name": "Newmark (3Q)",
+     "value": 4.5,
+     "hl": true,
+     "note": "A급"
+    },
+    {
+     "name": "Savills (3Q)",
+     "value": 4.6,
+     "hl": true,
+     "note": "프라임"
+    },
+    {
+     "name": "Cushman (3Q)",
+     "value": 5.0,
+     "hl": true,
+     "note": "A급"
+    },
+    {
+     "name": "Colliers (2Q)",
+     "value": 4.9,
+     "note": "전체"
+    },
+    {
+     "name": "알스퀘어 (2Q)",
+     "value": 6.5,
+     "note": "서울 평균"
+    },
+    {
+     "name": "JLL (2Q)",
+     "value": 6.6,
+     "note": "전체 · CBD 12.3%"
+    }
+   ]
+  },
+  "reports": [
+   {
+    "house": "야놀자리서치",
+    "kind": "숙박업 동향",
+    "period": "3Q26",
+    "title": "3분기 숙박업 전 부문 성장, 객실단가가 실적을 견인",
+    "metrics": [
+     [
+      "호텔·리조트 RevPAR (YoY)",
+      "+10.1%"
+     ],
+     [
+      "ADR / OCC (YoY)",
+      "+9.0% / +1.0%"
+     ],
+     [
+      "리조트 RevPAR",
+      "+25.2%"
+     ],
+     [
+      "4Q 호텔 OCC 전망지수",
+      "97.5"
+     ]
+    ],
+    "note": "외국인 수요는 서울과 부산 호텔에 집중됐습니다(체감 비율 서울 63%, 부산 81%). 서울 모텔은 RevPAR가 8.2% 줄었습니다.",
+    "src": "호텔앤레스토랑",
+    "url": "https://www.hotelrestaurant.co.kr/news/articleView.html?idxno=22433"
+   },
+   {
+    "house": "CBRE",
+    "kind": "Seoul Figures",
+    "period": "3Q26",
+    "title": "A급 공실률 3.1%, 캡레이트 4.3%로 2년 만에 상승 전환",
+    "metrics": [
+     [
+      "A급 공실률",
+      "3.1% (-1.1%p)"
+     ],
+     [
+      "명목 임대료",
+      "㎡당 41,671원 (+0.4%)"
+     ],
+     [
+      "캡레이트",
+      "4.3% (2Q 4.2%)"
+     ],
+     [
+      "오피스 투자액",
+      "7조원+"
+     ]
+    ],
+    "src": "이투데이",
+    "url": "https://www.etoday.co.kr/news/view/2638185"
+   },
+   {
+    "house": "Cushman & Wakefield",
+    "kind": "MarketBeat",
+    "period": "3Q26",
+    "title": "A급 공실률 5.0%, 서울 상업용 거래 5.3조원",
+    "metrics": [
+     [
+      "A급 공실률",
+      "5.0% (-0.8%p)"
+     ],
+     [
+      "임대료 (YoY)",
+      "+4.3%"
+     ],
+     [
+      "상업용 거래",
+      "5.3조원"
+     ],
+     [
+      "6대 상권 공실률",
+      "7.1% (-1.4%p)"
+     ]
+    ],
+    "note": "물류는 상온·코어 자산 중심으로 선별 투자가 이어졌습니다.",
+    "src": "코리아스프린트",
+    "url": "https://www.koreasprint.com/news/articleView.html?idxno=22250"
+   },
+   {
+    "house": "Savills",
+    "kind": "Seoul Prime Office",
+    "period": "3Q26",
+    "title": "오피스 거래 6.2조원, 캡레이트는 4% 초중반",
+    "metrics": [
+     [
+      "오피스 거래액",
+      "약 6.2조원"
+     ],
+     [
+      "프라임 공실률",
+      "4.6%"
+     ],
+     [
+      "명목 임대료 (YoY)",
+      "+5.5%"
+     ],
+     [
+      "프라임 캡레이트",
+      "4% 초중반"
+     ]
+    ],
+    "src": "Real Estate Asia",
+    "url": "https://realestateasia.com/commercial-office/news/seoul-prime-office-vacancy-rises-46-in-q3-district-performance-diverges"
+   },
+   {
+    "house": "Newmark",
+    "kind": "Office Leasing",
+    "period": "3Q26",
+    "title": "A급 공실률 4.5%, CBD는 임차인 이동으로 7.0%",
+    "metrics": [
+     [
+      "A급 공실률",
+      "4.5% (+0.2%p)"
+     ],
+     [
+      "CBD 공실률",
+      "7.0%"
+     ],
+     [
+      "임대료 (YoY)",
+      "+4.9%"
+     ]
+    ],
+    "src": "Newmark",
+    "url": "https://www.nmrk.com/insights/market-report/3q26-korea-office-leasing-market-conditions-trend"
+   },
+   {
+    "house": "JLL",
+    "kind": "Office · Logistics",
+    "period": "2Q26",
+    "ref": true,
+    "title": "서울 공실률 6.6%로 자연공실 5%를 넘어섬, 수도권 물류 공실 15.5%",
+    "metrics": [
+     [
+      "서울 오피스 공실률",
+      "6.6% (+2.3%p)"
+     ],
+     [
+      "CBD 공실률",
+      "12.3%"
+     ],
+     [
+      "수도권 물류 공실률",
+      "15.5%"
+     ],
+     [
+      "물류 캡레이트 전망",
+      "연말까지 +10bp"
+     ]
+    ],
+    "src": "Retalk Asia",
+    "url": "https://www.retalkasia.com/news/2026/07/29/selective-seoul-office-investment-intensifies-amid-full-scale-new-supply-q2-2026-jll"
+   },
+   {
+    "house": "알스퀘어",
+    "kind": "CRE 마켓 리포트",
+    "period": "2Q26",
+    "ref": true,
+    "title": "공급의 시대: 서울 공실률 6.5%, 선순위 대출 4.03%",
+    "metrics": [
+     [
+      "서울 오피스 공실률",
+      "6.5% (+0.4%p)"
+     ],
+     [
+      "신규 공급",
+      "11개 동 · 9.9만평"
+     ],
+     [
+      "선순위 대출 (올인)",
+      "4.03% (4.43%)"
+     ]
+    ],
+    "src": "벤처스퀘어",
+    "url": "https://www.venturesquare.net/1105438/"
+   },
+   {
+    "house": "젠스타메이트",
+    "kind": "투자자 서베이",
+    "period": "1H26",
+    "ref": true,
+    "title": "오피스 긍정 63%, 리테일 부정 83%. 서울 오피스 월간 리뷰 발간",
+    "metrics": [
+     [
+      "오피스 회복·호황 전망",
+      "63%"
+     ],
+     [
+      "리테일 후퇴·침체 전망",
+      "83%"
+     ]
+    ],
+    "note": "2026년 3월부터 '서울 오피스 마켓 리뷰'를 월간으로 냅니다.",
+    "src": "이데일리",
+    "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04552646645383976"
+   },
+   {
+    "house": "빌딩 거래 데이터",
+    "kind": "월간 빌딩 거래",
+    "period": "8월",
+    "ref": true,
+    "title": "빌딩 거래량 -17.1%, 금액 -37.3%. 100억원 이상은 서울에 쏠림",
+    "metrics": [
+     [
+      "거래량 (MoM)",
+      "-17.1%"
+     ],
+     [
+      "거래금액 (MoM)",
+      "-37.3%"
+     ],
+     [
+      "100억+ 중 서울 비중",
+      "31/33건"
+     ],
+     [
+      "최고가",
+      "코너136 빌딩 2,520억"
+     ]
+    ],
+    "src": "시사저널e",
+    "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=424118"
+   },
+   {
+    "house": "상장리츠 · 증권사",
+    "kind": "배당 · 전망",
+    "period": "11월",
+    "title": "SK리츠 3Q 배당 주당 72원. NH증권 \"오피스 펀더멘털은 방어력 견고\"",
+    "metrics": [
+     [
+      "SK리츠 3Q 배당",
+      "72원/주 · 217억"
+     ],
+     [
+      "리츠 업계 이슈",
+      "제이알글로벌리츠 회생"
+     ]
+    ],
+    "note": "NH투자증권 하반기 리츠 전망: 크레딧 리스크와 금리 상승으로 심리는 위축됐지만, 국내 오피스 자산의 펀더멘털은 우호적입니다.",
+    "src": "치킨스탁(DART) · NH투자증권",
+    "url": "https://www.chickstockfi.com/disclosures/20261104800457"
+   }
+  ]
  }
 }

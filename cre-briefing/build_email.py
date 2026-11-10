@@ -18,6 +18,7 @@ UP, DN = "#c2410c", "#1d4ed8"
 FONT = "'Pretendard','Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',Arial,sans-serif"
 W = 794  # A4 width @96dpi
 IMG = "cid:att1"  # email: inline attachment #1 (PDF is #0)
+IMG2 = "cid:att2"  # second chart (research comparison)
 
 STATUS = {"시행": ("#e7f6ec", "#1a7f37"), "시행 예정": ("#fff4e5", "#a75500"),
           "공포": ("#fff4e5", "#a75500"), "입법예고": ("#eaf1ff", "#1d4ed8"),
@@ -121,7 +122,10 @@ def chart_svg(c):
         o.append(f'<text x="{x(b["value"])+8:.1f}" y="{y+15}" font-size="13" font-weight="800" fill="{INK}">{b["value"]:.2f}%</text>')
         if b.get("note"):
             o.append(f'<text x="{x(b["value"])+62:.1f}" y="{y+15}" font-size="11" fill="{MUTE}">{e(b["note"])}</text>')
-    r = c["ref"]
+    r = c.get("ref")
+    if not r:
+        o.append('</svg>')
+        return "".join(o)
     rx = x(r["value"])
     o.append(f'<line x1="{rx:.1f}" y1="{T-4}" x2="{rx:.1f}" y2="{H-26}" stroke="#c2410c" stroke-width="2" stroke-dasharray="4 3"/>')
     o.append(f'<text x="{rx:.1f}" y="{T-12}" font-size="12" font-weight="800" fill="#c2410c" text-anchor="middle">'
@@ -259,19 +263,55 @@ def digest_card(g):
 
 def sectors(d):
     if not d.get("digest"):
-        return grouped(d["sectors"], title=head_div("04", "Sector Briefing", "섹터별 주요 사항"))
+        return grouped(d["sectors"], title=head_div("05", "Sector Briefing", "섹터별 주요 사항"))
     via = d.get("digest_via", {})
     legend = (f'<div style="font-size:11.5px;color:{MUTE};margin:-4px 0 12px">'
               f'<span style="color:{BRAND};font-weight:900">■</span> CRE Radar 리서치(요약 포함) &nbsp; '
               f'<span>•</span> 큐레이션 헤드라인 — {a(via.get("name", ""), via.get("url"), BRAND, 600)} {e(via.get("date", ""))} · 각 기사 매체명을 누르면 원문</div>')
     first = d["digest"][0]
-    out = [f'<tr class="sec"><td>{head_div("04", "News Digest", "상업용 부동산 섹터별 뉴스")}{legend}</td></tr>']
+    out = [f'<tr class="sec"><td>{head_div("05", "News Digest", "상업용 부동산 섹터별 뉴스")}{legend}</td></tr>']
     out += [digest_card(g) for g in d["digest"]]
     return "".join(out)
 
 
+def research(d, num):
+    rs = d.get("research")
+    if not rs:
+        return ""
+    cmp_ = ""
+    if rs.get("chart"):
+        c = rs["chart"]
+        cmp_ = (f'<tr><td style="padding-bottom:12px"><div class="box" style="border:1px solid {LINE};border-radius:12px;padding:14px 18px">'
+                f'<div style="font-size:13px;font-weight:800;color:{INK}">{e(c["title"])}</div>'
+                f'<div style="font-size:11px;color:{MUTE};margin:2px 0 6px;line-height:1.5">{e(c["sub"])}</div>'
+                f'<img src="{IMG2}" width="100%" alt="{e(c["title"])}" style="display:block;width:100%;max-width:700px;height:auto;border:0"></div></td></tr>')
+    cards = []
+    for k in range(0, len(rs["reports"]), 2):
+        tds = []
+        for j, r in enumerate(rs["reports"][k:k + 2]):
+            kp = "".join(
+                f'<tr><td style="padding:3px 0;font-size:11.5px;color:{SUB};width:46%">{e(m[0])}</td>'
+                f'<td style="padding:3px 0;font-size:13px;font-weight:800;color:{BRAND};text-align:right">{e(m[1])}</td></tr>'
+                for m in r.get("metrics", []))
+            ref = f'&nbsp;<span style="font-size:10.5px;color:#c2410c;font-weight:700;white-space:nowrap">참고</span>' if r.get("ref") else ""
+            tds.append(
+                f'<td width="50%" style="vertical-align:top;padding:0 {6 if j == 0 else 0}px 10px {0 if j == 0 else 6}px">'
+                f'<div class="box" style="border:1px solid {LINE};border-radius:12px;padding:12px 16px;background:#ffffff">'
+                f'<div>{pill(r["house"])}<span style="font-size:11px;color:{MUTE};margin-left:6px">{e(r.get("kind", ""))} · {e(r.get("period", ""))}</span>{ref}</div>'
+                f'<div style="font-size:13.5px;font-weight:800;line-height:1.45;margin:6px 0 4px">{a(r["title"], r.get("url"), INK, 800)}</div>'
+                f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid {LINE};margin-top:4px">{kp}</table>'
+                + (f'<div style="font-size:12px;color:{SUB};line-height:1.55;margin-top:6px">{e(r["note"])}</div>' if r.get("note") else "")
+                + f'<div style="margin-top:6px">{src(r["src"], r.get("url"))}</div></div></td>')
+        if len(tds) == 1:
+            tds.append('<td width="50%"></td>')
+        cards.append(f'<tr class="blk"><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>{"".join(tds)}</tr></table></td></tr>')
+    intro = f'<div style="font-size:11.5px;color:{MUTE};margin:-4px 0 12px">{e(rs.get("intro", ""))}</div>'
+    return (f'<tr class="sec"><td>{head_div(num, "Research Desk", "자문사 · 리서치 · 증권사 · 상장리츠 리포트")}{intro}</td></tr>'
+            + cmp_ + "".join(cards))
+
+
 def regulation(d):
-    return grouped(d["regulation"], status=True, title=head_div("05", "Regulation", "법령 · 규제 · 제도 변화"))
+    return grouped(d["regulation"], status=True, title=head_div("06", "Regulation", "법령 · 규제 · 제도 변화"))
 
 
 def insight(d):
@@ -280,7 +320,7 @@ def insight(d):
         f'<td style="{sep(i)}padding:11px 0"><div style="font-size:14px;font-weight:800;color:{INK}">{e(x["title"])}</div>'
         f'<div style="font-size:12.5px;color:{SUB};line-height:1.6;margin-top:2px">{e(x["text"])}</div></td></tr>'
         for i, x in enumerate(d["insights"]))
-    return (f'<tr class="blk"><td>{head_div("06", "Insight", "투자자 관점 분석 코멘트")}'
+    return (f'<tr class="blk"><td>{head_div("07", "Insight", "투자자 관점 분석 코멘트")}'
             f'<div class="box" style="border:1px solid {LINE};border-radius:12px;padding:4px 20px">{rows_table([items])}</div></td></tr>')
 
 
@@ -304,7 +344,7 @@ def build(d, for_print=False, short=False):
         body = masthead(d) + brief(d) + indicators(d) + pdf_note(d) + footer(d)
         return _wrap(body, False)
     body = (masthead(d) + brief(d) + indicators(d) + deals(d) +
-            sectors(d) + regulation(d) + insight(d) + footer(d))
+            research(d, "04") + sectors(d) + regulation(d) + insight(d) + footer(d))
     return _wrap(body, for_print)
 
 
@@ -337,9 +377,12 @@ if __name__ == "__main__":
     mode = sys.argv[2] if len(sys.argv) > 2 else ""
     if mode == "--chart":
         print(chart_svg(data["indicators"]["chart"]))
+    elif mode == "--chart2":
+        print(chart_svg(data["research"]["chart"]) if data.get("research", {}).get("chart") else "")
     elif mode == "--plain":
         print(plain(data))
     else:
         if mode == "--print":
             IMG = sys.argv[3] if len(sys.argv) > 3 else "chart.png"
+            IMG2 = sys.argv[4] if len(sys.argv) > 4 else "chart2.png"
         print(build(data, for_print=(mode == "--print"), short=(mode == "--short")))
