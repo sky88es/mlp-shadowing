@@ -51,7 +51,7 @@ ol.q{padding-left:20px}ol.q li{margin-bottom:8px;break-inside:avoid}
 .blank{font-family:'Source Serif 4',serif;font-size:10.5pt}
 .page{break-before:page}
 .ans li{margin-bottom:6px}
-.foot{margin-top:10px;font-size:8pt;color:var(--sub);border-top:1px solid var(--line);padding-top:8px}
+.foot{margin-top:6px;font-size:7pt;word-break:break-all;color:var(--sub);border-top:1px solid var(--line);padding-top:8px}
 .pre{white-space:pre-line}
 .routine{border:1.5px solid var(--acc2);border-radius:8px;padding:10px 14px;margin-top:14px;font-size:9pt}
 .routine b{color:var(--acc2)}

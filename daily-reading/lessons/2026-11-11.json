@@ -1,0 +1,237 @@
+{
+"day": 4,
+"date": "2026-11-11 (Wed)",
+"category": "K-CULTURE · PEOPLE",
+"level": "Intermediate",
+"title": "She Never Debuted — Then She Won a Golden Globe",
+"title_ko": "데뷔하지 못한 연습생, 골든글로브를 받다",
+"source": {
+"outlet": "CNBC",
+"title": "Kpop Demon Hunters Golden Globe winner Ejae: Rejection is redirection",
+"url": "https://www.cnbc.com/make-it/2026/01/13/kpop-demon-hunters-golden-globe-winner-ejae-rejection-is-redirection.html"
+},
+"background_ko": "넷플릭스 애니메이션 『케이팝 데몬 헌터스』의 노래 「Golden」은 빌보드 핫100 1위에 오르고, 2026년 골든글로브 주제가상을 받았습니다. 이 노래를 만든 사람은 10년 넘게 아이돌 데뷔를 꿈꿨던 작곡가 이재(EJAE)입니다.",
+"warmup_q": "무언가에서 '떨어진' 경험이 오히려 더 좋은 길로 이어진 적이 있나요?",
+"lines": [
+{
+"en": "For more than ten years, / EJAE had one dream: / to **debut** as a K-pop idol.",
+"ko": "10년 넘게 이재에게는 꿈이 하나 있었다. K-pop 아이돌로 데뷔하는 것이었다."
+},
+{
+"en": "She trained hard, / sang every day, / and waited for her chance.",
+"ko": "그녀는 열심히 연습했고, 매일 노래했고, 기회를 기다렸다."
+},
+{
+"en": "But the chance / never came.",
+"ko": "하지만 기회는 끝내 오지 않았다."
+},
+{
+"en": "She was never chosen / for a group / or as a solo singer.",
+"ko": "그녀는 그룹 멤버로도, 솔로 가수로도 뽑히지 못했다."
+},
+{
+"en": "Many people / would have **given up** / on music completely.",
+"ko": "많은 사람들은 음악을 완전히 포기했을 것이다."
+},
+{
+"en": "Instead, / she **took a different path** / and started writing songs for other singers.",
+"ko": "대신 그녀는 다른 길을 택해 다른 가수들을 위한 곡을 쓰기 시작했다."
+},
+{
+"en": "Her songs / were later sung / by famous groups / like Red Velvet and aespa.",
+"ko": "그녀의 노래는 나중에 레드벨벳, 에스파 같은 유명 그룹들이 불렀다."
+},
+{
+"en": "Then / she **worked on** the music / for the Netflix movie / KPop Demon Hunters.",
+"ko": "그 후 그녀는 넷플릭스 영화 『케이팝 데몬 헌터스』의 음악 작업에 참여했다."
+},
+{
+"en": "One of its songs, / \"Golden,\" / became a **global** hit.",
+"ko": "그 영화의 노래 중 하나인 「Golden」은 세계적인 히트곡이 되었다."
+},
+{
+"en": "It **reached** No. 1 / on the Billboard Hot 100.",
+"ko": "그 노래는 빌보드 핫100에서 1위에 올랐다."
+},
+{
+"en": "In January, / \"Golden\" won the Golden Globe / for Best Original Song.",
+"ko": "1월에 「Golden」은 골든글로브 주제가상을 받았다."
+},
+{
+"en": "On stage, / EJAE shared a simple message: / \"Rejection is **redirection**.\"",
+"ko": "무대 위에서 이재는 간단한 메시지를 전했다. \"거절은 방향 전환이다.\""
+},
+{
+"en": "In other words, / a \"no\" / can **point** you **toward** a better road.",
+"ko": "다시 말해, '안 돼'라는 대답이 더 좋은 길로 당신을 이끌 수도 있다."
+},
+{
+"en": "She didn't become an idol, / but her voice / still reached the whole world.",
+"ko": "그녀는 아이돌이 되지는 못했지만, 그녀의 목소리는 결국 전 세계에 닿았다."
+},
+{
+"en": "Sometimes, / the dream doesn't change. / Only the road does.",
+"ko": "때로 꿈은 바뀌지 않는다. 길만 바뀔 뿐이다."
+}
+],
+"words": [
+{
+"word": "debut",
+"ipa": "/deɪˈbjuː/",
+"pos": "v. / n.",
+"meaning": "데뷔하다; 데뷔",
+"synonym": "first appearance",
+"example": "The band will **debut** next spring."
+},
+{
+"word": "chance",
+"ipa": "/tʃæns/",
+"pos": "n.",
+"meaning": "기회",
+"synonym": "opportunity",
+"example": "This is your **chance** to show your talent."
+},
+{
+"word": "choose",
+"ipa": "/tʃuːz/",
+"pos": "v.",
+"meaning": "고르다, 뽑다 (choose-chose-chosen)",
+"synonym": "pick",
+"example": "She was **chosen** as the team leader."
+},
+{
+"word": "instead",
+"ipa": "/ɪnˈsted/",
+"pos": "adv.",
+"meaning": "대신에",
+"synonym": "rather",
+"example": "I didn't take the bus. I walked **instead**."
+},
+{
+"word": "global",
+"ipa": "/ˈɡloʊbəl/",
+"pos": "adj.",
+"meaning": "세계적인",
+"synonym": "worldwide",
+"example": "Climate change is a **global** problem."
+},
+{
+"word": "reach",
+"ipa": "/riːtʃ/",
+"pos": "v.",
+"meaning": "~에 이르다, 닿다",
+"synonym": "get to",
+"example": "The song **reached** No. 1 in ten countries."
+},
+{
+"word": "rejection",
+"ipa": "/rɪˈdʒekʃən/",
+"pos": "n.",
+"meaning": "거절, 불합격",
+"synonym": "refusal",
+"example": "He got many **rejections** before finding a job."
+},
+{
+"word": "redirection",
+"ipa": "/ˌriːdəˈrekʃən/",
+"pos": "n.",
+"meaning": "방향 전환",
+"synonym": "change of direction",
+"example": "The road closure caused a **redirection** of traffic."
+}
+],
+"idioms": [
+{
+"phrase": "give up (on)",
+"meaning": "(~을) 포기하다",
+"example": "Don't **give up on** your dream."
+},
+{
+"phrase": "take a different path",
+"meaning": "다른 길을 택하다",
+"example": "After college, he **took a different path** and became a chef."
+},
+{
+"phrase": "work on",
+"meaning": "~에 공을 들이다, 작업하다",
+"example": "I'm **working on** a new project."
+},
+{
+"phrase": "in other words",
+"meaning": "다시 말해",
+"example": "He's always late. **In other words**, he's not reliable."
+},
+{
+"phrase": "point A toward B",
+"meaning": "A를 B 쪽으로 이끌다",
+"example": "A good teacher can **point** you **toward** the right career."
+}
+],
+"key_sentences": [
+{
+"en": "Many people **would have given up** on music completely.",
+"note": "would have + p.p.: '(그 상황이었다면) ~했을 것이다'. 실제로 일어나지 않은 과거를 상상할 때 씁니다."
+},
+{
+"en": "Her songs **were later sung** by famous groups.",
+"note": "수동태 be + p.p. (+ by): '~에 의해 불렸다'. 행위보다 '노래'가 주인공일 때 수동태를 씁니다."
+},
+{
+"en": "The dream doesn't change. **Only the road does.**",
+"note": "does = changes. 앞에 나온 동사를 반복하지 않으려고 do/does로 대신합니다(대동사)."
+}
+],
+"questions": [
+{
+"q": "What is the main message of the passage?",
+"options": [
+"K-pop training is too hard.",
+"A rejection can lead to a better path.",
+"Songwriters earn more than singers.",
+"Netflix movies are popular."
+],
+"answer": "ⓑ 거절이 더 나은 길로 이어질 수 있다"
+},
+{
+"q": "What did EJAE do after she couldn't debut?",
+"options": [
+"She quit music.",
+"She became an actor.",
+"She wrote songs for other singers.",
+"She opened a dance school."
+],
+"answer": "ⓒ (6번 문장)"
+},
+{
+"q": "What award did \"Golden\" win in January?",
+"answer": "골든글로브 주제가상 (11번 문장)"
+},
+{
+"q": "T / F : EJAE finally debuted as a K-pop idol.",
+"answer": "F (4, 14번 문장)"
+}
+],
+"blanks": [
+{
+"sentence": "I didn't drink coffee. I had tea ________.",
+"answer": "instead"
+},
+{
+"sentence": "Never give ________ on your goals.",
+"answer": "up"
+},
+{
+"sentence": "The singer will ________ with her first album next month.",
+"answer": "debut"
+},
+{
+"sentence": "The climbers finally ________ the top of the mountain.",
+"answer": "reached"
+},
+{
+"sentence": "Don't be afraid of ________. Keep trying.",
+"answer": "rejection"
+}
+],
+"output_task": "🗣 Speak: 11~15번 문장 쉐도잉 3회.\n✍️ Write: A time a \"no\" helped you (2문장, give up 사용)"
+}
