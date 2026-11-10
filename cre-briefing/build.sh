@@ -8,7 +8,7 @@ NAME=$(basename "$J" .json)
 sh "$D/setup_fonts.sh"
 python3 "$D/build_email.py" "$J" --chart > "$O/chart.svg"
 node "$D/make_pdf.js" chart "$O/chart.svg" "$O/chart.png"
-python3 "$D/build_email.py" "$J" > "$O/email.html"
+python3 "$D/build_email.py" "$J" --short > "$O/email.html"
 python3 "$D/build_email.py" "$J" --plain > "$O/email.txt"
 python3 "$D/build_email.py" "$J" --print "$(cd "$O" && pwd)/chart.png" > "$O/print.html"
 node "$D/make_pdf.js" pdf "$O/print.html" "$O/CRE_Radar_$NAME.pdf"

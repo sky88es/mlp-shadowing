@@ -256,9 +256,24 @@ def footer(d):
             f'모든 항목의 Source를 누르면 원문으로 이동합니다.</td></tr>')
 
 
-def build(d, for_print=False):
+def pdf_note(d):
+    return (f'<tr><td style="padding-top:22px"><div style="border:2px solid {BRAND};border-radius:12px;padding:14px 18px">'
+            f'<div style="font-size:14px;font-weight:800;color:{BRAND}">📎 전체 브리핑은 첨부 PDF(A4)에서 보실 수 있습니다</div>'
+            f'<div style="font-size:12.5px;color:{SUB};margin-top:4px;line-height:1.6">03 Deals &amp; Financing · 04 Sector Briefing · '
+            f'05 Regulation · 06 Insight는 첨부 파일 <b>CRE_Radar_{e(d["date"].replace(".", "-"))}.pdf</b>에 있습니다. PDF의 Source를 누르면 원문으로 이동합니다.</div>'
+            f'</div></td></tr>')
+
+
+def build(d, for_print=False, short=False):
+    if short:
+        body = masthead(d) + brief(d) + indicators(d) + pdf_note(d) + footer(d)
+        return _wrap(body, False)
     body = (masthead(d) + brief(d) + indicators(d) + deals(d) +
             sectors(d) + regulation(d) + insight(d) + footer(d))
+    return _wrap(body, for_print)
+
+
+def _wrap(body, for_print):
     pad = "0" if for_print else "28px 36px"
     inner = (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
              f'style="max-width:{W}px;margin:0 auto;border-collapse:collapse;background:{PAGE}"><tbody>'
@@ -292,4 +307,4 @@ if __name__ == "__main__":
     else:
         if mode == "--print":
             IMG = sys.argv[3] if len(sys.argv) > 3 else "chart.png"
-        print(build(data, for_print=(mode == "--print")))
+        print(build(data, for_print=(mode == "--print"), short=(mode == "--short")))
