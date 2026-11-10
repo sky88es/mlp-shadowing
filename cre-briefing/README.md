@@ -15,6 +15,7 @@ JSON 구조는 `data/2026-11-10.json`을 예시로 보면 됩니다.
 - `financing.deals`: 실제 딜의 조달 금리. type, deal, terms, rate, size, when, src, url
 - `financing.levels`: 자산별 현재 선순위 금리 수준
 - `sectors`: 섹터별 기사. tag, name, sub, items[title, text, date, src, url, ref(오늘 이전 보도면 true)]
+- `regulation`: 법령·규제 그룹. tag, name, items[status(시행/시행 예정/공포/입법예고/검토/추진), title, text, date, src, url]. 그룹은 자본시장법(펀드·일반사모), 부동산투자회사법(리츠·프로젝트리츠), 금융규제(PF·대출·건전성), 부동산 일반(개발·거래·세제·건축) 4개
 - `valuation`: 캡레이트·공실률 타일
 - `insights`: 분석 코멘트
 

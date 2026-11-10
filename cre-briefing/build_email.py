@@ -178,9 +178,37 @@ def build(d):
           f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{"".join(rows)}</table>'
           f'</div></td></tr>')
 
-    # ---------- 05 valuation ----------
+    # ---------- 05 regulation ----------
+    if d.get("regulation"):
+        w(section_head("05", "Regulation", "법령 · 규제 · 제도 변화"))
+        status_col = {"시행": ("#e7f6ec", "#1a7f37"), "시행 예정": ("#fff4e5", "#b25e00"),
+                      "공포": ("#fff4e5", "#b25e00"), "입법예고": ("#eef4ff", "#1d5fd1"),
+                      "검토": ("#f2f2f5", "#5b5b66"), "추진": ("#f2f2f5", "#5b5b66")}
+        for grp in d["regulation"]:
+            rows = []
+            for i, it in enumerate(grp["items"]):
+                top = "" if i == 0 else f"border-top:1px solid {LINE};"
+                bg, fg = status_col.get(it.get("status", ""), ("#f2f2f5", "#5b5b66"))
+                st = (f'<span style="display:inline-block;background:{bg};color:{fg};font-size:11px;'
+                      f'font-weight:700;padding:3px 8px;border-radius:5px;margin-right:6px">{e(it.get("status", ""))}</span>')
+                rows.append(
+                    f'<tr><td style="{top}padding:13px 0">'
+                    f'<div style="font-size:15px;line-height:1.45">{st}<span style="font-weight:700">{e(it["title"])}</span></div>'
+                    f'<div style="font-size:13px;color:{SUB};margin-top:4px;line-height:1.6">{e(it["text"])}</div>'
+                    f'{src_line(it["src"], it.get("url"))}</td>'
+                    f'<td style="{top}padding:13px 0 13px 12px;font-size:12px;color:{MUTE};text-align:right;'
+                    f'vertical-align:top;white-space:nowrap">{e(it.get("date", ""))}</td></tr>')
+            w(f'<tr><td style="padding:0 0 12px">'
+              f'<div style="background:#ffffff;border:1px solid {BRAND};border-radius:16px;padding:16px 24px 8px">'
+              f'<div style="border-bottom:1px solid {LINE};padding-bottom:10px">'
+              f'{pill(grp["tag"])}<span style="font-size:18px;font-weight:800;margin-left:10px;vertical-align:middle">'
+              f'{e(grp["name"])}</span></div>'
+              f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0">{"".join(rows)}</table>'
+              f'</div></td></tr>')
+
+    # ---------- 06 valuation ----------
     if d.get("valuation"):
-        w(section_head("05", "Valuation", "캡레이트 · 공실률"))
+        w(section_head("06", "Valuation", "캡레이트 · 공실률"))
         cells = "".join(
             f'<td style="padding:6px;vertical-align:top" width="{100 // len(d["valuation"])}%">'
             f'<div style="background:#ffffff;border:1px solid {LINE};border-radius:12px;padding:14px">'
@@ -191,9 +219,9 @@ def build(d):
         w(f'<tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
           f'style="margin:0 -6px"><tr>{cells}</tr></table></td></tr>')
 
-    # ---------- 06 insight ----------
+    # ---------- 07 insight ----------
     if d.get("insights"):
-        w(section_head("06", "Insight", "투자자 관점 코멘트 · 분석"))
+        w(section_head("07", "Insight", "투자자 관점 코멘트 · 분석"))
         items = "".join(
             f'<div style="padding:12px 0;{"" if i == 0 else f"border-top:1px solid {LINE};"}">'
             f'<div style="font-size:15px;font-weight:700;color:{BRAND}">{e(x["title"])}</div>'
