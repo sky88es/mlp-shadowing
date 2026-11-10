@@ -10,6 +10,11 @@
   "url": "https://www.fnnews.com/news/202611091708568612",
   "points": [
    {
+    "tag": "Deals",
+    "text": "이지스운용과 베인캐피탈이 페블스톤·AEW의 평택·여주 물류센터 통매각 우협으로 선정됐습니다. SSG닷컴 본사 KB영등포타워도 매물로 나왔습니다.",
+    "ref": "03"
+   },
+   {
     "tag": "Office",
     "text": "10월 서울 빌딩 거래량은 52.9%, 금액은 15.5% 줄었습니다. 건수는 줄고 대형 딜에 금액이 쏠리고 있습니다.",
     "ref": "04"
@@ -144,6 +149,26 @@
   ]
  },
  "deals": [
+  {
+   "type": "Logistics",
+   "asset": "페블스톤·AEW · 평택·여주 물류센터 통매각",
+   "detail": "이지스운용과 베인캐피탈이 우선협상대상자로 선정됐습니다. 금액과 조달 조건은 원문을 확인해야 합니다.",
+   "amount": "원문 확인",
+   "rate": "비공개",
+   "stage": "우협 선정",
+   "src": "조선비즈",
+   "url": "https://biz.chosun.com/stock/market_trend/2026/11/10/F6PXHH4IEJFITCMRKE6RH4TO6E/"
+  },
+  {
+   "type": "Office",
+   "asset": "SSG닷컴 본사 'KB영등포타워' 매각 착수",
+   "detail": "SSG닷컴이 통으로 임차한 신축 오피스입니다. 매각 절차에 들어갔습니다.",
+   "amount": "-",
+   "rate": "-",
+   "stage": "매각 착수",
+   "src": "파이낸셜뉴스",
+   "url": "https://www.fnnews.com/news/202611060818019763"
+  },
   {
    "type": "Logistics",
    "asset": "라살운용 · 여주 심석리 물류센터 인수",
@@ -478,5 +503,294 @@
    "title": "개발 구조의 변화",
    "text": "PF 20% 룰이 시행되면 저자본 시행 구조가 막힙니다. 차입 한도가 명확한 프로젝트리츠나 에쿼티 비중이 큰 구조로 옮겨갈 가능성이 큽니다."
   }
- ]
+ ],
+ "digest": [
+  {
+   "tag": "Office",
+   "name": "오피스",
+   "icon": "🏢",
+   "items": [
+    {
+     "title": "10월 서울 빌딩 거래량 -52.9%, 금액 -15.5%",
+     "text": "거래 건수가 줄고 대형 딜에 금액이 쏠렸습니다. CBD는 흥국생명빌딩 거래로 금액이 늘었습니다.",
+     "date": "11.08",
+     "src": "아시아타임즈",
+     "url": "https://www.asiatime.co.kr/article/20261108500017",
+     "media": "아시아타임즈",
+     "own": true
+    },
+    {
+     "title": "LC타워 매각, 선순위 대주 DB손보 조건에 지연",
+     "text": "대주단의 협상력이 커지고 있다는 신호입니다.",
+     "date": "11.02",
+     "src": "파이낸셜뉴스",
+     "url": "https://www.fnnews.com/news/202611021826406184",
+     "media": "파이낸셜뉴스",
+     "own": true
+    },
+    {
+     "title": "판교 GB1·2타워, 디큐브시티 오피스2 등 대형 매물 재출회",
+     "date": "",
+     "ref": true,
+     "src": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2582783",
+     "media": "이투데이",
+     "own": true
+    },
+    {
+     "title": "경기도, 재정난에 초강수?…1조 광교신청사 매각 검토",
+     "media": "한국경제",
+     "url": "https://www.hankyung.com/article/2026110956671"
+    }
+   ]
+  },
+  {
+   "tag": "Hotel",
+   "name": "호텔",
+   "icon": "🏨",
+   "items": [
+    {
+     "title": "관광객 늘고 객실 부족…빌딩 투자자들 호텔로 이동",
+     "text": "케이스퀘어 홍대는 코람코와 파라다이스가 1,500억원에 인수해 호텔로 재개발합니다.",
+     "date": "",
+     "ref": true,
+     "src": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2642502",
+     "media": "이투데이",
+     "own": true
+    },
+    {
+     "title": "신한서부티엔디리츠, 나인트리호텔 동대문 810억원에 매각",
+     "text": "매각 대금으로 신라스테이 마포 지분을 추가 취득합니다.",
+     "date": "10.19",
+     "ref": true,
+     "src": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2636959",
+     "media": "이투데이",
+     "own": true
+    }
+   ]
+  },
+  {
+   "tag": "Retail",
+   "name": "리테일",
+   "icon": "🛍️",
+   "items": [
+    {
+     "title": "키움코어리테일리츠, 롯데몰 광명점 매각 추진 (4,000억원대 거론)",
+     "date": "",
+     "ref": true,
+     "src": "다음/원문",
+     "url": "https://v.daum.net/v/Yz7ejCFYlj?f=p",
+     "media": "다음/원문",
+     "own": true
+    },
+    {
+     "title": "“차라리 주택을 더”…상가 줄이는 아파트 재건축",
+     "media": "이코노미스트",
+     "url": "https://www01.economist.co.kr/article/view/ecn202611040011"
+    },
+    {
+     "title": "서울 6대 상권 공실률 7.1%…외국인 유입·대형 플래그십 영향",
+     "media": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2645900"
+    },
+    {
+     "title": "“월세 700만원 감당 못 해”… 나인 반포 상가에 드리운 ‘공실 공포’",
+     "media": "이코노미스트",
+     "url": "https://economist.co.kr/article/view/ecn202611040012"
+    },
+    {
+     "title": "무신사, 국내외 매장 100곳 시대…5년 만에 누적 방문객 1억명",
+     "media": "이데일리",
+     "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02148406645644080"
+    }
+   ]
+  },
+  {
+   "tag": "Data Center",
+   "name": "데이터센터",
+   "icon": "🖥️",
+   "items": [
+    {
+     "title": "미국 불확실성 피한 빅테크, 한국 데이터센터에 수조원 투자",
+     "date": "11월",
+     "src": "Investing.com",
+     "url": "https://kr.investing.com/news/stock-market-news/article-2167278",
+     "media": "Investing.com",
+     "own": true
+    },
+    {
+     "title": "\"수도권은 추론형, 지방은 학습형으로 나눠 접근해야\"",
+     "text": "수도권 데이터센터는 전력 확보가 핵심 변수입니다.",
+     "date": "10.21",
+     "ref": true,
+     "src": "한국경제",
+     "url": "https://www.hankyung.com/article/2026102168061",
+     "media": "한국경제",
+     "own": true
+    }
+   ]
+  },
+  {
+   "tag": "Logistics",
+   "name": "물류",
+   "icon": "📦",
+   "items": [
+    {
+     "title": "수도권 물류 투자, 개발보다 준공자산 인수로",
+     "text": "A급 물류센터 실거래가는 신규 개발원가보다 20~30% 낮습니다(신영에셋).",
+     "date": "",
+     "ref": true,
+     "src": "뉴스프라임",
+     "url": "https://www.newsprime.co.kr/news/article/?no=748762",
+     "media": "뉴스프라임",
+     "own": true
+    },
+    {
+     "title": "\"미국 부동산 펀드서 15억 돌아왔다\"…맵스16호, 물류 투자 '장기전'",
+     "media": "이데일리",
+     "url": "https://marketin.edaily.co.kr/News/Read?newsId=03637526645644080"
+    }
+   ]
+  },
+  {
+   "tag": "Development",
+   "name": "개발 · 리츠 · 펀드",
+   "icon": "🏗️",
+   "items": [
+    {
+     "title": "고금리에 리츠주 줄줄이 52주 신저가",
+     "text": "배당수익률은 7~9%대로 올랐지만 신규 자금 유입은 제한적입니다.",
+     "date": "11.03",
+     "src": "아시아경제",
+     "url": "https://view.asiae.co.kr/article/2026110316075011313",
+     "media": "아시아경제",
+     "own": true
+    },
+    {
+     "title": "삼성FN리츠 유상증자 903억원…11/11 납입, 11/25 상장",
+     "text": "구주주 청약은 11/3~4, 일반공모는 11/6~9입니다. 청약률은 미확인입니다.",
+     "date": "10.30",
+     "src": "DART 공시 요약",
+     "url": "https://www.chickstockfi.com/disclosures/20261030000106",
+     "media": "DART 공시 요약",
+     "own": true
+    },
+    {
+     "title": "오피스·물류센터 PF에도 건설사 보증 허용…건설산업기본법 개정",
+     "date": "",
+     "ref": true,
+     "src": "서울경제",
+     "url": "https://www.sedaily.com/article/14100470",
+     "media": "서울경제",
+     "own": true
+    },
+    {
+     "title": "한국 찾은 '큰손' 계약 불발 이유가…AI 프로젝트 '초비상'",
+     "media": "한국경제",
+     "url": "https://www.hankyung.com/article/2026110957881"
+    },
+    {
+     "title": "“데이터센터 승인 멈춘다” 美 규제 변수에 국내 건설사 ‘촉각’",
+     "media": "이데일리",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=03253766645644080&mediaCodeNo=257"
+    },
+    {
+     "title": "배송로봇부터 자율주행까지⋯3조원대 ‘세종 스마트시티’ 본격화",
+     "media": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2645845"
+    },
+    {
+     "title": "금융지주 1.2조 쏟아부었지만 … 부동산신탁 적자 탈출 '난항'",
+     "media": "뉴데일리",
+     "url": "https://biz.newdaily.co.kr/site/data/html/2026/11/09/2026110900113.html"
+    },
+    {
+     "title": "\"청년임대 한채에 고작 2억\" … 역세권 공급 가능할까",
+     "media": "매일경제",
+     "url": "https://www.mk.co.kr/news/realestate/12202671"
+    },
+    {
+     "title": "IPARK현대산업개발, 5174억원 규모 고양능곡3구역 재개발 수주",
+     "media": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2645804"
+    },
+    {
+     "title": "에프엘자산운용, NPL 펀드 설립 2년 만에 4500억 돌파",
+     "media": "조선비즈",
+     "url": "https://biz.chosun.com/stock/stock_general/2026/11/09/EANYGIDNJFHDXPXHVBVW6QHHS4/"
+    }
+   ]
+  },
+  {
+   "tag": "Global",
+   "name": "해외",
+   "icon": "🌏",
+   "items": [
+    {
+     "title": "\"美 오피스 빌딩 시장, 고금리에 부실 확대 전망\"",
+     "media": "연합인포맥스",
+     "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4443731"
+    },
+    {
+     "title": "도쿄 상업용 부동산 시장 활황…블랙스톤도 매각 추진",
+     "media": "아시아경제",
+     "url": "https://www.asiae.co.kr/article/2026110914040499949"
+    },
+    {
+     "title": "[Why] AI 투자 유치하던 유럽서 데이터센터 반대 시위 확산하는 이유",
+     "media": "조선비즈",
+     "url": "https://biz.chosun.com/international/international_general/2026/11/09/XLQ6XIR2MNH43KFBUH5PMFGFQ4/"
+    },
+    {
+     "title": "AIDC 규제 쌓는 美·유럽…‘인프라 강자’ 韓, 반사이익 챙길까 [AI 인사이트]",
+     "media": "파이낸셜뉴스",
+     "url": "https://www.fnnews.com/news/202611091826067286"
+    },
+    {
+     "title": "\"쇼핑하고 끝? 여긴 가족 놀이터\"...몽골서 '연매출 1000억' 이마트 성공 비결",
+     "media": "머니투데이",
+     "url": "https://www.mt.co.kr/living/2026/11/09/2026110814535492346"
+    }
+   ]
+  },
+  {
+   "tag": "Macro",
+   "name": "금리 · 경제",
+   "icon": "📈",
+   "items": [
+    {
+     "title": "내년 금리는 어떻게 될까…“반도체 꺾이면 한은도 돌아선다” 씨티銀 분석",
+     "media": "매일경제",
+     "url": "https://www.mk.co.kr/news/economy/12202108"
+    },
+    {
+     "title": "“고정이냐 변동이냐”…주담대 금리 격차 실종, 기준금리 인상 촉각",
+     "media": "에너지경제신문",
+     "url": "https://www.ekn.kr/web/view.php?key=20261109025167334"
+    },
+    {
+     "title": "저축銀, 2분기 대·중견기업 대출 5조원 넘어…1년새 50% ↑",
+     "media": "SBS Biz",
+     "url": "https://biz.sbs.co.kr/article/20000345010"
+    },
+    {
+     "title": "전세사기 피해자 보증금, 3분의 1까지 정부가 지원한다",
+     "media": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2645562"
+    },
+    {
+     "title": "종부세 공제 14억 통일해도⋯고가 1주택자 세 부담 완화 효과 제한적",
+     "media": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2645818"
+    }
+   ]
+  }
+ ],
+ "digest_via": {
+  "name": "부동산플래닛 간추린 뉴스",
+  "date": "2026.11.10",
+  "url": "https://inside.bdsplanet.com/news"
+ }
 }

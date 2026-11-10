@@ -45,7 +45,7 @@ def head(num, title, sub):
 
 
 def head_div(num, title, sub):
-    return (f'<div style="padding:52px 0 16px">'
+    return (f'<div style="padding:44px 0 14px">'
             f'<table role="presentation" cellpadding="0" cellspacing="0"><tr>'
             f'<td style="font-size:34px;font-weight:900;color:{BRAND};letter-spacing:-1px;line-height:1;padding-right:12px">{num}</td>'
             f'<td style="border-left:2px solid {BRAND};padding-left:12px">'
@@ -231,8 +231,43 @@ def grouped(groups, status=False, title=""):
     return "".join(out)
 
 
+def digest_card(g):
+    rows = []
+    for i, it in enumerate(g["items"]):
+        top = "" if i == 0 else f"border-top:1px dashed {LINE};"
+        ref = f'&nbsp;<span style="font-size:10.5px;color:#c2410c;font-weight:700;white-space:nowrap">참고</span>' if it.get("ref") else ""
+        media = (f'<span style="font-size:11.5px;color:{MUTE};white-space:nowrap">&nbsp;·&nbsp;{a(it.get("media", ""), it.get("url"), MUTE, 500)}</span>'
+                 if it.get("media") else "")
+        if it.get("own"):
+            body = (f'<div style="font-size:13.5px;line-height:1.5"><span style="color:{BRAND};font-weight:900">■</span>&nbsp;'
+                    f'{a(it["title"], it.get("url"), INK, 800)}{ref}{media}</div>'
+                    + (f'<div style="font-size:12.5px;color:{SUB};line-height:1.55;margin:3px 0 0 16px">{e(it["text"])}</div>' if it.get("text") else ""))
+        else:
+            body = (f'<div style="font-size:13.5px;line-height:1.5"><span style="color:{MUTE}">•</span>&nbsp;'
+                    f'{a(it["title"], it.get("url"), INK, 500)}{media}</div>')
+        rows.append(f'<tr><td style="{top}padding:7px 0">{body}</td>'
+                    f'<td style="{top}padding:7px 0 7px 8px;width:40px;text-align:right;vertical-align:top;font-size:11px;color:{MUTE};white-space:nowrap">{e(it.get("date", ""))}</td></tr>')
+    return (f'<tr class="blk"><td style="padding:0 0 12px"><div class="box" style="border:1px solid {LINE};border-radius:14px;background:#ffffff;overflow:hidden">'
+            f'<div style="background:#f7f6fe;padding:11px 18px;border-bottom:1px solid {LINE}">'
+            f'<table role="presentation" cellpadding="0" cellspacing="0"><tr>'
+            f'<td style="width:34px;height:34px;background:#ffffff;border:1px solid {LINE};border-radius:17px;text-align:center;font-size:17px;line-height:34px">{g["icon"]}</td>'
+            f'<td style="padding-left:10px"><span style="font-size:17px;font-weight:900;color:{BRAND};letter-spacing:-0.3px">{e(g["tag"])}</span>'
+            f'<span style="font-size:13px;color:{SUB};font-weight:600;margin-left:8px">{e(g["name"])}</span>'
+            f'<span style="font-size:11px;color:{MUTE};margin-left:8px">{len(g["items"])}건</span></td></tr></table></div>'
+            f'<div style="padding:4px 18px 6px">{rows_table(rows)}</div></div></td></tr>')
+
+
 def sectors(d):
-    return grouped(d["sectors"], title=head_div("04", "Sector Briefing", "섹터별 주요 사항"))
+    if not d.get("digest"):
+        return grouped(d["sectors"], title=head_div("04", "Sector Briefing", "섹터별 주요 사항"))
+    via = d.get("digest_via", {})
+    legend = (f'<div style="font-size:11.5px;color:{MUTE};margin:-4px 0 12px">'
+              f'<span style="color:{BRAND};font-weight:900">■</span> CRE Radar 리서치(요약 포함) &nbsp; '
+              f'<span>•</span> 큐레이션 헤드라인 — {a(via.get("name", ""), via.get("url"), BRAND, 600)} {e(via.get("date", ""))} · 각 기사 매체명을 누르면 원문</div>')
+    first = d["digest"][0]
+    out = [f'<tr class="sec"><td>{head_div("04", "News Digest", "상업용 부동산 섹터별 뉴스")}{legend}</td></tr>']
+    out += [digest_card(g) for g in d["digest"]]
+    return "".join(out)
 
 
 def regulation(d):
