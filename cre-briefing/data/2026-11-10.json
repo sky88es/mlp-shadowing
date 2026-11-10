@@ -1,224 +1,243 @@
 {
  "date": "2026.11.10",
  "weekday": "화",
- "tagline": "상업용 부동산 시장의 핵심 움직임과 금리를 한 번에",
- "hero": {
+ "issue": 1,
+ "brief": {
   "tag": "Hotel",
-  "title": "서울 호텔 객실, 2032년까지 7% 증가에 그친다",
-  "text": "CBRE코리아는 관광 수요가 늘어나는 데 비해 공급이 부족하다고 진단했습니다. 리브랜딩한 보코 서울 명동은 객실당 매각가가 60% 올라 오피스 투자자들이 호텔로 이동하고 있습니다.",
-  "url": "https://www.fnnews.com/news/202611091708568612"
+  "headline": "서울 호텔 객실, 2032년까지 7% 늘어나는 데 그친다",
+  "lead": "CBRE코리아는 인바운드 수요는 늘어나는데 신규 공급이 막혀 있다고 진단했습니다. 리브랜딩한 보코 서울 명동은 객실당 매각가가 60% 올랐습니다. 두산타워, 케이스퀘어 홍대처럼 오피스를 호텔로 바꾸는 투자가 늘고 있습니다.",
+  "src": "파이낸셜뉴스 · 11/9",
+  "url": "https://www.fnnews.com/news/202611091708568612",
+  "points": [
+   {
+    "tag": "Office",
+    "text": "10월 서울 빌딩 거래량은 52.9%, 금액은 15.5% 줄었습니다. 건수는 줄고 대형 딜에 금액이 쏠리고 있습니다.",
+    "ref": "04"
+   },
+   {
+    "tag": "Financing",
+    "text": "실제 딜 조달 금리는 오피스 4% 중반, 물류 6% 안팎으로 A급 캡레이트 4.3%보다 높습니다. 네거티브 레버리지 구간입니다.",
+    "ref": "02·03"
+   },
+   {
+    "tag": "REITs",
+    "text": "리츠주가 52주 신저가를 기록하는 가운데 삼성FN리츠 903억원 유상증자 납입일(11/11)이 다가왔습니다.",
+    "ref": "04"
+   },
+   {
+    "tag": "Regulation",
+    "text": "부동산개발사업관리법 개정이 11/13 시행됩니다(D-3). PF 자기자본 20% 룰은 2027년부터 단계적으로 적용됩니다.",
+    "ref": "05"
+   }
+  ]
  },
- "summary": [
-  {
-   "tag": "Hotel",
-   "title": "CBRE \"서울 호텔 공급, 2032년까지 7% 증가 그쳐\"",
-   "text": "공급 제약 속에 오피스를 호텔로 바꾸는 전환 투자(두산타워, 케이스퀘어 홍대)가 늘고 있습니다.",
-   "src": "파이낸셜뉴스 · 11/9",
-   "url": "https://www.fnnews.com/news/202611091708568612"
+ "indicators": {
+  "rates": [
+   {
+    "name": "기준금리",
+    "value": "3.00%",
+    "chg": "동결 · 다음 11/26",
+    "dir": "flat",
+    "asof": "10/22",
+    "src": "마켓로그",
+    "url": "https://marketlog.co.kr/rate-decision-calendar-2026/"
+   },
+   {
+    "name": "국고채 3년",
+    "value": "3.639%",
+    "chg": "+2.6bp",
+    "dir": "up",
+    "asof": "11/9",
+    "src": "재경일보",
+    "url": "https://news.jkn.co.kr/post/1080744"
+   },
+   {
+    "name": "국고채 10년",
+    "value": "4.152%",
+    "chg": "최신치 미확인",
+    "dir": "flat",
+    "asof": "10/22",
+    "src": "베타뉴스",
+    "url": "https://www.betanews.net/article/view/beta202610220173"
+   },
+   {
+    "name": "회사채 AA- 3년",
+    "value": "4.332%",
+    "chg": "+1.9bp",
+    "dir": "up",
+    "asof": "11/9",
+    "src": "재경일보",
+    "url": "https://news.jkn.co.kr/post/1080744"
+   },
+   {
+    "name": "CD 91일",
+    "value": "3.360%",
+    "chg": "+2.0bp",
+    "dir": "up",
+    "asof": "11/9",
+    "src": "재경일보",
+    "url": "https://news.jkn.co.kr/post/1080744"
+   },
+   {
+    "name": "은행채 5년",
+    "value": "4.656%",
+    "chg": "2년10개월 최고",
+    "dir": "up",
+    "asof": "10/15",
+    "src": "더팩트",
+    "url": "https://news.tf.co.kr/read/economy/2367462.htm"
+   }
+  ],
+  "note": "COFIX(신규) 3.43%, 9월분 +25bp (SBS Biz). 원/달러와 미국채 10년물은 11/9 수치를 확인하지 못했습니다.",
+  "chart": {
+   "title": "조달 금리 vs 오피스 캡레이트",
+   "sub": "진한 막대는 실제 딜 기준 선순위 조달 금리, 점선 화살표는 A급 오피스 캡레이트입니다. 막대가 캡레이트를 넘으면 네거티브 레버리지입니다.",
+   "max": 7.0,
+   "bars": [
+    {
+     "name": "국고채 3년",
+     "value": 3.639,
+     "note": "11/9"
+    },
+    {
+     "name": "회사채 AA- 3년",
+     "value": 4.332,
+     "note": "11/9"
+    },
+    {
+     "name": "오피스 선순위 (실제 딜)",
+     "value": 4.5,
+     "hl": true,
+     "note": "두산건설 사옥"
+    },
+    {
+     "name": "물류 선순위 (실제 딜)",
+     "value": 6.0,
+     "hl": true,
+     "note": "NIC 목표 금리"
+    }
+   ],
+   "ref": {
+    "name": "A급 오피스 캡레이트",
+    "value": 4.3
+   }
   },
+  "valuation": [
+   {
+    "name": "A급 오피스 캡레이트 (3Q)",
+    "value": "4.3%",
+    "note": "CBRE · 2Q 4.2%",
+    "url": "https://landvalueup.hankyung.com/valueupguide-20261110-0700"
+   },
+   {
+    "name": "A급 공실률 (3Q)",
+    "value": "3.1%",
+    "note": "CBRE · CBD 5.1 / GBD 1.0 / YBD 1.7",
+    "url": "https://www.fnnews.com/news/202610210939527638"
+   },
+   {
+    "name": "3Q 오피스 거래액",
+    "value": "6.2조원",
+    "note": "Savills",
+    "url": "https://en.fnnews.com/news/202610281136379610"
+   }
+  ]
+ },
+ "deals": [
   {
-   "tag": "Office",
-   "title": "10월 서울 빌딩 거래량 -52.9%, 금액 -15.5%",
-   "text": "거래 건수는 줄고 대형 딜에 금액이 쏠리고 있습니다. CBD는 흥국생명빌딩 거래로 금액이 늘었습니다.",
-   "src": "아시아타임즈 · 11/8",
-   "url": "https://www.asiatime.co.kr/article/20261108500017"
-  },
-  {
-   "tag": "Logistics",
-   "title": "라살운용, 여주 심석리 물류센터 인수…480억원 대출 조달",
-   "text": "베스타스운용에게서 1.4만평 규모의 신축급 상온센터를 인수합니다. 임차인은 롯데글로벌로지스와 무신사로지스틱스입니다.",
+   "type": "Logistics",
+   "asset": "라살운용 · 여주 심석리 물류센터 인수",
+   "detail": "매도자는 베스타스운용입니다. 연면적 1.4만평, 2022년 준공 상온센터이며 롯데글로벌로지스와 무신사로지스틱스가 임차하고 있습니다. 담보대출 480억원을 조달했습니다.",
+   "amount": "대출 480억",
+   "rate": "비공개",
+   "stage": "인수 진행",
    "src": "딜북",
    "url": "https://www.dealbook.co.kr/rasalunyong-yeoju-simseogri-mulryusenteo-insu-480eog-daecul-jodal/"
   },
   {
-   "tag": "Capital",
-   "title": "고금리에 리츠주 줄줄이 52주 신저가…삼성FN리츠 903억원 유증 11/11 납입",
-   "text": "리츠 배당수익률이 7~9%대까지 올랐지만 신규 자금 유입은 제한적입니다.",
-   "src": "아시아경제 · 11/3",
-   "url": "https://view.asiae.co.kr/article/2026110316075011313"
+   "type": "Logistics",
+   "asset": "캡스톤 · 인천 남동 NIC 물류 리파이낸싱",
+   "detail": "기존 7%대 금리를 낮추려는 리파이낸싱입니다. 공실 0%(쿠팡 등)이며 선순위는 하나대체 208호, 중순위는 별도입니다.",
+   "amount": "1,160억",
+   "rate": "6% 목표",
+   "stage": "추진 (4월)",
+   "src": "더벨",
+   "url": "https://www.thebell.co.kr/front/newsview.asp?code=00&key=202604071617220000106240"
   },
   {
-   "tag": "Rates",
-   "title": "11/26 금통위 앞두고 국고채 3년 3.639%",
-   "text": "기준금리 3.00%로 동결 중입니다. 실제 딜 조달 금리는 오피스 4% 중반, 물류 6% 안팎입니다.",
-   "src": "재경일보 · 11/9",
-   "url": "https://news.jkn.co.kr/post/1080744"
+   "type": "Office",
+   "asset": "이지스 · 논현 두산건설 사옥 리파이낸싱",
+   "detail": "매각이 무산된 뒤 대주 5곳에서 담보대출을 리파이낸싱했습니다.",
+   "amount": "1,380억",
+   "rate": "4.5%",
+   "stage": "완료",
+   "src": "딜북",
+   "url": "https://www.dealbook.co.kr/opiseu-dambodaecul-geumri-4-dae-daese-ibjibyeol-seupeuredeu-hwagdae/"
+  },
+  {
+   "type": "Mixed",
+   "asset": "이지스 · 동대문 두산타워 인수",
+   "detail": "마스턴에게서 매입했습니다. 프로젝트펀드 방식이며 NH투자증권과 하나은행이 참여하고 두산이 일부 출자했습니다. 일부 층의 호텔 전환을 검토 중입니다.",
+   "amount": "약 8,900억",
+   "rate": "비공개",
+   "stage": "종결 (7월)",
+   "src": "헤럴드경제",
+   "url": "https://biz.heraldcorp.com/article/10822014"
+  },
+  {
+   "type": "Retail",
+   "asset": "코람코라이프인프라리츠 · 주유소 19곳 매각",
+   "detail": "자산별 개별입찰입니다. 부동산플래닛이 주관하고 쿠시먼이 자문합니다. 용도전환을 노리는 개발사업자도 인수 대상으로 꼽힙니다.",
+   "amount": "-",
+   "rate": "-",
+   "stage": "입찰 11/19",
+   "src": "헤럴드경제",
+   "url": "https://biz.heraldcorp.com/article/10927220"
   }
  ],
- "rates": [
+ "levels": [
   {
-   "name": "기준금리",
-   "value": "3.00%",
-   "chg": "동결 · 다음 11/26",
-   "dir": "flat",
-   "asof": "10/22",
-   "src": "마켓로그",
-   "url": "https://marketlog.co.kr/rate-decision-calendar-2026/"
+   "asset": "오피스",
+   "level": "4% 중반",
+   "basis": "두산건설 사옥 4.5% · 평균 4.03% (2Q, 기존 대출 기준)"
   },
   {
-   "name": "국고채 3년",
-   "value": "3.639%",
-   "chg": "+2.6bp",
-   "dir": "up",
-   "asof": "11/9",
-   "src": "재경일보",
-   "url": "https://news.jkn.co.kr/post/1080744"
+   "asset": "물류",
+   "level": "5% 중후반 ~ 6%",
+   "basis": "NIC 6% 목표 · 물류 PF 6%대 중후반"
   },
   {
-   "name": "회사채 AA- 3년",
-   "value": "4.332%",
-   "chg": "+1.9bp",
-   "dir": "up",
-   "asof": "11/9",
-   "src": "재경일보",
-   "url": "https://news.jkn.co.kr/post/1080744"
+   "asset": "호텔",
+   "level": "4%대 초반",
+   "basis": "호텔 리츠 선순위 전환 4.2% (삼성증권)"
   },
   {
-   "name": "CD 91일",
-   "value": "3.360%",
-   "chg": "+2.0bp",
-   "dir": "up",
-   "asof": "11/9",
-   "src": "재경일보",
-   "url": "https://news.jkn.co.kr/post/1080744"
-  },
-  {
-   "name": "국고채 10년",
-   "value": "4.152%",
-   "chg": "최신치 미확인",
-   "dir": "flat",
-   "asof": "10/22",
-   "src": "베타뉴스",
-   "url": "https://www.betanews.net/article/view/beta202610220173"
-  },
-  {
-   "name": "은행채 5년 AAA",
-   "value": "4.656%",
-   "chg": "2년 10개월 최고",
-   "dir": "up",
-   "asof": "10/15",
-   "src": "더팩트",
-   "url": "https://news.tf.co.kr/read/economy/2367462.htm"
-  },
-  {
-   "name": "COFIX 신규",
-   "value": "3.43%",
-   "chg": "+25bp (9월분)",
-   "dir": "up",
-   "asof": "10월 발표",
-   "src": "SBS Biz",
-   "url": "https://biz.sbs.co.kr/amp/article/20000340193"
-  },
-  {
-   "name": "원/달러 · 미 10년",
-   "value": "미확인",
-   "chg": "출처 확인 불가",
-   "dir": "flat",
-   "asof": "-",
-   "src": "-",
-   "url": null
+   "asset": "바이아웃",
+   "level": "선순위 5~6% · 중순위 7~9%",
+   "basis": "IB토마토"
   }
  ],
- "rates_note": "▲ 상승 · ▼ 하락. 각 지표 아래에 기준일과 출처를 적었습니다.",
- "financing": {
-  "deals": [
-   {
-    "type": "Logistics",
-    "deal": "라살 · 여주 심석리 물류센터 인수",
-    "terms": "담보대출 480억원. 매도자는 베스타스, 연면적 1.4만평, 2022년 준공. 금리는 공개되지 않음",
-    "rate": "비공개",
-    "size": "대출 480억",
-    "when": "11월",
-    "src": "딜북",
-    "url": "https://www.dealbook.co.kr/rasalunyong-yeoju-simseogri-mulryusenteo-insu-480eog-daecul-jodal/"
-   },
-   {
-    "type": "Logistics",
-    "deal": "캡스톤 · 인천 남동 NIC 물류 리파이낸싱",
-    "terms": "기존 7%대에서 6%로 낮추는 것이 목표(추진). 공실 0%(쿠팡 등). 선순위 하나대체 208호, 중순위 별도",
-    "rate": "6% (목표)",
-    "size": "1,160억",
-    "when": "4월",
-    "src": "더벨",
-    "url": "https://www.thebell.co.kr/front/newsview.asp?code=00&key=202604071617220000106240"
-   },
-   {
-    "type": "Office",
-    "deal": "이지스 · 논현동 두산건설 사옥 리파이낸싱",
-    "terms": "대주 5곳. 매각이 무산된 뒤 리파이낸싱으로 대응",
-    "rate": "4.5%",
-    "size": "1,380억",
-    "when": "2026",
-    "src": "딜북",
-    "url": "https://www.dealbook.co.kr/opiseu-dambodaecul-geumri-4-dae-daese-ibjibyeol-seupeuredeu-hwagdae/"
-   },
-   {
-    "type": "Hotel",
-    "deal": "호텔 리츠 차입 선순위 전환",
-    "terms": "5.1%에서 4.2%로 90bp 하락",
-    "rate": "4.2%",
-    "size": "-",
-    "when": "2025~26",
-    "src": "삼성증권 리서치",
-    "url": "https://samsungpop.com/common.do?cmd=down&contentType=application%2Fpdf&fileName=2020%2F2026040308054586K_02_03.pdf&inlineYn=Y&saveKey=research.pdf"
-   },
-   {
-    "type": "Mixed",
-    "deal": "이지스 · 두산타워 인수",
-    "terms": "프로젝트펀드 방식. NH투자증권과 하나은행이 참여하고 두산이 일부 출자. 금리는 공개되지 않음",
-    "rate": "비공개",
-    "size": "9,000억+",
-    "when": "7월",
-    "src": "헤럴드경제",
-    "url": "https://biz.heraldcorp.com/article/10822014"
-   }
-  ],
-  "levels": [
-   {
-    "asset": "오피스",
-    "level": "4% 중반",
-    "basis": "두산건설 사옥 4.5% · 평균 4.03% (2Q, 올인 4.43%)"
-   },
-   {
-    "asset": "물류",
-    "level": "5% 중후반 ~ 6%",
-    "basis": "NIC 6% 목표 · PF 6%대 중후반"
-   },
-   {
-    "asset": "호텔",
-    "level": "4%대 초반",
-    "basis": "리츠 선순위 사례 (개별 호텔은 공개되지 않음)"
-   },
-   {
-    "asset": "바이아웃",
-    "level": "선순위 5~6% / 중순위 7~9%",
-    "basis": "IB토마토"
-   }
-  ]
- },
  "sectors": [
   {
    "tag": "Office",
    "name": "오피스",
-   "sub": "CBD · GBD · YBD",
    "items": [
     {
-     "title": "10월 서울 빌딩 거래량 -52.9%, 대형 딜 쏠림",
-     "text": "CBD는 흥국생명빌딩 거래로 금액이 늘었습니다.",
+     "title": "10월 서울 빌딩 거래량 -52.9%, 금액 -15.5%",
+     "text": "거래 건수가 줄고 대형 딜에 금액이 쏠렸습니다. CBD는 흥국생명빌딩 거래로 금액이 늘었습니다.",
      "date": "11.08",
      "src": "아시아타임즈",
      "url": "https://www.asiatime.co.kr/article/20261108500017"
     },
     {
-     "title": "LC타워 매각, 선순위 대주 DB손보 조건에 발목",
-     "text": "대주단 협상력이 커지고 있다는 신호입니다.",
+     "title": "LC타워 매각, 선순위 대주 DB손보 조건에 지연",
+     "text": "대주단의 협상력이 커지고 있다는 신호입니다.",
      "date": "11.02",
      "src": "파이낸셜뉴스",
      "url": "https://www.fnnews.com/news/202611021826406184"
     },
     {
      "title": "판교 GB1·2타워, 디큐브시티 오피스2 등 대형 매물 재출회",
-     "text": "딜 클로징을 넘지 못하는 오피스 매각 시장입니다.",
      "date": "",
      "ref": true,
      "src": "이투데이",
@@ -229,18 +248,10 @@
   {
    "tag": "Hotel",
    "name": "호텔",
-   "sub": "매각 · 전환 · 수급",
    "items": [
     {
-     "title": "CBRE \"서울 호텔 객실 2032년까지 7% 증가 그쳐\"",
-     "text": "보코 서울 명동은 브랜드를 바꾼 뒤 객실당 매각가가 60% 올랐습니다.",
-     "date": "11.09",
-     "src": "파이낸셜뉴스",
-     "url": "https://www.fnnews.com/news/202611091708568612"
-    },
-    {
-     "title": "관광객 늘고 객실 부족…빌딩 투자자들 호텔로",
-     "text": "두산타워 일부 호텔화, 케이스퀘어 홍대 호텔 재개발(1,500억원)",
+     "title": "관광객 늘고 객실 부족…빌딩 투자자들 호텔로 이동",
+     "text": "케이스퀘어 홍대는 코람코와 파라다이스가 1,500억원에 인수해 호텔로 재개발합니다.",
      "date": "",
      "ref": true,
      "src": "이투데이",
@@ -259,15 +270,7 @@
   {
    "tag": "Retail",
    "name": "리테일",
-   "sub": "쇼핑몰 · 상업시설",
    "items": [
-    {
-     "title": "코람코라이프인프라리츠, 주유소 19곳 매각…11/19 입찰 마감",
-     "text": "자산별 개별입찰입니다. 부동산플래닛이 주관하고 쿠시먼이 자문합니다. 용도전환을 노리는 개발사업자도 대상입니다.",
-     "date": "11.05",
-     "src": "헤럴드경제",
-     "url": "https://biz.heraldcorp.com/article/10927220"
-    },
     {
      "title": "키움코어리테일리츠, 롯데몰 광명점 매각 추진 (4,000억원대 거론)",
      "date": "",
@@ -280,7 +283,6 @@
   {
    "tag": "Data Center",
    "name": "데이터센터",
-   "sub": "전력 · 하이퍼스케일",
    "items": [
     {
      "title": "미국 불확실성 피한 빅테크, 한국 데이터센터에 수조원 투자",
@@ -289,8 +291,8 @@
      "url": "https://kr.investing.com/news/stock-market-news/article-2167278"
     },
     {
-     "title": "\"데이터센터, 수도권 추론형과 지방 학습형으로 나눠 접근해야\"",
-     "text": "수도권은 전력 병목이 핵심 변수입니다.",
+     "title": "\"수도권은 추론형, 지방은 학습형으로 나눠 접근해야\"",
+     "text": "수도권 데이터센터는 전력 확보가 핵심 변수입니다.",
      "date": "10.21",
      "ref": true,
      "src": "한국경제",
@@ -301,18 +303,10 @@
   {
    "tag": "Logistics",
    "name": "물류",
-   "sub": "매입 · 리파이낸싱 · 공매",
    "items": [
     {
-     "title": "라살운용, 여주 심석리 물류센터 인수…480억원 대출 조달",
-     "text": "롯데글로벌로지스와 무신사로지스틱스가 임차한 신축급 상온센터입니다.",
-     "date": "11월",
-     "src": "딜북",
-     "url": "https://www.dealbook.co.kr/rasalunyong-yeoju-simseogri-mulryusenteo-insu-480eog-daecul-jodal/"
-    },
-    {
-     "title": "수도권 물류, 개발보다 준공자산 인수로",
-     "text": "A급 실거래가는 신규 개발원가보다 20~30% 낮습니다(신영에셋).",
+     "title": "수도권 물류 투자, 개발보다 준공자산 인수로",
+     "text": "A급 물류센터 실거래가는 신규 개발원가보다 20~30% 낮습니다(신영에셋).",
      "date": "",
      "ref": true,
      "src": "뉴스프라임",
@@ -321,25 +315,25 @@
    ]
   },
   {
-   "tag": "Capital",
+   "tag": "REITs",
    "name": "자본시장 · 리츠",
-   "sub": "리츠 · 펀드 · 대주단",
    "items": [
     {
-     "title": "고금리 늪에 빠진 리츠주, 줄줄이 52주 신저가",
+     "title": "고금리에 리츠주 줄줄이 52주 신저가",
+     "text": "배당수익률은 7~9%대로 올랐지만 신규 자금 유입은 제한적입니다.",
      "date": "11.03",
      "src": "아시아경제",
      "url": "https://view.asiae.co.kr/article/2026110316075011313"
     },
     {
-     "title": "삼성FN리츠, 유상증자 903억원 확정…11/11 납입, 11/25 상장",
-     "text": "구주주 청약은 11/3~4, 실권주 일반공모는 11/6~9입니다. 청약 결과는 미확인입니다.",
+     "title": "삼성FN리츠 유상증자 903억원…11/11 납입, 11/25 상장",
+     "text": "구주주 청약은 11/3~4, 일반공모는 11/6~9입니다. 청약률은 미확인입니다.",
      "date": "10.30",
      "src": "DART 공시 요약",
      "url": "https://www.chickstockfi.com/disclosures/20261030000106"
     },
     {
-     "title": "리츠, 금리 뛰자 빌딩 매각 카드…GS서초타워는 유효입찰 없어 중단",
+     "title": "신한알파리츠 GS서초타워, 유효입찰 없어 매각 중단",
      "date": "10.19",
      "ref": true,
      "src": "이투데이",
@@ -350,54 +344,15 @@
   {
    "tag": "Development",
    "name": "복합개발 · PF",
-   "sub": "개발 · 정책",
    "items": [
     {
-     "title": "오피스·물류센터 PF에도 보증 길 열린다…건설산업기본법 개정",
+     "title": "오피스·물류센터 PF에도 건설사 보증 허용…건설산업기본법 개정",
      "date": "",
      "ref": true,
      "src": "서울경제",
      "url": "https://www.sedaily.com/article/14100470"
     }
    ]
-  }
- ],
- "valuation": [
-  {
-   "name": "A급 오피스 캡레이트",
-   "value": "4.3%",
-   "note": "CBRE 3Q (2Q 4.2%)",
-   "url": "https://landvalueup.hankyung.com/valueupguide-20261110-0700"
-  },
-  {
-   "name": "A급 공실률 (CBRE)",
-   "value": "3.1%",
-   "note": "CBD 5.1 · GBD 1.0 · YBD 1.7",
-   "url": "https://www.fnnews.com/news/202610210939527638"
-  },
-  {
-   "name": "3Q 오피스 거래액",
-   "value": "6.2조원",
-   "note": "Savills",
-   "url": "https://en.fnnews.com/news/202610281136379610"
-  }
- ],
- "insights": [
-  {
-   "title": "네거티브 레버리지",
-   "text": "오피스는 캡레이트 4.3%에 실제 조달 4.5% 수준이고, 물류는 조달금리가 6% 안팎입니다. 임대료 상승이나 밸류애드가 없는 레버리지 인수는 에쿼티 수익률을 깎습니다."
-  },
-  {
-   "title": "11/26 금통위가 분기점",
-   "text": "추가 인상이 나오면 CD와 은행채 5년에 연동된 차환 금리가 4% 후반까지 오를 수 있습니다. 잔여 임차기간(WALE)이 짧은 물류와 2026~27년 만기 자산부터 점검해야 합니다."
-  },
-  {
-   "title": "호텔은 상대적 강세",
-   "text": "공급 제약과 인바운드 수요가 겹쳐, 오피스를 호텔로 전환하는 밸류애드 전략이 여전히 유효합니다."
-  },
-  {
-   "title": "규제 체크포인트",
-   "text": "PF 20% 룰(2027~)이 시행되면 저자본 시행사의 PF가 막힙니다. 그래서 차입 한도가 명확한 프로젝트리츠나 에쿼티 비중이 큰 개발 구조로 옮겨갈 가능성이 큽니다. 부동산개발사업관리법(11/13 시행)의 인허가 지원 기관 지정 여부도 확인할 필요가 있습니다."
   }
  ],
  "regulation": [
@@ -481,7 +436,7 @@
    "items": [
     {
      "status": "시행 예정",
-     "title": "부동산개발사업관리법 개정 시행 (11/13, D-3)",
+     "title": "부동산개발사업관리법 개정 시행 · 11/13 시행 (D-3)",
      "text": "인허가를 신속히 지원하는 전문기관을 지정할 근거가 생깁니다. 지정 요건은 대통령령으로 정합니다.",
      "date": "11.13",
      "src": "국가법령정보센터",
@@ -504,6 +459,24 @@
      "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958747"
     }
    ]
+  }
+ ],
+ "insights": [
+  {
+   "title": "레버리지가 수익을 깎는 구간",
+   "text": "오피스 캡레이트 4.3%에 실제 조달은 4.5% 수준이고, 물류는 조달금리가 6% 안팎입니다. 임대료를 올리거나 밸류애드할 여지가 없는 자산은 LTV를 낮추는 것이 에쿼티 수익률에 유리합니다."
+  },
+  {
+   "title": "11/26 금통위가 분기점",
+   "text": "추가 인상이 나오면 CD와 은행채 5년에 연동된 차환 금리가 4% 후반까지 오를 수 있습니다. 2026~27년 만기 자산과 잔여 임차기간(WALE)이 짧은 물류부터 점검해야 합니다."
+  },
+  {
+   "title": "호텔은 상대적 강세",
+   "text": "공급 제약과 인바운드 수요가 겹쳐, 오피스를 호텔로 전환하는 밸류애드 전략이 여전히 유효합니다."
+  },
+  {
+   "title": "개발 구조의 변화",
+   "text": "PF 20% 룰이 시행되면 저자본 시행 구조가 막힙니다. 차입 한도가 명확한 프로젝트리츠나 에쿼티 비중이 큰 구조로 옮겨갈 가능성이 큽니다."
   }
  ]
 }
