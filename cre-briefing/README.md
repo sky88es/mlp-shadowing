@@ -4,7 +4,7 @@ A4 폭(794px) 이메일과 A4 PDF를 같은 데이터(JSON)로 만듭니다.
 
 ```bash
 sh cre-briefing/build.sh cre-briefing/data/YYYY-MM-DD.json /tmp/cre
-# -> /tmp/cre/email.html  (메일 본문 = 01·02 요약 + PDF 안내, 차트는 cid:att1)
+# -> /tmp/cre/email.html  (메일 본문 = 01~06 전체, A4 폭 794px, 차트는 cid:att1. </tr> 마다 줄바꿈되어 있어 나눠 읽기 쉬움)
 #    /tmp/cre/email.txt   (텍스트 대체본)
 #    /tmp/cre/chart.png   (인라인 차트, 첨부 #1, inline:true)
 #    /tmp/cre/CRE_Radar_YYYY-MM-DD.pdf (A4 PDF, 첨부 #0)

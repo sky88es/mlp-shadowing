@@ -45,7 +45,7 @@ def head(num, title, sub):
 
 
 def head_div(num, title, sub):
-    return (f'<div style="padding:22px 0 10px">'
+    return (f'<div style="padding:52px 0 16px">'
             f'<table role="presentation" cellpadding="0" cellspacing="0"><tr>'
             f'<td style="font-size:34px;font-weight:900;color:{BRAND};letter-spacing:-1px;line-height:1;padding-right:12px">{num}</td>'
             f'<td style="border-left:2px solid {BRAND};padding-left:12px">'
@@ -253,7 +253,7 @@ def footer(d):
     return (f'<tr><td style="padding:22px 0 0;border-top:1px solid {LINE};margin-top:20px;font-size:10.5px;color:{MUTE};line-height:1.6">'
             f'본 자료는 공개 보도 기반 자동 생성 브리핑이며 투자 권유가 아닙니다. '
             f'<span style="color:#c2410c;font-weight:700">참고</span> 표시는 오늘 이전 보도이며, 수치는 원문으로 확인하시기 바랍니다. '
-            f'모든 항목의 Source를 누르면 원문으로 이동합니다.</td></tr>')
+            f'모든 항목의 Source를 누르면 원문으로 이동합니다. 인쇄용 A4 PDF를 함께 첨부합니다.</td></tr>')
 
 
 def pdf_note(d):
