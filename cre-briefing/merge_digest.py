@@ -52,7 +52,19 @@ def main():
             if c and it.get("url") not in seen:
                 seen.add(it.get("url"))
                 cats[c].append({**it, "media": it.get("src", ""), "own": True})
-    fresh = b.get("date", "") == d.get("date", "")
+    # use the edition unless an earlier briefing already carried it (bdsplanet posts after our 06:50 run)
+    import glob, os
+    used = set()
+    for f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(path)), "20*.json")):
+        if os.path.abspath(f) == os.path.abspath(path):
+            continue
+        try:
+            v = (json.load(open(f, encoding="utf-8")).get("digest_via") or {}).get("date")
+            if v:
+                used.add(v)
+        except Exception:
+            pass
+    fresh = bool(b.get("date")) and b.get("date") not in used
     for s in (b.get("sections", []) if fresh else []):
         c = bdsp_cat(s["section"])
         if not c:
@@ -66,7 +78,7 @@ def main():
     d["digest_via"] = ({"name": "부동산플래닛 간추린 뉴스", "date": b.get("date", ""),
                         "url": "https://inside.bdsplanet.com/news"} if fresh else None)
     if not fresh:
-        print("bdsplanet not yet updated for", d.get("date"), "- curated headlines skipped")
+        print("bdsplanet edition", b.get("date"), "already used - curated headlines skipped")
     json.dump(d, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print({x["tag"]: len(x["items"]) for x in d["digest"]})
 

@@ -1,0 +1,877 @@
+{
+ "date": "2026.11.12",
+ "weekday": "목",
+ "issue": 3,
+ "brief": {
+  "tag": "Rates",
+  "headline": "美 CPI 쇼크에 국고 10년 10bp 급등…2개월 만에 최대폭",
+  "lead": "미국 10월 CPI가 전월보다 0.4%(근원 0.3%) 오르며 예상을 웃돌았습니다. 연준 빅스텝 우려가 커지면서 국고채 3년은 3.729%(+9.6bp), 10년은 3.950%(+10.0bp)로 뛰었습니다. 기준금리와 3년물의 격차는 72.9bp로 벌어졌습니다. 차환·신규 조달 금리에 곧바로 부담이 됩니다.",
+  "src": "이투데이 · 11/11",
+  "url": "https://www.etoday.co.kr/news/view/2647028",
+  "points": [
+   {
+    "tag": "Deals",
+    "text": "부동산플래닛이 인천 '시티오씨엘' 개발 용지 매각 자문을 맡았습니다. 농협은 대전 평촌산단에 대규모 충청권 물류센터를 짓습니다.",
+    "ref": "03"
+   },
+   {
+    "tag": "Data Center",
+    "text": "새로 짓는 데이터센터 10건 중 7건이 전력 확보가 어려운데도 수도권에 몰립니다. NHN은 내년 말까지 AI 데이터센터를 100MW로 키웁니다.",
+    "ref": "05"
+   },
+   {
+    "tag": "Retail",
+    "text": "'하루 임대료 2,000만원' 핫플 상권에서 줄폐업이 이어지고, 상가 투자 주의보가 나왔습니다.",
+    "ref": "05"
+   },
+   {
+    "tag": "REITs",
+    "text": "국감에서 상장리츠 유상증자가 이사회 결의부터 발행가 확정까지 평균 49.9일 걸린다는 지적이 나왔습니다. 금리 급등기에 조달 불확실성이 커집니다.",
+    "ref": "05"
+   },
+   {
+    "tag": "Regulation",
+    "text": "부동산개발사업관리법 개정안이 내일(11/13) 시행됩니다. 금감원은 신탁사에 건전 영업을 당부했습니다.",
+    "ref": "06"
+   }
+  ]
+ },
+ "indicators": {
+  "rates": [
+   {
+    "name": "기준금리",
+    "value": "3.00%",
+    "chg": "동결 · 다음 11/26",
+    "dir": "flat",
+    "asof": "10/22",
+    "src": "마켓로그",
+    "url": "https://marketlog.co.kr/rate-decision-calendar-2026/"
+   },
+   {
+    "name": "국고채 3년",
+    "value": "3.729%",
+    "chg": "+9.6bp",
+    "dir": "up",
+    "asof": "11/11",
+    "src": "이투데이",
+    "url": "https://www.etoday.co.kr/news/view/2647028"
+   },
+   {
+    "name": "국고채 10년",
+    "value": "3.950%",
+    "chg": "+10.0bp · 2개월래 최대폭",
+    "dir": "up",
+    "asof": "11/11",
+    "src": "이투데이",
+    "url": "https://www.etoday.co.kr/news/view/2647028"
+   },
+   {
+    "name": "회사채 AA- 3년",
+    "value": "4.332%",
+    "chg": "11/11 미확인",
+    "dir": "flat",
+    "asof": "11/9",
+    "src": "재경일보",
+    "url": "https://news.jkn.co.kr/post/1080744"
+   },
+   {
+    "name": "CD 91일",
+    "value": "3.360%",
+    "chg": "11/11 미확인",
+    "dir": "flat",
+    "asof": "11/9",
+    "src": "재경일보",
+    "url": "https://news.jkn.co.kr/post/1080744"
+   },
+   {
+    "name": "은행채 5년",
+    "value": "4.656%",
+    "chg": "2년10개월 최고",
+    "dir": "up",
+    "asof": "10/15",
+    "src": "더팩트",
+    "url": "https://news.tf.co.kr/read/economy/2367462.htm"
+   }
+  ],
+  "note": "국고채 2년 3.728%, 5년 3.810%, 20년 4.043%, 30년 4.015% (11/11). 3년물과 기준금리 격차는 72.9bp, 10년과 3년 스프레드는 22.1bp입니다. 미국 10월 CPI는 +0.4%(근원 +0.3%)였습니다. COFIX 10월분은 11월 중순에 발표됩니다.",
+  "chart": {
+   "title": "조달 금리 vs 오피스 캡레이트",
+   "sub": "진한 막대는 실제 딜 기준 선순위 조달 금리, 점선 화살표는 A급 오피스 캡레이트입니다. 막대가 캡레이트를 넘으면 네거티브 레버리지입니다.",
+   "max": 7.0,
+   "bars": [
+    {
+     "name": "국고채 3년",
+     "value": 3.729,
+     "note": "11/11"
+    },
+    {
+     "name": "회사채 AA- 3년",
+     "value": 4.332,
+     "note": "11/9"
+    },
+    {
+     "name": "오피스 선순위 (실제 딜)",
+     "value": 4.5,
+     "hl": true,
+     "note": "두산건설 사옥"
+    },
+    {
+     "name": "물류 선순위 (실제 딜)",
+     "value": 6.0,
+     "hl": true,
+     "note": "NIC 목표 금리"
+    }
+   ],
+   "ref": {
+    "name": "A급 오피스 캡레이트",
+    "value": 4.3
+   }
+  },
+  "valuation": [
+   {
+    "name": "A급 오피스 캡레이트 (3Q)",
+    "value": "4.3%",
+    "note": "CBRE · 2Q 4.2%",
+    "url": "https://landvalueup.hankyung.com/valueupguide-20261110-0700"
+   },
+   {
+    "name": "A급 공실률 (3Q)",
+    "value": "3.1%",
+    "note": "CBRE · CBD 5.1 / GBD 1.0 / YBD 1.7",
+    "url": "https://www.fnnews.com/news/202610210939527638"
+   },
+   {
+    "name": "3Q 오피스 거래액",
+    "value": "6.2조원",
+    "note": "Savills",
+    "url": "https://en.fnnews.com/news/202610281136379610"
+   }
+  ]
+ },
+ "deals": [
+  {
+   "type": "Development",
+   "asset": "인천 '시티오씨엘' 개발 용지 매각",
+   "detail": "부동산플래닛이 매각 자문사로 선정됐습니다.",
+   "amount": "-",
+   "rate": "-",
+   "stage": "매각 자문",
+   "src": "조선비즈",
+   "url": "https://biz.chosun.com/real_estate/real_estate_general/2026/11/10/QUQVP3KJT5H2PMB7DV6F5I2F7Q/"
+  },
+  {
+   "type": "Logistics",
+   "asset": "농협 · 대전 평촌산단 충청권 물류센터",
+   "detail": "대전 서구 평촌산단에 대규모 물류센터를 세웁니다.",
+   "amount": "-",
+   "rate": "-",
+   "stage": "설립 추진",
+   "src": "뉴시스",
+   "url": "https://www.newsis.com/view/NISX20261110_0003861932"
+  },
+  {
+   "type": "Logistics",
+   "asset": "코람코라이프로지스리츠 · LF 안양물류센터",
+   "detail": "JLL이 주관한 공개입찰(원매자 5곳)을 거쳐 편입했습니다.",
+   "amount": "2,700억",
+   "rate": "비공개",
+   "stage": "편입 결정",
+   "src": "블로터",
+   "url": "https://bloter.net/news/articleView.html?idxno=677984",
+   "ref": true
+  },
+  {
+   "type": "Office",
+   "asset": "이지스 · 논현 두산건설 사옥 리파이낸싱 (금리 벤치마크)",
+   "detail": "대주 5곳에서 담보대출을 리파이낸싱했습니다.",
+   "amount": "1,380억",
+   "rate": "4.5%",
+   "stage": "완료",
+   "src": "딜북",
+   "url": "https://www.dealbook.co.kr/opiseu-dambodaecul-geumri-4-dae-daese-ibjibyeol-seupeuredeu-hwagdae/",
+   "ref": true
+  },
+  {
+   "type": "Logistics",
+   "asset": "캡스톤 · 인천 남동 NIC 물류 리파이낸싱 (금리 벤치마크)",
+   "detail": "기존 7%대 금리를 낮추려는 리파이낸싱입니다.",
+   "amount": "1,160억",
+   "rate": "6% 목표",
+   "stage": "추진 (4월)",
+   "src": "더벨",
+   "url": "https://www.thebell.co.kr/front/newsview.asp?code=00&key=202604071617220000106240",
+   "ref": true
+  }
+ ],
+ "levels": [
+  {
+   "asset": "오피스",
+   "level": "4% 중반",
+   "basis": "두산건설 사옥 4.5% · 평균 4.03% (2Q, 기존 대출 기준)"
+  },
+  {
+   "asset": "물류",
+   "level": "5% 중후반 ~ 6%",
+   "basis": "NIC 6% 목표 · 물류 PF 6%대 중후반"
+  },
+  {
+   "asset": "호텔",
+   "level": "4%대 초반",
+   "basis": "호텔 리츠 선순위 전환 4.2% (삼성증권)"
+  },
+  {
+   "asset": "바이아웃",
+   "level": "선순위 5~6% · 중순위 7~9%",
+   "basis": "IB토마토"
+  }
+ ],
+ "research": {
+  "intro": "자문사·리서치센터·증권사·상장리츠의 최신 발표를 모았습니다. 하우스마다 조사 대상과 정의가 달라 수치를 그대로 비교할 수 없습니다. 원문 링크를 확인하세요.",
+  "chart": {
+   "title": "하우스별 서울 A급 오피스 공실률",
+   "sub": "진한 막대는 3Q26 발표, 연한 막대는 2Q26 최신치입니다. 조사 대상(프라임·A급·전체)과 권역 정의가 달라 단순 비교는 어렵습니다.",
+   "max": 8.0,
+   "bars": [
+    {
+     "name": "CBRE (3Q)",
+     "value": 3.1,
+     "hl": true,
+     "note": "A급 3대 권역"
+    },
+    {
+     "name": "Newmark (3Q)",
+     "value": 4.5,
+     "hl": true,
+     "note": "A급"
+    },
+    {
+     "name": "Savills (3Q)",
+     "value": 4.6,
+     "hl": true,
+     "note": "프라임"
+    },
+    {
+     "name": "Cushman (3Q)",
+     "value": 5.0,
+     "hl": true,
+     "note": "A급"
+    },
+    {
+     "name": "Colliers (2Q)",
+     "value": 4.9,
+     "note": "전체"
+    },
+    {
+     "name": "알스퀘어 (2Q)",
+     "value": 6.5,
+     "note": "서울 평균"
+    },
+    {
+     "name": "JLL (2Q)",
+     "value": 6.6,
+     "note": "전체 · CBD 12.3%"
+    }
+   ]
+  },
+  "reports": [
+   {
+    "house": "한국부동산원",
+    "kind": "상업용 임대동향",
+    "period": "3Q26",
+    "title": "전국 오피스 공실률 8.2%, 상가 공실 장기화",
+    "metrics": [
+     [
+      "오피스 공실률",
+      "8.2%"
+     ],
+     [
+      "일반 상가 공실률",
+      "13.7%"
+     ],
+     [
+      "중대형 / 소규모 상가",
+      "14.7% / 8.7%"
+     ],
+     [
+      "오피스 임대가격지수",
+      "+0.16%"
+     ]
+    ],
+    "note": "상가 임대가격지수는 0.02% 내려 전국적으로 하락세가 이어졌습니다.",
+    "src": "국제뉴스",
+    "url": "https://www.gukjenews.com/news/articleView.html?idxno=3736953",
+    "ref": true
+   },
+   {
+    "house": "CBRE",
+    "kind": "Hotel Report",
+    "period": "11/9",
+    "title": "서울 호텔 객실당 매매가 중위값 2배, 2027년까지 공급 공백",
+    "metrics": [
+     [
+      "객실당 중위가 (22~23 → 24~26)",
+      "2.5억 → 5억"
+     ],
+     [
+      "객실 공급 (~2032)",
+      "+7%"
+     ],
+     [
+      "보코 명동 객실당",
+      "약 6.4억"
+     ]
+    ],
+    "note": "2027년까지 기존 호텔을 사서 브랜드를 바꾸고, 2028~29년에 파는 밸류애드 전략을 제시했습니다.",
+    "src": "아시아경제",
+    "url": "https://view.asiae.co.kr/article/2026111012042993235",
+    "ref": true
+   },
+   {
+    "house": "야놀자리서치",
+    "kind": "숙박업 동향",
+    "period": "3Q26",
+    "title": "3분기 숙박업 전 부문 성장, 객실단가가 실적을 견인",
+    "metrics": [
+     [
+      "호텔·리조트 RevPAR (YoY)",
+      "+10.1%"
+     ],
+     [
+      "ADR / OCC (YoY)",
+      "+9.0% / +1.0%"
+     ],
+     [
+      "리조트 RevPAR",
+      "+25.2%"
+     ],
+     [
+      "4Q 호텔 OCC 전망지수",
+      "97.5"
+     ]
+    ],
+    "note": "외국인 수요는 서울과 부산 호텔에 집중됐습니다(체감 비율 서울 63%, 부산 81%). 서울 모텔은 RevPAR가 8.2% 줄었습니다.",
+    "src": "호텔앤레스토랑",
+    "url": "https://www.hotelrestaurant.co.kr/news/articleView.html?idxno=22433",
+    "ref": true
+   },
+   {
+    "house": "CBRE",
+    "kind": "Seoul Figures",
+    "period": "3Q26",
+    "title": "A급 공실률 3.1%, 캡레이트 4.3%로 2년 만에 상승 전환",
+    "metrics": [
+     [
+      "A급 공실률",
+      "3.1% (-1.1%p)"
+     ],
+     [
+      "명목 임대료",
+      "㎡당 41,671원 (+0.4%)"
+     ],
+     [
+      "캡레이트",
+      "4.3% (2Q 4.2%)"
+     ],
+     [
+      "오피스 투자액",
+      "7조원+"
+     ]
+    ],
+    "src": "이투데이",
+    "url": "https://www.etoday.co.kr/news/view/2638185",
+    "ref": true
+   },
+   {
+    "house": "Cushman & Wakefield",
+    "kind": "MarketBeat",
+    "period": "3Q26",
+    "title": "A급 공실률 5.0%, 서울 상업용 거래 5.3조원",
+    "metrics": [
+     [
+      "A급 공실률",
+      "5.0% (-0.8%p)"
+     ],
+     [
+      "임대료 (YoY)",
+      "+4.3%"
+     ],
+     [
+      "상업용 거래",
+      "5.3조원"
+     ],
+     [
+      "6대 상권 공실률",
+      "7.1% (-1.4%p)"
+     ]
+    ],
+    "note": "물류는 상온·코어 자산 중심으로 선별 투자가 이어졌습니다.",
+    "src": "코리아스프린트",
+    "url": "https://www.koreasprint.com/news/articleView.html?idxno=22250",
+    "ref": true
+   },
+   {
+    "house": "Savills",
+    "kind": "Seoul Prime Office",
+    "period": "3Q26",
+    "title": "오피스 거래 6.2조원, 캡레이트는 4% 초중반",
+    "metrics": [
+     [
+      "오피스 거래액",
+      "약 6.2조원"
+     ],
+     [
+      "프라임 공실률",
+      "4.6%"
+     ],
+     [
+      "명목 임대료 (YoY)",
+      "+5.5%"
+     ],
+     [
+      "프라임 캡레이트",
+      "4% 초중반"
+     ]
+    ],
+    "src": "Real Estate Asia",
+    "url": "https://realestateasia.com/commercial-office/news/seoul-prime-office-vacancy-rises-46-in-q3-district-performance-diverges",
+    "ref": true
+   },
+   {
+    "house": "Newmark",
+    "kind": "Office Leasing",
+    "period": "3Q26",
+    "title": "A급 공실률 4.5%, CBD는 임차인 이동으로 7.0%",
+    "metrics": [
+     [
+      "A급 공실률",
+      "4.5% (+0.2%p)"
+     ],
+     [
+      "CBD 공실률",
+      "7.0%"
+     ],
+     [
+      "임대료 (YoY)",
+      "+4.9%"
+     ]
+    ],
+    "src": "Newmark",
+    "url": "https://www.nmrk.com/insights/market-report/3q26-korea-office-leasing-market-conditions-trend",
+    "ref": true
+   },
+   {
+    "house": "JLL",
+    "kind": "Office · Logistics",
+    "period": "2Q26",
+    "ref": true,
+    "title": "서울 공실률 6.6%로 자연공실 5%를 넘어섬, 수도권 물류 공실 15.5%",
+    "metrics": [
+     [
+      "서울 오피스 공실률",
+      "6.6% (+2.3%p)"
+     ],
+     [
+      "CBD 공실률",
+      "12.3%"
+     ],
+     [
+      "수도권 물류 공실률",
+      "15.5%"
+     ],
+     [
+      "물류 캡레이트 전망",
+      "연말까지 +10bp"
+     ]
+    ],
+    "src": "Retalk Asia",
+    "url": "https://www.retalkasia.com/news/2026/07/29/selective-seoul-office-investment-intensifies-amid-full-scale-new-supply-q2-2026-jll"
+   },
+   {
+    "house": "알스퀘어",
+    "kind": "CRE 마켓 리포트",
+    "period": "2Q26",
+    "ref": true,
+    "title": "공급의 시대: 서울 공실률 6.5%, 선순위 대출 4.03%",
+    "metrics": [
+     [
+      "서울 오피스 공실률",
+      "6.5% (+0.4%p)"
+     ],
+     [
+      "신규 공급",
+      "11개 동 · 9.9만평"
+     ],
+     [
+      "선순위 대출 (올인)",
+      "4.03% (4.43%)"
+     ]
+    ],
+    "src": "벤처스퀘어",
+    "url": "https://www.venturesquare.net/1105438/"
+   },
+   {
+    "house": "젠스타메이트",
+    "kind": "투자자 서베이",
+    "period": "1H26",
+    "ref": true,
+    "title": "오피스 긍정 63%, 리테일 부정 83%. 서울 오피스 월간 리뷰 발간",
+    "metrics": [
+     [
+      "오피스 회복·호황 전망",
+      "63%"
+     ],
+     [
+      "리테일 후퇴·침체 전망",
+      "83%"
+     ]
+    ],
+    "note": "2026년 3월부터 '서울 오피스 마켓 리뷰'를 월간으로 냅니다.",
+    "src": "이데일리",
+    "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04552646645383976"
+   },
+   {
+    "house": "상장리츠 · 증권사",
+    "kind": "배당 · 전망",
+    "period": "11월",
+    "title": "SK리츠 3Q 배당 주당 72원. NH증권 \"오피스 펀더멘털은 방어력 견고\"",
+    "metrics": [
+     [
+      "SK리츠 3Q 배당",
+      "72원/주 · 217억"
+     ],
+     [
+      "리츠 업계 이슈",
+      "제이알글로벌리츠 회생"
+     ]
+    ],
+    "note": "NH투자증권 하반기 리츠 전망: 크레딧 리스크와 금리 상승으로 심리는 위축됐지만, 국내 오피스 자산의 펀더멘털은 우호적입니다.",
+    "src": "치킨스탁(DART) · NH투자증권",
+    "url": "https://www.chickstockfi.com/disclosures/20261104800457",
+    "ref": true
+   }
+  ]
+ },
+ "sectors": [
+  {
+   "tag": "REITs",
+   "name": "리츠",
+   "items": [
+    {
+     "title": "[국감] 리츠 자금조달 관행 17년째 그대로…유증 평균 49.9일",
+     "text": "2016년부터 2026년 8월까지 주주배정 유상증자 25건을 분석한 결과입니다. 발행가 확정까지 시간이 길어 금리 변동이 그대로 반영됩니다.",
+     "date": "",
+     "ref": true,
+     "src": "데일리안",
+     "url": "https://www.dailian.co.kr/news/view/1699607"
+    },
+    {
+     "title": "대신밸류리츠, 제6기 배당 기준일 11/23",
+     "date": "",
+     "src": "대신밸류리츠 공시",
+     "url": "https://daishinvaluereit.com/disclosure/notice/147"
+    }
+   ]
+  }
+ ],
+ "regulation": [
+  {
+   "tag": "자본시장법",
+   "name": "펀드 · 일반사모집합투자기구",
+   "items": [
+    {
+     "status": "시행",
+     "title": "자본시장법 시행령 개정 시행 (대통령령 제36756호)",
+     "text": "2026.10.13 시행. 부동산펀드·일반사모집합투자기구와 관련된 조문 변경 여부는 원문을 확인해야 합니다. 일반사모 운용방법 관련 조항은 6/30 시행분에서 개정됐습니다.",
+     "date": "10.13",
+     "src": "국가법령정보센터",
+     "url": "https://www.law.go.kr/lumLsLinkPop.do?lspttninfSeq=171407&chrClsCd=010202"
+    },
+    {
+     "status": "검토",
+     "title": "집합투자기구 관련 자본시장법 개정 동향",
+     "text": "비시장성 자산 비중이 높은 공모·일반투자자 대상 일반사모펀드를 환매금지형으로 설정하는 방안이 입법예고안에 담겼습니다. 부동산펀드에 직접 영향이 있으며, 최종 비율은 확정 전입니다.",
+     "date": "",
+     "src": "김앤장 리걸 업데이트",
+     "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=32883"
+    }
+   ]
+  },
+  {
+   "tag": "부동산투자회사법",
+   "name": "리츠 · 프로젝트리츠",
+   "items": [
+    {
+     "status": "시행",
+     "title": "프로젝트리츠 제도 시행 중 (2025.11.28~)",
+     "text": "영업인가 없이 설립신고만으로 개발이 가능하고, 최소 자본금은 50억원입니다. 차입은 자기자본의 2배까지, 주총 특별결의를 거치면 10배까지 허용됩니다. 개발 단계에서는 공모 의무와 1인 주식 한도가 완화되고, 기존 PFV는 요건을 갖추면 전환할 수 있습니다.",
+     "date": "",
+     "src": "김앤장 리걸 업데이트",
+     "url": "https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=32172"
+    },
+    {
+     "status": "검토",
+     "title": "국토부, 상장리츠 유상증자 제도 개선 검토",
+     "text": "두 달 걸리는 유상증자 관행을 손보고, 연금저축·IRP 계좌의 유증 참여 자율화와 코스피200 편입을 검토 중입니다. 리츠주가 52주 신저가를 기록하는 국면이라 실제 개선 여부를 주목할 만합니다.",
+     "date": "02.24",
+     "src": "인베스트조선",
+     "url": "https://www.investchosun.com/site/data/html_dir/2026/02/24/2026022480103.html"
+    }
+   ]
+  },
+  {
+   "tag": "금융규제",
+   "name": "금융 · PF · 대출 규제",
+   "items": [
+    {
+     "status": "시행 예정",
+     "title": "PF 자기자본비율 20% 룰 (2027~2030 단계 적용)",
+     "text": "자기자본비율에 따라 PF 대출 위험가중치를 차등 적용합니다(2027년 5%에서 2030년 20%로). 은행 PF 신용공여는 전체의 20% 이내, 증권사 부동산 투자는 자기자본의 100% 이내로 제한되고, 저축은행·상호금융은 미충족 사업장에 대출할 수 없습니다. 올해 안에 업권별 감독규정이 정비됩니다.",
+     "date": "2027.01",
+     "src": "아이뉴스24",
+     "url": "https://www.inews24.com/view/1957111"
+    },
+    {
+     "status": "검토",
+     "title": "은행 주담대 위험가중치 하한 20%에서 25%로 상향 검토",
+     "text": "2026.1월에 15%에서 20%로 올렸고, 10월 국감에서 추가 상향 가능성이 언급됐습니다. 은행 자본 여력이 줄면 비주택 부동산 대출에도 간접적으로 영향을 줄 수 있습니다.",
+     "date": "10월 국감",
+     "src": "한국금융신문",
+     "url": "https://www.fntimes.com/html/view.php?ud=2026101121044130055e6e69892f_18"
+    },
+    {
+     "status": "시행",
+     "title": "보험사 주담대 위험계수 상향 (K-ICS)",
+     "text": "LTV 60~80% 구간 위험계수가 3.5%에서 4.0%로 올랐고, 일부 보험사는 신규 취급을 중단했습니다.",
+     "date": "",
+     "src": "데일리안",
+     "url": "https://www.dailian.co.kr/news/view/1667537/%EB%8C%80%EC%B6%9C-%EA%B7%9C%EC%A0%9C-%EC%97%AD%EC%84%A4-%EB%B3%B4%ED%97%98%EC%82%AC-%EB%B2%88%EC%A7%84-%EC%A1%B0%EC%9D%B4%EA%B8%B0%EC%8B%A4-2026"
+    }
+   ]
+  },
+  {
+   "tag": "부동산 일반",
+   "name": "개발 · 거래 · 감독",
+   "items": [
+    {
+     "status": "시행 예정",
+     "title": "부동산개발사업관리법 개정 시행 · 11/13 시행 (D-1)",
+     "text": "인허가를 신속히 지원하는 전문기관을 지정할 근거가 생깁니다. 지정 요건은 대통령령으로 정합니다.",
+     "date": "11.13",
+     "src": "국가법령정보센터",
+     "url": "https://www.law.go.kr/LSW/lsRvsDocListP.do?lsId=014887&chrClsCd=010202&lsRvsGubun=all"
+    },
+    {
+     "status": "시행",
+     "title": "부동산거래신고법 시행령 개정 (10/1 시행)",
+     "text": "조정대상지역 관련 기간 요건이 11/10부터 적용됩니다(2025.10.16 지정분). 주로 주거용에 해당합니다.",
+     "date": "10.01",
+     "src": "국가법령정보센터",
+     "url": "https://law.go.kr/LSW/lsRvsDocListP.do?lsId=012790&chrClsCd=010202&lsRvsGubun=all"
+    },
+    {
+     "status": "추진",
+     "title": "국무총리 소속 '부동산감독원(가칭)' 설립 추진",
+     "text": "시장 교란 행위에 대한 대응을 강화하고 주택임대관리업 관리 기준을 강화합니다.",
+     "date": "",
+     "src": "정책브리핑",
+     "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148958747"
+    }
+   ]
+  }
+ ],
+ "insights": [
+  {
+   "title": "금리 되돌림, 하루 만에 반납",
+   "text": "하루 전 내렸던 금리가 미국 CPI 한 방에 10bp 뛰었습니다. 3년물과 기준금리 격차가 72.9bp라, 시장은 11/26 금통위에서 추가 인상을 일부 반영하고 있습니다. 신규 인수는 금리 상단을 5% 안팎으로 잡고 보수적으로 검토해야 합니다."
+  },
+  {
+   "title": "레버리지 역마진 확대",
+   "text": "A급 오피스 캡레이트가 4.3%인데 국고 10년이 3.95%까지 올라 위험 프리미엄이 35bp 수준으로 좁아졌습니다. 캡레이트가 오를(가격이 내릴) 압력이 커지는 구간입니다."
+  },
+  {
+   "title": "데이터센터는 결국 '전력이 되는 수도권 부지'",
+   "text": "신규 데이터센터의 70%가 수도권으로 몰리면서, 전력 인입이 확정된 부지의 희소가치가 더 커집니다."
+  },
+  {
+   "title": "리테일은 상권 양극화",
+   "text": "6대 상권 공실은 줄었지만, 고임대료 핫플은 줄폐업하고 있습니다. 가두 리테일은 임차인의 매출 체력을 먼저 확인해야 합니다."
+  }
+ ],
+ "digest": [
+  {
+   "tag": "Office",
+   "name": "오피스",
+   "icon": "🏢",
+   "items": [
+    {
+     "title": "기업 이전 기대감 도는데…부산 중대형 사무실 품귀",
+     "media": "국제신문",
+     "url": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20261111.22010003200&kid="
+    },
+    {
+     "title": "\"분양 멈추고 경매 늘고\"…지식산업센터 시장의 깊어진 한숨",
+     "media": "이데일리",
+     "url": "https://coinlab.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05713766645644408"
+    }
+   ]
+  },
+  {
+   "tag": "Retail",
+   "name": "리테일",
+   "icon": "🛍️",
+   "items": [
+    {
+     "title": "\"하루 임대료 2000만원\" 줄폐업…잘나가던 '핫플'이 어쩌다",
+     "media": "한국경제",
+     "url": "https://www.hankyung.com/article/2026111082681"
+    },
+    {
+     "title": "전 재산 넣었는데 빈 상가만 남았다[상가투자 주의보]②",
+     "media": "이데일리",
+     "url": "https://www.edaily.co.kr/News/Read?newsId=05503846645644408&mediaCodeNo=257"
+    },
+    {
+     "title": "향수만 520종에 약사도 상주…무신사, 옷 넘어 어디까지? [현장]",
+     "media": "아이뉴스24",
+     "url": "https://www.inews24.com/view/2024597"
+    }
+   ]
+  },
+  {
+   "tag": "Data Center",
+   "name": "데이터센터",
+   "icon": "🖥️",
+   "items": [
+    {
+     "title": "미국발 AI 투자 우려에…빅테크 한국 데이터센터 사업 주목",
+     "media": "연합뉴스",
+     "url": "https://www.yna.co.kr/view/AKR20261109149200017"
+    },
+    {
+     "title": "전력 확보 어려워도 수도권으로… 새로 짓는 데이터센터 10건 중 7건",
+     "media": "조선비즈",
+     "url": "https://biz.chosun.com/real_estate/real_estate_general/2026/11/10/SJOS6MPUMZGUHGL6BWY3RUSMTA/"
+    },
+    {
+     "title": "AI 데이터센터 투자 확대에 건설사 수혜 본격화",
+     "media": "EBN",
+     "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1731131"
+    },
+    {
+     "title": "NHN \"AI 데이터센터 내년 말까지 100MW 규모 확장\"",
+     "media": "중앙신문",
+     "url": "https://www.jasm.co.kr/news/view/324814/NHN-AI-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%84%BC%ED%84%B0-%EB%82%B4%EB%85%84-%EB%A7%90-100MW-%EA%B7%9C%EB%AA%A8-%ED%99%95%EC%9E%A5-2026"
+    }
+   ]
+  },
+  {
+   "tag": "Development",
+   "name": "개발 · 리츠 · 펀드",
+   "icon": "🏗️",
+   "items": [
+    {
+     "title": "[국감] 리츠 자금조달 관행 17년째 그대로…유증 평균 49.9일",
+     "text": "2016년부터 2026년 8월까지 주주배정 유상증자 25건을 분석한 결과입니다. 발행가 확정까지 시간이 길어 금리 변동이 그대로 반영됩니다.",
+     "date": "",
+     "ref": true,
+     "src": "데일리안",
+     "url": "https://www.dailian.co.kr/news/view/1699607",
+     "media": "데일리안",
+     "own": true
+    },
+    {
+     "title": "대신밸류리츠, 제6기 배당 기준일 11/23",
+     "date": "",
+     "src": "대신밸류리츠 공시",
+     "url": "https://daishinvaluereit.com/disclosure/notice/147",
+     "media": "대신밸류리츠 공시",
+     "own": true
+    },
+    {
+     "title": "부영그룹 ‘뚝섬 개발사업’ 내년 상반기 착공 가능할까…사업계획승인 절차 진행 중",
+     "media": "CEOSCOREDAILY",
+     "url": "https://www.ceoscoredaily.com/page/view/2026111015554470737"
+    },
+    {
+     "title": "금감원, 신탁사에 '건전 영업' 당부…\"부동산 공급 원활하도록\"",
+     "media": "연합뉴스",
+     "url": "https://www.yna.co.kr/amp/view/AKR20261110113400002"
+    },
+    {
+     "title": "건설수주 49% 늘었으나 체감경기 ‘한파’…10월 CBSI 70.6",
+     "media": "이데일리",
+     "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=04047526645644408"
+    },
+    {
+     "title": "운용·진입 이어 실물자산까지…겹겹 규제에 갇힌 토종 PEF[마켓인]",
+     "media": "이데일리",
+     "url": "https://m.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05589126645644408"
+    },
+    {
+     "title": "이지스, 바이오 신사업 본격화…헬스케어 플랫폼 만든다",
+     "media": "서울경제",
+     "url": "https://www.sedaily.com/article/20112330"
+    }
+   ]
+  },
+  {
+   "tag": "Global",
+   "name": "해외",
+   "icon": "🌏",
+   "items": [
+    {
+     "title": "\"집 대신 주식 샀더니\"…美서 40년 뒤 벌어진 놀라운 결과",
+     "media": "한국경제",
+     "url": "https://www.hankyung.com/article/202611106696i"
+    },
+    {
+     "title": "빅테크, 美·유럽 대신 아시아에 AIDC 짓나",
+     "media": "매일경제",
+     "url": "https://www.mk.co.kr/news/world/12204210"
+    },
+    {
+     "title": "‘일본의 팔란티어’로 불리는 AI 기업, 왜 주차장 회사를 샀을까? [JAPAN CLOSER]",
+     "media": "매일경제",
+     "url": "https://www.mk.co.kr/news/world/12204255"
+    },
+    {
+     "title": "中 완다그룹, 72세 창업자 경영 복귀… 부채 위기 해결할까",
+     "media": "조선비즈",
+     "url": "https://biz.chosun.com/international/international_general/2026/11/10/45SYOKUJVZBFHGUXKA4DIW5BUQ/"
+    }
+   ]
+  },
+  {
+   "tag": "Macro",
+   "name": "금리 · 경제",
+   "icon": "📈",
+   "items": [
+    {
+     "title": "[단독] \"대출도 예금도 이상하다\"…뒤집힌 금리 공식",
+     "media": "한국경제",
+     "url": "https://www.hankyung.com/article/2026111084481"
+    },
+    {
+     "title": "금융연 \"내년 한국경제 3.1% 성장…반도체 호황에 내수 회복\"",
+     "media": "연합뉴스",
+     "url": "https://www.yna.co.kr/amp/view/AKR20261110027300002"
+    },
+    {
+     "title": "반도체만 웃는 경제…서민 체감 경기는 '한숨'",
+     "media": "연합뉴스TV",
+     "url": "https://www.yonhapnewstv.co.kr/news/MYH20261110210529Zlt"
+    },
+    {
+     "title": "경찰, 부동산 범죄 3565명 적발… 특별단속 기간 1년 연장",
+     "media": "조선비즈",
+     "url": "https://biz.chosun.com/topics/topics_social/2026/11/10/62ZE3GEZCRBR3CRDN26TYKWIIA/"
+    }
+   ]
+  }
+ ],
+ "digest_via": {
+  "name": "부동산플래닛 간추린 뉴스",
+  "date": "2026.11.11",
+  "url": "https://inside.bdsplanet.com/news"
+ }
+}
