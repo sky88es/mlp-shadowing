@@ -132,6 +132,7 @@ const pages = (lessons.length > 1 ? cover(lessons) : '') + lessons.map(d => stud
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Fredoka:wght@500;600&family=Andika:wght@400;700&display=swap" rel="stylesheet">
 <style>${SCENE_CSS}
+.scene .it{filter:none!important;animation:none!important}
 @page{size:A4;margin:10mm}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Gowun Dodum','WenQuanYi Zen Hei',sans-serif;color:#2a2833;font-size:10pt}

@@ -34,7 +34,7 @@ pdir = os.path.join(KIDS, 'photos'); os.makedirs(os.path.join(pdir, 'print'), ex
 for f in os.listdir(pdir):
     if f.endswith('.jpg'):
         dst = os.path.join(pdir, 'print', f)
-        if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(os.path.join(pdir, f)):
+        if True:  # always refresh (cheap)
             im = Image.open(os.path.join(pdir, f)).convert('RGB')
-            if im.width > 760: im = im.resize((760, round(im.height * 760 / im.width)))
-            im.save(dst, 'JPEG', quality=70, optimize=True, progressive=True)
+            if im.width > 600: im = im.resize((600, round(im.height * 600 / im.width)))
+            im.save(dst, 'JPEG', quality=64, optimize=True, progressive=True)

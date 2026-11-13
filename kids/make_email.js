@@ -1,7 +1,10 @@
 // Weekly email body.
 // Usage: node kids/make_email.js <pdf name, e.g. week-2026-11-09.pdf> <lesson.json> [lesson.json ...]  -> prints HTML
 const fs = require('fs'), path = require('path');
-const [, , pdfName, ...files] = process.argv;
+// Usage: node kids/make_email.js <pdf name> <lesson.json>... [--attach]
+// --attach: the PDF is attached to the mail (Gmail send_message attachments), so say so and keep the link as a backup
+const ATTACH = process.argv.includes('--attach');
+const [, , pdfName, ...files] = process.argv.filter(a => a !== '--attach');
 const ls = files.map(f => JSON.parse(fs.readFileSync(f, 'utf8')));
 const cal = JSON.parse(fs.readFileSync(path.join(__dirname, 'calendar.json'), 'utf8'));
 const BRANCH = process.env.KIDS_BRANCH || 'claude/nifty-pascal-bnj2dg';
@@ -18,7 +21,8 @@ console.log(`<div style="font-family:Arial,'Malgun Gothic',sans-serif;max-width:
 <div style="background:linear-gradient(135deg,#ffcf6b,#ff8fa3);border-radius:16px;padding:18px;text-align:center;color:#fff">
 <div style="font-size:40px">🌞</div><div style="font-size:24px;font-weight:bold">아침 리딩 · 이번 주 Weekly Pack</div>
 <div style="font-size:14px">${a.replace(/-/g, '.')} – ${b.slice(5).replace('-', '.')} · English + 국어 + 글쓰기</div></div>
-<div style="text-align:center;margin:14px 0">${btn(raw('pdf/' + pdfName), '#7b6cf6', `🖨 인쇄용 PDF 받기 (${ls.length * (ls[0].write ? 5 : 4) + 2}쪽)`)}${site ? btn(site, '#2fb26b', '🔊 사이트에서 듣기') : ''}</div>
+${ATTACH ? `<div style="text-align:center;font-size:16px;font-weight:bold;color:#7b6cf6;margin:14px 0 4px">📎 인쇄용 PDF(${ls.length * (ls[0].write ? 5 : 4) + 2}쪽)가 첨부되어 있어요</div>` : ''}
+<div style="text-align:center;margin:${ATTACH ? '4px' : '14px'} 0 14px">${ATTACH ? '' : btn(raw('pdf/' + pdfName), '#7b6cf6', `🖨 인쇄용 PDF 받기 (${ls.length * (ls[0].write ? 5 : 4) + 2}쪽)`)}${site ? btn(site, '#2fb26b', '🔊 사이트에서 듣기') : ''}${ATTACH ? btn(raw('pdf/' + pdfName), '#a79ef5', '첨부가 안 열리면 여기서 받기') : ''}</div>
 <div style="font-size:13px;color:#7b7686;text-align:center;margin-bottom:6px">표지(주간 계획표) → 요일마다 English 2쪽 → 국어 2쪽 → 글쓰기 1쪽 → 맨 뒤 정답</div>
 <table style="width:100%;border-collapse:separate;border-spacing:0 6px;font-size:14px">
 ${ls.map(d => `<tr><td style="background:#fff;border-radius:12px 0 0 12px;padding:8px 10px;text-align:center;font-weight:bold;white-space:nowrap">${d.date.slice(5).replace('-', '/')}<br><span style="color:#7b7686;font-weight:normal">(${d.weekday})</span></td>
