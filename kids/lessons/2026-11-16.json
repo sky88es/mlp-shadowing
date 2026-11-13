@@ -1,0 +1,533 @@
+{
+ "version": 2,
+ "date": "2026-11-16",
+ "day": 8,
+ "weekday": "월",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 100",
+  "theme": "Animals",
+  "title": "Penguins: Birds That Swim",
+  "title_ko": "헤엄치는 새, 펭귄",
+  "lets_start": {
+   "q": "Can all birds fly?",
+   "q_ko": "모든 새는 날 수 있을까요?",
+   "options": [
+    "Yes, they can.",
+    "No, some can't."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "swim",
+    "meaning": "헤엄치다",
+    "emoji": "🏊"
+   },
+   {
+    "word": "waddle",
+    "meaning": "뒤뚱뒤뚱 걷다",
+    "emoji": "🐧"
+   },
+   {
+    "word": "feather",
+    "meaning": "깃털",
+    "emoji": "🪶"
+   },
+   {
+    "word": "warm",
+    "meaning": "따뜻한",
+    "emoji": "🧣"
+   },
+   {
+    "word": "egg",
+    "meaning": "알",
+    "emoji": "🥚"
+   },
+   {
+    "word": "hatch",
+    "meaning": "(알에서) 깨어나다",
+    "emoji": "🐣"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-16-en.jpg",
+    "caption": "Emperor penguins on the ice",
+    "caption_ko": "얼음 위의 황제펭귄"
+   },
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🐧",
+      34,
+      64,
+      30
+     ],
+     [
+      "🐧",
+      60,
+      68,
+      24
+     ],
+     [
+      "🧊",
+      82,
+      78,
+      16
+     ],
+     [
+      "🐟",
+      18,
+      86,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Penguins are birds, but they cannot fly. They use their short wings to **swim**. On land, they **waddle**.",
+    "ko": "펭귄은 새지만 날지 못해요. 짧은 날개로 헤엄을 쳐요. 땅에서는 뒤뚱뒤뚱 걸어요."
+   },
+   {
+    "text": "Penguins live in the cold south, near Antarctica. Thick **feathers** and fat keep them **warm**.",
+    "ko": "펭귄은 남극 가까이, 추운 남쪽에 살아요. 두꺼운 깃털과 지방 덕분에 따뜻해요.",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "🐧",
+       30,
+       72,
+       22
+      ],
+      [
+       "🐟",
+       56,
+       80,
+       10
+      ],
+      [
+       "🦑",
+       72,
+       74,
+       12
+      ],
+      [
+       "🦐",
+       86,
+       84,
+       9
+      ],
+      [
+       "🫧",
+       40,
+       60,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "The mother emperor penguin lays one **egg**. The father keeps it on his feet for about two months. Then the chick **hatches**!",
+    "ko": "엄마 황제펭귄이 알을 하나 낳아요. 아빠가 두 달쯤 발 위에 올려 품어요. 그러면 새끼가 깨어나요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "The father keeps the egg on his ___.",
+   "answer": "feet"
+  },
+  "you_know": {
+   "emoji": "🧂",
+   "text": "Penguins can drink salty sea water! A special part near their eyes takes the salt out.",
+   "text_ko": "펭귄은 짠 바닷물도 마실 수 있어요! 눈 근처의 특별한 기관이 소금을 걸러 내거든요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "how penguins live, swim, and care for eggs",
+    "how penguins learn to fly"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "How do penguins move on land?",
+    "options": [
+     [
+      "🐧",
+      "They waddle."
+     ],
+     [
+      "🦘",
+      "They hop high."
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who keeps the emperor penguin's egg warm?",
+    "options": [
+     [
+      "👨",
+      "the father"
+     ],
+     [
+      "🐻‍❄️",
+      "a polar bear"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Penguins use their wings to ___.",
+    "choices": [
+     "fly",
+     "swim",
+     "dig"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What helps penguins stay warm?",
+    "choices": [
+     "thick feathers and fat",
+     "warm coats",
+     "hot water"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How long does the father keep the egg?",
+    "choices": [
+     "two days",
+     "two weeks",
+     "about two months"
+    ],
+    "answer": 2
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🐥",
+    "sentence": "The baby duck will ___ from the egg soon.",
+    "options": [
+     "hatch",
+     "waddle"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🧤",
+    "sentence": "Mittens keep my hands ___.",
+    "options": [
+     "warm",
+     "flat"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🦆",
+    "sentence": "The duck ___s to the pond.",
+    "options": [
+     "waddle",
+     "hatch"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "All About Penguins",
+   "heads": [
+    "Body 🪶",
+    "Home 🧊",
+    "Babies 🥚"
+   ],
+   "choices": [
+    "Short wings like flippers and thick feathers",
+    "the cold south, near Antarctica",
+    "The father keeps the egg on his feet."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "If you were a penguin, what would you like to do?",
+   "q_ko": "내가 펭귄이라면 무엇을 하고 싶나요?",
+   "frame": "If I were a penguin, I would ___."
+  },
+  "sources": "National Geographic Kids, Britannica (penguins)"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "신기한 동물",
+  "title": "겨울 손님 저어새가 왔어요",
+  "lets_start": {
+   "q": "숟가락처럼 생긴 부리를 가진 새가 있을까요?",
+   "options": [
+    "있어요",
+    "없어요"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "철새",
+    "meaning": "계절에 따라 사는 곳을 옮기는 새",
+    "emoji": "🕊️"
+   },
+   {
+    "word": "부리",
+    "meaning": "새의 뾰족한 입",
+    "emoji": "🐦"
+   },
+   {
+    "word": "젓다",
+    "meaning": "이리저리 흔들어 움직이다",
+    "emoji": "🥄"
+   },
+   {
+    "word": "갯벌",
+    "meaning": "바닷물이 빠지면 드러나는 넓은 진흙땅",
+    "emoji": "🦀"
+   },
+   {
+    "word": "멸종",
+    "meaning": "한 종류의 생물이 모두 사라짐",
+    "emoji": "⚠️"
+   },
+   {
+    "word": "천연기념물",
+    "meaning": "나라에서 정해 보호하는 귀한 동식물",
+    "emoji": "🏅"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-16-ko.jpg",
+    "caption_ko": "숟가락 같은 부리를 가진 저어새"
+   },
+   "scene": {
+    "bg": "sea",
+    "items": [
+     [
+      "🦢",
+      40,
+      62,
+      30
+     ],
+     [
+      "🥄",
+      62,
+      50,
+      12
+     ],
+     [
+      "🐟",
+      78,
+      84,
+      10
+     ],
+     [
+      "🦀",
+      18,
+      86,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "추운 겨울이 다가오자 제주도 바닷가에 **철새** 저어새가 찾아왔어요."
+   },
+   {
+    "text": "저어새의 **부리**는 숟가락처럼 생겼어요. 이 부리를 물속에서 좌우로 **저으며** 작은 물고기와 새우를 잡아먹어요. 그래서 이름이 '저어새'예요.",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "🦢",
+       36,
+       64,
+       26
+      ],
+      [
+       "↔️",
+       60,
+       74,
+       10
+      ],
+      [
+       "🐟",
+       76,
+       84,
+       9
+      ],
+      [
+       "🦐",
+       88,
+       76,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "저어새는 온 세상에 몇천 마리밖에 없는 귀한 새예요. **멸종** 위기라서 **천연기념물**로 보호해요. **갯벌**과 바다를 깨끗하게 지키면 저어새도 지킬 수 있어요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "저어새의 부리는 ___처럼 생겼어요.",
+   "answer": "숟가락"
+  },
+  "you_know": {
+   "emoji": "🥚",
+   "text": "세상에 있는 저어새 10마리 가운데 9마리는 우리나라에서 알을 낳아요. 한 번에 알을 2~4개 낳고 25일쯤 품어요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "저어새의 생김새와 저어새를 지켜야 하는 까닭",
+    "숟가락을 만드는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "저어새는 무엇을 잡아먹나요?",
+    "options": [
+     [
+      "🐟",
+      "작은 물고기와 새우"
+     ],
+     [
+      "🍎",
+      "사과와 배"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "저어새가 겨울에 찾아온 곳은?",
+    "options": [
+     [
+      "🏝️",
+      "제주도 바닷가"
+     ],
+     [
+      "🏜️",
+      "모래사막"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "'저어새'라는 이름이 붙은 까닭은?",
+    "choices": [
+     "부리를 좌우로 저어서",
+     "저녁에만 날아서",
+     "저 멀리 살아서"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "저어새는 세상에 얼마나 남아 있나요?",
+    "choices": [
+     "몇천 마리",
+     "몇백만 마리",
+     "한 마리"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "저어새를 지키려면 무엇을 깨끗하게 지켜야 하나요?",
+    "choices": [
+     "갯벌과 바다",
+     "놀이터",
+     "냉장고"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🥣",
+    "sentence": "코코아 가루를 넣고 숟가락으로 ___어요.",
+    "options": [
+     "저었",
+     "날았"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🦀",
+    "sentence": "___에는 게와 조개가 살아요.",
+    "options": [
+     "갯벌",
+     "부리"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🦅",
+    "sentence": "독수리는 ___가 날카로워요.",
+    "options": [
+     "부리",
+     "철새"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "저어새 알아보기",
+   "heads": [
+    "생김새",
+    "먹이 잡는 법",
+    "지키는 법"
+   ],
+   "choices": [
+    "부리가 숟가락처럼 생겼어요.",
+    "부리를 물속에서 좌우로 저어요.",
+    "갯벌과 바다를 깨끗하게 지켜요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "저어새에게 해 주고 싶은 말을 써 보세요.",
+   "frame": "저어새야, ___."
+  },
+  "dictation": [
+   "저어새",
+   "숟가락",
+   "부리",
+   "갯벌",
+   "지켜요"
+  ],
+  "copy": "저어새 부리는 숟가락을 닮았어요.",
+  "sources": "소년한국일보 「\"겨울 나러 왔어요\"」(2026.11) 사진 기사를 바탕으로 새로 씀"
+ },
+ "write": {
+  "ref_ko": "요한일서 4장 8절",
+  "ref": "1 John 4:8",
+  "ko": "하나님은 사랑이세요.",
+  "en": "God is love.",
+  "words": [
+   "사랑",
+   "하나님"
+  ],
+  "prompt": "오늘 내가 사랑한다고 말하고 싶은 사람은?"
+ }
+}

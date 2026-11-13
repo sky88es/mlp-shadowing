@@ -59,7 +59,7 @@
     ]
    ]
   },
-  "photo": null
+  "photo": "photos/2026-11-10-ko.jpg"
  },
  {
   "date": "2026-11-11",
@@ -204,6 +204,213 @@
     ]
    ]
   },
+  "photo": "photos/2026-11-15-ko.jpg"
+ },
+ {
+  "date": "2026-11-16",
+  "day": 8,
+  "weekday": "월",
+  "en_title": "Penguins: Birds That Swim",
+  "ko_title": "겨울 손님 저어새가 왔어요",
+  "en_genre": "Nonfiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "snow",
+   "items": [
+    [
+     "🐧",
+     34,
+     64,
+     30
+    ],
+    [
+     "🐧",
+     60,
+     68,
+     24
+    ],
+    [
+     "🧊",
+     82,
+     78,
+     16
+    ],
+    [
+     "🐟",
+     18,
+     86,
+     10
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-16-en.jpg"
+ },
+ {
+  "date": "2026-11-17",
+  "day": 9,
+  "weekday": "화",
+  "en_title": "Pip Can't Fly!",
+  "ko_title": "보이저 1호, 빛으로 하루 걸리는 곳까지!",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "snow",
+   "items": [
+    [
+     "🐧",
+     40,
+     68,
+     30
+    ],
+    [
+     "🕊️",
+     70,
+     24,
+     14
+    ],
+    [
+     "🕊️",
+     84,
+     36,
+     10
+    ],
+    [
+     "❓",
+     56,
+     44,
+     10
+    ],
+    [
+     "🧊",
+     16,
+     80,
+     14
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-17-ko.jpg"
+ },
+ {
+  "date": "2026-11-18",
+  "day": 10,
+  "weekday": "수",
+  "en_title": "Eight Spinning Planets",
+  "ko_title": "우주로 보낸 편지",
+  "en_genre": "Nonfiction",
+  "ko_genre": "이야기",
+  "cover": {
+   "bg": "space",
+   "items": [
+    [
+     "☀️",
+     12,
+     50,
+     22
+    ],
+    [
+     "🌍",
+     40,
+     54,
+     12
+    ],
+    [
+     "🪐",
+     66,
+     46,
+     20
+    ],
+    [
+     "🌑",
+     86,
+     60,
+     10
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-18-en.jpg"
+ },
+ {
+  "date": "2026-11-19",
+  "day": 11,
+  "weekday": "목",
+  "en_title": "Leo's Trip to the Moon",
+  "ko_title": "천 년을 가는 종이, 한지",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "night",
+   "items": [
+    [
+     "📦",
+     34,
+     66,
+     26
+    ],
+    [
+     "👦",
+     34,
+     46,
+     16
+    ],
+    [
+     "🚀",
+     66,
+     40,
+     22
+    ],
+    [
+     "🌕",
+     84,
+     18,
+     14
+    ]
+   ]
+  },
   "photo": null
+ },
+ {
+  "date": "2026-11-20",
+  "day": 12,
+  "weekday": "금",
+  "en_title": "Birthdays Around the World",
+  "ko_title": "어린이 기자, 국립스포츠박물관에 가다",
+  "en_genre": "Nonfiction",
+  "ko_genre": "기사문",
+  "cover": {
+   "bg": "house",
+   "items": [
+    [
+     "🎂",
+     50,
+     62,
+     26
+    ],
+    [
+     "🎈",
+     20,
+     30,
+     14
+    ],
+    [
+     "🎈",
+     82,
+     26,
+     14
+    ],
+    [
+     "🪅",
+     50,
+     22,
+     16
+    ],
+    [
+     "🎁",
+     80,
+     74,
+     12
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-20-en.jpg"
  }
 ]

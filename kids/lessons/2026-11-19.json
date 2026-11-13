@@ -1,0 +1,518 @@
+{
+ "version": 2,
+ "date": "2026-11-19",
+ "day": 11,
+ "weekday": "목",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "Space",
+  "title": "Leo's Trip to the Moon",
+  "title_ko": "레오의 달나라 여행",
+  "lets_start": {
+   "q": "Would you like to go to the Moon?",
+   "q_ko": "달에 가 보고 싶나요?",
+   "options": [
+    "Yes! It looks fun.",
+    "No, it looks scary."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "build",
+    "meaning": "만들다, 짓다",
+    "emoji": "🔨"
+   },
+   {
+    "word": "rocket",
+    "meaning": "로켓",
+    "emoji": "🚀"
+   },
+   {
+    "word": "blast off",
+    "meaning": "발사하다",
+    "emoji": "🔥"
+   },
+   {
+    "word": "float",
+    "meaning": "둥둥 뜨다",
+    "emoji": "🎈"
+   },
+   {
+    "word": "dusty",
+    "meaning": "먼지투성이의",
+    "emoji": "🌫️"
+   },
+   {
+    "word": "someday",
+    "meaning": "언젠가",
+    "emoji": "🌠"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "night",
+    "items": [
+     [
+      "📦",
+      34,
+      66,
+      26
+     ],
+     [
+      "👦",
+      34,
+      46,
+      16
+     ],
+     [
+      "🚀",
+      66,
+      40,
+      22
+     ],
+     [
+      "🌕",
+      84,
+      18,
+      14
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Leo **builds** a **rocket** out of a big box. He paints it silver. \"Three, two, one, **blast off**!\" He closes his eyes.",
+    "ko": "레오는 큰 상자로 로켓을 만들어요. 은색으로 칠해요. \"셋, 둘, 하나, 발사!\" 레오는 눈을 감아요."
+   },
+   {
+    "text": "Leo is on the Moon! The ground is gray and **dusty**. Leo jumps and **floats** high. He sees a blue ball in the black sky. It is Earth!",
+    "ko": "레오가 달에 왔어요! 땅은 회색이고 먼지투성이예요. 레오가 뛰자 높이 둥둥 떠올라요. 까만 하늘에 파란 공이 보여요. 지구예요!",
+    "scene": {
+     "bg": "space",
+     "items": [
+      [
+       "🌍",
+       76,
+       26,
+       18
+      ],
+      [
+       "👨‍🚀",
+       36,
+       52,
+       26
+      ],
+      [
+       "🌑",
+       50,
+       94,
+       70
+      ]
+     ]
+    }
+   },
+   {
+    "text": "\"Leo, dinner time!\" says Mom. Leo opens his eyes. He is in the living room. \"**Someday** I will go to the Moon,\" he says.",
+    "ko": "\"레오, 저녁 먹자!\" 엄마가 말해요. 레오가 눈을 떠요. 거실이에요. \"언젠가 달에 갈 거야.\" 레오가 말해요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "Leo paints his box rocket ___.",
+   "answer": "silver"
+  },
+  "you_know": {
+   "emoji": "🌕",
+   "text": "On the Moon, you would weigh only about one sixth of what you weigh on Earth. You could jump much higher!",
+   "text_ko": "달에서는 몸무게가 지구의 약 6분의 1밖에 안 돼요. 훨씬 높이 뛸 수 있어요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Leo's pretend trip to the Moon",
+    "Leo's real trip to Mars"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What does Leo use to make his rocket?",
+    "options": [
+     [
+      "📦",
+      "a big box"
+     ],
+     [
+      "🪵",
+      "logs"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Leo see in the black sky?",
+    "options": [
+     [
+      "🌍",
+      "Earth"
+     ],
+     [
+      "🌈",
+      "a rainbow"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "The ground on the Moon is ___.",
+    "choices": [
+     "green and wet",
+     "gray and dusty",
+     "white and cold"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "What happens when Leo jumps on the Moon?",
+    "choices": [
+     "He floats high.",
+     "He falls down.",
+     "He runs fast."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where is Leo at the end?",
+    "choices": [
+     "on the Moon",
+     "in the living room",
+     "at school"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🏰",
+    "sentence": "Let's ___ a sandcastle on the beach.",
+    "options": [
+     "build",
+     "float"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🦆",
+    "sentence": "The rubber duck can ___ in the bathtub.",
+    "options": [
+     "float",
+     "build"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🧹",
+    "sentence": "The old box is very ___.",
+    "options": [
+     "dusty",
+     "someday"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Beginning",
+    "Middle",
+    "End"
+   ],
+   "choices": [
+    "Leo builds a rocket from a box.",
+    "Leo floats on the Moon and sees Earth.",
+    "Mom calls Leo for dinner."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What would you take with you to the Moon?",
+   "q_ko": "달에 갈 때 무엇을 가져가고 싶나요?",
+   "frame": "I would take ___ to the Moon."
+  },
+  "sources": "창작 이야기 (달의 중력은 실제 사실)"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "우리 문화",
+  "title": "천 년을 가는 종이, 한지",
+  "lets_start": {
+   "q": "종이는 무엇으로 만들까요?",
+   "options": [
+    "나무",
+    "돌"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "한지",
+    "meaning": "우리나라 전통 방법으로 만든 종이",
+    "emoji": "📜"
+   },
+   {
+    "word": "닥나무",
+    "meaning": "껍질로 한지를 만드는 나무",
+    "emoji": "🌳"
+   },
+   {
+    "word": "껍질",
+    "meaning": "겉을 싸고 있는 것",
+    "emoji": "🪵"
+   },
+   {
+    "word": "장인",
+    "meaning": "한 가지 일을 오래 해서 솜씨가 뛰어난 사람",
+    "emoji": "👐"
+   },
+   {
+    "word": "질기다",
+    "meaning": "잘 찢어지거나 끊어지지 않다",
+    "emoji": "💪"
+   },
+   {
+    "word": "유산",
+    "meaning": "조상이 남겨 준 귀한 것",
+    "emoji": "🏛️"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "house",
+    "items": [
+     [
+      "📜",
+      34,
+      56,
+      30
+     ],
+     [
+      "🌳",
+      72,
+      50,
+      28
+     ],
+     [
+      "👐",
+      50,
+      82,
+      14
+     ],
+     [
+      "✨",
+      20,
+      26,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "**한지**는 우리 조상들이 쓰던 전통 종이예요. **닥나무** **껍질**을 벗겨 삶고 두드려서 만들어요."
+   },
+   {
+    "text": "**장인**이 물에 푼 닥나무 섬유를 발로 얇게 떠요. 섬유가 서로 얽혀서 종이가 아주 **질겨져요**. 잘 말리면 한지가 돼요.",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🌳",
+       14,
+       48,
+       20
+      ],
+      [
+       "➡️",
+       30,
+       52,
+       8
+      ],
+      [
+       "🫕",
+       46,
+       54,
+       18
+      ],
+      [
+       "➡️",
+       62,
+       52,
+       8
+      ],
+      [
+       "📜",
+       82,
+       52,
+       22
+      ]
+     ]
+    }
+   },
+   {
+    "text": "옛말에 \"종이는 천 년을 간다\"고 했어요. 한지 만드는 기술은 곧 유네스코 인류무형문화**유산**이 될 것으로 보여요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "한지는 ___ 껍질로 만들어요.",
+   "answer": "닥나무"
+  },
+  "you_know": {
+   "emoji": "🇫🇷",
+   "text": "프랑스 루브르박물관에서도 오래된 가구를 고칠 때 우리 한지를 썼어요. 한지가 질기고 오래가기 때문이에요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "한지를 만드는 방법과 한지의 좋은 점",
+    "책을 읽는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "한지를 만드는 재료는?",
+    "options": [
+     [
+      "🌳",
+      "닥나무 껍질"
+     ],
+     [
+      "🐑",
+      "양털"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "한지의 좋은 점은?",
+    "options": [
+     [
+      "💪",
+      "질기고 오래가요"
+     ],
+     [
+      "🧊",
+      "차갑고 미끄러워요"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "한지를 만들 때 닥나무 껍질을 어떻게 하나요?",
+    "choices": [
+     "삶고 두드려요",
+     "얼려요",
+     "색칠해요"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "종이가 질겨지는 까닭은?",
+    "choices": [
+     "섬유가 서로 얽혀서",
+     "풀을 많이 발라서",
+     "햇빛을 받아서"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "옛말에 종이는 몇 년을 간다고 했나요?",
+    "choices": [
+     "십 년",
+     "백 년",
+     "천 년"
+    ],
+    "answer": 2
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🍊",
+    "sentence": "귤 ___을 까서 먹었어요.",
+    "options": [
+     "껍질",
+     "유산"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🪢",
+    "sentence": "이 밧줄은 아주 ___서 끊어지지 않아요.",
+    "options": [
+     "질겨",
+     "얇아"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏺",
+    "sentence": "도자기 ___이 예쁜 그릇을 빚었어요.",
+    "options": [
+     "장인",
+     "닥나무"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "한지 만들기",
+   "heads": [
+    "첫째",
+    "둘째",
+    "셋째"
+   ],
+   "choices": [
+    "닥나무 껍질을 벗겨 삶고 두드려요.",
+    "물에 풀어 발로 얇게 떠요.",
+    "잘 말리면 한지가 돼요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "한지로 무엇을 만들어 보고 싶나요?",
+   "frame": "나는 한지로 ___을/를 만들고 싶어요."
+  },
+  "dictation": [
+   "한지",
+   "닥나무",
+   "껍질",
+   "천 년",
+   "질겨요"
+  ],
+  "copy": "한지는 천 년을 가는 종이예요.",
+  "sources": "소년한국일보 스페셜뉴스 「장인의 손길과 자연 어우러진 유산 '한지'」(2026.11.9)를 쉽게 다시 씀"
+ },
+ "write": {
+  "ref_ko": "데살로니가전서 5장 18절",
+  "ref": "1 Thessalonians 5:18",
+  "ko": "모든 일에 감사하세요.",
+  "en": "In everything give thanks.",
+  "words": [
+   "감사",
+   "모든 일"
+  ],
+  "prompt": "오늘 감사한 일 한 가지는?"
+ }
+}

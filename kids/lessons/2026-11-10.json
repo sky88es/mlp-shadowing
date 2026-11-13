@@ -411,6 +411,10 @@
    }
   ],
   "hero": {
+   "photo": {
+    "src": "photos/2026-11-10-ko.jpg",
+    "caption_ko": "바다 위를 나는 맹크스슴새"
+   },
    "scene": {
     "bg": "sea",
     "items": [
