@@ -358,6 +358,10 @@
    }
   ],
   "hero": {
+   "photo": {
+    "src": "photos/2026-11-15-ko.jpg",
+    "caption_ko": "노랗게 핀 민들레꽃"
+   },
    "scene": {
     "bg": "field",
     "items": [

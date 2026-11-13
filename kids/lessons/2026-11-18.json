@@ -1,0 +1,552 @@
+{
+ "version": 2,
+ "date": "2026-11-18",
+ "day": 10,
+ "weekday": "수",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 100",
+  "theme": "Space",
+  "title": "Eight Spinning Planets",
+  "title_ko": "빙글빙글 도는 여덟 행성",
+  "lets_start": {
+   "q": "Which planet do we live on?",
+   "q_ko": "우리는 어느 행성에 살고 있나요?",
+   "options": [
+    "Earth",
+    "Mars"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "planet",
+    "meaning": "행성",
+    "emoji": "🪐"
+   },
+   {
+    "word": "orbit",
+    "meaning": "궤도, 도는 길",
+    "emoji": "⭕"
+   },
+   {
+    "word": "closest",
+    "meaning": "가장 가까운",
+    "emoji": "📍"
+   },
+   {
+    "word": "biggest",
+    "meaning": "가장 큰",
+    "emoji": "🐘"
+   },
+   {
+    "word": "ring",
+    "meaning": "고리",
+    "emoji": "💍"
+   },
+   {
+    "word": "spin",
+    "meaning": "돌다",
+    "emoji": "🌀"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-18-en.jpg",
+    "caption": "Swirling clouds on Jupiter",
+    "caption_ko": "목성의 소용돌이 구름"
+   },
+   "scene": {
+    "bg": "space",
+    "items": [
+     [
+      "☀️",
+      12,
+      50,
+      22
+     ],
+     [
+      "🌍",
+      40,
+      54,
+      12
+     ],
+     [
+      "🪐",
+      66,
+      46,
+      20
+     ],
+     [
+      "🌑",
+      86,
+      60,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Earth is a **planet**. Eight planets move around the Sun. Each one has its own path, called an **orbit**.",
+    "ko": "지구는 행성이에요. 여덟 개의 행성이 태양 둘레를 돌아요. 행성마다 자기 길이 있는데, 이것을 궤도라고 해요."
+   },
+   {
+    "text": "Mercury is the **closest** planet to the Sun. It is very hot. Earth is the third planet. It has air and water. Jupiter is the **biggest** planet.",
+    "ko": "수성은 태양에서 가장 가까운 행성이에요. 아주 뜨거워요. 지구는 세 번째 행성이에요. 공기와 물이 있어요. 목성은 가장 큰 행성이에요.",
+    "scene": {
+     "bg": "space",
+     "items": [
+      [
+       "🌍",
+       24,
+       56,
+       12
+      ],
+      [
+       "🪐",
+       64,
+       52,
+       40
+      ],
+      [
+       "➡️",
+       42,
+       56,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Saturn has **rings** of ice and rock. All the planets **spin** like tops. Earth spins once every day. That gives us day and night!",
+    "ko": "토성에는 얼음과 돌로 된 고리가 있어요. 모든 행성은 팽이처럼 돌아요. 지구는 하루에 한 바퀴 돌아요. 그래서 낮과 밤이 생겨요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "Earth is the ___ planet from the Sun.",
+   "answer": "third"
+  },
+  "you_know": {
+   "emoji": "🔭",
+   "text": "Pluto was called a planet for many years. In 2006, scientists named it a dwarf planet.",
+   "text_ko": "명왕성은 오랫동안 행성이라고 불렸어요. 2006년에 과학자들은 명왕성을 '왜소 행성'으로 정했어요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "the eight planets that go around the Sun",
+    "how to build a rocket"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "Which planet has beautiful rings?",
+    "options": [
+     [
+      "🪐",
+      "Saturn"
+     ],
+     [
+      "🌍",
+      "Earth"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Earth have?",
+    "options": [
+     [
+      "💧",
+      "air and water"
+     ],
+     [
+      "🔥",
+      "only fire"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Which planet is closest to the Sun?",
+    "choices": [
+     "Mercury",
+     "Jupiter",
+     "Neptune"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Jupiter is the ___ planet.",
+    "choices": [
+     "smallest",
+     "biggest",
+     "hottest"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Why do we have day and night?",
+    "choices": [
+     "The Moon turns off.",
+     "Earth spins once every day.",
+     "The Sun goes to sleep."
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🎠",
+    "sentence": "The merry-go-round can ___ around and around.",
+    "options": [
+     "spin",
+     "ring"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏫",
+    "sentence": "The park is the ___ place to my school.",
+    "options": [
+     "closest",
+     "planet"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🐳",
+    "sentence": "The blue whale is the ___ animal.",
+    "options": [
+     "biggest",
+     "closest"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Planet Facts",
+   "heads": [
+    "Mercury",
+    "Jupiter",
+    "Saturn"
+   ],
+   "choices": [
+    "closest to the Sun and very hot",
+    "the biggest planet",
+    "has rings of ice and rock"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "Which planet would you like to visit? Why?",
+   "q_ko": "어느 행성에 가 보고 싶나요? 왜요?",
+   "frame": "I want to visit ___ because ___."
+  },
+  "sources": "NASA Space Place"
+ },
+ "ko": {
+  "genre": "이야기",
+  "level": "초1~2",
+  "theme": "상상 이야기",
+  "title": "우주로 보낸 편지",
+  "lets_start": {
+   "q": "외계인 친구가 있다면 무엇을 물어보고 싶나요?",
+   "options": [
+    "이름이 뭐야?",
+    "뭘 먹고 살아?"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "편지",
+    "meaning": "하고 싶은 말을 적어 보내는 글",
+    "emoji": "💌"
+   },
+   {
+    "word": "답장",
+    "meaning": "받은 편지에 대답하여 보내는 편지",
+    "emoji": "📬"
+   },
+   {
+    "word": "궁금하다",
+    "meaning": "무엇이 알고 싶다",
+    "emoji": "🤔"
+   },
+   {
+    "word": "망원경",
+    "meaning": "먼 곳을 크게 보는 도구",
+    "emoji": "🔭"
+   },
+   {
+    "word": "반짝이다",
+    "meaning": "빛이 잠깐씩 나타났다 사라지다",
+    "emoji": "✨"
+   },
+   {
+    "word": "소중하다",
+    "meaning": "매우 귀하고 중요하다",
+    "emoji": "💎"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "night",
+    "items": [
+     [
+      "🏠",
+      24,
+      62,
+      30
+     ],
+     [
+      "👧",
+      54,
+      72,
+      20
+     ],
+     [
+      "🔭",
+      70,
+      66,
+      16
+     ],
+     [
+      "💌",
+      78,
+      30,
+      12
+     ],
+     [
+      "⭐",
+      44,
+      18,
+      8
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "서아는 뉴스에서 보이저 1호 이야기를 들었어요. \"나도 우주에 **편지**를 보낼래요!\""
+   },
+   {
+    "text": "\"우주 친구에게. 안녕? 나는 지구에 사는 서아야. 너희 별에도 떡볶이가 있니? 나는 네가 정말 **궁금해**.\" 서아는 편지 끝에 별을 크게 그렸어요.",
+    "scene": {
+     "bg": "house",
+     "items": [
+      [
+       "👧",
+       28,
+       62,
+       26
+      ],
+      [
+       "✏️",
+       50,
+       66,
+       10
+      ],
+      [
+       "💌",
+       68,
+       58,
+       20
+      ],
+      [
+       "⭐",
+       68,
+       56,
+       7
+      ]
+     ]
+    }
+   },
+   {
+    "text": "그날 밤, 서아는 아빠와 **망원경**으로 하늘을 보았어요. 별 하나가 유난히 **반짝였어요**. \"아빠, 저 별이 **답장**하는 것 같아요!\" \"그럴지도 모르지. 지구도 참 **소중한** 별이란다.\"",
+    "scene": {
+     "bg": "night",
+     "items": [
+      [
+       "👨",
+       26,
+       70,
+       22
+      ],
+      [
+       "👧",
+       48,
+       74,
+       18
+      ],
+      [
+       "🔭",
+       64,
+       66,
+       16
+      ],
+      [
+       "🌟",
+       80,
+       22,
+       16
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "서아는 편지 끝에 ___을 크게 그렸어요.",
+   "answer": "별"
+  },
+  "you_know": {
+   "emoji": "📡",
+   "text": "실제로 과학자들은 1974년에 커다란 전파 망원경으로 먼 별들을 향해 지구를 소개하는 신호를 보낸 적이 있어요."
+  },
+  "main_idea": {
+   "q": "이 이야기는 무엇에 관한 이야기인가요?",
+   "options": [
+    "서아가 우주 친구에게 편지를 쓴 이야기",
+    "서아가 떡볶이를 만든 이야기"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "서아는 누구에게 편지를 썼나요?",
+    "options": [
+     [
+      "👽",
+      "우주 친구"
+     ],
+     [
+      "👵",
+      "할머니"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "서아와 아빠는 무엇으로 하늘을 보았나요?",
+    "options": [
+     [
+      "🔭",
+      "망원경"
+     ],
+     [
+      "📺",
+      "텔레비전"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "서아가 우주 친구에게 물어본 것은?",
+    "choices": [
+     "너희 별에도 떡볶이가 있니?",
+     "몇 살이니?",
+     "학교에 다니니?"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "서아는 왜 별이 답장하는 것 같다고 했나요?",
+    "choices": [
+     "별이 유난히 반짝여서",
+     "별이 떨어져서",
+     "별이 말을 해서"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "아빠는 지구가 어떤 별이라고 했나요?",
+    "choices": [
+     "무서운 별",
+     "소중한 별",
+     "작은 별"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "📬",
+    "sentence": "친구에게 편지를 보냈더니 ___이 왔어요.",
+    "options": [
+     "답장",
+     "망원경"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🎁",
+    "sentence": "상자 안에 뭐가 들었는지 ___해요.",
+    "options": [
+     "궁금",
+     "소중"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "💎",
+    "sentence": "가족은 나에게 가장 ___해요.",
+    "options": [
+     "소중",
+     "반짝"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "이야기 지도",
+   "heads": [
+    "처음",
+    "가운데",
+    "끝"
+   ],
+   "choices": [
+    "서아가 보이저 1호 뉴스를 들어요.",
+    "우주 친구에게 편지를 써요.",
+    "반짝이는 별을 보며 답장이라고 생각해요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "나도 우주 친구에게 편지를 써 보세요.",
+   "frame": "우주 친구에게. 안녕? 나는 ___. 지구에는 ___."
+  },
+  "dictation": [
+   "편지",
+   "궁금해",
+   "망원경",
+   "반짝였어요",
+   "소중한 별"
+  ],
+  "copy": "지구는 참 소중한 별이에요.",
+  "sources": "창작 이야기 (어제 읽은 보이저 1호 기사와 이어지는 글)"
+ },
+ "write": {
+  "ref_ko": "데살로니가전서 5장 17절",
+  "ref": "1 Thessalonians 5:17",
+  "ko": "쉬지 말고 기도하세요.",
+  "en": "Pray without ceasing.",
+  "words": [
+   "기도",
+   "쉬지 말고"
+  ],
+  "prompt": "오늘 기도하고 싶은 것은?"
+ }
+}

@@ -86,19 +86,48 @@ function workPage(d, U, lang) {
 </section>`;
 }
 
+// 글쓰기: 격자 칸에 한글 따라 쓰기 + 4선에 영어 따라 쓰기
+function gridRows(text, traceCls) {
+  const N = 11, chars =[...text.replace(/[.!?]$/, '')], rows = [];
+  for (let i = 0; i < chars.length; i += N) rows.push(chars.slice(i, i + N));
+  const row = (cs, cls) => `<div class="grow">${Array.from({ length: N }, (_, i) => `<div class="gc"><span class="${cls}">${cs[i] && cs[i] !== ' ' ? esc(cs[i]) : ''}</span></div>`).join('')}</div>`;
+  return rows.map(r => row(r, traceCls) + row([], '') + row([], '')).join('');
+}
+function enRow(text) {
+  const fs = Math.min(12.6, 178 / (Math.max(text.length, 1) * 0.56)), b = 12, k = fs / 12.6;
+  const y = v => (b - v * k).toFixed(2);
+  return `<svg class="enrow" viewBox="0 0 190 16"><line x1="0" x2="190" y1="${y(9.3)}" y2="${y(9.3)}" stroke="#bcd3ee" stroke-width=".25"/><line x1="0" x2="190" y1="${y(6.5)}" y2="${y(6.5)}" stroke="#bcd3ee" stroke-width=".25" stroke-dasharray="1.5 1.5"/><line x1="0" x2="190" y1="${b}" y2="${b}" stroke="#e58c8c" stroke-width=".35"/><line x1="0" x2="190" y1="${(b + 3.2 * k).toFixed(2)}" y2="${(b + 3.2 * k).toFixed(2)}" stroke="#bcd3ee" stroke-width=".25"/>${text ? `<text x="3" y="${b}" font-family="Andika" font-size="${fs.toFixed(2)}" fill="#cfcfd6">${esc(text)}</text>` : ''}</svg>`;
+}
+function writePage(d) {
+  const W = d.write; if (!W) return '';
+  return `<section class="pg ko wr" style="--g:#8a63d2">
+  <div class="meta"><span class="unit">단원 ${d.day}</span><span>글쓰기 · 오늘의 말씀 따라 쓰기</span><span class="dt">${d.date.slice(5).replace('-', '/')} (${d.weekday})</span></div>
+  <div class="verse"><div class="vk">${esc(W.ko)}</div><div class="ve">${esc(W.en)}</div><div class="vr">${esc(W.ref_ko)} · ${esc(W.ref)}</div></div>
+  <h2>한글 또박또박 <small>흐린 글씨를 따라 쓰고, 아래 칸에 혼자 써요</small></h2>
+  ${gridRows(W.ko, 'tr')}
+  <h2>낱말 연습</h2>
+  ${W.words.map(w => { const cs = [...w]; const line = [...cs, ' ', ...cs].slice(0, 11); return `<div class="grow">${Array.from({ length: 11 }, (_, i) => `<div class="gc"><span class="${i < cs.length ? 'tr dk' : 'tr'}">${line[i] && line[i] !== ' ' ? esc(line[i]) : ''}</span></div>`).join('')}</div>`; }).join('')}
+  <h2>English <small>Trace and write.</small></h2>
+  ${enRow(W.en)}${enRow(W.en)}${enRow('')}
+  <h2>내 생각 한 줄</h2>
+  <div class="it"><div>${esc(W.prompt)}</div><div class="line"></div><div class="line"></div></div>
+  <footer>영어 구절: World English Bible(공공 영역) · 한국어는 아이 눈높이로 쉽게 풀어 쓴 문장이에요.</footer>
+</section>`;
+}
+
 function cover(ls) {
   const a = ls[0].date, b = ls[ls.length - 1].date;
-  return `<section class="pg cover"><div class="cv-top"><div class="rng">WEEKLY READING PACK</div><h1>아침 리딩</h1><div class="rng2">${a.replace(/-/g, '.')} – ${b.slice(5).replace('-', '.')} · English + 국어 · 하루 20분</div></div>
-  <table class="plan"><tr><th>날짜</th><th>🔤 English</th><th>📖 국어</th><th>⭐</th></tr>
-  ${ls.map(d => `<tr><td><b>${d.date.slice(5).replace('-', '/')}</b><br>(${d.weekday})</td><td><div class="pt">${esc(d.en.title)}</div><div class="pm">${esc((GENRE[d.en.genre] || [d.en.genre])[0])} · ${esc(d.en.level)} · ${esc(d.en.theme)}</div></td><td><div class="pt">${esc(d.ko.title)}</div><div class="pm">${esc((GENRE[d.ko.genre] || [d.ko.genre])[0])} · ${esc(d.ko.theme)}</div></td><td><div class="stk"></div></td></tr>`).join('')}</table>
-  <div class="how"><b>하루 20분 이렇게!</b> ① 생각 열기·새 낱말 (3분) → ② 본문 듣고 따라 읽기 (7분, 소리는 사이트 🔊) → ③ 활동지 (10분) · 다 하면 ⭐ 칸에 스티커!</div></section>`;
+  return `<section class="pg cover"><div class="cv-top"><div class="rng">WEEKLY READING PACK</div><h1>아침 리딩</h1><div class="rng2">${a.replace(/-/g, '.')} – ${b.slice(5).replace('-', '.')} · English + 국어 + 글쓰기 · 하루 20~25분</div></div>
+  <table class="plan"><tr><th>날짜</th><th>🔤 English</th><th>📖 국어</th><th>✍️ 글쓰기</th><th>⭐</th></tr>
+  ${ls.map(d => `<tr><td><b>${d.date.slice(5).replace('-', '/')}</b><br>(${d.weekday})</td><td><div class="pt">${esc(d.en.title)}</div><div class="pm">${esc((GENRE[d.en.genre] || [d.en.genre])[0])} · ${esc(d.en.level)} · ${esc(d.en.theme)}</div></td><td><div class="pt">${esc(d.ko.title)}</div><div class="pm">${esc((GENRE[d.ko.genre] || [d.ko.genre])[0])} · ${esc(d.ko.theme)}</div></td><td>${d.write ? `<div class="pt">${esc(d.write.ko)}</div><div class="pm">${esc(d.write.en)}</div>` : ''}</td><td><div class="stk"></div></td></tr>`).join('')}</table>
+  <div class="how"><b>하루 순서</b> ① English 2쪽 → ② 국어 2쪽 → ③ 글쓰기 1쪽 · 요일별로 5장씩 묶어 두면 좋아요 · 다 하면 ⭐ 칸에 스티커!</div></section>`;
 }
 function answers(ls) {
   const one = U => `Pop: ${esc(U.pop_quiz.answer)} · A ${U.main_idea.answer + 1} · B ${U.check.map(c => c.answer + 1).join(',')} · C ${U.choose.map(c => ABC[c.answer]).join(',')} · Word: ${U.word_zone.map(w => esc(w.options[w.answer])).join(', ')} · Wrap: ${U.wrap_up.answers.map(i => ABC[i]).join('-')}`;
   return `<section class="pg key"><h2>정답 Answer Key</h2>${ls.map(d => `<div class="kd"><b>DAY ${d.day} (${d.date.slice(5).replace('-', '/')})</b><div>🔤 ${one(d.en)}</div><div>📖 ${one(d.ko)} · 받아쓰기: ${d.ko.dictation.map(esc).join(', ')}</div></div>`).join('')}</section>`;
 }
 
-const pages = (lessons.length > 1 ? cover(lessons) : '') + lessons.map(d => studentPage(d, d.en, 'en') + workPage(d, d.en, 'en') + studentPage(d, d.ko, 'ko') + workPage(d, d.ko, 'ko')).join('') + (lessons.length > 1 ? answers(lessons) : '');
+const pages = (lessons.length > 1 ? cover(lessons) : '') + lessons.map(d => studentPage(d, d.en, 'en') + workPage(d, d.en, 'en') + studentPage(d, d.ko, 'ko') + workPage(d, d.ko, 'ko') + writePage(d)).join('') + (lessons.length > 1 ? answers(lessons) : '');
 
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Fredoka:wght@500;600&family=Andika:wght@400;700&display=swap" rel="stylesheet">
@@ -126,8 +155,8 @@ mark{background:linear-gradient(transparent 58%,#ffe873 58%);color:inherit;font-
 .start{font-family:var(--fb);font-size:9.5pt;color:#555;border-left:1mm solid var(--g);padding:.5mm 0 .5mm 3mm;margin-bottom:4mm;line-height:1.5}
 .start b{font-family:var(--fh);font-weight:600;color:var(--g);margin-right:1.5mm}.ko .start b{font-weight:400}
 .start .opts span{margin-left:3mm;white-space:nowrap}
-.passage{font-family:var(--fb);font-size:13.5pt;line-height:1.75;overflow:hidden}
-.ko .passage{font-size:13pt;line-height:1.9}
+.passage{font-family:var(--fb);font-size:15pt;line-height:1.8;overflow:hidden}
+.ko .passage{font-size:14.5pt;line-height:1.95}
 .passage p{margin:0 0 3mm}
 figure{margin:0}
 .side{float:right;width:46%;margin:1mm 0 2mm 4mm}
@@ -165,6 +194,17 @@ footer{font-size:6.5pt;color:#aaa5b4;margin-top:auto;padding-top:2mm;line-height
 .trace{font-family:'Jua';font-size:13pt;color:#cfc9d9;letter-spacing:.6mm;text-align:center;padding:1mm 0}
 .line{border-bottom:.3mm solid #ddd;height:7.5mm}
 .fr{margin-top:1.5mm}
+/* writing page */
+.wr h2{font-family:'Jua';font-weight:400;font-size:13pt;color:var(--g);margin:4mm 0 2mm}.wr h2 small{font-family:'Gowun Dodum';font-size:8.5pt;color:#8b8698}
+.verse{background:#f6f2fd;border-radius:3mm;padding:5mm 6mm;text-align:center}
+.vk{font-family:'Jua';font-size:22pt}.ve{font-family:'Andika';font-size:14pt;color:#555;margin-top:1mm}.vr{font-size:8.5pt;color:#8b8698;margin-top:1.5mm}
+.grow{display:grid;grid-template-columns:repeat(11,16.4mm);justify-content:center;flex:none}
+.gc{width:16.4mm;height:16.4mm;border:.35mm solid #9ab7dc;margin:0 -.35mm -.35mm 0;position:relative;display:flex;align-items:center;justify-content:center}
+.gc:before,.gc:after{content:"";position:absolute;border:0 dashed #cfdff2}
+.gc:before{left:50%;top:0;bottom:0;border-left-width:.25mm}.gc:after{top:50%;left:0;right:0;border-top-width:.25mm}
+.gc .tr{font-family:'Gowun Dodum';font-size:11.6mm;line-height:1;color:#d3d3da;position:relative;z-index:1}.gc .tr.dk{color:#b5b5c0}
+.enrow{width:100%;height:16mm;display:block;margin-bottom:1.5mm;flex:none;overflow:hidden}
+.wr .line{flex:none}
 /* cover & key */
 .cv-top{border-bottom:.6mm solid #2a2833;padding:14mm 0 8mm;margin-bottom:6mm}
 .cv-top h1{font-family:'Jua';font-weight:400;font-size:40pt;margin:2mm 0}

@@ -1,5 +1,5 @@
 {
- "note": "영어는 Bricks Reading처럼 같은 주제를 Fiction(F)과 Nonfiction(NF)으로 이틀씩 짝지어 읽어요(레벨 100·120·200 섞기). 국어는 어린이신문(소년한국일보·내친구서울) 소재로 정보글·이야기·기사문·서평·동시를 돌려요. 그주 새 기사가 더 재미있으면 바꿀 수 있어요.",
+ "note": "월~금만 만들어요. 영어는 같은 주제를 Fiction(F)과 Nonfiction(NF)으로 짝지어 읽고, 국어는 어린이신문 소재로 정보글·이야기·기사문·서평을 돌려요. 요일마다 영어, 국어, 글쓰기 순서예요.",
  "days": [
   {
    "date": "2026-11-09",
@@ -27,16 +27,6 @@
    "ko": "[정보글] 귤은 비타민C가 사과의 20배?"
   },
   {
-   "date": "2026-11-14",
-   "en": "[NF] Is Iceland an Ice Land?",
-   "ko": "[기사문] 잠실 한강 자전거장, 오늘 문 열어요"
-  },
-  {
-   "date": "2026-11-15",
-   "en": "[F] The Bottle Band",
-   "ko": "[서평] 『강아지똥』을 읽고"
-  },
-  {
    "date": "2026-11-16",
    "en": "[NF] Penguins: Birds That Swim",
    "ko": "[정보글] 겨울 철새는 왜 우리나라로 올까?"
@@ -60,16 +50,6 @@
    "date": "2026-11-20",
    "en": "[NF] Where Does Chocolate Come From?",
    "ko": "[정보글] 떡볶이는 원래 빨갛지 않았다?"
-  },
-  {
-   "date": "2026-11-21",
-   "en": "[F] The Piñata Party",
-   "ko": "[기사문] 어린이 기자, 국립스포츠박물관에 가다"
-  },
-  {
-   "date": "2026-11-22",
-   "en": "[NF] Birthdays Around the World",
-   "ko": "[서평] 『구름빵』을 읽고"
   },
   {
    "date": "2026-11-23",
@@ -97,16 +77,6 @@
    "ko": "[이야기] 할머니의 김장 날"
   },
   {
-   "date": "2026-11-28",
-   "en": "[F] Grandma's Noodle Day",
-   "ko": "[정보글] 피아노 건반은 몇 개일까?"
-  },
-  {
-   "date": "2026-11-29",
-   "en": "[NF] The First People on the Moon",
-   "ko": "[서평] 『팥죽 할멈과 호랑이』를 읽고"
-  },
-  {
    "date": "2026-11-30",
    "en": "[NF] Polar Bears Have Black Skin!",
    "ko": "[정보글] 12월, 한 해의 마지막 달"
@@ -130,16 +100,6 @@
    "date": "2026-12-04",
    "en": "[NF] Why Is Ice Slippery?",
    "ko": "[이야기] 호떡 가게 꼬마 손님"
-  },
-  {
-   "date": "2026-12-05",
-   "en": "[F] The Snowflake Hunt",
-   "ko": "[기사문] 겨울 놀이 팽이치기 대회"
-  },
-  {
-   "date": "2026-12-06",
-   "en": "[NF] The Real Story of Santa Claus",
-   "ko": "[옛이야기] 해와 달이 된 오누이"
   }
  ]
 }

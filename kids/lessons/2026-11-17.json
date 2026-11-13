@@ -1,0 +1,564 @@
+{
+ "version": 2,
+ "date": "2026-11-17",
+ "day": 9,
+ "weekday": "화",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "Animals",
+  "title": "Pip Can't Fly!",
+  "title_ko": "날지 못하는 핍",
+  "lets_start": {
+   "q": "Is there something you can't do yet?",
+   "q_ko": "아직 못 하는 것이 있나요?",
+   "options": [
+    "Yes, there is.",
+    "No, I can do everything!"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "flap",
+    "meaning": "(날개를) 퍼덕이다",
+    "emoji": "🪽"
+   },
+   {
+    "word": "climb",
+    "meaning": "기어오르다",
+    "emoji": "🧗"
+   },
+   {
+    "word": "jump",
+    "meaning": "뛰어오르다",
+    "emoji": "🦘"
+   },
+   {
+    "word": "fall",
+    "meaning": "떨어지다",
+    "emoji": "⬇️"
+   },
+   {
+    "word": "zoom",
+    "meaning": "쌩 하고 달리다",
+    "emoji": "🚀"
+   },
+   {
+    "word": "fast",
+    "meaning": "빠른",
+    "emoji": "⚡"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🐧",
+      40,
+      68,
+      30
+     ],
+     [
+      "🕊️",
+      70,
+      24,
+      14
+     ],
+     [
+      "🕊️",
+      84,
+      36,
+      10
+     ],
+     [
+      "❓",
+      56,
+      44,
+      10
+     ],
+     [
+      "🧊",
+      16,
+      80,
+      14
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Pip is a little penguin. He sees seagulls in the sky. \"I want to fly, too!\" He **flaps** his wings, but he stays on the ice.",
+    "ko": "핍은 꼬마 펭귄이에요. 하늘의 갈매기를 봐요. \"나도 날고 싶어!\" 날개를 퍼덕이지만 얼음 위에 그대로예요."
+   },
+   {
+    "text": "Pip **climbs** a big rock and **jumps**. Plop! He **falls** into the water. \"I can't fly,\" says Pip.",
+    "ko": "핍은 큰 바위에 올라가 뛰어내려요. 풍덩! 물에 떨어져요. \"난 날 수 없어.\" 핍이 말해요.",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "🪨",
+       24,
+       58,
+       28
+      ],
+      [
+       "🐧",
+       52,
+       70,
+       20
+      ],
+      [
+       "💦",
+       62,
+       58,
+       12
+      ],
+      [
+       "😢",
+       52,
+       44,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Then Pip moves his wings in the water. Whoosh! He **zooms** like a rocket. \"Wow, Pip! You are so **fast**!\" say the seagulls. Pip smiles. \"I can fly in the sea!\"",
+    "ko": "그때 핍이 물속에서 날개를 움직여요. 쉬익! 로켓처럼 쌩 나아가요. \"와, 핍! 정말 빠르구나!\" 갈매기들이 말해요. 핍이 웃어요. \"나는 바다에서 날 수 있어!\"",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "🐧",
+       40,
+       78,
+       22,
+       true
+      ],
+      [
+       "💨",
+       62,
+       78,
+       12
+      ],
+      [
+       "🐟",
+       84,
+       84,
+       9
+      ],
+      [
+       "🕊️",
+       60,
+       22,
+       12
+      ],
+      [
+       "😊",
+       40,
+       60,
+       8
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "Pip climbs a big ___ and jumps.",
+   "answer": "rock"
+  },
+  "you_know": {
+   "emoji": "🐧",
+   "text": "Gentoo penguins are some of the fastest swimmers of all birds!",
+   "text_ko": "젠투펭귄은 새들 가운데 손꼽히게 빨리 헤엄치는 새예요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Pip finding out he can 'fly' in the sea",
+    "Pip learning to fly in the sky"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What does Pip want to do at first?",
+    "options": [
+     [
+      "🕊️",
+      "fly in the sky"
+     ],
+     [
+      "⛷️",
+      "go skiing"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where is Pip fast?",
+    "options": [
+     [
+      "🌊",
+      "in the sea"
+     ],
+     [
+      "🌳",
+      "in the forest"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Pip sees ___ flying in the sky.",
+    "choices": [
+     "seagulls",
+     "bees",
+     "planes"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What happens when Pip jumps?",
+    "choices": [
+     "He flies away.",
+     "He falls into the water.",
+     "He lands on a tree."
+    ],
+    "answer": 1
+   },
+   {
+    "q": "How does Pip feel at the end?",
+    "choices": [
+     "sad",
+     "happy",
+     "angry"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🐒",
+    "sentence": "The monkey can ___ up the tree.",
+    "options": [
+     "climb",
+     "zoom"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍂",
+    "sentence": "Leaves ___ from the trees in fall.",
+    "options": [
+     "fall",
+     "flap"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🐆",
+    "sentence": "A cheetah is very ___.",
+    "options": [
+     "fast",
+     "sad"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Problem",
+    "What Pip Tries",
+    "Ending"
+   ],
+   "choices": [
+    "Pip can't fly like the seagulls.",
+    "He flaps his wings and jumps from a rock.",
+    "He finds out he can 'fly' fast in the sea."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What are you really good at?",
+   "q_ko": "내가 정말 잘하는 것은 무엇인가요?",
+   "frame": "I can't ___, but I can ___!"
+  },
+  "sources": "창작 이야기"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "과학 뉴스",
+  "title": "보이저 1호, 빛으로 하루 걸리는 곳까지!",
+  "lets_start": {
+   "q": "세상에서 가장 빠른 것은 무엇일까요?",
+   "options": [
+    "비행기",
+    "빛"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "탐사선",
+    "meaning": "우주를 살펴보려고 보내는 기계",
+    "emoji": "🛰️"
+   },
+   {
+    "word": "발사",
+    "meaning": "로켓을 쏘아 올림",
+    "emoji": "🚀"
+   },
+   {
+    "word": "광일",
+    "meaning": "빛이 하루 동안 가는 거리",
+    "emoji": "💡"
+   },
+   {
+    "word": "목성",
+    "meaning": "태양계에서 가장 큰 행성",
+    "emoji": "🪐"
+   },
+   {
+    "word": "외계",
+    "meaning": "지구 밖의 세계",
+    "emoji": "👽"
+   },
+   {
+    "word": "인사말",
+    "meaning": "만나거나 헤어질 때 하는 말",
+    "emoji": "👋"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-17-ko.jpg",
+    "caption_ko": "보이저 1호에 실린 '골든 레코드'"
+   },
+   "scene": {
+    "bg": "space",
+    "items": [
+     [
+      "🛰️",
+      40,
+      46,
+      28
+     ],
+     [
+      "🌍",
+      14,
+      78,
+      12
+     ],
+     [
+      "💿",
+      70,
+      30,
+      14
+     ],
+     [
+      "✨",
+      84,
+      60,
+      8
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "1977년, 작은 자동차만 한 우주 **탐사선** 보이저 1호가 **발사**되었어요. **목성**과 토성을 지나 지금도 날아가고 있어요."
+   },
+   {
+    "text": "11월 18일, 보이저 1호는 지구에서 '1**광일**' 떨어진 곳에 닿아요. 1광일은 빛이 하루 동안 가는 거리예요. 사람이 만든 것 가운데 가장 멀리 갔어요.",
+    "scene": {
+     "bg": "space",
+     "items": [
+      [
+       "🌍",
+       12,
+       60,
+       12
+      ],
+      [
+       "☀️",
+       30,
+       40,
+       12
+      ],
+      [
+       "➡️",
+       52,
+       56,
+       10
+      ],
+      [
+       "🛰️",
+       80,
+       50,
+       20
+      ]
+     ]
+    }
+   },
+   {
+    "text": "보이저 1호에는 금빛 레코드판이 실려 있어요. 55개 나라 말의 **인사말**이 담겨 있고, 우리말 \"안녕하세요?\"도 있어요. **외계** 친구가 들을지도 몰라요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "보이저 1호는 ___년에 발사되었어요.",
+   "answer": "1977"
+  },
+  "you_know": {
+   "emoji": "🚗",
+   "text": "보이저 1호는 한 시간에 6만 1000km를 날아가요. 그렇게 빠른데도 1광일까지 가는 데 49년이 넘게 걸렸어요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "보이저 1호가 아주 먼 우주까지 날아간 소식",
+    "자동차를 만드는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "보이저 1호에 실려 있는 것은?",
+    "options": [
+     [
+      "💿",
+      "금빛 레코드판"
+     ],
+     [
+      "🍱",
+      "도시락"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "레코드에 담긴 우리말 인사는?",
+    "options": [
+     [
+      "👋",
+      "안녕하세요?"
+     ],
+     [
+      "😴",
+      "잘 자요."
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "보이저 1호의 크기는?",
+    "choices": [
+     "작은 자동차만 해요",
+     "학교만 해요",
+     "연필만 해요"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "1광일은 무엇인가요?",
+    "choices": [
+     "빛이 하루 동안 가는 거리",
+     "비행기가 하루 동안 가는 거리",
+     "사람이 하루 동안 걷는 거리"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "레코드에는 몇 개 나라 말의 인사말이 담겨 있나요?",
+    "choices": [
+     "5개",
+     "55개",
+     "555개"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🚀",
+    "sentence": "누리호가 하늘로 ___되었어요.",
+    "options": [
+     "발사",
+     "인사말"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🙋",
+    "sentence": "선생님께 \"안녕하세요?\" 하고 ___을 했어요.",
+    "options": [
+     "인사말",
+     "탐사선"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🛰️",
+    "sentence": "___이 화성의 사진을 찍어 보냈어요.",
+    "options": [
+     "탐사선",
+     "광일"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "보이저 1호 이야기",
+   "heads": [
+    "언제 떠났나?",
+    "어디까지 갔나?",
+    "무엇을 실었나?"
+   ],
+   "choices": [
+    "1977년에 발사되었어요.",
+    "지구에서 1광일 떨어진 곳",
+    "지구의 소리와 인사말이 담긴 레코드"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "내가 외계 친구에게 들려주고 싶은 지구의 소리는?",
+   "frame": "나는 ___ 소리를 들려주고 싶어요."
+  },
+  "dictation": [
+   "탐사선",
+   "보이저",
+   "하루 종일",
+   "레코드판",
+   "안녕하세요"
+  ],
+  "copy": "빛이 하루 동안 가는 거리예요.",
+  "sources": "소년한국일보 「보이저 1호, 18일 '1광일 거리' 도달」(2026.11)을 쉽게 다시 씀"
+ },
+ "write": {
+  "ref_ko": "데살로니가전서 5장 16절",
+  "ref": "1 Thessalonians 5:16",
+  "ko": "항상 기뻐하세요.",
+  "en": "Rejoice always.",
+  "words": [
+   "기쁨",
+   "항상"
+  ],
+  "prompt": "오늘 기뻤던 일 한 가지는?"
+ }
+}

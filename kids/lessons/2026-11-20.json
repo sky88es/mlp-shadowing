@@ -1,0 +1,540 @@
+{
+ "version": 2,
+ "date": "2026-11-20",
+ "day": 12,
+ "weekday": "금",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 120",
+  "theme": "Around the World",
+  "title": "Birthdays Around the World",
+  "title_ko": "세계의 생일 풍습",
+  "lets_start": {
+   "q": "What do you do on your birthday?",
+   "q_ko": "생일에 무엇을 하나요?",
+   "options": [
+    "eat cake",
+    "eat seaweed soup"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "celebrate",
+    "meaning": "축하하다",
+    "emoji": "🎉"
+   },
+   {
+    "word": "seaweed",
+    "meaning": "해초, 미역",
+    "emoji": "🌿"
+   },
+   {
+    "word": "piñata",
+    "meaning": "피냐타 (사탕 넣은 인형)",
+    "emoji": "🪅"
+   },
+   {
+    "word": "noodle",
+    "meaning": "국수",
+    "emoji": "🍜"
+   },
+   {
+    "word": "wish",
+    "meaning": "소원, 바람",
+    "emoji": "🌠"
+   },
+   {
+    "word": "custom",
+    "meaning": "풍습",
+    "emoji": "🌏"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-20-en.jpg",
+    "caption": "A colorful piñata",
+    "caption_ko": "알록달록한 피냐타"
+   },
+   "scene": {
+    "bg": "house",
+    "items": [
+     [
+      "🎂",
+      50,
+      62,
+      26
+     ],
+     [
+      "🎈",
+      20,
+      30,
+      14
+     ],
+     [
+      "🎈",
+      82,
+      26,
+      14
+     ],
+     [
+      "🪅",
+      50,
+      22,
+      16
+     ],
+     [
+      "🎁",
+      80,
+      74,
+      12
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Everyone has a birthday. People **celebrate** in different ways!",
+    "ko": "누구에게나 생일이 있어요. 사람들은 저마다 다르게 축하해요!"
+   },
+   {
+    "text": "In Korea, people eat **seaweed** soup. It reminds them of their mother's love. In Mexico, children hit a **piñata**. Candy falls out!",
+    "ko": "한국에서는 미역국을 먹어요. 엄마의 사랑을 떠올리게 해요. 멕시코에서는 아이들이 피냐타를 쳐요. 사탕이 쏟아져요!",
+    "scene": {
+     "bg": "day",
+     "items": [
+      [
+       "🪅",
+       50,
+       26,
+       20
+      ],
+      [
+       "🍬",
+       40,
+       60,
+       9
+      ],
+      [
+       "🍭",
+       58,
+       64,
+       9
+      ],
+      [
+       "🧒",
+       22,
+       72,
+       18
+      ],
+      [
+       "🍜",
+       82,
+       72,
+       16
+      ]
+     ]
+    }
+   },
+   {
+    "text": "In China, people eat long **noodles**. They are a **wish** for a long life. In Denmark, families hang a flag outside. The **customs** are different, but everyone wishes for a happy year!",
+    "ko": "중국에서는 긴 국수를 먹어요. 오래 살라는 소원이에요. 덴마크에서는 집 밖에 국기를 걸어요. 풍습은 달라도 모두 행복한 한 해를 빌어요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "In Korea, people eat ___ soup on their birthday.",
+   "answer": "seaweed"
+  },
+  "you_know": {
+   "emoji": "🎂",
+   "text": "In many countries, people blow out candles on a cake and make a wish without saying it out loud.",
+   "text_ko": "많은 나라에서 케이크 촛불을 끄면서 소원을 마음속으로 빌어요. 소리 내어 말하지 않는 게 약속이래요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "how people celebrate birthdays around the world",
+    "how to bake a birthday cake"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What do children hit in Mexico?",
+    "options": [
+     [
+      "🪅",
+      "a piñata"
+     ],
+     [
+      "⚾",
+      "a baseball"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What do people in China often eat?",
+    "options": [
+     [
+      "🍜",
+      "long noodles"
+     ],
+     [
+      "🍕",
+      "pizza"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Why do Koreans eat seaweed soup on their birthday?",
+    "choices": [
+     "It reminds them of their mother's love.",
+     "It is the only food.",
+     "It makes them tall."
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What do long noodles mean?",
+    "choices": [
+     "a wish for a long life",
+     "a wish for snow",
+     "a wish for money"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "In Denmark, families hang a ___ outside the house.",
+    "choices": [
+     "sock",
+     "flag",
+     "lamp"
+    ],
+    "answer": 1
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🥳",
+    "sentence": "We ___ Grandma's birthday with a party.",
+    "options": [
+     "celebrate",
+     "wish"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "⭐",
+    "sentence": "Make a ___ when you see a shooting star!",
+    "options": [
+     "wish",
+     "custom"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🙇",
+    "sentence": "Bowing on New Year's Day is a Korean ___.",
+    "options": [
+     "custom",
+     "noodle"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Birthday Customs",
+   "heads": [
+    "Korea 🇰🇷",
+    "Mexico 🇲🇽",
+    "Denmark 🇩🇰"
+   ],
+   "choices": [
+    "People eat seaweed soup.",
+    "Children hit a piñata.",
+    "Families hang a flag outside."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What is your favorite birthday tradition?",
+   "q_ko": "내가 가장 좋아하는 생일 풍습은 무엇인가요?",
+   "frame": "On my birthday, I like to ___."
+  },
+  "sources": "National Geographic Kids, Britannica (birthday customs)"
+ },
+ "ko": {
+  "genre": "기사문",
+  "level": "초1~2",
+  "theme": "어린이 기자 수첩",
+  "title": "어린이 기자, 국립스포츠박물관에 가다",
+  "lets_start": {
+   "q": "박물관에서 직접 몸으로 해 보는 것을 무엇이라고 할까요?",
+   "options": [
+    "체험",
+    "숙제"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "박물관",
+    "meaning": "귀한 물건을 모아 보여 주는 곳",
+    "emoji": "🏛️"
+   },
+   {
+    "word": "예약",
+    "meaning": "미리 약속해 두는 것",
+    "emoji": "📅"
+   },
+   {
+    "word": "체험",
+    "meaning": "직접 해 보는 것",
+    "emoji": "🙌"
+   },
+   {
+    "word": "기록",
+    "meaning": "운동 경기에서 잰 성적",
+    "emoji": "⏱️"
+   },
+   {
+    "word": "보치아",
+    "meaning": "공을 표적구 가까이 보내는 경기",
+    "emoji": "🔴"
+   },
+   {
+    "word": "표적구",
+    "meaning": "보치아에서 목표가 되는 하얀 공",
+    "emoji": "⚪"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-20-ko.jpg",
+    "caption_ko": "패럴림픽 보치아 경기 모습"
+   },
+   "scene": {
+    "bg": "house",
+    "items": [
+     [
+      "🏛️",
+      30,
+      52,
+      34
+     ],
+     [
+      "🧒",
+      62,
+      70,
+      20
+     ],
+     [
+      "🔴",
+      78,
+      84,
+      8
+     ],
+     [
+      "🔵",
+      86,
+      80,
+      8
+     ],
+     [
+      "⚪",
+      82,
+      72,
+      6
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "서울 올림픽공원에 국립스포츠**박물관**이 문을 열었어요. 어린이박물관은 미리 **예약**해야 들어갈 수 있어요."
+   },
+   {
+    "text": "한 어린이 기자가 이곳을 찾아갔어요. 바코드 팔찌를 받고 여러 스포츠를 **체험**했어요. 달리기 **기록**도 재고, 높이뛰기도 했어요.",
+    "scene": {
+     "bg": "pitch",
+     "items": [
+      [
+       "🏃",
+       30,
+       66,
+       26
+      ],
+      [
+       "⏱️",
+       56,
+       40,
+       14
+      ],
+      [
+       "🤸",
+       78,
+       62,
+       22
+      ]
+     ]
+    }
+   },
+   {
+    "text": "가장 기억에 남은 것은 **보치아**였어요. 빨간 공과 파란 공을 하얀 **표적구**에 가까이 보내는 경기예요. 어린이 기자는 \"직접 몸을 움직이니 더 재미있었다\"고 말했어요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "보치아는 공을 하얀 ___에 가까이 보내는 경기예요.",
+   "answer": "표적구"
+  },
+  "you_know": {
+   "emoji": "🏅",
+   "text": "보치아는 장애인 올림픽인 패럴림픽 종목이에요. 우리나라는 패럴림픽 보치아에서 여러 번 금메달을 딴 보치아 강국이에요."
+  },
+  "main_idea": {
+   "q": "이 기사는 무엇을 알려 주나요?",
+   "options": [
+    "어린이 기자가 국립스포츠박물관에서 체험한 일",
+    "어린이 기자가 축구 선수가 된 일"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "박물관은 어디에 있나요?",
+    "options": [
+     [
+      "🏟️",
+      "서울 올림픽공원"
+     ],
+     [
+      "🏝️",
+      "제주도"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "입구에서 무엇을 받나요?",
+    "options": [
+     [
+      "⌚",
+      "바코드 팔찌"
+     ],
+     [
+      "🎈",
+      "풍선"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "어린이박물관에 들어가려면?",
+    "choices": [
+     "미리 예약해요",
+     "줄을 서요",
+     "시험을 봐요"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "어린이 기자가 체험하지 않은 것은?",
+    "choices": [
+     "달리기",
+     "높이뛰기",
+     "수영"
+    ],
+    "answer": 2
+   },
+   {
+    "q": "가장 기억에 남은 체험은?",
+    "choices": [
+     "보치아",
+     "달리기",
+     "높이뛰기"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🍽️",
+    "sentence": "식당에 가기 전에 자리를 ___했어요.",
+    "options": [
+     "예약",
+     "기록"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍓",
+    "sentence": "농장에서 딸기 따기 ___을 했어요.",
+    "options": [
+     "체험",
+     "표적구"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏊",
+    "sentence": "수영 대회에서 내 최고 ___을 세웠어요.",
+    "options": [
+     "기록",
+     "예약"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "육하원칙으로 정리하기",
+   "heads": [
+    "누가?",
+    "어디서?",
+    "무엇을?"
+   ],
+   "choices": [
+    "어린이 기자가",
+    "국립스포츠박물관 어린이박물관에서",
+    "여러 가지 스포츠를 체험했어요"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "내가 가 본 곳을 기사처럼 소개해 보세요.",
+   "frame": "나는 ___에 가서 ___을/를 했어요. 가장 재미있었던 것은 ___."
+  },
+  "dictation": [
+   "박물관",
+   "예약",
+   "달리기",
+   "높이뛰기",
+   "보치아"
+  ],
+  "copy": "직접 해 보니 더 재미있었어요.",
+  "parent_tip": "국립스포츠박물관 어린이박물관은 누리집 사전 예약제예요. 주말 나들이로도 좋아요.",
+  "sources": "내친구서울 어린이 기자 기사 「국립스포츠박물관 개관, 스포츠의 세계로 떠나요」를 바탕으로 새로 씀"
+ },
+ "write": {
+  "ref_ko": "요한복음 13장 34절",
+  "ref": "John 13:34",
+  "ko": "서로 사랑하세요.",
+  "en": "Love one another.",
+  "words": [
+   "서로",
+   "친구"
+  ],
+  "prompt": "친구에게 해 주고 싶은 좋은 말은?"
+ }
+}
