@@ -25,6 +25,7 @@
 4. `node daily-reading/make_pdf.js daily-reading/lessons/YYYY-MM-DD.json daily-reading/pdf/YYYY-MM-DD.pdf` → 4쪽(최대 5쪽)인지 `pdfinfo`로 확인.
 5. JSON과 PDF를 커밋하고 `ccr-7681b3cb-dx280m` 브랜치에 push한다.
 6. 이메일 발송 (받는 사람 `sangwon.park@jbam.co.kr`, `kkh206022@jbam.co.kr`, 제목 `[Daily English] DAY n · <title>`):
+   - **기본: Gmail send_message에 PDF를 첨부**한다. attachments의 content에 파일 참조 `sha256:<sha256sum 결과 64자>:<PDF 절대경로>`, filename, mimeType application/pdf를 넣는다(base64를 직접 쓰지 않음). 본문 HTML은 그대로 쓰고 PDF 링크도 남겨 둔다.
    - Brevo 키가 환경에 저장돼 있으면: `daily-reading/send_email.sh <json> <pdf>` → PDF 첨부 발송.
    - 아니면: `node daily-reading/make_email.js <json>` 출력(HTML, 학습 내용 전체 포함)을 그대로 Gmail `send_message`의 htmlBody로 발송.
      본문에 PDF 링크 포함: https://raw.githubusercontent.com/sky88es/mlp-shadowing/ccr-7681b3cb-dx280m/daily-reading/pdf/YYYY-MM-DD.pdf
