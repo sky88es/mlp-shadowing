@@ -1,0 +1,237 @@
+{
+"day": 7,
+"date": "2026-11-14 (Sat)",
+"category": "HEALTH · LIFE",
+"level": "Intermediate",
+"title": "Five Simple Habits for a Longer Life",
+"title_ko": "더 오래 사는 다섯 가지 단순한 습관",
+"source": {
+"outlet": "CNBC",
+"title": "A 30-year Harvard study reveals the 5 simple habits that may prolong your life by 10 years or more",
+"url": "https://www.cnbc.com/2019/04/09/harvard-study-says-these-5-habits-may-help-you-live-10-years-longer.html"
+},
+"background_ko": "하버드 공중보건대학원 연구팀은 미국 성인 12만여 명의 건강 기록을 수십 년 동안 분석해, 수명을 10년 이상 늘릴 수 있는 다섯 가지 생활 습관을 찾아냈습니다. 주말 아침, 내 습관을 점검해 볼까요?",
+"warmup_q": "건강을 위해 지금 잘하고 있는 습관 하나, 고치고 싶은 습관 하나는 무엇인가요?",
+"lines": [
+{
+"en": "Everyone wants to live a long / and healthy life.",
+"ko": "누구나 오래, 그리고 건강하게 살고 싶어 한다."
+},
+{
+"en": "But what **actually** works?",
+"ko": "그런데 실제로 효과가 있는 것은 무엇일까?"
+},
+{
+"en": "Researchers at Harvard / **looked at** health data / from more than 120,000 adults.",
+"ko": "하버드의 연구자들은 12만 명이 넘는 성인의 건강 데이터를 살펴보았다."
+},
+{
+"en": "They followed these people / for about 30 years.",
+"ko": "그들은 이 사람들을 약 30년 동안 추적했다."
+},
+{
+"en": "In the end, / they found / five simple **habits**.",
+"ko": "마침내 그들은 다섯 가지 단순한 습관을 발견했다."
+},
+{
+"en": "First, / eat a healthy **diet** / with lots of vegetables and whole grains.",
+"ko": "첫째, 채소와 통곡물이 풍부한 건강한 식사를 하라."
+},
+{
+"en": "Second, / exercise for at least 30 minutes / a day.",
+"ko": "둘째, 하루에 최소 30분 운동하라."
+},
+{
+"en": "Third, / keep a healthy body **weight**.",
+"ko": "셋째, 건강한 체중을 유지하라."
+},
+{
+"en": "Fourth, / don't drink too much alcohol.",
+"ko": "넷째, 술을 너무 많이 마시지 마라."
+},
+{
+"en": "And fifth, / don't smoke / at all.",
+"ko": "그리고 다섯째, 담배는 아예 피우지 마라."
+},
+{
+"en": "People who **followed** all five habits / lived about 10 years longer / or more.",
+"ko": "다섯 가지 습관을 모두 지킨 사람들은 약 10년 이상 더 오래 살았다."
+},
+{
+"en": "They were also / much less likely / to die from heart disease or cancer.",
+"ko": "그들은 또한 심장병이나 암으로 사망할 가능성이 훨씬 낮았다."
+},
+{
+"en": "None of these habits / is **surprising**.",
+"ko": "이 습관 중 어느 것도 놀랍지는 않다."
+},
+{
+"en": "The hard part / is doing them / every single day.",
+"ko": "어려운 부분은 그것들을 매일매일 실천하는 것이다."
+},
+{
+"en": "Maybe the secret to a long life / is not a **secret** at all.",
+"ko": "어쩌면 장수의 비결은 전혀 비밀이 아닐지도 모른다."
+}
+],
+"words": [
+{
+"word": "actually",
+"ipa": "/ˈæktʃuəli/",
+"pos": "adv.",
+"meaning": "실제로, 사실은",
+"synonym": "really",
+"example": "I **actually** enjoyed the movie."
+},
+{
+"word": "habit",
+"ipa": "/ˈhæbɪt/",
+"pos": "n.",
+"meaning": "습관",
+"synonym": "routine",
+"example": "Reading before bed is a good **habit**."
+},
+{
+"word": "diet",
+"ipa": "/ˈdaɪət/",
+"pos": "n.",
+"meaning": "식단, 식습관",
+"synonym": "eating habits",
+"example": "A healthy **diet** includes fruit and vegetables."
+},
+{
+"word": "exercise",
+"ipa": "/ˈeksərsaɪz/",
+"pos": "v. / n.",
+"meaning": "운동하다; 운동",
+"synonym": "work out",
+"example": "I **exercise** three times a week."
+},
+{
+"word": "weight",
+"ipa": "/weɪt/",
+"pos": "n.",
+"meaning": "체중, 무게",
+"synonym": "heaviness",
+"example": "He lost **weight** by walking every day."
+},
+{
+"word": "follow",
+"ipa": "/ˈfɑːloʊ/",
+"pos": "v.",
+"meaning": "(규칙 등을) 따르다; 추적하다",
+"synonym": "stick to",
+"example": "Please **follow** the safety rules."
+},
+{
+"word": "surprising",
+"ipa": "/sərˈpraɪzɪŋ/",
+"pos": "adj.",
+"meaning": "놀라운",
+"synonym": "unexpected",
+"example": "The test results were **surprising**."
+},
+{
+"word": "secret",
+"ipa": "/ˈsiːkrət/",
+"pos": "n.",
+"meaning": "비밀, 비결",
+"synonym": "key",
+"example": "What's the **secret** to your success?"
+}
+],
+"idioms": [
+{
+"phrase": "look at",
+"meaning": "~을 살펴보다, 검토하다",
+"example": "Let's **look at** the numbers again."
+},
+{
+"phrase": "at least",
+"meaning": "적어도, 최소한",
+"example": "Drink **at least** eight glasses of water a day."
+},
+{
+"phrase": "in the end",
+"meaning": "결국, 마침내",
+"example": "**In the end**, we chose the cheaper hotel."
+},
+{
+"phrase": "be likely to",
+"meaning": "~할 가능성이 있다",
+"example": "It **is likely to** rain this afternoon."
+},
+{
+"phrase": "not ~ at all",
+"meaning": "전혀 ~ 아니다",
+"example": "I'm **not** tired **at all**."
+}
+],
+"key_sentences": [
+{
+"en": "People **who followed** all five habits lived about 10 years longer.",
+"note": "관계대명사 who: 'people who ~' = ~한 사람들. 사람을 꾸밀 때 씁니다."
+},
+{
+"en": "They were **much less likely to** die from heart disease.",
+"note": "be likely to의 비교: less likely to = ~할 가능성이 더 낮은. much가 비교급을 강조합니다."
+},
+{
+"en": "**The hard part is** doing them every single day.",
+"note": "The hard part is + -ing: '어려운 건 ~하는 것이다'. 회화에서도 자주 쓰는 구조입니다."
+}
+],
+"questions": [
+{
+"q": "What is the passage mainly about?",
+"options": [
+"A new medicine for long life",
+"Five habits that may help people live longer",
+"Why Harvard students are healthy",
+"How to cook vegetables"
+],
+"answer": "ⓑ 더 오래 살게 도와줄 수 있는 다섯 가지 습관"
+},
+{
+"q": "How long should you exercise each day?",
+"options": [
+"At least 10 minutes",
+"At least 30 minutes",
+"Two hours",
+"It doesn't matter"
+],
+"answer": "ⓑ 최소 30분 (7번 문장)"
+},
+{
+"q": "According to the passage, what is the hard part?",
+"answer": "그 습관들을 매일 실천하는 것 (14번 문장)"
+},
+{
+"q": "T / F : The researchers followed people for about 30 years.",
+"answer": "T (4번 문장)"
+}
+],
+"blanks": [
+{
+"sentence": "Brushing your teeth twice a day is a good ________.",
+"answer": "habit"
+},
+{
+"sentence": "Sleep at ________ seven hours a night.",
+"answer": "least"
+},
+{
+"sentence": "She doesn't like coffee ________ all.",
+"answer": "at"
+},
+{
+"sentence": "What's the ________ to staying young?",
+"answer": "secret"
+},
+{
+"sentence": "He changed his ________ and ate less sugar.",
+"answer": "diet"
+}
+],
+"output_task": "🗣 Speak: 6~11번 문장 쉐도잉 3회.\n✍️ Write: Which of the 5 habits do you want to start? (2문장, at least 사용)"
+}
