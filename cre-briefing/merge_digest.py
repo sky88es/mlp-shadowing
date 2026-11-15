@@ -14,7 +14,7 @@ ORDER = [
     ("Development", "개발 · 리츠 · 펀드", "🏗️"), ("Global", "해외", "🌏"), ("Macro", "금리 · 경제", "📈"),
 ]
 OURS = {"Office": "Office", "Hotel": "Hotel", "Retail": "Retail", "Data Center": "Data Center",
-        "Logistics": "Logistics", "REITs": "Development", "Development": "Development"}
+        "Logistics": "Logistics", "REITs": "Development", "Development": "Development", "Global": "Global", "Macro": "Macro"}
 
 
 def bdsp_cat(section):
