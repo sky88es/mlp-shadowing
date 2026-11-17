@@ -17,6 +17,9 @@ OURS = {"Office": "Office", "Hotel": "Hotel", "Retail": "Retail", "Data Center":
         "Logistics": "Logistics", "REITs": "Development", "Development": "Development", "Global": "Global", "Macro": "Macro"}
 
 
+HOUSING = ("가구", "재건축", "재개발", "정비사업", "집값", "전월세", "전셋값", "주담대", "청약", "아파트", "모아주택", "빌라")
+
+
 def bdsp_cat(section):
     head, _, sub = section.partition("\n")
     head = head.strip().lower()
@@ -35,7 +38,7 @@ def bdsp_cat(section):
                      ("리테일", "Retail"), ("상가", "Retail")]:
             if k in sub:
                 return c
-        return "Development"
+        return None  # housing-supply trend etc. -> skip
     return None  # housing, start-up, local issues -> skip
 
 
@@ -70,6 +73,8 @@ def main():
         if not c:
             continue
         for it in s["items"]:
+            if c in ("Development", "Macro") and any(k in it["title"] for k in HOUSING):
+                continue
             if it["url"] in seen:
                 continue
             seen.add(it["url"])
