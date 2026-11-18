@@ -17,7 +17,7 @@ OURS = {"Office": "Office", "Hotel": "Hotel", "Retail": "Retail", "Data Center":
         "Logistics": "Logistics", "REITs": "Development", "Development": "Development", "Global": "Global", "Macro": "Macro"}
 
 
-HOUSING = ("가구", "재건축", "재개발", "정비사업", "집값", "전월세", "전셋값", "주담대", "청약", "아파트", "모아주택", "빌라")
+HOUSING = ("가구", "재건축", "재개발", "정비사업", "집값", "전월세", "전셋값", "주담대", "청약", "아파트", "모아주택", "빌라", "리모델링", "주공", "3040", "내 집")
 
 
 def bdsp_cat(section):
