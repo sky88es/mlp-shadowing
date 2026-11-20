@@ -1,0 +1,546 @@
+{
+ "version": 2,
+ "date": "2026-11-23",
+ "day": 13,
+ "weekday": "월",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 100",
+  "theme": "My Body",
+  "title": "Look, Listen, Touch, Smell, and Taste!",
+  "title_ko": "보고, 듣고, 만지고, 맡고, 맛봐요!",
+  "lets_start": {
+   "q": "How many senses do you have?",
+   "q_ko": "감각은 몇 가지일까요?",
+   "options": [
+    "I think five.",
+    "I'm not sure."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "senses",
+    "meaning": "감각",
+    "emoji": "🧠"
+   },
+   {
+    "word": "hear",
+    "meaning": "듣다",
+    "emoji": "👂"
+   },
+   {
+    "word": "smell",
+    "meaning": "냄새 맡다",
+    "emoji": "👃"
+   },
+   {
+    "word": "taste",
+    "meaning": "맛보다",
+    "emoji": "😋"
+   },
+   {
+    "word": "tongue",
+    "meaning": "혀",
+    "emoji": "👅"
+   },
+   {
+    "word": "touch",
+    "meaning": "만지다",
+    "emoji": "✋"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "field",
+    "items": [
+     [
+      "👧",
+      38,
+      62,
+      30
+     ],
+     [
+      "🌸",
+      68,
+      70,
+      18
+     ],
+     [
+      "👃",
+      38,
+      36,
+      10
+     ],
+     [
+      "👂",
+      56,
+      24,
+      9
+     ],
+     [
+      "👀",
+      22,
+      24,
+      9
+     ],
+     [
+      "✋",
+      80,
+      46,
+      9
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "You have five **senses**. You see with your eyes. You **hear** with your ears. You **smell** with your nose.",
+    "ko": "여러분에게는 다섯 가지 감각이 있어요. 눈으로 보고, 귀로 듣고, 코로 냄새를 맡아요."
+   },
+   {
+    "text": "Your **tongue** helps you **taste**. It can tell sweet, sour, salty, and bitter. Is a lemon sweet? No, it is sour!",
+    "ko": "혀는 맛을 느끼게 해 줘요. 단맛, 신맛, 짠맛, 쓴맛을 알 수 있어요. 레몬은 달까요? 아니요, 시어요!",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🍋",
+       30,
+       60,
+       22
+      ],
+      [
+       "👅",
+       60,
+       56,
+       18
+      ],
+      [
+       "😝",
+       82,
+       60,
+       14
+      ],
+      [
+       "🍬",
+       16,
+       84,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Your skin helps you **touch**. It feels hot, cold, soft, and rough. All five senses work together. They keep you safe and happy!",
+    "ko": "피부는 만지는 것을 느끼게 해 줘요. 뜨겁고, 차갑고, 부드럽고, 거친 것을 알 수 있어요. 다섯 감각이 함께 일해서 우리를 안전하고 행복하게 해 줘요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "You hear with your ___.",
+   "answer": "ears"
+  },
+  "you_know": {
+   "emoji": "🐟",
+   "text": "Some fish can taste with their fins and tails, not only with their mouths!",
+   "text_ko": "어떤 물고기는 입뿐 아니라 지느러미와 꼬리로도 맛을 느껴요!"
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "the five senses and the body parts we use",
+    "five kinds of fruit"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What do you use to smell?",
+    "options": [
+     [
+      "👃",
+      "your nose"
+     ],
+     [
+      "👂",
+      "your ears"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How does a lemon taste?",
+    "options": [
+     [
+      "🍋",
+      "sour"
+     ],
+     [
+      "🍬",
+      "sweet"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "You see with your ___.",
+    "choices": [
+     "eyes",
+     "hands",
+     "feet"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Your ___ helps you taste.",
+    "choices": [
+     "skin",
+     "tongue",
+     "nose"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "Your skin helps you ___.",
+    "choices": [
+     "touch",
+     "hear",
+     "see"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🍲",
+    "sentence": "I can ___ the soup. It is yummy!",
+    "options": [
+     "taste",
+     "hear"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🐦",
+    "sentence": "Can you ___ the bird singing?",
+    "options": [
+     "hear",
+     "touch"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🧸",
+    "sentence": "I ___ the soft teddy bear.",
+    "options": [
+     "touch",
+     "smell"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "My Five Senses",
+   "heads": [
+    "See & Hear",
+    "Smell & Taste",
+    "Touch"
+   ],
+   "choices": [
+    "eyes and ears",
+    "nose and tongue",
+    "skin"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What is your favorite smell?",
+   "q_ko": "내가 좋아하는 냄새는 무엇인가요?",
+   "frame": "I love the smell of ___."
+  },
+  "sources": "Science Kids (Fun Senses Facts for Kids), KidsHealth"
+ },
+ "ko": {
+  "genre": "속담",
+  "level": "초1~2",
+  "theme": "자연에서 배우는 속담",
+  "title": "벼는 익을수록 고개를 숙인다",
+  "lets_start": {
+   "q": "가을 들판에서 황금빛으로 물드는 곡식은 무엇일까요?",
+   "options": [
+    "벼",
+    "수박"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "벼",
+    "meaning": "쌀이 열리는 곡식",
+    "emoji": "🌾"
+   },
+   {
+    "word": "이삭",
+    "meaning": "벼 줄기 끝에 알곡이 달린 부분",
+    "emoji": "🌾"
+   },
+   {
+    "word": "알곡",
+    "meaning": "껍질을 벗기기 전 곡식 알",
+    "emoji": "🍚"
+   },
+   {
+    "word": "익다",
+    "meaning": "열매나 곡식이 다 자라다",
+    "emoji": "🍂"
+   },
+   {
+    "word": "숙이다",
+    "meaning": "머리를 앞으로 기울이다",
+    "emoji": "🙇"
+   },
+   {
+    "word": "겸손",
+    "meaning": "자기를 뽐내지 않고 낮추는 마음",
+    "emoji": "💛"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-23-ko.jpg",
+    "caption_ko": "황금빛으로 익은 계단식 논"
+   },
+   "scene": {
+    "bg": "autumn",
+    "items": [
+     [
+      "🌾",
+      14,
+      66,
+      22
+     ],
+     [
+      "🌾",
+      34,
+      62,
+      24
+     ],
+     [
+      "🌾",
+      56,
+      66,
+      22
+     ],
+     [
+      "🌾",
+      78,
+      62,
+      24
+     ],
+     [
+      "🧑‍🌾",
+      90,
+      76,
+      16
+     ],
+     [
+      "☀️",
+      84,
+      16,
+      12
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "가을 들판에 노란 **벼**가 가득해요. 푸른 벼는 꼿꼿이 서 있는데, 다 **익은** 벼는 고개를 푹 **숙이고** 있어요."
+   },
+   {
+    "text": "벼가 익으면 **이삭**에 **알곡**이 가득 차서 무거워지기 때문이에요. 알곡이 가득할수록 고개를 더 깊이 숙여요.",
+    "scene": {
+     "bg": "field",
+     "items": [
+      [
+       "🌱",
+       22,
+       70,
+       18
+      ],
+      [
+       "➡️",
+       42,
+       66,
+       8
+      ],
+      [
+       "🌾",
+       66,
+       62,
+       28
+      ],
+      [
+       "🍚",
+       86,
+       80,
+       10
+      ]
+     ]
+    }
+   },
+   {
+    "text": "그래서 옛 어른들은 이렇게 말했어요. \"벼는 익을수록 고개를 숙인다.\" 많이 알고 훌륭한 사람일수록 뽐내지 않고 **겸손**하다는 뜻이에요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "다 익은 벼는 고개를 ___.",
+   "answer": "숙여요"
+  },
+  "you_know": {
+   "emoji": "🍚",
+   "text": "우리가 먹는 쌀밥은 벼의 알곡 껍질을 벗겨서 만들어요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "벼가 고개를 숙이는 까닭과 속담의 뜻",
+    "벼를 심는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "다 익은 벼는 어떤 모습인가요?",
+    "options": [
+     [
+      "🌾",
+      "고개를 숙여요"
+     ],
+     [
+      "🌱",
+      "꼿꼿하게 서 있어요"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "벼가 고개를 숙이는 까닭은?",
+    "options": [
+     [
+      "⚖️",
+      "알곡이 가득 차 무거워서"
+     ],
+     [
+      "🌧️",
+      "비가 와서"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "벼가 익는 계절은?",
+    "choices": [
+     "봄",
+     "가을",
+     "겨울"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "'벼는 익을수록 고개를 숙인다'는 어떤 사람을 말하나요?",
+    "choices": [
+     "뽐내는 사람",
+     "잘 알수록 겸손한 사람",
+     "키가 큰 사람"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "익은 벼의 이삭에는 무엇이 가득한가요?",
+    "choices": [
+     "알곡",
+     "물",
+     "꽃"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🙇",
+    "sentence": "친구에게 인사하며 고개를 ___어요.",
+    "options": [
+     "숙였",
+     "들었"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍎",
+    "sentence": "사과가 빨갛게 ___었어요.",
+    "options": [
+     "익",
+     "숙"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "💛",
+    "sentence": "칭찬을 받아도 우쭐하지 않는 것이 ___이에요.",
+    "options": [
+     "겸손",
+     "이삭"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "속담 풀이",
+   "heads": [
+    "자연의 모습",
+    "까닭",
+    "속담의 뜻"
+   ],
+   "choices": [
+    "익은 벼가 고개를 숙여요.",
+    "알곡이 가득 차 무거워요.",
+    "훌륭할수록 겸손해요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "친구가 칭찬을 받으면 어떤 말을 해 주고 싶나요?",
+   "frame": "___야, 정말 대단해!"
+  },
+  "dictation": [
+   "벼",
+   "이삭",
+   "알곡",
+   "겸손",
+   "고개를 숙여요"
+  ],
+  "copy": "벼는 익을수록 고개를 숙여요.",
+  "sources": "소년한국일보 「초등 속담 팩트체크」 '벼는 익을수록 고개를 숙인다'를 소재로 새로 씀 (본문 그림 기사라 속담 뜻과 일반 상식으로 구성)"
+ },
+ "write": {
+  "ref_ko": "시편 118편 24절",
+  "ref": "Psalm 118:24",
+  "ko": "오늘을 기뻐해요.",
+  "en": "We will rejoice and be glad in it!",
+  "words": [
+   "오늘",
+   "기쁨"
+  ],
+  "prompt": "오늘 기대되는 일 한 가지는?"
+ }
+}

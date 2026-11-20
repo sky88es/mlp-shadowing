@@ -45,5 +45,8 @@
 1. `kids/tools/week<N>_en.py`(EN), `week<N>_ko.py`(KO, WRITE)에 5일치를 쓴다. 스키마는 `week2_*.py`와 같게.
 2. 사진 찾기·저장.
 3. `python3 kids/tools/build_week.py week<N>` → `node kids/build_index.js`
-4. `node kids/make_pdf.js kids/pdf/week-<월요일>.pdf <5일치 json>` → 27쪽. `OVERFLOW`가 나오면 글을 줄인다. `pdftoppm`으로 직접 확인.
-5. 커밋 · push → 메일 발송(`node kids/make_email.js week-<월요일>.pdf <5일치 json>`) → PR을 만들어 main에 squash 병합(사이트 갱신).
+4. `node kids/make_pdf.js kids/pdf/week-<월요일>.pdf <5일치 json>` → 27쪽. `OVERFLOW`가 나오면 글을 줄인다. 그다음 `python3 -W ignore kids/tools/shrink_pdf.py kids/pdf/week-<월요일>.pdf`로 무손실 정리(약 3MB, **3.0MB 이하여야 메일에 붙는다**). `pdftoppm`으로 직접 확인(이모지 그림이 나오는지).
+   - 3.0MB를 넘으면: `build_week.py`의 인쇄용 사진 폭(600)을 500으로 낮춰 다시 빌드하거나, 쪽수가 많으면 사진을 줄인다.
+   - 절대 PyMuPDF `rewrite_images()`를 쓰지 않는다(이모지 그림이 지워진다).
+5. 커밋 · push → **PDF를 첨부해서** 메일 발송: `node kids/make_email.js week-<월요일>.pdf <5일치 json> --attach` 출력을 htmlBody로, PDF는 Gmail `send_message`의 attachments(`content`: `sha256:<해시>:<절대경로>`, filename `week-<월요일>.pdf`, mimeType `application/pdf`)로 붙인다. 해시는 `sha256sum`으로. 첨부 용량 한도(약 3MB)를 넘겨 거절되면 메일 안 링크 버튼만 있는 판(`--attach` 없이)으로 보낸다.
+6. PR을 만들어 main에 squash 병합(사이트 갱신).

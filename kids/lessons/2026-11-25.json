@@ -1,0 +1,530 @@
+{
+ "version": 2,
+ "date": "2026-11-25",
+ "day": 15,
+ "weekday": "수",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 120",
+  "theme": "Animals",
+  "title": "How Do Bees Make Honey?",
+  "title_ko": "벌은 어떻게 꿀을 만들까?",
+  "lets_start": {
+   "q": "Do you like honey?",
+   "q_ko": "꿀을 좋아하나요?",
+   "options": [
+    "Yes, I love it!",
+    "No, not really."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "flower",
+    "meaning": "꽃",
+    "emoji": "🌼"
+   },
+   {
+    "word": "nectar",
+    "meaning": "꽃의 달콤한 즙(꿀물)",
+    "emoji": "💧"
+   },
+   {
+    "word": "hive",
+    "meaning": "벌집(벌이 사는 집)",
+    "emoji": "🏠"
+   },
+   {
+    "word": "honeycomb",
+    "meaning": "벌집 모양 칸",
+    "emoji": "🍯"
+   },
+   {
+    "word": "fan",
+    "meaning": "부채질하다",
+    "emoji": "💨"
+   },
+   {
+    "word": "wax",
+    "meaning": "밀랍",
+    "emoji": "🕯️"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-25-en.jpg",
+    "caption": "A honey bee drinks nectar from a flower.",
+    "caption_ko": "꿀벌이 꽃에서 꿀물을 마셔요"
+   },
+   "scene": {
+    "bg": "field",
+    "items": [
+     [
+      "🐝",
+      40,
+      44,
+      22
+     ],
+     [
+      "🌼",
+      64,
+      70,
+      22
+     ],
+     [
+      "🌼",
+      24,
+      74,
+      14
+     ],
+     [
+      "🍯",
+      84,
+      78,
+      14
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Honey bees visit **flowers**. They drink a sweet juice called **nectar**. They carry it in a special honey stomach.",
+    "ko": "꿀벌은 꽃을 찾아가요. 꽃에서 '꿀물'이라는 달콤한 즙을 마셔요. 꿀물은 몸속 특별한 꿀주머니에 담아 가져가요."
+   },
+   {
+    "text": "Back at the **hive**, the bees pass the nectar to other bees. These bees chew it. Then they put it in wax holes called **honeycomb**.",
+    "ko": "벌집에 돌아오면 다른 벌에게 꿀물을 건네요. 그 벌들이 꿀물을 씹어요. 그다음 밀랍 칸인 벌집 모양 칸에 넣어요.",
+    "scene": {
+     "bg": "day",
+     "items": [
+      [
+       "🐝",
+       24,
+       40,
+       14
+      ],
+      [
+       "🐝",
+       44,
+       56,
+       14
+      ],
+      [
+       "🍯",
+       70,
+       62,
+       26
+      ],
+      [
+       "➡️",
+       34,
+       74,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "The nectar is still wet. So the bees **fan** it with their wings. When it is thick, they cover it with **wax**. Now it is honey!",
+    "ko": "꿀물은 아직 묽어요. 그래서 벌들이 날개로 부채질해요. 걸쭉해지면 밀랍으로 덮어요. 이제 꿀이 되었어요!"
+   }
+  ],
+  "pop_quiz": {
+   "q": "Bees drink a sweet juice called ___.",
+   "answer": "nectar"
+  },
+  "you_know": {
+   "emoji": "🌬️",
+   "text": "Bees also fan their wings to cool the hive, just like a tiny fan!",
+   "text_ko": "벌들은 벌집을 시원하게 하려고도 날개로 부채질해요. 작은 선풍기 같아요!"
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "how bees make honey",
+    "how bees build roads"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What do bees drink from flowers?",
+    "options": [
+     [
+      "💧",
+      "nectar"
+     ],
+     [
+      "🥤",
+      "soda"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How do bees dry the nectar?",
+    "options": [
+     [
+      "💨",
+      "They fan it with their wings."
+     ],
+     [
+      "🔥",
+      "They heat it on a fire."
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Bees carry nectar in their honey ___.",
+    "choices": [
+     "stomach",
+     "basket",
+     "bag"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Honey is kept in holes called ___.",
+    "choices": [
+     "honeycomb",
+     "pockets",
+     "tubes"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "At the end, bees cover the honey with ___.",
+    "choices": [
+     "wax",
+     "water",
+     "leaves"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🏠",
+    "sentence": "The bee lives in a ___ with many other bees.",
+    "options": [
+     "hive",
+     "wax"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🌞",
+    "sentence": "I use a ___ on a hot day to feel cool.",
+    "options": [
+     "fan",
+     "nectar"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🕯️",
+    "sentence": "The candle is made of ___.",
+    "options": [
+     "wax",
+     "flower"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Making Honey",
+   "heads": [
+    "First",
+    "Next",
+    "Last"
+   ],
+   "choices": [
+    "Bees drink nectar from flowers.",
+    "Bees pass the nectar to other bees in the hive.",
+    "Bees fan the nectar and cover it with wax."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What do you like to eat with honey?",
+   "q_ko": "꿀과 함께 먹으면 맛있는 것은 무엇인가요?",
+   "frame": "I like honey on ___."
+  },
+  "sources": "Britannica Kids (honeybee), LiveScience (How do bees make honey?)"
+ },
+ "ko": {
+  "genre": "동시",
+  "level": "초1~2",
+  "theme": "흉내 내는 말 동시",
+  "title": "겨울 아침",
+  "lets_start": {
+   "q": "추운 겨울 아침, 입에서 무엇이 나오나요?",
+   "options": [
+    "하얀 입김",
+    "노란 불꽃"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "서리",
+    "meaning": "찬 날 밤에 물방울이 얼어 붙은 것",
+    "emoji": "❄️"
+   },
+   {
+    "word": "입김",
+    "meaning": "입에서 나오는 따뜻한 김",
+    "emoji": "💨"
+   },
+   {
+    "word": "반짝반짝",
+    "meaning": "작은 빛이 자꾸 빛나는 모양",
+    "emoji": "✨"
+   },
+   {
+    "word": "꼼지락꼼지락",
+    "meaning": "몸을 자꾸 조금씩 움직이는 모양",
+    "emoji": "🦶"
+   },
+   {
+    "word": "호로록",
+    "meaning": "국물을 입으로 빨아 마시는 소리",
+    "emoji": "🥣"
+   },
+   {
+    "word": "사르르",
+    "meaning": "눈이나 얼음이 살며시 녹는 모양",
+    "emoji": "🫠"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🪟",
+      34,
+      56,
+      34
+     ],
+     [
+      "❄️",
+      22,
+      24,
+      9
+     ],
+     [
+      "❄️",
+      60,
+      18,
+      8
+     ],
+     [
+      "✨",
+      34,
+      50,
+      10
+     ],
+     [
+      "🧒",
+      74,
+      70,
+      22
+     ],
+     [
+      "💨",
+      66,
+      52,
+      9
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "창문에 하얀 **서리**가 반짝반짝.\n내 **입김**도 호호, 하얗게 퐁퐁."
+   },
+   {
+    "text": "이불 속 발가락이 꼼지락꼼지락.\n아이, 추워! 발가락이 쏙 숨어요.",
+    "scene": {
+     "bg": "house",
+     "items": [
+      [
+       "🛏️",
+       40,
+       62,
+       32
+      ],
+      [
+       "🦶",
+       70,
+       66,
+       16
+      ],
+      [
+       "🥶",
+       70,
+       36,
+       10
+      ]
+     ]
+    }
+   },
+   {
+    "text": "엄마가 끓여 주신 따끈한 국, 후후 불어 **호로록**.\n몸이 **사르르** 녹아요. 우리 집 겨울 아침."
+   }
+  ],
+  "pop_quiz": {
+   "q": "창문에 하얀 ___가 반짝반짝 붙었어요.",
+   "answer": "서리"
+  },
+  "you_know": {
+   "emoji": "🎵",
+   "text": "'반짝반짝', '꼼지락꼼지락'처럼 소리나 모양을 흉내 내는 말을 '의성어·의태어'라고 해요. 글에 넣으면 장면이 눈앞에 보이는 것 같아요."
+  },
+  "main_idea": {
+   "q": "이 시에서 말하는 것은 무엇인가요?",
+   "options": [
+    "춥지만 따뜻한 겨울 아침 모습",
+    "더운 여름 바다"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "발가락은 어디에서 꼼지락거리나요?",
+    "options": [
+     [
+      "🛏️",
+      "이불 속"
+     ],
+     [
+      "🏖️",
+      "모래 위"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "몸을 사르르 녹여 준 것은?",
+    "options": [
+     [
+      "🥣",
+      "따끈한 국"
+     ],
+     [
+      "🧊",
+      "차가운 얼음"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "창문에는 무엇이 반짝거리나요?",
+    "choices": [
+     "서리",
+     "무지개",
+     "촛불"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "입김은 어떤 색인가요?",
+    "choices": [
+     "하얀색",
+     "빨간색",
+     "초록색"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "국을 마시는 소리를 흉내 낸 말은?",
+    "choices": [
+     "호로록",
+     "반짝반짝",
+     "꼼지락꼼지락"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🌟",
+    "sentence": "밤하늘의 별이 ___ 빛나요.",
+    "options": [
+     "반짝반짝",
+     "호로록"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍦",
+    "sentence": "아이스크림이 입안에서 ___ 녹아요.",
+    "options": [
+     "사르르",
+     "꼼지락"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "😮‍💨",
+    "sentence": "추운 날 입에서 하얀 ___이 나와요.",
+    "options": [
+     "입김",
+     "서리"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "시의 장면",
+   "heads": [
+    "첫째 연",
+    "둘째 연",
+    "셋째 연"
+   ],
+   "choices": [
+    "창문의 서리와 하얀 입김",
+    "이불 속 발가락",
+    "따끈한 국과 따뜻해진 몸"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "겨울 아침의 모습을 흉내 내는 말로 한 줄 써 보세요.",
+   "frame": "겨울 아침에는 ___ 소리가 나요."
+  },
+  "dictation": [
+   "서리",
+   "입김",
+   "반짝반짝",
+   "따끈한 국",
+   "겨울 아침"
+  ],
+  "copy": "몸이 사르르 녹아요.",
+  "parent_tip": "시를 소리 내어 읽으며 '반짝반짝', '호로록'은 몸짓을 함께 해 보세요.",
+  "sources": "직접 쓴 동시(소년한국일보 「시를 읽읍시다」 코너의 동시 형식을 참고)"
+ },
+ "write": {
+  "ref_ko": "잠언 16장 24절",
+  "ref": "Proverbs 16:24",
+  "ko": "고운 말은 꿀송이예요.",
+  "en": "Pleasant words are a honeycomb.",
+  "words": [
+   "꿀송이",
+   "고운 말"
+  ],
+  "prompt": "오늘 누구에게 고운 말을 하고 싶나요?"
+ }
+}

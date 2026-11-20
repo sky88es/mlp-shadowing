@@ -412,5 +412,230 @@
    ]
   },
   "photo": "photos/2026-11-20-en.jpg"
+ },
+ {
+  "date": "2026-11-23",
+  "day": 13,
+  "weekday": "월",
+  "en_title": "Look, Listen, Touch, Smell, and Taste!",
+  "ko_title": "벼는 익을수록 고개를 숙인다",
+  "en_genre": "Nonfiction",
+  "ko_genre": "속담",
+  "cover": {
+   "bg": "field",
+   "items": [
+    [
+     "👧",
+     38,
+     62,
+     30
+    ],
+    [
+     "🌸",
+     68,
+     70,
+     18
+    ],
+    [
+     "👃",
+     38,
+     36,
+     10
+    ],
+    [
+     "👂",
+     56,
+     24,
+     9
+    ],
+    [
+     "👀",
+     22,
+     24,
+     9
+    ],
+    [
+     "✋",
+     80,
+     46,
+     9
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-23-ko.jpg"
+ },
+ {
+  "date": "2026-11-24",
+  "day": 14,
+  "weekday": "화",
+  "en_title": "Max and the Cookie Smell",
+  "ko_title": "우리 몸의 뼈는 몇 개일까?",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "kitchen",
+   "items": [
+    [
+     "👦",
+     30,
+     60,
+     28
+    ],
+    [
+     "🍪",
+     62,
+     66,
+     16
+    ],
+    [
+     "🍪",
+     76,
+     70,
+     12
+    ],
+    [
+     "🐶",
+     84,
+     76,
+     16
+    ],
+    [
+     "👃",
+     34,
+     34,
+     10
+    ],
+    [
+     "✨",
+     66,
+     40,
+     9
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-24-ko.jpg"
+ },
+ {
+  "date": "2026-11-25",
+  "day": 15,
+  "weekday": "수",
+  "en_title": "How Do Bees Make Honey?",
+  "ko_title": "겨울 아침",
+  "en_genre": "Nonfiction",
+  "ko_genre": "동시",
+  "cover": {
+   "bg": "field",
+   "items": [
+    [
+     "🐝",
+     40,
+     44,
+     22
+    ],
+    [
+     "🌼",
+     64,
+     70,
+     22
+    ],
+    [
+     "🌼",
+     24,
+     74,
+     14
+    ],
+    [
+     "🍯",
+     84,
+     78,
+     14
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-25-en.jpg"
+ },
+ {
+  "date": "2026-11-26",
+  "day": 16,
+  "weekday": "목",
+  "en_title": "Busy Bea",
+  "ko_title": "붕어빵에는 왜 붕어가 없을까?",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "field",
+   "items": [
+    [
+     "🐝",
+     40,
+     38,
+     22
+    ],
+    [
+     "🌼",
+     26,
+     74,
+     18
+    ],
+    [
+     "🌷",
+     62,
+     76,
+     18
+    ],
+    [
+     "🌼",
+     84,
+     70,
+     14
+    ],
+    [
+     "☀️",
+     84,
+     16,
+     12
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-26-ko.jpg"
+ },
+ {
+  "date": "2026-11-27",
+  "day": 17,
+  "weekday": "금",
+  "en_title": "Noodles Around the World",
+  "ko_title": "할머니의 김장 날",
+  "en_genre": "Nonfiction",
+  "ko_genre": "이야기",
+  "cover": {
+   "bg": "kitchen",
+   "items": [
+    [
+     "🍜",
+     30,
+     62,
+     26
+    ],
+    [
+     "🍝",
+     62,
+     64,
+     24
+    ],
+    [
+     "🥢",
+     80,
+     38,
+     12
+    ],
+    [
+     "🍅",
+     84,
+     80,
+     10
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-27-en.jpg"
  }
 ]

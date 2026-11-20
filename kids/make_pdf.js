@@ -10,7 +10,7 @@ const KIDS = __dirname;
 const lessons = inPaths.map(p => JSON.parse(fs.readFileSync(p, 'utf8')));
 const credits = (() => { try { return JSON.parse(fs.readFileSync(path.join(KIDS, 'photos/credits.json'), 'utf8')); } catch { return {}; } })();
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const hl = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<mark>$1</mark>');
+const hl = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<mark>$1</mark>').replace(/\n/g, '<br>');
 const blank = s => esc(s).replace(/___/g, '<span class="bl"></span>');
 const ABC = 'abc';
 
@@ -28,7 +28,7 @@ function figure(f, cls) {
   if (f.scene) return `<figure class="${cls}">${sceneHTML(f.scene)}</figure>`;
   return '';
 }
-const GENRE = { Fiction: ['📖 Fiction', '#ff6f86'], Nonfiction: ['🔎 Nonfiction', '#2f9ee1'], '이야기': ['📖 이야기', '#ff6f86'], '정보글': ['🔎 정보글', '#2f9ee1'], '기사문': ['📰 기사문', '#8a63d2'], '서평': ['📚 서평', '#2fb26b'] };
+const GENRE = { Fiction: ['📖 Fiction', '#ff6f86'], Nonfiction: ['🔎 Nonfiction', '#2f9ee1'], '이야기': ['📖 이야기', '#ff6f86'], '정보글': ['🔎 정보글', '#2f9ee1'], '기사문': ['📰 기사문', '#8a63d2'], '서평': ['📚 서평', '#2fb26b'], '속담': ['📜 속담', '#c98a2b'], '동시': ['🎵 동시', '#e0609a'] };
 
 function studentPage(d, U, lang) {
   const isEn = lang === 'en';
@@ -132,6 +132,7 @@ const pages = (lessons.length > 1 ? cover(lessons) : '') + lessons.map(d => stud
 const html = `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=Fredoka:wght@500;600&family=Andika:wght@400;700&display=swap" rel="stylesheet">
 <style>${SCENE_CSS}
+.scene .it{filter:none!important;animation:none!important}
 @page{size:A4;margin:10mm}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Gowun Dodum','WenQuanYi Zen Hei',sans-serif;color:#2a2833;font-size:10pt}
