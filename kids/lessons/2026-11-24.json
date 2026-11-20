@@ -1,0 +1,593 @@
+{
+ "version": 2,
+ "date": "2026-11-24",
+ "day": 14,
+ "weekday": "화",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "My Body",
+  "title": "Max and the Cookie Smell",
+  "title_ko": "맥스와 쿠키 냄새",
+  "lets_start": {
+   "q": "What smells yummy at your home?",
+   "q_ko": "집에서 어떤 냄새가 맛있게 나나요?",
+   "options": [
+    "Cookies!",
+    "Soup!"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "sniff",
+    "meaning": "킁킁 냄새 맡다",
+    "emoji": "👃"
+   },
+   {
+    "word": "smell",
+    "meaning": "냄새, 냄새 맡다",
+    "emoji": "🍪"
+   },
+   {
+    "word": "plate",
+    "meaning": "접시",
+    "emoji": "🍽️"
+   },
+   {
+    "word": "crumbs",
+    "meaning": "부스러기",
+    "emoji": "🍞"
+   },
+   {
+    "word": "follow",
+    "meaning": "따라가다",
+    "emoji": "👣"
+   },
+   {
+    "word": "oven",
+    "meaning": "오븐",
+    "emoji": "🔥"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "kitchen",
+    "items": [
+     [
+      "👦",
+      30,
+      60,
+      28
+     ],
+     [
+      "🍪",
+      62,
+      66,
+      16
+     ],
+     [
+      "🍪",
+      76,
+      70,
+      12
+     ],
+     [
+      "🐶",
+      84,
+      76,
+      16
+     ],
+     [
+      "👃",
+      34,
+      34,
+      10
+     ],
+     [
+      "✨",
+      66,
+      40,
+      9
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Max wakes up. **Sniff**, sniff! He can **smell** something sweet and warm. \"Cookies!\" he shouts.",
+    "ko": "맥스가 잠에서 깨요. 킁킁! 달콤하고 따뜻한 냄새가 나요. \"쿠키다!\" 맥스가 외쳐요."
+   },
+   {
+    "text": "Max runs to the kitchen. The **plate** is empty! He sees **crumbs** on the floor. He **follows** the crumbs under the table.",
+    "ko": "맥스는 부엌으로 달려가요. 접시가 비었어요! 바닥에 부스러기가 보여요. 맥스는 부스러기를 따라 식탁 아래로 가요.",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "👦",
+       24,
+       62,
+       24
+      ],
+      [
+       "🍽️",
+       52,
+       74,
+       14
+      ],
+      [
+       "🍞",
+       66,
+       84,
+       8
+      ],
+      [
+       "🍞",
+       76,
+       86,
+       8
+      ],
+      [
+       "👣",
+       86,
+       78,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Rex the dog is there, with crumbs on his nose. \"Rex!\" says Max. Then Mom opens the **oven**. \"Here are more cookies!\" Max and Rex smile.",
+    "ko": "개 렉스가 거기 있어요. 코에 부스러기를 묻힌 채로요. \"렉스!\" 맥스가 말해요. 그때 엄마가 오븐을 열어요. \"쿠키 더 있단다!\" 맥스와 렉스가 웃어요.",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🐶",
+       30,
+       70,
+       22
+      ],
+      [
+       "👦",
+       56,
+       64,
+       22
+      ],
+      [
+       "👩",
+       82,
+       58,
+       22
+      ],
+      [
+       "🔥",
+       86,
+       80,
+       10
+      ],
+      [
+       "🍪",
+       70,
+       86,
+       9
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "The ___ is empty.",
+   "answer": "plate"
+  },
+  "you_know": {
+   "emoji": "🐕",
+   "text": "Dogs have a super nose. They can smell much better than people can!",
+   "text_ko": "개는 코가 아주 뛰어나요. 사람보다 냄새를 훨씬 잘 맡아요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Max finding who ate the cookies",
+    "Max baking cookies with Rex"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "Who has crumbs on his nose?",
+    "options": [
+     [
+      "🐶",
+      "Rex the dog"
+     ],
+     [
+      "🐱",
+      "a cat"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Mom open?",
+    "options": [
+     [
+      "🔥",
+      "the oven"
+     ],
+     [
+      "🚪",
+      "the door"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Max smells something ___.",
+    "choices": [
+     "sweet and warm",
+     "cold and sour",
+     "hot and spicy"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Max follows the ___.",
+    "choices": [
+     "crumbs",
+     "mice",
+     "stairs"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "At the end, Max ___.",
+    "choices": [
+     "smiles",
+     "cries",
+     "sleeps"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🌷",
+    "sentence": "My dog likes to ___ the flowers.",
+    "options": [
+     "sniff",
+     "follow"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🥪",
+    "sentence": "Put the sandwich on the ___.",
+    "options": [
+     "plate",
+     "oven"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🦆",
+    "sentence": "The ducklings ___ their mother.",
+    "options": [
+     "follow",
+     "smell"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Beginning",
+    "Middle",
+    "End"
+   ],
+   "choices": [
+    "Max smells cookies.",
+    "Max follows crumbs and finds Rex.",
+    "Mom bakes new cookies."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What would you do if your snack was gone?",
+   "q_ko": "내 간식이 사라졌다면 어떻게 할까요?",
+   "frame": "I would ___."
+  },
+  "sources": "창작 이야기 (개의 후각은 일반 상식)"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "우리 몸",
+  "title": "우리 몸의 뼈는 몇 개일까?",
+  "lets_start": {
+   "q": "우리 몸속에 단단한 것은 무엇이 있을까요?",
+   "options": [
+    "뼈",
+    "구름"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "뼈",
+    "meaning": "몸을 받쳐 주는 단단한 것",
+    "emoji": "🦴"
+   },
+   {
+    "word": "연골",
+    "meaning": "말랑하고 질긴 뼈",
+    "emoji": "🦷"
+   },
+   {
+    "word": "합쳐지다",
+    "meaning": "여러 개가 하나로 모이다",
+    "emoji": "🧩"
+   },
+   {
+    "word": "튼튼하다",
+    "meaning": "몸이나 물건이 단단하고 힘차다",
+    "emoji": "💪"
+   },
+   {
+    "word": "보호하다",
+    "meaning": "다치지 않게 지키다",
+    "emoji": "🛡️"
+   },
+   {
+    "word": "등",
+    "meaning": "몸의 뒤쪽",
+    "emoji": "🧍"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-24-ko.jpg",
+    "caption_ko": "사람 몸의 여러 가지 뼈(척추, 갈비뼈, 머리뼈, 팔다리뼈)"
+   },
+   "scene": {
+    "bg": "house",
+    "items": [
+     [
+      "💀",
+      40,
+      52,
+      30
+     ],
+     [
+      "🦴",
+      70,
+      66,
+      16
+     ],
+     [
+      "🧒",
+      18,
+      70,
+      18
+     ],
+     [
+      "❓",
+      74,
+      30,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "우리 몸에는 **뼈**가 있어서 쓰러지지 않고 설 수 있어요. 어른의 뼈는 모두 206개예요."
+   },
+   {
+    "text": "그런데 아기는 뼈가 더 많아요. 아기의 뼈는 약 300개나 돼요. 아기의 뼈에는 아직 말랑한 **연골**이 많아요.",
+    "scene": {
+     "bg": "house",
+     "items": [
+      [
+       "👶",
+       30,
+       62,
+       24
+      ],
+      [
+       "🦴",
+       56,
+       56,
+       12
+      ],
+      [
+       "🦴",
+       68,
+       70,
+       12
+      ],
+      [
+       "🦴",
+       80,
+       58,
+       12
+      ],
+      [
+       "3️⃣",
+       56,
+       28,
+       8
+      ],
+      [
+       "0️⃣",
+       66,
+       28,
+       8
+      ],
+      [
+       "0️⃣",
+       76,
+       28,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "아기가 자라면서 작은 뼈들이 서로 **합쳐져요**. 그래서 어른이 되면 206개가 돼요. 뼈는 우리 몸을 **보호하고** **튼튼하게** 받쳐 줘요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "어른의 뼈는 모두 ___개예요.",
+   "answer": "206"
+  },
+  "you_know": {
+   "emoji": "🖐️",
+   "text": "한 손에만 뼈가 27개나 있어요. 가장 작은 뼈는 귀 안에 있어요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "우리 몸의 뼈의 수와 아기 뼈가 많은 까닭",
+    "뼈를 먹는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "누구의 뼈가 더 많나요?",
+    "options": [
+     [
+      "👶",
+      "아기"
+     ],
+     [
+      "🧑",
+      "어른"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "뼈는 몸에서 무슨 일을 하나요?",
+    "options": [
+     [
+      "🛡️",
+      "몸을 보호하고 받쳐 줘요"
+     ],
+     [
+      "🎵",
+      "노래를 불러 줘요"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "어른의 뼈는 몇 개인가요?",
+    "choices": [
+     "106개",
+     "206개",
+     "306개"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "아기의 뼈에는 무엇이 많나요?",
+    "choices": [
+     "연골",
+     "머리카락",
+     "돌"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "자라면서 작은 뼈들은 어떻게 되나요?",
+    "choices": [
+     "합쳐져요",
+     "사라져요",
+     "더 작아져요"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🧩",
+    "sentence": "퍼즐 조각이 하나로 ___어요.",
+    "options": [
+     "합쳐졌",
+     "흩어졌"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "⛑️",
+    "sentence": "헬멧은 머리를 ___어요.",
+    "options": [
+     "보호해",
+     "먹어"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏋️",
+    "sentence": "매일 운동하면 몸이 ___어져요.",
+    "options": [
+     "튼튼해",
+     "말랑해"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "뼈 이야기",
+   "heads": [
+    "어른",
+    "아기",
+    "자라면서"
+   ],
+   "choices": [
+    "뼈가 206개예요.",
+    "뼈가 약 300개예요.",
+    "작은 뼈들이 합쳐져요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "뼈가 튼튼해지려면 어떻게 해야 할까요?",
+   "frame": "나는 ___을/를 해서 뼈를 튼튼하게 할 거예요."
+  },
+  "dictation": [
+   "뼈",
+   "연골",
+   "아기",
+   "튼튼해요",
+   "이백육 개"
+  ],
+  "copy": "뼈는 우리 몸을 튼튼하게 받쳐 줘요.",
+  "sources": "PopSci, Healthline 등 영문 자료와 국내 기사(사람 뼈 개수 206개·아기 약 300개)를 확인해 새로 씀"
+ },
+ "write": {
+  "ref_ko": "잠언 17장 17절",
+  "ref": "Proverbs 17:17",
+  "ko": "친구는 늘 사랑해요.",
+  "en": "A friend loves at all times.",
+  "words": [
+   "친구",
+   "사랑"
+  ],
+  "prompt": "나의 친구에게 하고 싶은 말은?"
+ }
+}

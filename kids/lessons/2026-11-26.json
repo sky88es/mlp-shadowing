@@ -1,0 +1,569 @@
+{
+ "version": 2,
+ "date": "2026-11-26",
+ "day": 16,
+ "weekday": "목",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "Animals",
+  "title": "Busy Bea",
+  "title_ko": "바쁜 벌 비아",
+  "lets_start": {
+   "q": "Do you like rainy days?",
+   "q_ko": "비 오는 날을 좋아하나요?",
+   "options": [
+    "Yes, I do.",
+    "No, I don't."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "busy",
+    "meaning": "바쁜",
+    "emoji": "⏰"
+   },
+   {
+    "word": "buzz",
+    "meaning": "윙윙(벌 소리)",
+    "emoji": "🐝"
+   },
+   {
+    "word": "rain",
+    "meaning": "비",
+    "emoji": "🌧️"
+   },
+   {
+    "word": "leaf",
+    "meaning": "나뭇잎",
+    "emoji": "🍃"
+   },
+   {
+    "word": "tired",
+    "meaning": "피곤한",
+    "emoji": "😴"
+   },
+   {
+    "word": "home",
+    "meaning": "집",
+    "emoji": "🏠"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "field",
+    "items": [
+     [
+      "🐝",
+      40,
+      38,
+      22
+     ],
+     [
+      "🌼",
+      26,
+      74,
+      18
+     ],
+     [
+      "🌷",
+      62,
+      76,
+      18
+     ],
+     [
+      "🌼",
+      84,
+      70,
+      14
+     ],
+     [
+      "☀️",
+      84,
+      16,
+      12
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Bea is a little bee. **Buzz**, buzz! She flies from flower to flower. She is very **busy**.",
+    "ko": "비아는 꼬마 벌이에요. 윙윙! 이 꽃 저 꽃으로 날아다녀요. 아주 바빠요."
+   },
+   {
+    "text": "Then **rain** comes. Drip, drop! Bea hides under a big **leaf**. A ladybug named Lily is there, too. \"I am cold,\" says Lily.",
+    "ko": "그때 비가 와요. 똑똑! 비아는 커다란 나뭇잎 아래에 숨어요. 무당벌레 릴리도 거기 있어요. \"나 추워.\" 릴리가 말해요.",
+    "scene": {
+     "bg": "rain",
+     "items": [
+      [
+       "🍃",
+       50,
+       34,
+       40
+      ],
+      [
+       "🐝",
+       36,
+       72,
+       18
+      ],
+      [
+       "🐞",
+       66,
+       74,
+       16
+      ],
+      [
+       "💧",
+       18,
+       46,
+       8
+      ],
+      [
+       "💧",
+       84,
+       40,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Bea moves close to Lily. They stay warm together. When the rain stops, they fly **home**. Bea is **tired**, but she is happy.",
+    "ko": "비아가 릴리 가까이 다가가요. 둘은 함께 따뜻하게 있어요. 비가 그치자 둘은 집으로 날아가요. 비아는 피곤하지만 행복해요.",
+    "scene": {
+     "bg": "day",
+     "items": [
+      [
+       "🐝",
+       34,
+       40,
+       18
+      ],
+      [
+       "🐞",
+       54,
+       46,
+       14
+      ],
+      [
+       "🏠",
+       80,
+       62,
+       24
+      ],
+      [
+       "🌈",
+       60,
+       22,
+       18
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "Bea hides under a big ___.",
+   "answer": "leaf"
+  },
+  "you_know": {
+   "emoji": "📍",
+   "text": "A worker bee can fly up to about 5 kilometers to find flowers!",
+   "text_ko": "일벌은 꽃을 찾아 최대 5km쯤 날아가기도 해요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Bea and Lily staying warm in the rain",
+    "Bea making honey for winter"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "Who is under the leaf with Bea?",
+    "options": [
+     [
+      "🐞",
+      "Lily the ladybug"
+     ],
+     [
+      "🦋",
+      "a butterfly"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Bea do when the rain stops?",
+    "options": [
+     [
+      "🏠",
+      "She flies home."
+     ],
+     [
+      "🏊",
+      "She goes swimming."
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Bea flies from flower to ___.",
+    "choices": [
+     "flower",
+     "tree",
+     "rock"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Lily says, \"I am ___.\"",
+    "choices": [
+     "cold",
+     "hungry",
+     "sleepy"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "At the end, Bea is ___.",
+    "choices": [
+     "tired but happy",
+     "sad and angry",
+     "scared"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "📚",
+    "sentence": "My brother is ___ today. He has lots of homework.",
+    "options": [
+     "busy",
+     "tired"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "☂️",
+    "sentence": "Take an umbrella. It is going to ___.",
+    "options": [
+     "rain",
+     "leaf"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏃",
+    "sentence": "After a long run, I feel ___.",
+    "options": [
+     "tired",
+     "home"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Beginning",
+    "Middle",
+    "End"
+   ],
+   "choices": [
+    "Bea is busy flying from flower to flower.",
+    "Rain comes and Bea meets Lily under a leaf.",
+    "They stay warm and fly home."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "How can you help a friend who is cold or sad?",
+   "q_ko": "춥거나 슬픈 친구를 어떻게 도와줄 수 있을까요?",
+   "frame": "I can ___."
+  },
+  "sources": "창작 이야기 (일벌의 비행 거리는 YHA·Science Trek 자료 참고)"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "맛있는 이야기",
+  "title": "붕어빵에는 왜 붕어가 없을까?",
+  "lets_start": {
+   "q": "겨울 길거리에서 파는 따끈한 간식은 무엇일까요?",
+   "options": [
+    "붕어빵",
+    "아이스크림"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "붕어빵",
+    "meaning": "붕어 모양으로 구운 빵",
+    "emoji": "🐟"
+   },
+   {
+    "word": "반죽",
+    "meaning": "가루에 물을 섞어 이겨 놓은 것",
+    "emoji": "🥣"
+   },
+   {
+    "word": "팥소",
+    "meaning": "빵 속에 넣는 달콤한 팥",
+    "emoji": "🫘"
+   },
+   {
+    "word": "틀",
+    "meaning": "모양을 만드는 도구",
+    "emoji": "🔲"
+   },
+   {
+    "word": "타이야키",
+    "meaning": "일본의 붕어빵(도미 모양)",
+    "emoji": "🇯🇵"
+   },
+   {
+    "word": "행운",
+    "meaning": "좋은 일이 생기는 운",
+    "emoji": "🍀"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-26-ko.jpg",
+    "caption_ko": "길거리에서 구운 붕어빵"
+   },
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🐟",
+      36,
+      60,
+      24
+     ],
+     [
+      "🥣",
+      66,
+      66,
+      16
+     ],
+     [
+      "🫘",
+      84,
+      78,
+      10
+     ],
+     [
+      "❄️",
+      20,
+      22,
+      9
+     ],
+     [
+      "💨",
+      36,
+      38,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "겨울 길거리에서 따끈한 **붕어빵**을 먹어 본 적 있나요? 그런데 붕어빵 속에는 붕어가 없어요. 밀가루 **반죽**과 달콤한 **팥소**가 들어 있을 뿐이에요."
+   },
+   {
+    "text": "붕어 모양 **틀**에 반죽을 붓고 구워서 붕어처럼 생겼어요. 그래서 이름이 붕어빵이에요.",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🥣",
+       22,
+       62,
+       18
+      ],
+      [
+       "➡️",
+       42,
+       62,
+       8
+      ],
+      [
+       "🔲",
+       60,
+       60,
+       20
+      ],
+      [
+       "🐟",
+       84,
+       62,
+       18
+      ]
+     ]
+    }
+   },
+   {
+    "text": "붕어빵은 일본의 **타이야키**에서 왔다고 해요. 일본에서는 도미 모양으로 만들었는데, 도미는 **행운**을 가져다주는 생선이었어요. 우리나라에서는 붕어 모양으로 바뀌었다고 전해져요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "붕어빵 속에는 ___가 들어 있어요.",
+   "answer": "팥소"
+  },
+  "you_know": {
+   "emoji": "🍞",
+   "text": "붕어빵은 이름과 달리 생선이 전혀 들어가지 않아요. 이름은 모양에서 왔어요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "붕어빵의 이름과 유래",
+    "붕어를 잡는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "붕어빵 속에는 무엇이 들어 있나요?",
+    "options": [
+     [
+      "🫘",
+      "달콤한 팥소"
+     ],
+     [
+      "🐟",
+      "살아 있는 붕어"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "붕어빵은 어디에서 왔다고 하나요?",
+    "options": [
+     [
+      "🇯🇵",
+      "일본의 타이야키"
+     ],
+     [
+      "🇮🇹",
+      "이탈리아의 피자"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "붕어빵을 만들 때 반죽을 붓는 것은?",
+    "choices": [
+     "틀",
+     "컵",
+     "접시"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "일본의 타이야키는 어떤 생선 모양인가요?",
+    "choices": [
+     "붕어",
+     "도미",
+     "고래"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "붕어빵이라는 이름이 붙은 까닭은?",
+    "choices": [
+     "붕어 모양이라서",
+     "붕어가 들어 있어서",
+     "붕어가 먹어서"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🥞",
+    "sentence": "팬케이크를 만들려고 밀가루 ___을 저었어요.",
+    "options": [
+     "반죽",
+     "행운"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍀",
+    "sentence": "네잎클로버를 찾으면 ___이 온대요.",
+    "options": [
+     "행운",
+     "팥소"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍪",
+    "sentence": "쿠키 ___로 별 모양을 찍었어요.",
+    "options": [
+     "틀",
+     "반죽"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "붕어빵 알아보기",
+   "heads": [
+    "속에는",
+    "만드는 법",
+    "유래"
+   ],
+   "choices": [
+    "달콤한 팥소가 들어 있어요.",
+    "붕어 모양 틀에 반죽을 구워요.",
+    "일본의 타이야키에서 왔어요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "내가 만들고 싶은 모양의 빵을 소개해 보세요.",
+   "frame": "나는 ___ 모양의 빵을 만들고 싶어요."
+  },
+  "dictation": [
+   "붕어빵",
+   "반죽",
+   "팥소",
+   "겨울",
+   "타이야키"
+  ],
+  "copy": "붕어빵에는 붕어가 없어요.",
+  "sources": "위키백과 타이야키·붕어빵, Tokyo Weekender, 다음 뉴스 「붕어빵의 역사」를 확인해 새로 씀 (한국 붕어빵의 기원은 설명이 여러 가지라 '전해져요'로 씀)"
+ },
+ "write": {
+  "ref_ko": "여호수아 1장 9절",
+  "ref": "Joshua 1:9",
+  "ko": "굳세고 용감하세요.",
+  "en": "Be strong and courageous.",
+  "words": [
+   "굳세다",
+   "용감"
+  ],
+  "prompt": "내가 용기를 내고 싶은 일은?"
+ }
+}

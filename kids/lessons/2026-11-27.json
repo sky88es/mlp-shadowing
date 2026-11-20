@@ -1,0 +1,551 @@
+{
+ "version": 2,
+ "date": "2026-11-27",
+ "day": 17,
+ "weekday": "금",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 120",
+  "theme": "Food Around the World",
+  "title": "Noodles Around the World",
+  "title_ko": "세계의 국수",
+  "lets_start": {
+   "q": "What is your favorite noodle dish?",
+   "q_ko": "내가 가장 좋아하는 국수 요리는 무엇인가요?",
+   "options": [
+    "ramen",
+    "spaghetti"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "noodles",
+    "meaning": "국수, 면",
+    "emoji": "🍜"
+   },
+   {
+    "word": "spaghetti",
+    "meaning": "스파게티",
+    "emoji": "🍝"
+   },
+   {
+    "word": "ramen",
+    "meaning": "라멘(일본식 국수)",
+    "emoji": "🍥"
+   },
+   {
+    "word": "soup",
+    "meaning": "국물, 수프",
+    "emoji": "🥣"
+   },
+   {
+    "word": "sauce",
+    "meaning": "소스",
+    "emoji": "🍅"
+   },
+   {
+    "word": "millet",
+    "meaning": "기장(곡식)",
+    "emoji": "🌾"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-27-en.jpg",
+    "caption": "A bowl of ramen noodles",
+    "caption_ko": "라멘 한 그릇"
+   },
+   "scene": {
+    "bg": "kitchen",
+    "items": [
+     [
+      "🍜",
+      30,
+      62,
+      26
+     ],
+     [
+      "🍝",
+      62,
+      64,
+      24
+     ],
+     [
+      "🥢",
+      80,
+      38,
+      12
+     ],
+     [
+      "🍅",
+      84,
+      80,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "People all over the world love **noodles**. The oldest noodles are about 4,000 years old. They were found in a bowl in China.",
+    "ko": "전 세계 사람들은 국수를 좋아해요. 가장 오래된 국수는 약 4,000년 전 것이에요. 중국에서 그릇에 담긴 채로 발견되었어요."
+   },
+   {
+    "text": "In Italy, people eat **spaghetti** with tomato **sauce**. In Japan, they eat **ramen** in hot **soup**. In Korea, we love jjajangmyeon!",
+    "ko": "이탈리아 사람들은 토마토소스를 곁들인 스파게티를 먹어요. 일본 사람들은 뜨거운 국물에 라멘을 먹어요. 우리나라에서는 짜장면을 좋아해요!",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "🍝",
+       24,
+       62,
+       20
+      ],
+      [
+       "🍜",
+       52,
+       62,
+       20
+      ],
+      [
+       "🥢",
+       78,
+       56,
+       12
+      ],
+      [
+       "🇮🇹",
+       24,
+       30,
+       9
+      ],
+      [
+       "🇯🇵",
+       52,
+       30,
+       9
+      ],
+      [
+       "🇰🇷",
+       78,
+       30,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Noodles can be thin or thick, hot or cold. The oldest noodles were made from **millet**. Today, many noodles are made from wheat or rice.",
+    "ko": "국수는 가늘거나 굵고, 뜨겁거나 차가울 수 있어요. 가장 오래된 국수는 기장으로 만들었어요. 오늘날 많은 국수는 밀이나 쌀로 만들어요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "The oldest noodles were found in ___.",
+   "answer": "China"
+  },
+  "you_know": {
+   "emoji": "⏱️",
+   "text": "Instant noodles first went on sale in 1958.",
+   "text_ko": "즉석 국수(인스턴트 라면)는 1958년에 처음 팔리기 시작했어요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "noodles from different places and times",
+    "how to make a sandwich"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "Where were the oldest noodles found?",
+    "options": [
+     [
+      "🇨🇳",
+      "China"
+     ],
+     [
+      "🇮🇹",
+      "Italy"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What do people in Italy eat with tomato sauce?",
+    "options": [
+     [
+      "🍝",
+      "spaghetti"
+     ],
+     [
+      "🍚",
+      "rice"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "The oldest noodles are about ___ years old.",
+    "choices": [
+     "400",
+     "4,000",
+     "40,000"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "In Japan, people eat ramen in hot ___.",
+    "choices": [
+     "soup",
+     "juice",
+     "milk"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "The oldest noodles were made from ___.",
+    "choices": [
+     "millet",
+     "chocolate",
+     "beans"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🍅",
+    "sentence": "Pour the red ___ on the pasta.",
+    "options": [
+     "sauce",
+     "millet"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🐤",
+    "sentence": "Little birds like to eat ___ seeds.",
+    "options": [
+     "millet",
+     "soup"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🥶",
+    "sentence": "I drink hot ___ on a cold day.",
+    "options": [
+     "soup",
+     "sauce"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Noodle Facts",
+   "heads": [
+    "Oldest",
+    "Italy",
+    "Japan"
+   ],
+   "choices": [
+    "found in China, 4,000 years old",
+    "spaghetti with tomato sauce",
+    "ramen in hot soup"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What is your favorite noodle dish?",
+   "q_ko": "내가 가장 좋아하는 국수 요리는 무엇인가요?",
+   "frame": "My favorite noodle dish is ___."
+  },
+  "sources": "National Geographic, NBC News (Lajia noodles, 2005), Tasting Table"
+ },
+ "ko": {
+  "genre": "이야기",
+  "level": "초1~2",
+  "theme": "우리 문화",
+  "title": "할머니의 김장 날",
+  "lets_start": {
+   "q": "김치를 한꺼번에 많이 담그는 일을 무엇이라고 할까요?",
+   "options": [
+    "김장",
+    "소풍"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "김장",
+    "meaning": "겨울에 먹을 김치를 한꺼번에 담그는 일",
+    "emoji": "🥬"
+   },
+   {
+    "word": "배추",
+    "meaning": "김치의 주재료인 채소",
+    "emoji": "🥬"
+   },
+   {
+    "word": "양념",
+    "meaning": "맛을 내려고 넣는 고춧가루 같은 것",
+    "emoji": "🌶️"
+   },
+   {
+    "word": "버무리다",
+    "meaning": "여러 가지를 한데 섞다",
+    "emoji": "🥣"
+   },
+   {
+    "word": "이웃",
+    "meaning": "가까이 사는 집",
+    "emoji": "🏘️"
+   },
+   {
+    "word": "유산",
+    "meaning": "조상이 남겨 준 귀한 것",
+    "emoji": "🏛️"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-27-ko.jpg",
+    "caption_ko": "김장 재료인 절인 배추와 고춧가루 양념"
+   },
+   "scene": {
+    "bg": "kitchen",
+    "items": [
+     [
+      "🥬",
+      30,
+      62,
+      24
+     ],
+     [
+      "🌶️",
+      56,
+      56,
+      14
+     ],
+     [
+      "👵",
+      78,
+      58,
+      24
+     ],
+     [
+      "👧",
+      50,
+      76,
+      18
+     ],
+     [
+      "🏘️",
+      86,
+      26,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "오늘은 할머니 댁에서 **김장**하는 날이에요. 마당에는 소금에 절인 **배추**가 산처럼 쌓여 있어요."
+   },
+   {
+    "text": "하윤이는 빨간 **양념**을 배춧잎 사이사이에 쓱쓱 발랐어요. \"이렇게 **버무리면** 되나요?\" \"그래, 아주 잘하네.\" 할머니가 웃으셨어요.",
+    "scene": {
+     "bg": "kitchen",
+     "items": [
+      [
+       "👧",
+       28,
+       62,
+       24
+      ],
+      [
+       "🥬",
+       54,
+       66,
+       22
+      ],
+      [
+       "🌶️",
+       74,
+       52,
+       12
+      ],
+      [
+       "👵",
+       86,
+       64,
+       18
+      ],
+      [
+       "😊",
+       86,
+       38,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "김치를 다 담근 뒤 할머니는 통을 여러 개 챙기셨어요. \"**이웃**과 나눠 먹으려고.\" 김장은 김치를 담그고 나누는 문화라서 유네스코 인류무형**유산**으로 뽑혔대요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "할머니는 김치를 ___과 나눠 먹으려고 통을 챙겼어요.",
+   "answer": "이웃"
+  },
+  "you_know": {
+   "emoji": "🌏",
+   "text": "2013년 유네스코는 '김장, 한국의 김치를 담그고 나누는 문화'를 인류무형문화유산으로 정했어요."
+  },
+  "main_idea": {
+   "q": "이 이야기는 무엇에 관한 이야기인가요?",
+   "options": [
+    "하윤이가 할머니와 김장하고 김치를 나눈 이야기",
+    "하윤이가 배추를 사러 간 이야기"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "하윤이는 무엇을 발랐나요?",
+    "options": [
+     [
+      "🌶️",
+      "빨간 양념"
+     ],
+     [
+      "🍯",
+      "꿀"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "할머니는 김치를 누구와 나누려고 했나요?",
+    "options": [
+     [
+      "🏘️",
+      "이웃"
+     ],
+     [
+      "🐶",
+      "강아지"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "마당에 쌓여 있던 것은?",
+    "choices": [
+     "절인 배추",
+     "수박",
+     "장작"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "하윤이는 양념을 어디에 발랐나요?",
+    "choices": [
+     "배춧잎 사이사이",
+     "접시 위",
+     "벽"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "김장 문화가 유네스코에서 인정받은 까닭은?",
+    "choices": [
+     "김치를 담그고 나누는 문화라서",
+     "김치가 매워서",
+     "배추가 커서"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🥗",
+    "sentence": "샐러드 재료를 그릇에 넣고 ___어요.",
+    "options": [
+     "버무렸",
+     "던졌"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏘️",
+    "sentence": "옆집 ___에게 떡을 나눠 주었어요.",
+    "options": [
+     "이웃",
+     "양념"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍲",
+    "sentence": "찌개에 ___을 넣어 맛을 냈어요.",
+    "options": [
+     "양념",
+     "유산"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "이야기 지도",
+   "heads": [
+    "처음",
+    "가운데",
+    "끝"
+   ],
+   "choices": [
+    "할머니 댁에서 김장을 시작해요.",
+    "하윤이가 양념을 발라요.",
+    "김치를 이웃과 나눠요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "내가 이웃이나 친구와 나누고 싶은 것은 무엇인가요?",
+   "frame": "나는 ___을/를 나누고 싶어요."
+  },
+  "dictation": [
+   "김장",
+   "배추",
+   "양념",
+   "이웃",
+   "나눠 먹어요"
+  ],
+  "copy": "김치를 이웃과 나눠 먹어요.",
+  "sources": "국가기록원(김장, 2013 유네스코 인류무형유산), 대구매일·정책브리핑 기사를 확인해 새로 씀"
+ },
+ "write": {
+  "ref_ko": "에베소서 4장 32절",
+  "ref": "Ephesians 4:32",
+  "ko": "서로 친절하세요.",
+  "en": "Be kind to one another.",
+  "words": [
+   "친절",
+   "서로"
+  ],
+  "prompt": "오늘 친절하게 대한 사람은 누구인가요?"
+ }
+}
