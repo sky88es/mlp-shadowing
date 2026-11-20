@@ -12,7 +12,7 @@ const raw = p => `https://raw.githubusercontent.com/sky88es/mlp-shadowing/${BRAN
 // site link is shown only once the site is published (set KIDS_SITE, e.g. https://sky88es.github.io/mlp-shadowing/kids/)
 const site = process.env.KIDS_SITE || '';
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const G = { Fiction: '📖', Nonfiction: '🔎', '이야기': '📖', '정보글': '🔎', '기사문': '📰', '서평': '📚' };
+const G = { Fiction: '📖', Nonfiction: '🔎', '이야기': '📖', '정보글': '🔎', '기사문': '📰', '서평': '📚', '속담': '📜', '동시': '🎵' };
 const WD = ['일', '월', '화', '수', '목', '금', '토'];
 const btn = (href, bg, t) => `<a href="${href}" style="display:inline-block;background:${bg};color:#fff;padding:13px 20px;border-radius:26px;text-decoration:none;font-weight:bold;margin:4px;font-size:16px">${t}</a>`;
 const a = ls[0].date, b = ls[ls.length - 1].date;
