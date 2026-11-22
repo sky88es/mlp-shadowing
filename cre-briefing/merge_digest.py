@@ -17,7 +17,7 @@ OURS = {"Office": "Office", "Hotel": "Hotel", "Retail": "Retail", "Data Center":
         "Logistics": "Logistics", "REITs": "Development", "Development": "Development", "Global": "Global", "Macro": "Macro"}
 
 
-HOUSING = ("가구", "재건축", "재개발", "정비사업", "집값", "전월세", "전셋값", "주담대", "청약", "아파트", "모아주택", "빌라", "리모델링", "주공", "3040", "내 집")
+HOUSING = ("가구", "재건축", "재개발", "정비사업", "집값", "전월세", "전셋값", "주담대", "청약", "아파트", "모아주택", "빌라", "리모델링", "주공", "3040", "내 집", "가로주택", "공공주택", "임대주택")
 
 
 def bdsp_cat(section):
@@ -34,6 +34,8 @@ def bdsp_cat(section):
     if head.startswith("economic"):
         return "Macro"
     if head.startswith("real estate trend"):
+        if "오피스텔" in sub:
+            return None  # residential officetel trend
         for k, c in [("물류", "Logistics"), ("호텔", "Hotel"), ("데이터", "Data Center"), ("오피스", "Office"),
                      ("리테일", "Retail"), ("상가", "Retail")]:
             if k in sub:
