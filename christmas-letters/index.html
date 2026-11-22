@@ -104,6 +104,7 @@ input[type=color]{width:38px;height:28px;padding:0;border:1px solid #bbb}
 const _s=document.createElement('style');_s.textContent=Object.entries(window.FB).map(([k,v])=>`@font-face{font-family:'${k}';src:url(data:font/woff2;base64,${v}) format('woff2')}`).join('');document.head.appendChild(_s);
 const FONTS=[{"id": "Jua-Regular", "name": "주아", "mood": "귀엽고 통통"}, {"id": "BagelFatOne-Regular", "name": "베이글팻", "mood": "통통 풍선 느낌"}, {"id": "GamjaFlower-Regular", "name": "감자꽃", "mood": "손글씨 동글"}, {"id": "HiMelody-Regular", "name": "하이멜로디", "mood": "동화 손글씨"}, {"id": "Gaegu-Bold", "name": "개구", "mood": "발랄 손글씨"}, {"id": "CuteFont-Regular", "name": "큐트", "mood": "아기자기"}, {"id": "PoorStory-Regular", "name": "푸어스토리", "mood": "편지 손글씨"}, {"id": "SingleDay-Regular", "name": "싱글데이", "mood": "손글씨 캐주얼"}, {"id": "YeonSung-Regular", "name": "연성", "mood": "캘리 장식"}, {"id": "Gugi-Regular", "name": "구기", "mood": "뾰족 장식"}, {"id": "SongMyung-Regular", "name": "송명", "mood": "우아한 명조"}, {"id": "NanumBrushScript-Regular", "name": "나눔붓", "mood": "부드러운 붓"}, {"id": "EastSeaDokdo-Regular", "name": "동해독도", "mood": "붓글씨 힘찬"}, {"id": "Dokdo-Regular", "name": "독도", "mood": "굵은 붓"}, {"id": "NanumPenScript-Regular", "name": "나눔펜", "mood": "펜글씨"}, {"id": "DoHyeon-Regular", "name": "도현", "mood": "깔끔 굵은 고딕"}, {"id": "BlackHanSans-Regular", "name": "검은고딕", "mood": "아주 굵고 시원"}, {"id": "Stylish-Regular", "name": "스타일리시", "mood": "세련 고딕"}];
 const PRESETS=[
+ {n:"검정(기본)",fill:"#000000",stroke:"#000000",outer:"#000000",flat:1},
  {n:"산타 빨강",fill:"#d32f2f",stroke:"#ffffff",outer:"#1b5e20"},
  {n:"트리 초록",fill:"#1b7a34",stroke:"#ffffff",outer:"#b71c1c"},
  {n:"금빛 성탄",fill:"#e0b020",stroke:"#ffffff",outer:"#b71c1c"},
@@ -117,8 +118,8 @@ const state=()=>({text:$('text').value.replace(/\s/g,''),fill:$('fill').value,st
   sw:+$('sw').value,ow:+$('ow').value,pattern:$('pattern').value,shadow:$('shadow').checked,
   paper:$('paper').value.split(','),orient:$('orient').value,margin:+$('margin').value,tile:$('tile').value.split('x').map(Number),ovl:+$('ovl').value,
   mirror:$('mirror').checked,guide:$('guide').checked,deco:$('deco').checked,pnum:$('pnum').checked,font:S.font});
-function save(){try{localStorage.setItem('xmas',JSON.stringify({...state(),pi:S.pi}))}catch(e){}}
-function load(){try{const o=JSON.parse(localStorage.getItem('xmas')||'null');if(!o)return;
+function save(){try{localStorage.setItem('xmas2',JSON.stringify({...state(),pi:S.pi}))}catch(e){}}
+function load(){try{const o=JSON.parse(localStorage.getItem('xmas2')||'null');if(!o)return;
   ['text','fill','stroke','outer','sw','ow','pattern','paper','orient','margin','tile','ovl'].forEach(k=>{if(o[k]!=null){const v=Array.isArray(o[k])?o[k].join(','):o[k];$(k).value=v}});
   ['shadow','mirror','guide','deco','pnum'].forEach(k=>$(k).checked=!!o[k]);
   if(o.font&&FONTS.some(f=>f.id===o.font))S.font=o.font;}catch(e){}}
@@ -130,10 +131,10 @@ FONTS.forEach(f=>{const d=document.createElement('div');d.className='fcard';d.da
 PRESETS.forEach((p,i)=>{const b=document.createElement('button');
   b.innerHTML=`<span class="dot" style="background:${p.fill}"></span><span class="dot" style="background:${p.stroke}"></span>${p.n}`;
   b.onclick=()=>{$('fill').value=p.fill;$('stroke').value=p.stroke;$('outer').value=p.outer;
-    if(p.n==="사탕 지팡이")$('pattern').value="stripe";render()};$('presets').appendChild(b)});
+    $('pattern').value=p.n==="사탕 지팡이"?"stripe":"none";if(p.flat){$('sw').value=0;$('ow').value=0;$('deco').checked=false}else{if(+$('sw').value==0)$('sw').value=3;if(+$('ow').value==0)$('ow').value=3}render()};$('presets').appendChild(b)});
 // defaults
-$('fill').value="#d32f2f";$('stroke').value="#ffffff";$('outer').value="#1b5e20";
-$('sw').value=3;$('ow').value=3;$('margin').value=10;$('ovl').value=10;$('shadow').checked=false;$('deco').checked=true;
+$('fill').value="#000000";$('stroke').value="#000000";$('outer').value="#000000";
+$('sw').value=0;$('ow').value=0;$('margin').value=10;$('ovl').value=10;$('shadow').checked=false;$('deco').checked=false;
 load();
 document.querySelectorAll('.panel input,.panel select').forEach(e=>e.addEventListener('input',render));
 
