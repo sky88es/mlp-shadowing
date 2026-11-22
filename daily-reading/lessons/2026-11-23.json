@@ -1,0 +1,237 @@
+{
+ "day": 16,
+ "date": "2026-11-23 (Mon)",
+ "category": "TECH · LIFE",
+ "level": "Intermediate",
+ "title": "When the Systems Go Down",
+ "title_ko": "시스템이 멈추던 날",
+ "source": {
+  "outlet": "CNBC",
+  "title": "Emergency prep spending surges amid U.S. tech outages",
+  "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html"
+ },
+ "background_ko": "11월 중순 미국에서는 이메일 서비스가 멈추고, 전국의 항공편이 한때 이륙을 멈추는 등 기술 장애가 잇따랐습니다. 당국은 시스템 업그레이드 문제였다고 설명했지만, 불안해진 사람들은 비상용품을 사재기하기 시작했습니다. CNBC가 이 '비상 대비 소비'를 보도했습니다.",
+ "warmup_q": "휴대폰이나 인터넷이 하루 종일 안 된다면, 가장 먼저 불편할 일은 무엇인가요?",
+ "lines": [
+  {
+   "en": "Last week, / many Americans **discovered** / how much they depend on technology.",
+   "ko": "지난주 많은 미국인들은 자신이 기술에 얼마나 의존하고 있는지 알게 되었다."
+  },
+  {
+   "en": "First, / a popular email service / stopped working for millions of users.",
+   "ko": "먼저, 인기 있는 이메일 서비스가 수백만 명의 사용자에게 작동을 멈췄다."
+  },
+  {
+   "en": "Then, / for a short time, / all U.S. airline flights / were **grounded**.",
+   "ko": "그다음, 잠시 동안 미국의 모든 항공편이 이륙하지 못했다."
+  },
+  {
+   "en": "Officials said / the problems came from system upgrades, / not from an attack.",
+   "ko": "당국은 그 문제들이 공격이 아니라 시스템 업그레이드에서 비롯되었다고 말했다."
+  },
+  {
+   "en": "But many people / still felt **nervous**.",
+   "ko": "하지만 많은 사람들은 여전히 불안해했다."
+  },
+  {
+   "en": "So they did / what people often do / when they are worried: / they went shopping.",
+   "ko": "그래서 그들은 걱정될 때 사람들이 흔히 하는 일을 했다. 바로 쇼핑하러 간 것이다."
+  },
+  {
+   "en": "Spending at emergency-product brands / jumped about 400% / compared with a year ago.",
+   "ko": "비상용품 브랜드에서의 지출은 1년 전과 비교해 약 400% 급증했다."
+  },
+  {
+   "en": "One company said / its online sales / were about five times higher than usual.",
+   "ko": "한 회사는 온라인 매출이 평소의 약 다섯 배였다고 말했다."
+  },
+  {
+   "en": "It even **ran out of** / water purification tablets.",
+   "ko": "그 회사는 정수 알약마저 동이 났다."
+  },
+  {
+   "en": "At Costco, / most of the large generators on its website / **sold out**.",
+   "ko": "코스트코에서는 웹사이트에 올라온 대형 발전기 대부분이 품절되었다."
+  },
+  {
+   "en": "Scary posts on social media / made the **anxiety** even worse.",
+   "ko": "소셜 미디어의 무서운 게시물들이 불안을 더 키웠다."
+  },
+  {
+   "en": "Experts say / it is smart / to be **prepared** for an emergency.",
+   "ko": "전문가들은 비상 상황에 대비하는 것이 현명하다고 말한다."
+  },
+  {
+   "en": "But **panic buying** / is not the same as **planning ahead**.",
+   "ko": "하지만 공황 구매는 미리 계획하는 것과 같지 않다."
+  },
+  {
+   "en": "A small kit / with water, a flashlight, and a phone charger / is often enough.",
+   "ko": "물, 손전등, 휴대폰 충전기가 든 작은 비상 키트면 대개 충분하다."
+  },
+  {
+   "en": "And it might also be a good idea / to write down a few phone numbers / on paper.",
+   "ko": "그리고 전화번호 몇 개를 종이에 적어 두는 것도 좋은 생각일지 모른다."
+  }
+ ],
+ "words": [
+  {
+   "word": "discover",
+   "ipa": "/dɪˈskʌvər/",
+   "pos": "v.",
+   "meaning": "알게 되다, 발견하다",
+   "synonym": "find out",
+   "example": "I **discovered** a great café near my office."
+  },
+  {
+   "word": "ground",
+   "ipa": "/ɡraʊnd/",
+   "pos": "v.",
+   "meaning": "(비행기를) 이륙하지 못하게 하다",
+   "synonym": "keep on the ground",
+   "example": "All flights were **grounded** because of the storm."
+  },
+  {
+   "word": "nervous",
+   "ipa": "/ˈnɜːrvəs/",
+   "pos": "adj.",
+   "meaning": "불안한, 긴장한",
+   "synonym": "worried",
+   "example": "I always feel **nervous** before a big meeting."
+  },
+  {
+   "word": "anxiety",
+   "ipa": "/æŋˈzaɪəti/",
+   "pos": "n.",
+   "meaning": "불안, 걱정",
+   "synonym": "worry",
+   "example": "Deep breathing can reduce **anxiety**."
+  },
+  {
+   "word": "prepared",
+   "ipa": "/prɪˈperd/",
+   "pos": "adj.",
+   "meaning": "준비된, 대비가 된",
+   "synonym": "ready",
+   "example": "Be **prepared** for rain this weekend."
+  },
+  {
+   "word": "generator",
+   "ipa": "/ˈdʒenəreɪtər/",
+   "pos": "n.",
+   "meaning": "발전기",
+   "synonym": "",
+   "example": "The hospital has a **generator** for power cuts."
+  },
+  {
+   "word": "emergency",
+   "ipa": "/ɪˈmɜːrdʒənsi/",
+   "pos": "n.",
+   "meaning": "비상(사태), 응급 상황",
+   "synonym": "crisis",
+   "example": "Call 119 in an **emergency**."
+  },
+  {
+   "word": "depend",
+   "ipa": "/dɪˈpend/",
+   "pos": "v.",
+   "meaning": "의존하다, ~에 달려 있다",
+   "synonym": "rely",
+   "example": "We **depend** on our phones too much."
+  }
+ ],
+ "idioms": [
+  {
+   "phrase": "run out of",
+   "meaning": "~이 다 떨어지다, 바닥나다",
+   "example": "We **ran out of** milk, so I went to the store."
+  },
+  {
+   "phrase": "sell out",
+   "meaning": "매진되다, 품절되다",
+   "example": "The concert tickets **sold out** in five minutes."
+  },
+  {
+   "phrase": "panic buying",
+   "meaning": "공황 구매, 사재기",
+   "example": "**Panic buying** emptied the shelves."
+  },
+  {
+   "phrase": "plan ahead",
+   "meaning": "미리 계획하다",
+   "example": "If you **plan ahead**, you won't need to rush."
+  },
+  {
+   "phrase": "compared with",
+   "meaning": "~와 비교하여",
+   "example": "Prices are higher **compared with** last year."
+  }
+ ],
+ "key_sentences": [
+  {
+   "en": "Many Americans discovered **how much they depend** on technology.",
+   "note": "간접의문문 how much + 주어 + 동사: '얼마나 많이 ~하는지'. 의문문 어순(do they depend)이 아니라 평서문 어순이 됩니다."
+  },
+  {
+   "en": "They did **what** people often do **when** they are worried.",
+   "note": "what = the thing that '~하는 것'. 관계대명사 what 뒤에 불완전한 문장(people often do ___)이 옵니다."
+  },
+  {
+   "en": "Panic buying **is not the same as** planning ahead.",
+   "note": "A is not the same as B: 'A는 B와 같지 않다'. 비슷해 보이는 두 개념을 구별할 때 씁니다. 동명사(buying, planning)가 주어·보어 역할."
+  }
+ ],
+ "questions": [
+  {
+   "q": "What is the passage mainly about?",
+   "options": [
+    "How to build a generator",
+    "People buying emergency supplies after tech outages",
+    "A new email service",
+    "Cheap flights in November"
+   ],
+   "answer": "ⓑ 기술 장애 후 비상용품을 사들이는 사람들"
+  },
+  {
+   "q": "According to officials, what caused the problems?",
+   "options": [
+    "An attack",
+    "Bad weather",
+    "System upgrades",
+    "Social media"
+   ],
+   "answer": "ⓒ 시스템 업그레이드 (4번 문장)"
+  },
+  {
+   "q": "What did one company run out of?",
+   "answer": "정수 알약(water purification tablets) (9번 문장)"
+  },
+  {
+   "q": "T / F : Experts say panic buying is the best way to prepare.",
+   "answer": "F — 공황 구매는 미리 계획하는 것과 다르다 (13번 문장)"
+  }
+ ],
+ "blanks": [
+  {
+   "sentence": "Oh no, we ran ________ of coffee again.",
+   "answer": "out"
+  },
+  {
+   "sentence": "Gas prices are lower ________ with last month.",
+   "answer": "compared"
+  },
+  {
+   "sentence": "I feel ________ when my phone battery is low.",
+   "answer": "nervous"
+  },
+  {
+   "sentence": "It's good to plan ________ for a long trip.",
+   "answer": "ahead"
+  },
+  {
+   "sentence": "Keep a flashlight at home for an ________.",
+   "answer": "emergency"
+  }
+ ],
+ "output_task": "🗣 Speak: 11~15번 문장 쉐도잉 3회.\n✍️ Write: If the internet stopped for a day, what would you do? (2문장, depend on 사용)"
+}
