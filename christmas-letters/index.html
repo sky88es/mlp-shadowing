@@ -76,6 +76,8 @@ input[type=color]{width:38px;height:28px;padding:0;border:1px solid #bbb}
   <h2>4. 종이 / 인쇄</h2>
   <label><b>종이 크기</b><select id="paper"><option value="210,297,A4">A4</option><option value="297,420,A3">A3</option><option value="257,364,B4">B4</option><option value="215.9,279.4,Letter">Letter</option></select></label>
   <label><b>방향</b><select id="orient"><option value="auto">글자에 맞춰 자동</option><option value="portrait">세로</option><option value="landscape">가로</option></select></label>
+  <label><b>나눠 인쇄</b><select id="tile"><option value="1x1">1장 (나누지 않음)</option><option value="2x1">가로 2장</option><option value="1x2">세로 2장</option><option value="2x2">2×2 (4장)</option><option value="3x2">가로3×세로2 (6장)</option><option value="2x3">가로2×세로3 (6장)</option><option value="3x3">3×3 (9장)</option><option value="4x3">가로4×세로3 (12장)</option><option value="4x4">4×4 (16장)</option></select></label>
+  <label><b>붙이는 여유</b><input type="range" id="ovl" min="0" max="20" step="1"><span id="ovv"></span></label>
   <label><b>여백</b><input type="range" id="margin" min="0" max="30" step="1"><span id="mv"></span></label>
   <label><b>좌우반전</b><input type="checkbox" id="mirror"> <small>(거울처럼 반대로)</small></label>
   <label><b>오림선 표시</b><input type="checkbox" id="guide"> <small>(점선 가이드)</small></label>
@@ -113,11 +115,11 @@ const $=id=>document.getElementById(id);
 const S={font:FONTS[0].id,pi:0,pattern:"none",orient:"auto"};
 const state=()=>({text:$('text').value.replace(/\s/g,''),fill:$('fill').value,stroke:$('stroke').value,outer:$('outer').value,
   sw:+$('sw').value,ow:+$('ow').value,pattern:$('pattern').value,shadow:$('shadow').checked,
-  paper:$('paper').value.split(','),orient:$('orient').value,margin:+$('margin').value,
+  paper:$('paper').value.split(','),orient:$('orient').value,margin:+$('margin').value,tile:$('tile').value.split('x').map(Number),ovl:+$('ovl').value,
   mirror:$('mirror').checked,guide:$('guide').checked,deco:$('deco').checked,pnum:$('pnum').checked,font:S.font});
 function save(){try{localStorage.setItem('xmas',JSON.stringify({...state(),pi:S.pi}))}catch(e){}}
 function load(){try{const o=JSON.parse(localStorage.getItem('xmas')||'null');if(!o)return;
-  ['text','fill','stroke','outer','sw','ow','pattern','paper','orient','margin'].forEach(k=>{if(o[k]!=null){const v=Array.isArray(o[k])?o[k].join(','):o[k];$(k).value=v}});
+  ['text','fill','stroke','outer','sw','ow','pattern','paper','orient','margin','tile','ovl'].forEach(k=>{if(o[k]!=null){const v=Array.isArray(o[k])?o[k].join(','):o[k];$(k).value=v}});
   ['shadow','mirror','guide','deco','pnum'].forEach(k=>$(k).checked=!!o[k]);
   if(o.font&&FONTS.some(f=>f.id===o.font))S.font=o.font;}catch(e){}}
 
@@ -131,7 +133,7 @@ PRESETS.forEach((p,i)=>{const b=document.createElement('button');
     if(p.n==="사탕 지팡이")$('pattern').value="stripe";render()};$('presets').appendChild(b)});
 // defaults
 $('fill').value="#d32f2f";$('stroke').value="#ffffff";$('outer').value="#1b5e20";
-$('sw').value=3;$('ow').value=3;$('margin').value=10;$('shadow').checked=false;$('deco').checked=true;
+$('sw').value=3;$('ow').value=3;$('margin').value=10;$('ovl').value=10;$('shadow').checked=false;$('deco').checked=true;
 load();
 document.querySelectorAll('.panel input,.panel select').forEach(e=>e.addEventListener('input',render));
 
@@ -159,39 +161,52 @@ function decoSvg(W,H,st){
 }
 function pageSize(st,i){let[w,h]=st.paper.map(Number);
   if(st.orient==="landscape"&&w<h)[w,h]=[h,w];else if(st.orient==="portrait"&&w>h)[w,h]=[h,w];return[w,h]}
-function pageSvg(st,ch,idx,total,uid){
-  const[W,H]=pageSize(st,idx);const m=st.margin+(st.deco?6:0)*0;
+function pageSvg(st,ch,idx,total,uid,r=0,c=0){
+  const[W,H]=pageSize(st,idx);const[cols,rows]=st.tile;const o=cols*rows>1?Math.min(st.ovl,W/3,H/3):0;
+  const VW=cols*(W-o)+o,VH=rows*(H-o)+o;const m=st.margin;const pb=st.pnum?6:0;
   const M=measure(ch,st.font);const gw=M.r-M.l,gh=M.a+M.d;
-  const pad=(st.sw/2+st.ow)*1.0; // stroke allowance (mm)
-  const aw=W-2*m-2*pad,ah=H-2*m-2*pad-(st.pnum?6:0);
-  const fs=1000*Math.min(aw/gw,ah/gh)*(gw>0?1:0); // font size in mm... scale: 1000px => gw px
+  const pad=(st.sw/2+st.ow);
+  const aw=VW-2*m-2*pad,ah=VH-2*m-2*pad-pb;
   const sc=Math.min(aw/gw,ah/gh);const size=1000*sc;
-  const cx=W/2-((M.l+M.r)/2)*sc, cy=(H-(st.pnum?6:0))/2+((M.a-M.d)/2)*sc;
+  const cx=VW/2-((M.l+M.r)/2)*sc, cy=(VH-pb)/2+((M.a-M.d)/2)*sc;
   const style=`font-family:'${st.font}';font-size:${size}px`;
   const txt=(extra)=>`<text x="${cx}" y="${cy}" style="${style}" text-anchor="start" ${extra}>${ch}</text>`;
-  const clipId='c'+uid;
+  const uk=uid+'_'+r+'_'+c, clipId='c'+uk;
   let body='';
-  if(st.shadow)body+=txt(`fill="#000" opacity=".25" transform="translate(${W*.012} ${W*.012})" stroke="#000" stroke-width="${st.sw+st.ow*2}" stroke-linejoin="round"`);
+  if(st.shadow)body+=txt(`fill="#000" opacity=".25" transform="translate(${VW*.012} ${VW*.012})" stroke="#000" stroke-width="${st.sw+st.ow*2}" stroke-linejoin="round"`);
   if(st.ow>0)body+=txt(`fill="${st.outer}" stroke="${st.outer}" stroke-width="${st.sw+st.ow*2}" stroke-linejoin="round"`);
   if(st.sw>0)body+=txt(`fill="${st.stroke}" stroke="${st.stroke}" stroke-width="${st.sw}" stroke-linejoin="round"`);
   body+=txt(`fill="${st.fill}"`);
-  if(st.pattern!=="none")body+=`<g clip-path="url(#${clipId})"><rect width="${W}" height="${H}" fill="url(#p${uid})"/></g>`;
-  const defs=`<defs>${patternDefs(st,uid)}<clipPath id="${clipId}">${txt('')}</clipPath></defs>`;
+  if(st.pattern!=="none")body+=`<g clip-path="url(#${clipId})"><rect width="${VW}" height="${VH}" fill="url(#p${uk})"/></g>`;
+  const defs=`<defs>${patternDefs(st,uk)}<clipPath id="${clipId}">${txt('')}</clipPath></defs>`;
   let guide='';
-  if(st.guide){const g=Math.max(1,(st.sw/2+st.ow)); // dashed box around glyph
-    guide=`<rect x="${W/2-gw*sc/2-g-2}" y="${(H-(st.pnum?6:0))/2-gh*sc/2-g-2}" width="${gw*sc+2*g+4}" height="${gh*sc+2*g+4}" fill="none" stroke="#999" stroke-width=".4" stroke-dasharray="3 2"/>`}
-  const deco=st.deco?decoSvg(W,H,st):'';
-  const num=st.pnum?`<text x="${W/2}" y="${H-m*0.35-1}" text-anchor="middle" font-size="3.4" fill="#999" font-family="sans-serif">${idx+1}/${total}  ${ch}</text>`:'';
+  if(st.guide){const g=Math.max(1,(st.sw/2+st.ow));
+    guide=`<rect x="${VW/2-gw*sc/2-g-2}" y="${(VH-pb)/2-gh*sc/2-g-2}" width="${gw*sc+2*g+4}" height="${gh*sc+2*g+4}" fill="none" stroke="#999" stroke-width=".4" stroke-dasharray="3 2"/>`}
+  const deco=st.deco?decoSvg(VW,VH,st):'';
   const inner=`${defs}${deco}${guide}${body}`;
-  const mir=st.mirror?`<g transform="translate(${W} 0) scale(-1 1)">${inner}</g>`:inner;
-  return`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}mm" height="${H}mm" preserveAspectRatio="xMidYMid meet">
-  <rect width="${W}" height="${H}" fill="#fff"/>${mir}${num}</svg>`;
+  const mir=st.mirror?`<g transform="translate(${VW} 0) scale(-1 1)">${inner}</g>`:inner;
+  const X=c*(W-o),Y=r*(H-o);
+  // overlay in sheet coordinates (not mirrored): labels + glue lines
+  let ov='';const tiled=cols*rows>1;
+  const ln=(x1,y1,x2,y2)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#888" stroke-width=".35" stroke-dasharray="4 2"/>`;
+  if(tiled&&o>0){
+    if(c<cols-1)ov+=ln(X+W-o,Y,X+W-o,Y+H);
+    if(c>0)ov+=ln(X+o,Y,X+o,Y+H);
+    if(r<rows-1)ov+=ln(X,Y+H-o,X+W,Y+H-o);
+    if(r>0)ov+=ln(X,Y+o,X+W,Y+o);
+  }
+  if(tiled)ov+=`<text x="${X+W/2}" y="${Y+4.5}" text-anchor="middle" font-size="3.6" fill="#777" font-family="sans-serif">▲ 위</text>`;
+  const num=st.pnum?`<text x="${X+W/2}" y="${Y+H-2.2}" text-anchor="middle" font-size="3.4" fill="#999" font-family="sans-serif">${ch}${tiled?`  [${r+1}줄 ${c+1}번째]`:''}  ${idx+1}/${total}</text>`:'';
+  return`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${X} ${Y} ${W} ${H}" width="${W}mm" height="${H}mm" preserveAspectRatio="xMidYMid meet">
+  <rect x="${X}" y="${Y}" width="${W}" height="${H}" fill="#fff"/>${mir}${ov}${num}</svg>`;
 }
+function sheets(st){const ch=[...st.text],[cols,rows]=st.tile,out=[];
+  ch.forEach((x,i)=>{for(let r=0;r<rows;r++)for(let c=0;c<cols;c++)out.push({ch:x,ci:i,r,c})});return out}
 let rtimer;
 function render(){
   const st=state();
   document.querySelectorAll('.fcard').forEach(e=>e.classList.toggle('on',e.dataset.id===S.font));
-  $('swv').textContent=st.sw+'mm';$('owv').textContent=st.ow+'mm';$('mv').textContent=st.margin+'mm';
+  $('swv').textContent=st.sw+'mm';$('owv').textContent=st.ow+'mm';$('mv').textContent=st.margin+'mm';$('ovv').textContent=st.ovl+'mm';
   document.fonts.load(`40px '${st.font}'`,st.text||'가').then(()=>{
     const chars=[...st.text];const pv=$('preview');pv.innerHTML='';
     $('pagestyle').textContent='';
@@ -199,15 +214,16 @@ function render(){
     // @page: use the first page's size (all same if orientation fixed)
     const[W,H]=pageSize(st,0);
     $('pagestyle').textContent=`@page{size:${W}mm ${H}mm;margin:0}`;
-    chars.forEach((ch,i)=>{
-      const svg=pageSvg(st,ch,i,chars.length,i);
+    const list=sheets(st);
+    list.forEach((s,i)=>{
+      const svg=pageSvg(st,s.ch,i,list.length,'v'+i,s.r,s.c);
       const sc=Math.min(1,380/W);
       const w=document.createElement('div');w.className='pgw';
-      w.innerHTML=`<div class="pg" style="width:${W*sc*3.78}px;height:${H*sc*3.78}px"><div class="lbl">${i+1}쪽 · ${ch}</div>${svg}</div>`;
-      const s=w.querySelector('svg');s.removeAttribute('width');s.removeAttribute('height');
+      w.innerHTML=`<div class="pg" style="width:${W*sc*3.78}px;height:${H*sc*3.78}px"><div class="lbl">${i+1}쪽 · ${s.ch}${st.tile[0]*st.tile[1]>1?` (${s.r+1}줄 ${s.c+1}번째)`:''}</div>${svg}</div>`;
+      const sv=w.querySelector('svg');sv.removeAttribute('width');sv.removeAttribute('height');
       pv.appendChild(w);
       const sh=document.createElement('div');sh.className='sheet';sh.style.cssText=`width:${W}mm;height:${H}mm`;
-      sh.innerHTML=pageSvg(st,ch,i,chars.length,'p'+i);pr.appendChild(sh);
+      sh.innerHTML=pageSvg(st,s.ch,i,list.length,'p'+i,s.r,s.c);pr.appendChild(sh);
     });
     save();
   });
@@ -215,9 +231,9 @@ function render(){
 $('print').onclick=()=>{render();setTimeout(()=>window.print(),400)};
 $('png').onclick=async()=>{
   const st=state();await document.fonts.load(`40px '${st.font}'`,st.text);
-  const chars=[...st.text];
-  for(let i=0;i<chars.length;i++){
-    const svg=pageSvg(st,chars[i],i,chars.length,'d'+i);
+  const list=sheets(st);
+  for(let i=0;i<list.length;i++){
+    const svg=pageSvg(st,list[i].ch,i,list.length,'d'+i,list[i].r,list[i].c);
     const[W,H]=pageSize(st,i);const px=W/25.4*200; // 200dpi
     // inline the font into the SVG so the image renders standalone
     const fam=S.font;const b64=FONT_B64[fam];
@@ -226,7 +242,7 @@ $('png').onclick=async()=>{
     const img=new Image();await new Promise(r=>{img.onload=r;img.src=url});
     const c=document.createElement('canvas');c.width=px;c.height=H/25.4*200;
     const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(img,0,0,c.width,c.height);
-    const a=document.createElement('a');a.href=c.toDataURL('image/png');a.download=`${i+1}_${chars[i]}.png`;a.click();
+    const a=document.createElement('a');a.href=c.toDataURL('image/png');a.download=`${String(i+1).padStart(2,'0')}_${list[i].ch}${st.tile[0]*st.tile[1]>1?`_${list[i].r+1}줄${list[i].c+1}번`:''}.png`;a.click();
     await new Promise(r=>setTimeout(r,300));
   }
 };
