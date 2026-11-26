@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>크리스마스 큰 글자 만들기</title>
+<style>
+
+:root{--red:#c62828;--green:#1b5e20;--gold:#c9a227;--bg:#f6f1e7;--ink:#2b2b2b}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--ink)}
+header{background:linear-gradient(90deg,#8e1b1b,#1b5e20);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:12px}
+header h1{margin:0;font-size:20px}
+header span{opacity:.85;font-size:13px}
+.wrap{display:grid;grid-template-columns:380px 1fr;gap:16px;padding:16px;max-width:1500px;margin:auto}
+.panel{background:#fff;border-radius:12px;padding:14px 16px;box-shadow:0 1px 4px #0002;align-self:start;position:sticky;top:8px;max-height:calc(100vh - 16px);overflow:auto}
+.panel h2{font-size:14px;margin:16px 0 8px;color:var(--red);border-bottom:2px solid #eee;padding-bottom:4px}
+.panel h2:first-child{margin-top:0}
+label{display:flex;align-items:center;gap:8px;font-size:13px;margin:6px 0}
+label>b{min-width:78px;font-weight:600}
+input[type=text]{width:100%;font-size:22px;padding:8px;border:2px solid #ddd;border-radius:8px}
+input[type=range]{flex:1}
+select{flex:1;padding:5px;font-size:13px}
+.fonts{display:grid;grid-template-columns:1fr 1fr;gap:6px;max-height:440px;overflow:auto;padding:4px;margin-top:6px;border:1px solid #eee;border-radius:8px}
+.fonts .cat{grid-column:1/-1;font-size:12px;font-weight:700;color:#8e1b1b;margin-top:6px}
+.fcard.dis{opacity:.35;pointer-events:none}
+.fcard{border:2px solid #e3e3e3;border-radius:8px;padding:4px 6px;cursor:pointer;text-align:center;background:#fff}
+.fcard:hover{border-color:#e57373}
+.fcard.on{border-color:var(--red);background:#fff1f1}
+.fcard .s{font-size:30px;line-height:1.25;white-space:nowrap;overflow:hidden}
+.fcard .n{font-size:11px;color:#666}
+.sw{display:flex;flex-wrap:wrap;gap:6px}
+.sw button{border:2px solid #ddd;border-radius:8px;padding:3px 8px;background:#fff;cursor:pointer;font-size:12px;display:flex;align-items:center;gap:5px}
+.sw button.on{border-color:#000}
+.dot{width:16px;height:16px;border-radius:50%;border:1px solid #0004;display:inline-block}
+input[type=color]{width:38px;height:28px;padding:0;border:1px solid #bbb}
+.btns{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.btn{flex:1;padding:12px;font-size:15px;font-weight:700;border:0;border-radius:8px;cursor:pointer;color:#fff;background:var(--red)}
+.btn.g{background:var(--green)}
+.hint{font-size:12px;color:#666;line-height:1.5;background:#fffbe6;border:1px solid #f0e2a0;border-radius:8px;padding:8px;margin-top:10px}
+#preview{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.pg{background:#fff;box-shadow:0 2px 8px #0004;position:relative}
+.pg .lbl{position:absolute;top:-18px;left:0;font-size:12px;color:#666}
+.pgw{position:relative;margin-top:18px}
+.pg svg{display:block;width:100%;height:100%}
+#printarea{display:none}
+@media print{
+  body{background:#fff}
+  header,.wrap{display:none!important}
+  #printarea{display:block}
+  #printarea .sheet{page-break-after:always;break-after:page;overflow:hidden}
+  #printarea .sheet:last-child{page-break-after:auto;break-after:auto}
+  #printarea svg{display:block}
+}
+@media (max-width:900px){.wrap{grid-template-columns:1fr}.panel{position:static;max-height:none}}
+</style>
+<style id="pagestyle"></style>
+</head>
+<body>
+<header><h1>🎄 크리스마스 큰 글자 만들기</h1><span>한 글자씩 큰 페이지로 → 인쇄 → 오려서 판에 붙이기</span></header>
+<div class="wrap">
+<div class="panel">
+  <h2>1. 글자</h2>
+  <input type="text" id="text" value="참빛예수" maxlength="12">
+
+  <label><b>글자 나누기</b><select id="split"><option value="none">글자 그대로 (참)</option><option value="jamo">자음·모음 하나씩 (ㅊ ㅏ ㅁ)</option></select></label>
+  <div id="jamoopts" hidden>
+    <label><b>같은 글자</b><input type="checkbox" id="dedupe"> <small>한 번만 (예: ㅂ이 두 번 나와도 1장)</small></label>
+    <label><b>크기 통일</b><input type="checkbox" id="same" checked> <small>모든 조각을 같은 크기 기준으로 (조립할 때 편해요)</small></label>
+  </div>
+
+  <h2>2. 글꼴 <small id="fcount" style="font-weight:400;color:#888"></small></h2>
+  <div class="sw" id="cats"></div>
+  <div class="fonts" id="fonts"></div>
+
+  <h2>3. 색깔</h2>
+  <div class="sw" id="presets"></div>
+  <label><b>글자색</b><input type="color" id="fill"><b style="min-width:50px">테두리</b><input type="color" id="stroke"></label>
+  <label><b>테두리 굵기</b><input type="range" id="sw" min="0" max="12" step="0.5"><span id="swv"></span></label>
+  <label><b>바깥 윤곽선</b><input type="color" id="outer"><input type="range" id="ow" min="0" max="12" step="0.5"><span id="owv"></span></label>
+  <label><b>글자 안 무늬</b>
+    <select id="pattern"><option value="none">없음</option><option value="dots">눈송이 점</option><option value="stripe">사탕 줄무늬</option><option value="stars">별</option></select></label>
+  <label><b>그림자</b><input type="checkbox" id="shadow"> <small>(오릴 땐 끄는 게 편해요)</small></label>
+
+  <h2>4. 종이 / 인쇄</h2>
+  <label><b>종이 크기</b><select id="paper"><option value="210,297,A4">A4</option><option value="297,420,A3">A3</option><option value="257,364,B4">B4</option><option value="215.9,279.4,Letter">Letter</option></select></label>
+  <label><b>방향</b><select id="orient"><option value="auto">글자에 맞춰 자동</option><option value="portrait">세로</option><option value="landscape">가로</option></select></label>
+  <label><b>나눠 인쇄</b><select id="tile"><option value="1x1">1장 (나누지 않음)</option><option value="2x1">가로 2장</option><option value="1x2">세로 2장</option><option value="2x2">2×2 (4장)</option><option value="3x2">가로3×세로2 (6장)</option><option value="2x3">가로2×세로3 (6장)</option><option value="3x3">3×3 (9장)</option><option value="4x3">가로4×세로3 (12장)</option><option value="4x4">4×4 (16장)</option></select></label>
+  <label><b>붙이는 여유</b><input type="range" id="ovl" min="0" max="20" step="1"><span id="ovv"></span></label>
+  <label><b>여백</b><input type="range" id="margin" min="0" max="30" step="1"><span id="mv"></span></label>
+  <label><b>좌우반전</b><input type="checkbox" id="mirror"> <small>(거울처럼 반대로)</small></label>
+  <label><b>오림선 표시</b><input type="checkbox" id="guide"> <small>(점선 가이드)</small></label>
+  <label><b>페이지 장식</b><input type="checkbox" id="deco"> <small>(구석에 별/눈)</small></label>
+  <label><b>쪽 번호</b><input type="checkbox" id="pnum" checked> <small>(인쇄 맨 아래 작게)</small></label>
+
+  <div class="btns">
+    <button class="btn" id="print">🖨 인쇄하기</button>
+    <button class="btn g" id="png">PNG 저장</button>
+  </div>
+  <div class="hint">
+    <b>인쇄 팁</b><br>
+    인쇄 창에서 <b>배율 100%(실제 크기)</b>, <b>머리글·바닥글 끄기</b>를 확인하세요.<br>
+    글꼴은 선택할 때 인터넷에서 불러와요(처음 한 번). 시험으로 한 장 먼저 뽑아 보세요.<br>
+    <b>자음·모음 나누기</b>: 참 → ㅊ, ㅏ, ㅁ 을 각각 한 페이지에 크게 인쇄해요.
+  </div>
+</div>
+<div><div id="preview"></div></div>
+</div>
+<div id="printarea"></div>
+
+<script>
+const FONTS=[{"id": "jejuhallasan", "name": "제주한라산", "cat": "붓글씨", "mood": "굵고 힘찬 붓", "jamo": true, "kb": 191}, {"id": "kiranghaerang", "name": "기랑해랑", "cat": "붓글씨", "mood": "굵고 단정한 붓", "jamo": true, "kb": 717}, {"id": "eastseadokdo", "name": "동해독도", "cat": "붓글씨", "mood": "힘찬 붓", "jamo": true, "kb": 215}, {"id": "dokdo", "name": "독도", "cat": "붓글씨", "mood": "거친 붓", "jamo": true, "kb": 396}, {"id": "nanumbrush", "name": "나눔붓", "cat": "붓글씨", "mood": "가는 붓", "jamo": true, "kb": 418}, {"id": "yeonsung", "name": "연성", "cat": "붓글씨", "mood": "캘리그라피", "jamo": true, "kb": 457}, {"id": "gasoekone", "name": "가속원", "cat": "붓글씨", "mood": "먹물 굵은 붓", "jamo": true, "kb": 239}, {"id": "gamja", "name": "감자꽃", "cat": "손글씨", "mood": "동글동글", "jamo": true, "kb": 231}, {"id": "himelody", "name": "하이멜로디", "cat": "손글씨", "mood": "동화 느낌", "jamo": true, "kb": 212}, {"id": "singleday", "name": "싱글데이", "cat": "손글씨", "mood": "캐주얼", "jamo": true, "kb": 64}, {"id": "poorstory", "name": "푸어스토리", "cat": "손글씨", "mood": "편지글씨", "jamo": true, "kb": 114}, {"id": "nanumpen", "name": "나눔펜", "cat": "손글씨", "mood": "펜글씨", "jamo": true, "kb": 470}, {"id": "bwpicture", "name": "흑백사진", "cat": "손글씨", "mood": "레트로 손글씨", "jamo": true, "kb": 186}, {"id": "cutefont", "name": "큐트", "cat": "손글씨", "mood": "아기자기", "jamo": true, "kb": 131}, {"id": "gaegulight", "name": "개구 가볍게", "cat": "손글씨", "mood": "발랄", "jamo": true, "kb": 468}, {"id": "gaeguregular", "name": "개구 보통", "cat": "손글씨", "mood": "발랄", "jamo": true, "kb": 277}, {"id": "gaegubold", "name": "개구 굵게", "cat": "손글씨", "mood": "발랄", "jamo": true, "kb": 473}, {"id": "donglelight", "name": "동글 가볍게", "cat": "귀엽고 둥근", "mood": "통통 둥근", "jamo": true, "kb": 56}, {"id": "dongleregular", "name": "동글 보통", "cat": "귀엽고 둥근", "mood": "통통 둥근", "jamo": true, "kb": 58}, {"id": "donglebold", "name": "동글 굵게", "cat": "귀엽고 둥근", "mood": "통통 둥근", "jamo": true, "kb": 59}, {"id": "jua", "name": "주아", "cat": "귀엽고 둥근", "mood": "귀엽고 통통", "jamo": true, "kb": 347}, {"id": "bagel", "name": "베이글팻", "cat": "귀엽고 둥근", "mood": "풍선 느낌", "jamo": true, "kb": 349}, {"id": "orbit", "name": "오르빗", "cat": "귀엽고 둥근", "mood": "부드러운 둥근", "jamo": true, "kb": 167}, {"id": "gowundodum", "name": "고운돋움", "cat": "귀엽고 둥근", "mood": "단아한 돋움", "jamo": true, "kb": 154}, {"id": "diphylleia", "name": "산하엽", "cat": "굵은 제목체", "mood": "우아한 장식", "jamo": false, "kb": 321}, {"id": "moirai", "name": "모이라이", "cat": "굵은 제목체", "mood": "세리프 굵은", "jamo": true, "kb": 439}, {"id": "blackhan", "name": "검은고딕", "cat": "굵은 제목체", "mood": "아주 굵고 시원", "jamo": true, "kb": 164}, {"id": "dohyeon", "name": "도현", "cat": "굵은 제목체", "mood": "깔끔 굵은 고딕", "jamo": true, "kb": 160}, {"id": "gugi", "name": "구기", "cat": "굵은 제목체", "mood": "뾰족 장식", "jamo": true, "kb": 172}, {"id": "stylish", "name": "스타일리시", "cat": "굵은 제목체", "mood": "세련", "jamo": true, "kb": 238}, {"id": "sunflowerlight", "name": "해바라기 가볍게", "cat": "굵은 제목체", "mood": "또렷한 고딕", "jamo": true, "kb": 121}, {"id": "sunflowermedium", "name": "해바라기 보통", "cat": "굵은 제목체", "mood": "또렷한 고딕", "jamo": true, "kb": 115}, {"id": "sunflowerbold", "name": "해바라기 굵게", "cat": "굵은 제목체", "mood": "또렷한 고딕", "jamo": true, "kb": 128}, {"id": "nanumgothicregular", "name": "나눔고딕 보통", "cat": "고딕", "mood": "표준 고딕", "jamo": true, "kb": 222}, {"id": "nanumgothicbold", "name": "나눔고딕 굵게", "cat": "고딕", "mood": "표준 고딕", "jamo": true, "kb": 287}, {"id": "nanumgothicextrabold", "name": "나눔고딕 아주 굵게", "cat": "고딕", "mood": "표준 고딕", "jamo": true, "kb": 270}, {"id": "nanumcodingregular", "name": "나눔코딩 보통", "cat": "고딕", "mood": "각진 고딕", "jamo": true, "kb": 409}, {"id": "nanumcodingbold", "name": "나눔코딩 굵게", "cat": "고딕", "mood": "각진 고딕", "jamo": true, "kb": 413}, {"id": "gothica1light", "name": "고딕A1 300", "cat": "고딕", "mood": "깔끔 고딕", "jamo": true, "kb": 138}, {"id": "gothica1regular", "name": "고딕A1 400", "cat": "고딕", "mood": "깔끔 고딕", "jamo": true, "kb": 139}, {"id": "gothica1medium", "name": "고딕A1 500", "cat": "고딕", "mood": "깔끔 고딕", "jamo": true, "kb": 125}, {"id": "gothica1semibold", "name": "고딕A1 600", "cat": "고딕", "mood": "깔끔 고딕", "jamo": true, "kb": 142}, {"id": "gothica1bold", "name": "고딕A1 700", "cat": "고딕", "mood": "깔끔 고딕", "jamo": true, "kb": 142}, {"id": "gothica1extrabold", "name": "고딕A1 800", "cat": "고딕", "mood": "깔끔 고딕", "jamo": true, "kb": 143}, {"id": "gothica1black", "name": "고딕A1 900", "cat": "고딕", "mood": "깔끔 고딕", "jamo": true, "kb": 128}, {"id": "plexlight", "name": "플렉스 300", "cat": "고딕", "mood": "현대적 고딕", "jamo": true, "kb": 223}, {"id": "plexregular", "name": "플렉스 400", "cat": "고딕", "mood": "현대적 고딕", "jamo": true, "kb": 225}, {"id": "plexmedium", "name": "플렉스 500", "cat": "고딕", "mood": "현대적 고딕", "jamo": true, "kb": 264}, {"id": "plexsemibold", "name": "플렉스 600", "cat": "고딕", "mood": "현대적 고딕", "jamo": true, "kb": 262}, {"id": "plexbold", "name": "플렉스 700", "cat": "고딕", "mood": "현대적 고딕", "jamo": true, "kb": 256}, {"id": "notosans300", "name": "노토산스 300", "cat": "고딕", "mood": "기본 고딕", "jamo": true, "kb": 160}, {"id": "notosans400", "name": "노토산스 400", "cat": "고딕", "mood": "기본 고딕", "jamo": true, "kb": 165}, {"id": "notosans500", "name": "노토산스 500", "cat": "고딕", "mood": "기본 고딕", "jamo": true, "kb": 167}, {"id": "notosans600", "name": "노토산스 600", "cat": "고딕", "mood": "기본 고딕", "jamo": true, "kb": 168}, {"id": "notosans700", "name": "노토산스 700", "cat": "고딕", "mood": "기본 고딕", "jamo": true, "kb": 169}, {"id": "notosans800", "name": "노토산스 800", "cat": "고딕", "mood": "기본 고딕", "jamo": true, "kb": 168}, {"id": "notosans900", "name": "노토산스 900", "cat": "고딕", "mood": "기본 고딕", "jamo": true, "kb": 156}, {"id": "jejugothic", "name": "제주고딕", "cat": "고딕", "mood": "부드러운 고딕", "jamo": true, "kb": 90}, {"id": "gowunbatangregular", "name": "고운바탕 보통", "cat": "명조·바탕", "mood": "단정한 바탕", "jamo": true, "kb": 204}, {"id": "gowunbatangbold", "name": "고운바탕 굵게", "cat": "명조·바탕", "mood": "단정한 바탕", "jamo": true, "kb": 169}, {"id": "nanummjregular", "name": "나눔명조 보통", "cat": "명조·바탕", "mood": "전통 명조", "jamo": true, "kb": 336}, {"id": "nanummjbold", "name": "나눔명조 굵게", "cat": "명조·바탕", "mood": "전통 명조", "jamo": true, "kb": 367}, {"id": "nanummjextrabold", "name": "나눔명조 아주 굵게", "cat": "명조·바탕", "mood": "전통 명조", "jamo": true, "kb": 473}, {"id": "notoserif300", "name": "노토세리프 300", "cat": "명조·바탕", "mood": "기본 명조", "jamo": true, "kb": 329}, {"id": "notoserif400", "name": "노토세리프 400", "cat": "명조·바탕", "mood": "기본 명조", "jamo": true, "kb": 341}, {"id": "notoserif500", "name": "노토세리프 500", "cat": "명조·바탕", "mood": "기본 명조", "jamo": true, "kb": 347}, {"id": "notoserif600", "name": "노토세리프 600", "cat": "명조·바탕", "mood": "기본 명조", "jamo": true, "kb": 326}, {"id": "notoserif700", "name": "노토세리프 700", "cat": "명조·바탕", "mood": "기본 명조", "jamo": true, "kb": 351}, {"id": "notoserif800", "name": "노토세리프 800", "cat": "명조·바탕", "mood": "기본 명조", "jamo": true, "kb": 344}, {"id": "notoserif900", "name": "노토세리프 900", "cat": "명조·바탕", "mood": "기본 명조", "jamo": true, "kb": 229}, {"id": "hahmlet300", "name": "함렛 300", "cat": "명조·바탕", "mood": "세련된 바탕", "jamo": true, "kb": 171}, {"id": "hahmlet400", "name": "함렛 400", "cat": "명조·바탕", "mood": "세련된 바탕", "jamo": true, "kb": 145}, {"id": "hahmlet500", "name": "함렛 500", "cat": "명조·바탕", "mood": "세련된 바탕", "jamo": true, "kb": 178}, {"id": "hahmlet600", "name": "함렛 600", "cat": "명조·바탕", "mood": "세련된 바탕", "jamo": true, "kb": 184}, {"id": "hahmlet700", "name": "함렛 700", "cat": "명조·바탕", "mood": "세련된 바탕", "jamo": true, "kb": 186}, {"id": "hahmlet800", "name": "함렛 800", "cat": "명조·바탕", "mood": "세련된 바탕", "jamo": true, "kb": 185}, {"id": "hahmlet900", "name": "함렛 900", "cat": "명조·바탕", "mood": "세련된 바탕", "jamo": true, "kb": 155}, {"id": "jejumyeongjo", "name": "제주명조", "cat": "명조·바탕", "mood": "고전 명조", "jamo": true, "kb": 238}, {"id": "songmyung", "name": "송명", "cat": "명조·바탕", "mood": "우아한 명조", "jamo": true, "kb": 295}];
+const PRESETS=[
+ {n:"검정(기본)",fill:"#000000",stroke:"#000000",outer:"#000000",flat:1},
+ {n:"산타 빨강",fill:"#d32f2f",stroke:"#ffffff",outer:"#1b5e20"},
+ {n:"트리 초록",fill:"#1b7a34",stroke:"#ffffff",outer:"#b71c1c"},
+ {n:"금빛 성탄",fill:"#e0b020",stroke:"#ffffff",outer:"#b71c1c"},
+ {n:"눈 내린 밤",fill:"#ffffff",stroke:"#1565c0",outer:"#0d2b5c"},
+ {n:"홀리 빨강+금",fill:"#c62828",stroke:"#f4c542",outer:"#14532d"},
+ {n:"사탕 지팡이",fill:"#ffffff",stroke:"#d32f2f",outer:"#d32f2f"},
+];
+const $=id=>document.getElementById(id);
+const S={font:FONTS[0].id,pi:0,pattern:"none",orient:"auto"};
+const state=()=>({text:$('text').value.replace(/\s/g,''),fill:$('fill').value,stroke:$('stroke').value,outer:$('outer').value,
+  sw:+$('sw').value,ow:+$('ow').value,pattern:$('pattern').value,shadow:$('shadow').checked,
+  paper:$('paper').value.split(','),orient:$('orient').value,margin:+$('margin').value,split:$('split').value,dedupe:$('dedupe').checked,same:$('same').checked,tile:$('tile').value.split('x').map(Number),ovl:+$('ovl').value,
+  mirror:$('mirror').checked,guide:$('guide').checked,deco:$('deco').checked,pnum:$('pnum').checked,font:S.font});
+function save(){try{localStorage.setItem('xmas4',JSON.stringify({...state(),pi:S.pi}))}catch(e){}}
+function load(){try{const o=JSON.parse(localStorage.getItem('xmas4')||'null');if(!o)return;
+  ['text','fill','stroke','outer','sw','ow','pattern','paper','orient','margin','tile','ovl','split'].forEach(k=>{if(o[k]!=null){const v=Array.isArray(o[k])?o[k].join(','):o[k];$(k).value=v}});
+  ['shadow','mirror','guide','deco','pnum','dedupe','same'].forEach(k=>$(k).checked=!!o[k]);
+  if(o.font&&FONTS.some(f=>f.id===o.font))S.font=o.font;}catch(e){}}
+
+// UI build
+const LOADED={};
+function ensureFont(id){
+  if(LOADED[id])return LOADED[id];
+  const ff=new FontFace(id,`url(fonts/${id}.woff2) format('woff2')`);
+  document.fonts.add(ff);return LOADED[id]=ff.load().then(()=>true).catch(()=>{delete LOADED[id];return false});
+}
+const CATS=[...new Set(FONTS.map(f=>f.cat))];let curCat='전체';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const d=e.target;io.unobserve(d);
+  ensureFont(d.dataset.id).then(ok=>{if(ok)d.querySelector('.s').style.fontFamily=`'${d.dataset.id}'`})}}),{root:null,rootMargin:'200px'});
+function buildCards(){
+  const box=$('fonts');box.innerHTML='';let n=0;
+  CATS.forEach(cat=>{if(curCat!=='전체'&&curCat!==cat)return;
+    const h=document.createElement('div');h.className='cat';h.textContent=cat;box.appendChild(h);
+    FONTS.filter(f=>f.cat===cat).forEach(f=>{n++;const d=document.createElement('div');d.className='fcard';d.dataset.id=f.id;
+      d.innerHTML=`<div class="s">참빛예수</div><div class="n">${f.name} · ${f.mood}</div>`;
+      d.onclick=()=>{S.font=f.id;render()};box.appendChild(d);io.observe(d)})});
+  $('fcount').textContent=`(${n}개 · 눌러서 고르기)`;refreshCards();
+}
+function sampleText(){const st=state();const u=units(st).map(x=>x.ch).slice(0,4).join('');return u||'참빛예수'}
+function refreshCards(){
+  const jm=$('split').value==='jamo',smp=sampleText();
+  document.querySelectorAll('.fcard').forEach(d=>{const f=FONTS.find(x=>x.id===d.dataset.id);
+    d.classList.toggle('on',d.dataset.id===S.font);d.classList.toggle('dis',jm&&!f.jamo);
+    d.querySelector('.s').textContent=smp});
+}
+$('cats').innerHTML='';['전체',...CATS].forEach(c=>{const b=document.createElement('button');b.textContent=c;b.onclick=()=>{curCat=c;
+  document.querySelectorAll('#cats button').forEach(x=>x.classList.toggle('on',x.textContent===c));buildCards()};
+  if(c==='전체')b.classList.add('on');$('cats').appendChild(b)});
+PRESETS.forEach((p,i)=>{const b=document.createElement('button');
+  b.innerHTML=`<span class="dot" style="background:${p.fill}"></span><span class="dot" style="background:${p.stroke}"></span>${p.n}`;
+  b.onclick=()=>{$('fill').value=p.fill;$('stroke').value=p.stroke;$('outer').value=p.outer;
+    $('pattern').value=p.n==="사탕 지팡이"?"stripe":"none";if(p.flat){$('sw').value=0;$('ow').value=0;$('deco').checked=false}else{if(+$('sw').value==0)$('sw').value=3;if(+$('ow').value==0)$('ow').value=3}render()};$('presets').appendChild(b)});
+// defaults
+$('fill').value="#000000";$('stroke').value="#000000";$('outer').value="#000000";
+$('sw').value=0;$('ow').value=0;$('margin').value=10;$('ovl').value=10;$('shadow').checked=false;$('deco').checked=false;$('same').checked=true;
+load();buildCards();
+document.querySelectorAll('.panel input,.panel select').forEach(e=>e.addEventListener('input',render));
+
+// measure glyph box (in em units of a 1000px font) using canvas
+const cv=document.createElement('canvas').getContext('2d');
+function measure(ch,font){cv.font=`1000px '${font}'`;const m=cv.measureText(ch);
+  return{l:-m.actualBoundingBoxLeft,r:m.actualBoundingBoxRight,a:m.actualBoundingBoxAscent,d:m.actualBoundingBoxDescent}}
+
+function patternDefs(st,uid){
+  if(st.pattern==="none")return"";
+  const c=st.stroke;
+  if(st.pattern==="dots")return`<pattern id="p${uid}" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2.4" fill="${c}" opacity=".9"/><circle cx="12" cy="12" r="1.6" fill="${c}" opacity=".9"/></pattern>`;
+  if(st.pattern==="stripe")return`<pattern id="p${uid}" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="24" fill="${c}"/></pattern>`;
+  if(st.pattern==="stars")return`<pattern id="p${uid}" width="30" height="30" patternUnits="userSpaceOnUse"><path transform="translate(15 15) scale(5)" d="M0-1 .29-.4.95-.31.48.15.59.81 0 .5-.59.81-.48.15-.95-.31-.29-.4Z" fill="${c}" opacity=".9"/></pattern>`;
+}
+function decoSvg(W,H,st){
+  const g=[];const col=[st.fill,st.outer,"#c9a227"];
+  const star=(x,y,s,c)=>`<path transform="translate(${x} ${y}) scale(${s})" d="M0-1 .29-.4.95-.31.48.15.59.81 0 .5-.59.81-.48.15-.95-.31-.29-.4Z" fill="${c}"/>`;
+  const flake=(x,y,s,c)=>{let l='';for(let i=0;i<3;i++)l+=`<line x1="${-s}" y1="0" x2="${s}" y2="0" transform="rotate(${i*60} ${x} ${y}) translate(${x} ${y})"/>`;return`<g stroke="${c}" stroke-width="${s/6}" stroke-linecap="round">${l}</g>`};
+  const u=Math.min(W,H)/25;
+  [[1,1],[-1,1],[1,-1],[-1,-1]].forEach(([sx,sy],i)=>{const cx=sx>0?3*u:W-3*u,cy=sy>0?3*u:H-3*u;
+    g.push(star(cx,cy,u*1.3,col[2]));g.push(flake(cx+sx*2.2*u,cy+sy*0.2*u,u*0.8,"#7aa7d9"));g.push(flake(cx+sx*0.2*u,cy+sy*2.4*u,u*0.7,"#7aa7d9"));
+    g.push(`<circle cx="${cx+sx*2*u}" cy="${cy+sy*2*u}" r="${u*.45}" fill="${col[i%2]}"/>`)});
+  return g.join('');
+}
+function pageSize(st,i){let[w,h]=st.paper.map(Number);
+  if(st.orient==="landscape"&&w<h)[w,h]=[h,w];else if(st.orient==="portrait"&&w>h)[w,h]=[h,w];return[w,h]}
+function pageSvg(st,ch,idx,total,uid,r=0,c=0){
+  const[W,H]=pageSize(st,idx);const[cols,rows]=st.tile;const o=cols*rows>1?Math.min(st.ovl,W/3,H/3):0;
+  const VW=cols*(W-o)+o,VH=rows*(H-o)+o;const m=st.margin;const pb=st.pnum?6:0;
+  const M=measure(ch,st.font);const gw=M.r-M.l,gh=M.a+M.d;
+  const pad=(st.sw/2+st.ow);
+  const aw=VW-2*m-2*pad,ah=VH-2*m-2*pad-pb;
+  const sc=st._sc||Math.min(aw/gw,ah/gh);const size=1000*sc;
+  const cx=VW/2-((M.l+M.r)/2)*sc, cy=(VH-pb)/2+((M.a-M.d)/2)*sc;
+  const style=`font-family:'${st.font}';font-size:${size}px`;
+  const txt=(extra)=>`<text x="${cx}" y="${cy}" style="${style}" text-anchor="start" ${extra}>${ch}</text>`;
+  const uk=uid+'_'+r+'_'+c, clipId='c'+uk;
+  let body='';
+  if(st.shadow)body+=txt(`fill="#000" opacity=".25" transform="translate(${VW*.012} ${VW*.012})" stroke="#000" stroke-width="${st.sw+st.ow*2}" stroke-linejoin="round"`);
+  if(st.ow>0)body+=txt(`fill="${st.outer}" stroke="${st.outer}" stroke-width="${st.sw+st.ow*2}" stroke-linejoin="round"`);
+  if(st.sw>0)body+=txt(`fill="${st.stroke}" stroke="${st.stroke}" stroke-width="${st.sw}" stroke-linejoin="round"`);
+  body+=txt(`fill="${st.fill}"`);
+  if(st.pattern!=="none")body+=`<g clip-path="url(#${clipId})"><rect width="${VW}" height="${VH}" fill="url(#p${uk})"/></g>`;
+  const defs=`<defs>${patternDefs(st,uk)}<clipPath id="${clipId}">${txt('')}</clipPath></defs>`;
+  let guide='';
+  if(st.guide){const g=Math.max(1,(st.sw/2+st.ow));
+    guide=`<rect x="${VW/2-gw*sc/2-g-2}" y="${(VH-pb)/2-gh*sc/2-g-2}" width="${gw*sc+2*g+4}" height="${gh*sc+2*g+4}" fill="none" stroke="#999" stroke-width=".4" stroke-dasharray="3 2"/>`}
+  const deco=st.deco?decoSvg(VW,VH,st):'';
+  const inner=`${defs}${deco}${guide}${body}`;
+  const mir=st.mirror?`<g transform="translate(${VW} 0) scale(-1 1)">${inner}</g>`:inner;
+  const X=c*(W-o),Y=r*(H-o);
+  // overlay in sheet coordinates (not mirrored): labels + glue lines
+  let ov='';const tiled=cols*rows>1;
+  const ln=(x1,y1,x2,y2)=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#888" stroke-width=".35" stroke-dasharray="4 2"/>`;
+  if(tiled&&o>0){
+    if(c<cols-1)ov+=ln(X+W-o,Y,X+W-o,Y+H);
+    if(c>0)ov+=ln(X+o,Y,X+o,Y+H);
+    if(r<rows-1)ov+=ln(X,Y+H-o,X+W,Y+H-o);
+    if(r>0)ov+=ln(X,Y+o,X+W,Y+o);
+  }
+  if(tiled)ov+=`<text x="${X+W/2}" y="${Y+4.5}" text-anchor="middle" font-size="3.6" fill="#777" font-family="sans-serif">▲ 위</text>`;
+  const num=st.pnum?`<text x="${X+W/2}" y="${Y+H-2.2}" text-anchor="middle" font-size="3.4" fill="#999" font-family="sans-serif">${ch}${tiled?`  [${r+1}줄 ${c+1}번째]`:''}  ${idx+1}/${total}</text>`:'';
+  return`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${X} ${Y} ${W} ${H}" width="${W}mm" height="${H}mm" preserveAspectRatio="xMidYMid meet">
+  <rect x="${X}" y="${Y}" width="${W}" height="${H}" fill="#fff"/>${mir}${ov}${num}</svg>`;
+}
+const CHO="ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ",JUNG="ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ",
+ JONG=["","ㄱ","ㄲ","ㄳ","ㄴ","ㄵ","ㄶ","ㄷ","ㄹ","ㄺ","ㄻ","ㄼ","ㄽ","ㄾ","ㄿ","ㅀ","ㅁ","ㅂ","ㅄ","ㅅ","ㅆ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+function decompose(ch){const c=ch.codePointAt(0);
+  if(c>=0xAC00&&c<=0xD7A3){const s=c-0xAC00,l=Math.floor(s/588),v=Math.floor((s%588)/28),t=s%28;
+    return[CHO[l],JUNG[v]].concat(JONG[t]?[JONG[t]]:[])}return[ch]}
+function units(st){let u=[];[...st.text].forEach((ch,ci)=>{
+  if(st.split==='jamo')decompose(ch).forEach(j=>u.push({ch:j,ci}));else u.push({ch,ci})});
+  if(st.split==='jamo'&&st.dedupe){const seen=new Set();u=u.filter(x=>!seen.has(x.ch)&&seen.add(x.ch))}
+  return u}
+function fitScale(st,ch){const[W,H]=pageSize(st,0);const[cols,rows]=st.tile;const o=cols*rows>1?Math.min(st.ovl,W/3,H/3):0;
+  const VW=cols*(W-o)+o,VH=rows*(H-o)+o,pb=st.pnum?6:0,pad=st.sw/2+st.ow;
+  const M=measure(ch,st.font);const gw=M.r-M.l,gh=M.a+M.d;if(!(gw>0&&gh>0))return 1;
+  return Math.min((VW-2*st.margin-2*pad)/gw,(VH-2*st.margin-2*pad-pb)/gh)}
+function sheets(st){const[cols,rows]=st.tile,out=[];const us=units(st);
+  if(st.split==='jamo'&&st.same&&us.length){st._sc=Math.min(...us.map(x=>fitScale(st,x.ch)))}else st._sc=null;
+  us.forEach(x=>{for(let r=0;r<rows;r++)for(let c=0;c<cols;c++)out.push({ch:x.ch,ci:x.ci,r,c})});return out}
+let rtimer;
+function render(){
+  const st=state();
+  $('jamoopts').hidden=st.split!=='jamo';
+  if(st.split==='jamo'&&!(FONTS.find(f=>f.id===S.font)||{}).jamo){S.font=(FONTS.find(f=>f.jamo)||FONTS[0]).id;st.font=S.font}
+  refreshCards();
+  $('swv').textContent=st.sw+'mm';$('owv').textContent=st.ow+'mm';$('mv').textContent=st.margin+'mm';$('ovv').textContent=st.ovl+'mm';
+  ensureFont(st.font).then(()=>document.fonts.load(`40px '${st.font}'`,'가')).then(()=>{
+    const pv=$('preview');pv.innerHTML='';
+    $('pagestyle').textContent='';
+    const pr=$('printarea');pr.innerHTML='';
+    // @page: use the first page's size (all same if orientation fixed)
+    const[W,H]=pageSize(st,0);
+    $('pagestyle').textContent=`@page{size:${W}mm ${H}mm;margin:0}`;
+    const list=sheets(st);
+    if(!list.length)pv.innerHTML='<p style="padding:40px;color:#888">글자를 입력하세요.</p>';
+    list.forEach((s,i)=>{
+      const svg=pageSvg(st,s.ch,i,list.length,'v'+i,s.r,s.c);
+      const sc=Math.min(1,380/W);
+      const w=document.createElement('div');w.className='pgw';
+      w.innerHTML=`<div class="pg" style="width:${W*sc*3.78}px;height:${H*sc*3.78}px"><div class="lbl">${i+1}쪽 · ${s.ch}${st.tile[0]*st.tile[1]>1?` (${s.r+1}줄 ${s.c+1}번째)`:''}</div>${svg}</div>`;
+      const sv=w.querySelector('svg');sv.removeAttribute('width');sv.removeAttribute('height');
+      pv.appendChild(w);
+      const sh=document.createElement('div');sh.className='sheet';sh.style.cssText=`width:${W}mm;height:${H}mm`;
+      sh.innerHTML=pageSvg(st,s.ch,i,list.length,'p'+i,s.r,s.c);pr.appendChild(sh);
+    });
+    save();
+  });
+}
+$('print').onclick=async()=>{await ensureFont(S.font);render();setTimeout(()=>window.print(),600)};
+$('png').onclick=async()=>{
+  const st=state();await ensureFont(st.font);
+  let b64;try{const r=await fetch(`fonts/${S.font}.woff2`);const bl=await r.blob();b64=await new Promise(res=>{const fr=new FileReader();fr.onload=()=>res(fr.result.split(',')[1]);fr.readAsDataURL(bl)})}catch(e){alert('PNG 저장은 웹 주소(링크)로 열었을 때만 돼요. 인쇄하기는 그대로 쓸 수 있어요.');return}
+  const list=sheets(st);
+  for(let i=0;i<list.length;i++){
+    const svg=pageSvg(st,list[i].ch,i,list.length,'d'+i,list[i].r,list[i].c);
+    const[W,H]=pageSize(st,i);const px=W/25.4*200; // 200dpi
+    // inline the font into the SVG so the image renders standalone
+    const fam=S.font;
+    const withFont=svg.replace('<defs>',`<defs><style>@font-face{font-family:'${fam}';src:url(data:font/woff2;base64,${b64}) format('woff2')}</style>`);
+    const url=URL.createObjectURL(new Blob([withFont],{type:'image/svg+xml'}));
+    const img=new Image();await new Promise(r=>{img.onload=r;img.src=url});
+    const c=document.createElement('canvas');c.width=px;c.height=H/25.4*200;
+    const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(img,0,0,c.width,c.height);
+    const a=document.createElement('a');a.href=c.toDataURL('image/png');a.download=`${String(i+1).padStart(2,'0')}_${list[i].ch}${st.tile[0]*st.tile[1]>1?`_${list[i].r+1}줄${list[i].c+1}번`:''}.png`;a.click();
+    await new Promise(r=>setTimeout(r,300));
+  }
+};
+render();
+</script>
+</body>
+</html>
