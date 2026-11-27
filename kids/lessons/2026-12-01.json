@@ -1,0 +1,569 @@
+{
+ "version": 2,
+ "date": "2026-12-01",
+ "day": 19,
+ "weekday": "화",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "Animals",
+  "title": "Pola's First Snow",
+  "title_ko": "폴라의 첫눈",
+  "lets_start": {
+   "q": "Do you remember your first snow?",
+   "q_ko": "처음 눈을 본 날이 기억나나요?",
+   "options": [
+    "Yes, I do!",
+    "Not really."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "cub",
+    "meaning": "새끼 곰",
+    "emoji": "🐻‍❄️"
+   },
+   {
+    "word": "den",
+    "meaning": "굴, 보금자리",
+    "emoji": "🕳️"
+   },
+   {
+    "word": "snow",
+    "meaning": "눈",
+    "emoji": "❄️"
+   },
+   {
+    "word": "soft",
+    "meaning": "부드러운",
+    "emoji": "🧸"
+   },
+   {
+    "word": "jump",
+    "meaning": "뛰다",
+    "emoji": "🦘"
+   },
+   {
+    "word": "slide",
+    "meaning": "미끄러지다",
+    "emoji": "🛷"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🐻‍❄️",
+      36,
+      66,
+      30
+     ],
+     [
+      "🐻‍❄️",
+      66,
+      70,
+      18
+     ],
+     [
+      "❄️",
+      20,
+      20,
+      9
+     ],
+     [
+      "❄️",
+      56,
+      12,
+      8
+     ],
+     [
+      "❄️",
+      84,
+      28,
+      9
+     ],
+     [
+      "✨",
+      48,
+      40,
+      8
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Pola is a little polar bear **cub**. Today she leaves her **den** for the first time. \"Mama, what is that white thing?\"",
+    "ko": "폴라는 어린 북극곰이에요. 오늘 처음으로 굴 밖으로 나와요. \"엄마, 저 하얀 건 뭐예요?\""
+   },
+   {
+    "text": "\"That is **snow**,\" says Mama. Pola touches it. It is cold and **soft**. She **jumps** in. Poof! Snow lands on her nose.",
+    "ko": "\"저건 눈이란다.\" 엄마가 말해요. 폴라가 눈을 만져요. 차갑고 부드러워요. 폴라가 폴짝 뛰어들어요. 폭! 눈이 코 위에 내려앉아요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🐻‍❄️",
+       34,
+       68,
+       24
+      ],
+      [
+       "❄️",
+       60,
+       70,
+       16
+      ],
+      [
+       "💨",
+       58,
+       50,
+       10
+      ],
+      [
+       "👃",
+       40,
+       44,
+       8
+      ]
+     ]
+    }
+   },
+   {
+    "text": "Pola **slides** down a little hill. \"Wheee!\" Mama laughs. \"I love snow!\" says Pola.",
+    "ko": "폴라가 작은 언덕을 미끄러져 내려와요. \"야호!\" 엄마가 웃어요. \"난 눈이 정말 좋아요!\" 폴라가 말해요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🛷",
+       34,
+       56,
+       18
+      ],
+      [
+       "🐻‍❄️",
+       52,
+       62,
+       22
+      ],
+      [
+       "🐻‍❄️",
+       82,
+       76,
+       20
+      ],
+      [
+       "😄",
+       52,
+       36,
+       9
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "Pola leaves her ___ for the first time.",
+   "answer": "den"
+  },
+  "you_know": {
+   "emoji": "🐾",
+   "text": "Polar bear cubs are born in a snow den. They stay there for the first few months.",
+   "text_ko": "북극곰 새끼는 눈 굴 속에서 태어나요. 처음 몇 달은 그 안에서 지내요."
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Pola seeing and playing in snow for the first time",
+    "Pola getting lost in a storm"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What does Pola ask Mama about?",
+    "options": [
+     [
+      "❄️",
+      "the white thing"
+     ],
+     [
+      "🐟",
+      "a fish"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What does Pola do on the hill?",
+    "options": [
+     [
+      "🛷",
+      "She slides down."
+     ],
+     [
+      "😴",
+      "She sleeps."
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Pola is a little polar bear ___.",
+    "choices": [
+     "cub",
+     "cat",
+     "cup"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Snow feels cold and ___.",
+    "choices": [
+     "soft",
+     "hot",
+     "loud"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "How does Pola feel at the end?",
+    "choices": [
+     "happy",
+     "sad",
+     "scared"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🐰",
+    "sentence": "The rabbit lives in a ___ under the ground.",
+    "options": [
+     "den",
+     "cub"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🛹",
+    "sentence": "I ___ down the hill on my sled.",
+    "options": [
+     "slide",
+     "soft"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🦘",
+    "sentence": "A kangaroo can ___ very high.",
+    "options": [
+     "jump",
+     "snow"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Beginning",
+    "Middle",
+    "End"
+   ],
+   "choices": [
+    "Pola leaves her den and sees white snow.",
+    "Pola touches the soft snow and jumps in.",
+    "Pola slides down a hill and laughs."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What do you like to do in the snow?",
+   "q_ko": "눈이 오면 무엇을 하고 싶나요?",
+   "frame": "In the snow, I like to ___."
+  },
+  "sources": "창작 이야기 (북극곰 새끼가 눈 굴에서 태어나는 것은 일반 상식)"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "세계 이야기",
+  "title": "핀란드 산타 마을에 가 볼까?",
+  "lets_start": {
+   "q": "산타 할아버지는 어디에 산다고 할까요?",
+   "options": [
+    "북극 가까운 곳",
+    "열대 바닷가"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "핀란드",
+    "meaning": "북유럽에 있는 나라",
+    "emoji": "🇫🇮"
+   },
+   {
+    "word": "북극권",
+    "meaning": "북극과 가까운 아주 추운 지역의 경계",
+    "emoji": "🧊"
+   },
+   {
+    "word": "우체국",
+    "meaning": "편지를 보내고 받는 곳",
+    "emoji": "📮"
+   },
+   {
+    "word": "편지",
+    "meaning": "하고 싶은 말을 적어 보내는 글",
+    "emoji": "💌"
+   },
+   {
+    "word": "요정",
+    "meaning": "산타를 돕는 작은 친구",
+    "emoji": "🧝"
+   },
+   {
+    "word": "고향",
+    "meaning": "태어나 자란 곳",
+    "emoji": "🏡"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-12-01-ko.jpg",
+    "caption_ko": "핀란드 로바니에미 산타클로스 마을의 크리스마스 집"
+   },
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🎅",
+      40,
+      56,
+      26
+     ],
+     [
+      "🏡",
+      74,
+      62,
+      24
+     ],
+     [
+      "🎄",
+      16,
+      66,
+      18
+     ],
+     [
+      "⭐",
+      62,
+      18,
+      9
+     ],
+     [
+      "📮",
+      88,
+      82,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "**핀란드**에는 산타 할아버지의 **고향**이라는 마을이 있어요. 북쪽 도시 로바니에미 가까이에 있는 '산타클로스 마을'이에요."
+   },
+   {
+    "text": "이 마을은 **북극권** 위에 있어요. 땅에는 북극권을 나타내는 하얀 선이 그려져 있어서, 그 선을 밟고 사진을 찍을 수 있어요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🧊",
+       22,
+       62,
+       18
+      ],
+      [
+       "➖",
+       52,
+       74,
+       30
+      ],
+      [
+       "📸",
+       76,
+       56,
+       16
+      ],
+      [
+       "🧍",
+       52,
+       56,
+       16
+      ]
+     ]
+    }
+   },
+   {
+    "text": "산타 **우체국**에는 전 세계 어린이들의 **편지**가 와요. **요정** 옷을 입은 직원들이 편지를 정리해요. 마을에 들어가는 것은 무료예요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "산타 마을은 ___ 위에 있어요.",
+   "answer": "북극권"
+  },
+  "you_know": {
+   "emoji": "🎅",
+   "text": "핀란드에서는 산타를 '요울루푸키'라고 불러요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "핀란드 산타 마을의 모습",
+    "산타가 선물을 나르는 방법"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "산타 마을은 어느 나라에 있나요?",
+    "options": [
+     [
+      "🇫🇮",
+      "핀란드"
+     ],
+     [
+      "🇰🇷",
+      "우리나라"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "산타 우체국에는 무엇이 오나요?",
+    "options": [
+     [
+      "💌",
+      "어린이들의 편지"
+     ],
+     [
+      "🍕",
+      "피자"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "산타 마을 땅에 그려진 것은?",
+    "choices": [
+     "하얀 북극권 선",
+     "빨간 하트",
+     "파란 별"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "편지를 정리하는 사람들은 어떤 옷을 입나요?",
+    "choices": [
+     "요정 옷",
+     "소방관 옷",
+     "우주복"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "산타 마을에 들어갈 때 돈이 드나요?",
+    "choices": [
+     "무료예요",
+     "아주 비싸요",
+     "표를 두 장 사야 해요"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "📮",
+    "sentence": "친구에게 ___를 써서 ___에 넣었어요.",
+    "options": [
+     "편지",
+     "요정"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏡",
+    "sentence": "명절에 ___에 가서 할머니를 만났어요.",
+    "options": [
+     "고향",
+     "북극권"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🌍",
+    "sentence": "지구본에서 ___ 나라를 찾았어요.",
+    "options": [
+     "핀란드",
+     "우체국"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "산타 마을 알아보기",
+   "heads": [
+    "어디에?",
+    "땅에는?",
+    "우체국에는?"
+   ],
+   "choices": [
+    "핀란드 북극권 위",
+    "하얀 북극권 선",
+    "전 세계 어린이의 편지"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "산타 할아버지께 편지를 쓴다면 무엇을 쓰고 싶나요?",
+   "frame": "산타 할아버지께. 저는 ___을/를 갖고 싶어요."
+  },
+  "dictation": [
+   "핀란드",
+   "산타",
+   "북극권",
+   "우체국",
+   "편지"
+  ],
+  "copy": "산타 마을에는 편지가 와요.",
+  "sources": "Visit Rovaniemi, Posti(산타클로스 메인 우체국), Wikipedia (Santa Claus Village)를 확인해 새로 씀"
+ },
+ "write": {
+  "ref_ko": "누가복음 2장 14절",
+  "ref": "Luke 2:14",
+  "ko": "가장 높은 곳에 영광!",
+  "en": "Glory to God in the highest",
+  "words": [
+   "영광",
+   "하늘"
+  ],
+  "prompt": "하늘을 보며 하고 싶은 말은?"
+ }
+}

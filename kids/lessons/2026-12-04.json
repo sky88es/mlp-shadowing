@@ -1,0 +1,586 @@
+{
+ "version": 2,
+ "date": "2026-12-04",
+ "day": 22,
+ "weekday": "금",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 120",
+  "theme": "Science",
+  "title": "Why Is Ice Slippery?",
+  "title_ko": "얼음은 왜 미끄러울까?",
+  "lets_start": {
+   "q": "Have you ever slipped on ice?",
+   "q_ko": "얼음 위에서 미끄러진 적이 있나요?",
+   "options": [
+    "Yes, I have!",
+    "No, never."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "ice",
+    "meaning": "얼음",
+    "emoji": "🧊"
+   },
+   {
+    "word": "slippery",
+    "meaning": "미끄러운",
+    "emoji": "🧼"
+   },
+   {
+    "word": "slide",
+    "meaning": "미끄러지다",
+    "emoji": "🛷"
+   },
+   {
+    "word": "layer",
+    "meaning": "얇은 층",
+    "emoji": "🥞"
+   },
+   {
+    "word": "rink",
+    "meaning": "스케이트장",
+    "emoji": "⛸️"
+   },
+   {
+    "word": "scientist",
+    "meaning": "과학자",
+    "emoji": "🔬"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "⛸️",
+      40,
+      64,
+      26
+     ],
+     [
+      "🧊",
+      72,
+      70,
+      20
+     ],
+     [
+      "💧",
+      70,
+      44,
+      10
+     ],
+     [
+      "❄️",
+      22,
+      24,
+      9
+     ],
+     [
+      "❄️",
+      84,
+      24,
+      8
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Ice is hard and cold. But it is also very **slippery**. Why can you **slide** on ice?",
+    "ko": "얼음은 단단하고 차가워요. 하지만 아주 미끄럽기도 해요. 왜 얼음 위에서는 미끄러질까요?"
+   },
+   {
+    "text": "The top of the **ice** has a very thin **layer** of water. It works like oil and lets things slide.",
+    "ko": "얼음 맨 위에는 아주 얇은 물 층이 있어요. 이 물이 기름처럼 작용해서 물건이 미끄러지게 해요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🧊",
+       44,
+       64,
+       30
+      ],
+      [
+       "💧",
+       44,
+       48,
+       12
+      ],
+      [
+       "➡️",
+       76,
+       60,
+       9
+      ],
+      [
+       "⛸️",
+       84,
+       72,
+       12
+      ]
+     ]
+    }
+   },
+   {
+    "text": "**Scientists** still study how this thin layer forms. That is why skaters can glide on a **rink**, and why you must walk carefully on an icy road.",
+    "ko": "과학자들은 이 얇은 물 층이 어떻게 생기는지 아직도 연구해요. 그래서 스케이트 선수는 스케이트장에서 쭉 미끄러질 수 있고, 우리는 얼음길을 조심히 걸어야 해요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🔬",
+       28,
+       56,
+       18
+      ],
+      [
+       "⛸️",
+       60,
+       66,
+       22
+      ],
+      [
+       "⚠️",
+       82,
+       40,
+       11
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "The top of ice has a thin layer of ___.",
+   "answer": "water"
+  },
+  "you_know": {
+   "emoji": "⛸️",
+   "text": "Ice skates have thin metal blades, so skaters can glide over the ice.",
+   "text_ko": "스케이트에는 얇은 금속 날이 있어서 얼음 위를 쭉 미끄러질 수 있어요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "why ice is slippery",
+    "why ice is hot"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What is on top of ice?",
+    "options": [
+     [
+      "💧",
+      "a thin layer of water"
+     ],
+     [
+      "🏜️",
+      "a layer of sand"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where do skaters glide?",
+    "options": [
+     [
+      "⛸️",
+      "on a rink"
+     ],
+     [
+      "🏖️",
+      "on a beach"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Ice is hard, cold, and ___.",
+    "choices": [
+     "slippery",
+     "sticky",
+     "hot"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "The thin water layer works like ___.",
+    "choices": [
+     "oil",
+     "glue",
+     "sand"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Who still studies how the layer forms?",
+    "choices": [
+     "scientists",
+     "skaters",
+     "bakers"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🍦",
+    "sentence": "My ___ cream is cold.",
+    "options": [
+     "ice",
+     "rink"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🎂",
+    "sentence": "The cake has two ___s of cream.",
+    "options": [
+     "layer",
+     "scientist"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "⛄",
+    "sentence": "We can ___ down the snowy hill.",
+    "options": [
+     "slide",
+     "layer"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Slippery Ice",
+   "heads": [
+    "What?",
+    "Why?",
+    "Careful!"
+   ],
+   "choices": [
+    "Ice is hard and cold, but slippery.",
+    "A thin layer of water is on top.",
+    "Walk carefully on an icy road."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "How can you stay safe on an icy road?",
+   "q_ko": "얼음길에서 안전하게 걸으려면 어떻게 해야 할까요?",
+   "frame": "On an icy road, I will ___."
+  },
+  "sources": "UCAR Center for Science Education, Live Science, Penn Engineering (why ice is slippery)"
+ },
+ "ko": {
+  "genre": "이야기",
+  "level": "초1~2",
+  "theme": "마음이 따뜻한 이야기",
+  "title": "호떡 가게 꼬마 손님",
+  "lets_start": {
+   "q": "추운 겨울에 먹으면 좋은 따끈한 간식은?",
+   "options": [
+    "호떡",
+    "빙수"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "호떡",
+    "meaning": "속에 설탕이 든 납작한 빵",
+    "emoji": "🥞"
+   },
+   {
+    "word": "철판",
+    "meaning": "음식을 굽는 평평한 쇠판",
+    "emoji": "🍳"
+   },
+   {
+    "word": "지글지글",
+    "meaning": "기름이 끓는 소리",
+    "emoji": "🔥"
+   },
+   {
+    "word": "뜨끈뜨끈",
+    "meaning": "아주 뜨거운 모양",
+    "emoji": "♨️"
+   },
+   {
+    "word": "꼴깍",
+    "meaning": "침을 삼키는 소리",
+    "emoji": "😋"
+   },
+   {
+    "word": "쪼개다",
+    "meaning": "둘로 나누다",
+    "emoji": "✂️"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-12-04-ko.jpg",
+    "caption_ko": "철판 위에서 구워지는 호떡"
+   },
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🥞",
+      40,
+      62,
+      24
+     ],
+     [
+      "🍳",
+      66,
+      64,
+      20
+     ],
+     [
+      "🧒",
+      26,
+      70,
+      18
+     ],
+     [
+      "👦",
+      84,
+      74,
+      14
+     ],
+     [
+      "♨️",
+      52,
+      38,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "추운 겨울 저녁, 도윤이는 호떡 가게 앞에 섰어요. **철판** 위에서 **호떡**이 **지글지글** 구워지고 있었어요."
+   },
+   {
+    "text": "도윤이는 용돈으로 호떡 하나를 샀어요. 호떡 속 설탕이 녹아서 **뜨끈뜨끈**했어요. \"호호 불어서 조심해서 먹어.\" 아주머니가 말했어요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🥞",
+       40,
+       62,
+       24
+      ],
+      [
+       "👩‍🍳",
+       74,
+       60,
+       22
+      ],
+      [
+       "🧒",
+       24,
+       70,
+       18
+      ],
+      [
+       "💨",
+       52,
+       40,
+       10
+      ]
+     ]
+    }
+   },
+   {
+    "text": "그때 옆에서 꼬마가 침을 **꼴깍** 삼켰어요. 도윤이는 호떡을 반으로 **쪼개** 나눠 주었어요. \"고마워!\" 꼬마가 활짝 웃었어요. 도윤이 마음도 호떡처럼 따뜻해졌어요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🧒",
+       28,
+       66,
+       20
+      ],
+      [
+       "👦",
+       62,
+       72,
+       16
+      ],
+      [
+       "🥞",
+       48,
+       56,
+       14
+      ],
+      [
+       "💛",
+       46,
+       34,
+       12
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "도윤이는 호떡을 반으로 ___ 나눠 주었어요.",
+   "answer": "쪼개"
+  },
+  "you_know": {
+   "emoji": "💛",
+   "text": "나눠 먹으면 맛있는 음식이 더 맛있게 느껴져요. 따뜻한 마음이 함께 전해지기 때문이에요."
+  },
+  "main_idea": {
+   "q": "이 이야기는 무엇에 관한 이야기인가요?",
+   "options": [
+    "도윤이가 호떡을 나눠 준 따뜻한 이야기",
+    "도윤이가 호떡을 만든 이야기"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "도윤이는 무엇을 샀나요?",
+    "options": [
+     [
+      "🥞",
+      "호떡 하나"
+     ],
+     [
+      "🍦",
+      "아이스크림"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "꼬마에게 호떡을 어떻게 나눠 주었나요?",
+    "options": [
+     [
+      "✂️",
+      "반으로 쪼개서"
+     ],
+     [
+      "🛍️",
+      "통째로"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "호떡이 구워지는 소리는?",
+    "choices": [
+     "지글지글",
+     "딸랑딸랑",
+     "퐁당퐁당"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "아주머니는 도윤이에게 뭐라고 했나요?",
+    "choices": [
+     "호호 불어서 조심해서 먹어",
+     "빨리 가렴",
+     "내일 다시 와"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "이야기가 끝날 때 도윤이의 마음은?",
+    "choices": [
+     "따뜻해졌어요",
+     "차가워졌어요",
+     "무서워졌어요"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🥓",
+    "sentence": "프라이팬에서 고기가 ___ 구워져요.",
+    "options": [
+     "지글지글",
+     "꼴깍"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍪",
+    "sentence": "쿠키를 둘로 ___ 동생에게 주었어요.",
+    "options": [
+     "쪼개",
+     "구워"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍲",
+    "sentence": "국이 ___ 끓고 있어요.",
+    "options": [
+     "뜨끈뜨끈",
+     "꼴깍"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "이야기 지도",
+   "heads": [
+    "처음",
+    "가운데",
+    "끝"
+   ],
+   "choices": [
+    "도윤이가 호떡 가게 앞에 서요.",
+    "도윤이가 호떡을 사요.",
+    "도윤이가 꼬마와 호떡을 나눠요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "내가 친구와 나눠 먹고 싶은 간식은 무엇인가요?",
+   "frame": "나는 친구와 ___을/를 나눠 먹고 싶어요."
+  },
+  "dictation": [
+   "호떡",
+   "철판",
+   "지글지글",
+   "꼴깍",
+   "나눠 주었어요"
+  ],
+  "copy": "호떡을 반으로 쪼개 나눠 주었어요.",
+  "sources": "창작 이야기"
+ },
+ "write": {
+  "ref_ko": "요한일서 4장 19절",
+  "ref": "1 John 4:19",
+  "ko": "먼저 사랑받았어요.",
+  "en": "We love him, because he first loved us.",
+  "words": [
+   "먼저",
+   "사랑"
+  ],
+  "prompt": "나를 사랑해 주는 사람은 누구인가요?"
+ }
+}

@@ -637,5 +637,236 @@
    ]
   },
   "photo": "photos/2026-11-27-en.jpg"
+ },
+ {
+  "date": "2026-11-30",
+  "day": 18,
+  "weekday": "월",
+  "en_title": "Polar Bears Have Black Skin!",
+  "ko_title": "12월, 한 해의 마지막 달",
+  "en_genre": "Nonfiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "snow",
+   "items": [
+    [
+     "🐻‍❄️",
+     42,
+     62,
+     34
+    ],
+    [
+     "❄️",
+     18,
+     18,
+     9
+    ],
+    [
+     "❄️",
+     70,
+     14,
+     8
+    ],
+    [
+     "🧊",
+     84,
+     80,
+     14
+    ],
+    [
+     "☀️",
+     84,
+     22,
+     10
+    ]
+   ]
+  },
+  "photo": "photos/2026-11-30-en.jpg"
+ },
+ {
+  "date": "2026-12-01",
+  "day": 19,
+  "weekday": "화",
+  "en_title": "Pola's First Snow",
+  "ko_title": "핀란드 산타 마을에 가 볼까?",
+  "en_genre": "Fiction",
+  "ko_genre": "정보글",
+  "cover": {
+   "bg": "snow",
+   "items": [
+    [
+     "🐻‍❄️",
+     36,
+     66,
+     30
+    ],
+    [
+     "🐻‍❄️",
+     66,
+     70,
+     18
+    ],
+    [
+     "❄️",
+     20,
+     20,
+     9
+    ],
+    [
+     "❄️",
+     56,
+     12,
+     8
+    ],
+    [
+     "❄️",
+     84,
+     28,
+     9
+    ],
+    [
+     "✨",
+     48,
+     40,
+     8
+    ]
+   ]
+  },
+  "photo": "photos/2026-12-01-ko.jpg"
+ },
+ {
+  "date": "2026-12-02",
+  "day": 20,
+  "weekday": "수",
+  "en_title": "Christmas in Summer in Australia",
+  "ko_title": "고래 싸움에 새우 등 터진다",
+  "en_genre": "Nonfiction",
+  "ko_genre": "속담",
+  "cover": {
+   "bg": "sea",
+   "items": [
+    [
+     "🎅",
+     40,
+     52,
+     26
+    ],
+    [
+     "🏖️",
+     74,
+     66,
+     20
+    ],
+    [
+     "☀️",
+     84,
+     16,
+     12
+    ],
+    [
+     "🎄",
+     16,
+     66,
+     16
+    ],
+    [
+     "🦘",
+     62,
+     84,
+     12
+    ]
+   ]
+  },
+  "photo": "photos/2026-12-02-ko.jpg"
+ },
+ {
+  "date": "2026-12-03",
+  "day": 21,
+  "weekday": "목",
+  "en_title": "Santa's Summer Holiday",
+  "ko_title": "첫눈",
+  "en_genre": "Fiction",
+  "ko_genre": "동시",
+  "cover": {
+   "bg": "sea",
+   "items": [
+    [
+     "🎅",
+     40,
+     56,
+     28
+    ],
+    [
+     "🏝️",
+     76,
+     64,
+     20
+    ],
+    [
+     "☀️",
+     84,
+     16,
+     12
+    ],
+    [
+     "🩳",
+     26,
+     78,
+     9
+    ],
+    [
+     "🧴",
+     60,
+     80,
+     8
+    ]
+   ]
+  },
+  "photo": "photos/2026-12-03-ko.jpg"
+ },
+ {
+  "date": "2026-12-04",
+  "day": 22,
+  "weekday": "금",
+  "en_title": "Why Is Ice Slippery?",
+  "ko_title": "호떡 가게 꼬마 손님",
+  "en_genre": "Nonfiction",
+  "ko_genre": "이야기",
+  "cover": {
+   "bg": "snow",
+   "items": [
+    [
+     "⛸️",
+     40,
+     64,
+     26
+    ],
+    [
+     "🧊",
+     72,
+     70,
+     20
+    ],
+    [
+     "💧",
+     70,
+     44,
+     10
+    ],
+    [
+     "❄️",
+     22,
+     24,
+     9
+    ],
+    [
+     "❄️",
+     84,
+     24,
+     8
+    ]
+   ]
+  },
+  "photo": "photos/2026-12-04-ko.jpg"
  }
 ]

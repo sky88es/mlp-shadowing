@@ -1,0 +1,529 @@
+{
+ "version": 2,
+ "date": "2026-11-30",
+ "day": 18,
+ "weekday": "월",
+ "en": {
+  "genre": "Nonfiction",
+  "level": "Bricks 120",
+  "theme": "Animals",
+  "title": "Polar Bears Have Black Skin!",
+  "title_ko": "북극곰의 피부는 검은색!",
+  "lets_start": {
+   "q": "What color is a polar bear?",
+   "q_ko": "북극곰은 무슨 색일까요?",
+   "options": [
+    "White!",
+    "I'm not sure."
+   ]
+  },
+  "new_words": [
+   {
+    "word": "Arctic",
+    "meaning": "북극 지방",
+    "emoji": "🧊"
+   },
+   {
+    "word": "skin",
+    "meaning": "피부",
+    "emoji": "🖐️"
+   },
+   {
+    "word": "fur",
+    "meaning": "털",
+    "emoji": "🧸"
+   },
+   {
+    "word": "hollow",
+    "meaning": "속이 빈",
+    "emoji": "🥤"
+   },
+   {
+    "word": "reflect",
+    "meaning": "(빛을) 되튕기다",
+    "emoji": "🔦"
+   },
+   {
+    "word": "blubber",
+    "meaning": "두꺼운 지방층",
+    "emoji": "🫧"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-11-30-en.jpg",
+    "caption": "A mother polar bear and her two cubs walk on the ice.",
+    "caption_ko": "얼음 위를 걷는 엄마 북극곰과 새끼 두 마리"
+   },
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "🐻‍❄️",
+      42,
+      62,
+      34
+     ],
+     [
+      "❄️",
+      18,
+      18,
+      9
+     ],
+     [
+      "❄️",
+      70,
+      14,
+      8
+     ],
+     [
+      "🧊",
+      84,
+      80,
+      14
+     ],
+     [
+      "☀️",
+      84,
+      22,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "A polar bear looks white. But under its **fur**, its **skin** is black!",
+    "ko": "북극곰은 하얗게 보여요. 하지만 털 아래 피부는 검은색이에요!"
+   },
+   {
+    "text": "Each hair is clear and **hollow**, like a tiny straw. It **reflects** the light, so the fur looks white.",
+    "ko": "털 한 가닥 한 가닥은 투명하고 속이 비어 있어요. 작은 빨대 같아요. 털이 빛을 되튕겨서 하얗게 보여요.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🐻‍❄️",
+       30,
+       66,
+       26
+      ],
+      [
+       "🥤",
+       62,
+       60,
+       16
+      ],
+      [
+       "🔦",
+       82,
+       40,
+       12
+      ],
+      [
+       "✨",
+       62,
+       32,
+       9
+      ]
+     ]
+    }
+   },
+   {
+    "text": "The black skin takes in heat from the sun. A thick layer of **blubber** keeps the bear warm, too. Polar bears live in the **Arctic**, where it is very cold.",
+    "ko": "검은 피부는 햇볕의 열을 받아들여요. 두꺼운 지방층도 곰을 따뜻하게 해 줘요. 북극곰은 아주 추운 북극 지방에 살아요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "A polar bear's skin is ___.",
+   "answer": "black"
+  },
+  "you_know": {
+   "emoji": "🌿",
+   "text": "Sometimes a polar bear's fur looks green! Tiny plants called algae can grow inside the hollow hairs.",
+   "text_ko": "어떤 때는 북극곰의 털이 초록색으로 보여요! 속이 빈 털 안에 '조류'라는 아주 작은 식물이 자랄 수 있거든요."
+  },
+  "main_idea": {
+   "q": "This passage is about ___.",
+   "options": [
+    "why a polar bear looks white but has black skin",
+    "why polar bears sleep all day"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "What color is a polar bear's skin?",
+    "options": [
+     [
+      "⚫",
+      "black"
+     ],
+     [
+      "⚪",
+      "white"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "What keeps the bear warm?",
+    "options": [
+     [
+      "🫧",
+      "thick blubber"
+     ],
+     [
+      "🧥",
+      "a winter coat"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Each hair is clear and ___.",
+    "choices": [
+     "hollow",
+     "heavy",
+     "curly"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "The fur looks white because it ___ light.",
+    "choices": [
+     "reflects",
+     "eats",
+     "makes"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Polar bears live in the ___.",
+    "choices": [
+     "Arctic",
+     "desert",
+     "jungle"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🧤",
+    "sentence": "My cat has soft, white ___.",
+    "options": [
+     "fur",
+     "blubber"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🪞",
+    "sentence": "A mirror can ___ light.",
+    "options": [
+     "reflect",
+     "hollow"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🎍",
+    "sentence": "A straw is ___ inside.",
+    "options": [
+     "hollow",
+     "Arctic"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Polar Bear Facts",
+   "heads": [
+    "Fur",
+    "Skin",
+    "Home"
+   ],
+   "choices": [
+    "clear and hollow, so it looks white",
+    "black, so it takes in the sun's heat",
+    "the cold Arctic"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "Why can a polar bear stay warm in the Arctic?",
+   "q_ko": "북극곰은 어떻게 북극에서 따뜻하게 지낼까요?",
+   "frame": "A polar bear stays warm because ___."
+  },
+  "sources": "Ocean Conservancy, National Geographic Education (Animals 101: Polar Bears), A-Z Animals"
+ },
+ "ko": {
+  "genre": "정보글",
+  "level": "초1~2",
+  "theme": "달력 이야기",
+  "title": "12월, 한 해의 마지막 달",
+  "lets_start": {
+   "q": "한 해는 모두 몇 달일까요?",
+   "options": [
+    "열두 달",
+    "열 달"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "달력",
+    "meaning": "날짜와 달을 적어 놓은 종이",
+    "emoji": "🗓️"
+   },
+   {
+    "word": "마지막",
+    "meaning": "맨 끝",
+    "emoji": "🏁"
+   },
+   {
+    "word": "디셈버",
+    "meaning": "12월을 뜻하는 영어(December)",
+    "emoji": "🎄"
+   },
+   {
+    "word": "로마",
+    "meaning": "옛날 유럽의 큰 나라",
+    "emoji": "🏛️"
+   },
+   {
+    "word": "시작",
+    "meaning": "처음 하는 것",
+    "emoji": "🚦"
+   },
+   {
+    "word": "이름",
+    "meaning": "부르는 말",
+    "emoji": "🏷️"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "house",
+    "items": [
+     [
+      "🗓️",
+      36,
+      52,
+      34
+     ],
+     [
+      "🎄",
+      70,
+      62,
+      22
+     ],
+     [
+      "❄️",
+      20,
+      22,
+      9
+     ],
+     [
+      "⭐",
+      84,
+      24,
+      9
+     ],
+     [
+      "🎁",
+      78,
+      82,
+      10
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "12월은 한 해의 **마지막** 달이에요. 영어로 12월은 '**디셈버**'라고 해요."
+   },
+   {
+    "text": "'디셈버'는 옛 **로마** 말로 '열'이라는 뜻이에요. 옛 로마 **달력**은 3월부터 **시작**해서, 12월이 열 번째 달이었어요.",
+    "scene": {
+     "bg": "house",
+     "items": [
+      [
+       "🏛️",
+       24,
+       56,
+       24
+      ],
+      [
+       "🗓️",
+       56,
+       56,
+       24
+      ],
+      [
+       "🔟",
+       84,
+       56,
+       16
+      ]
+     ]
+    }
+   },
+   {
+    "text": "나중에 1월과 2월이 앞에 생겼어요. 그래서 12월은 열두 번째 달이 되었어요. 하지만 **이름**은 그대로 남았어요."
+   }
+  ],
+  "pop_quiz": {
+   "q": "옛 로마 달력에서 12월은 ___ 번째 달이었어요.",
+   "answer": "열"
+  },
+  "you_know": {
+   "emoji": "🔢",
+   "text": "9월(September)은 '일곱', 10월(October)은 '여덟', 11월(November)은 '아홉'이라는 옛 로마 말에서 이름이 왔어요."
+  },
+  "main_idea": {
+   "q": "이 글은 무엇을 알려 주나요?",
+   "options": [
+    "12월이라는 이름이 생긴 까닭",
+    "겨울에 입는 옷의 종류"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "12월은 한 해의 몇 번째 달인가요?",
+    "options": [
+     [
+      "1️⃣2️⃣",
+      "열두 번째"
+     ],
+     [
+      "🔟",
+      "열 번째"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "'디셈버'는 옛 로마 말로 무슨 뜻인가요?",
+    "options": [
+     [
+      "🔟",
+      "열"
+     ],
+     [
+      "🎄",
+      "크리스마스"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "옛 로마 달력은 몇 월부터 시작했나요?",
+    "choices": [
+     "1월",
+     "3월",
+     "12월"
+    ],
+    "answer": 1
+   },
+   {
+    "q": "12월이 열두 번째 달이 된 까닭은?",
+    "choices": [
+     "앞에 1월과 2월이 생겨서",
+     "달이 하나 줄어서",
+     "겨울이 길어서"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "12월의 이름은 어떻게 되었나요?",
+    "choices": [
+     "그대로 남았어요",
+     "바뀌었어요",
+     "사라졌어요"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🗓️",
+    "sentence": "___에 생일을 동그라미로 표시했어요.",
+    "options": [
+     "달력",
+     "이름"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏁",
+    "sentence": "달리기 경주의 ___ 바퀴를 돌고 있어요.",
+    "options": [
+     "마지막",
+     "시작"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏷️",
+    "sentence": "새로 산 가방에 ___을 써 넣었어요.",
+    "options": [
+     "이름",
+     "로마"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "12월 이름의 비밀",
+   "heads": [
+    "뜻",
+    "옛날",
+    "지금"
+   ],
+   "choices": [
+    "'열'이라는 로마 말",
+    "열 번째 달이었어요",
+    "열두 번째 달이에요"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "12월에 하고 싶은 일을 써 보세요.",
+   "frame": "12월에 나는 ___을/를 하고 싶어요."
+  },
+  "dictation": [
+   "12월",
+   "달력",
+   "마지막",
+   "로마",
+   "이름"
+  ],
+  "copy": "12월은 한 해의 마지막 달이에요.",
+  "sources": "Britannica, Etymonline, Dictionary.com (December의 어원)을 확인해 새로 씀"
+ },
+ "write": {
+  "ref_ko": "고린도전서 16장 14절",
+  "ref": "1 Corinthians 16:14",
+  "ko": "사랑으로 모두 해요.",
+  "en": "Let all that you do be done in love.",
+  "words": [
+   "사랑",
+   "모두"
+  ],
+  "prompt": "오늘 사랑으로 하고 싶은 일은?"
+ }
+}
