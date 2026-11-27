@@ -1,0 +1,576 @@
+{
+ "version": 2,
+ "date": "2026-12-03",
+ "day": 21,
+ "weekday": "목",
+ "en": {
+  "genre": "Fiction",
+  "level": "Bricks 100",
+  "theme": "Around the World",
+  "title": "Santa's Summer Holiday",
+  "title_ko": "산타 할아버지의 여름휴가",
+  "lets_start": {
+   "q": "Where would you go on a holiday?",
+   "q_ko": "휴가를 간다면 어디에 가고 싶나요?",
+   "options": [
+    "the beach",
+    "the mountains"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "holiday",
+    "meaning": "휴가",
+    "emoji": "🏝️"
+   },
+   {
+    "word": "tired",
+    "meaning": "피곤한",
+    "emoji": "😴"
+   },
+   {
+    "word": "shorts",
+    "meaning": "반바지",
+    "emoji": "🩳"
+   },
+   {
+    "word": "sunscreen",
+    "meaning": "자외선 차단제",
+    "emoji": "🧴"
+   },
+   {
+    "word": "sand",
+    "meaning": "모래",
+    "emoji": "⏳"
+   },
+   {
+    "word": "relax",
+    "meaning": "편히 쉬다",
+    "emoji": "🧘"
+   }
+  ],
+  "hero": {
+   "scene": {
+    "bg": "sea",
+    "items": [
+     [
+      "🎅",
+      40,
+      56,
+      28
+     ],
+     [
+      "🏝️",
+      76,
+      64,
+      20
+     ],
+     [
+      "☀️",
+      84,
+      16,
+      12
+     ],
+     [
+      "🩳",
+      26,
+      78,
+      9
+     ],
+     [
+      "🧴",
+      60,
+      80,
+      8
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "Santa is very **tired**. It is the day after Christmas. \"I need a **holiday**!\" he says.",
+    "ko": "산타는 아주 피곤해요. 크리스마스 다음 날이에요. \"나 휴가가 필요해!\" 산타가 말해요."
+   },
+   {
+    "text": "Santa puts on **shorts** and a funny hat. His reindeer take him to a sunny beach.",
+    "ko": "산타는 반바지를 입고 우스운 모자를 써요. 순록들이 햇볕이 쨍쨍한 해변으로 데려다줘요.",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "🎅",
+       36,
+       56,
+       24
+      ],
+      [
+       "🩳",
+       54,
+       62,
+       10
+      ],
+      [
+       "🦌",
+       72,
+       62,
+       20
+      ],
+      [
+       "🏖️",
+       84,
+       78,
+       14
+      ]
+     ]
+    }
+   },
+   {
+    "text": "He puts on **sunscreen** and sits in the **sand**. A girl asks, \"Are you Santa?\" \"Shh!\" he smiles. \"I just want to **relax**.\"",
+    "ko": "산타가 자외선 차단제를 바르고 모래 위에 앉아요. 한 소녀가 물어요. \"산타 할아버지세요?\" \"쉿!\" 산타가 웃어요. \"난 그냥 쉬고 싶단다.\"",
+    "scene": {
+     "bg": "sea",
+     "items": [
+      [
+       "🎅",
+       34,
+       62,
+       24
+      ],
+      [
+       "👧",
+       66,
+       68,
+       18
+      ],
+      [
+       "🧴",
+       20,
+       82,
+       8
+      ],
+      [
+       "🍦",
+       80,
+       50,
+       10
+      ],
+      [
+       "🤫",
+       50,
+       38,
+       9
+      ]
+     ]
+    }
+   }
+  ],
+  "pop_quiz": {
+   "q": "Santa puts on ___ and a funny hat.",
+   "answer": "shorts"
+  },
+  "you_know": {
+   "emoji": "🎅",
+   "text": "In many countries, Santa has different names. In Finland, he is called Joulupukki!",
+   "text_ko": "나라마다 산타의 이름이 달라요. 핀란드에서는 '요울루푸키'라고 불러요!"
+  },
+  "main_idea": {
+   "q": "This story is about ___.",
+   "options": [
+    "Santa taking a holiday at the beach",
+    "Santa making toys at the North Pole"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "Why does Santa need a holiday?",
+    "options": [
+     [
+      "😴",
+      "He is tired."
+     ],
+     [
+      "🎁",
+      "He lost his gifts."
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Where does Santa go?",
+    "options": [
+     [
+      "🏖️",
+      "to a sunny beach"
+     ],
+     [
+      "🏔️",
+      "to a snowy hill"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "Santa puts on ___ at the beach.",
+    "choices": [
+     "sunscreen",
+     "boots",
+     "mittens"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Santa sits in the ___.",
+    "choices": [
+     "sand",
+     "snow",
+     "car"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "Santa says, \"I just want to ___.\"",
+    "choices": [
+     "relax",
+     "run",
+     "sing"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🥱",
+    "sentence": "After a long trip, I feel ___.",
+    "options": [
+     "tired",
+     "sunscreen"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🏰",
+    "sentence": "We build a castle with ___.",
+    "options": [
+     "sand",
+     "shorts"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🛋️",
+    "sentence": "On Sunday, I like to ___ at home.",
+    "options": [
+     "relax",
+     "holiday"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "Story Map",
+   "heads": [
+    "Beginning",
+    "Middle",
+    "End"
+   ],
+   "choices": [
+    "Santa is tired and needs a holiday.",
+    "Santa goes to a sunny beach in shorts.",
+    "A girl finds him, but he just wants to relax."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "What would you do on a holiday?",
+   "q_ko": "휴가에 무엇을 하고 싶나요?",
+   "frame": "On a holiday, I would ___."
+  },
+  "sources": "창작 이야기 (핀란드의 산타 이름 '요울루푸키'는 Visit Rovaniemi 자료)"
+ },
+ "ko": {
+  "genre": "동시",
+  "level": "초1~2",
+  "theme": "흉내 내는 말 동시",
+  "title": "첫눈",
+  "lets_start": {
+   "q": "첫눈이 오면 무엇을 하고 싶나요?",
+   "options": [
+    "눈사람 만들기",
+    "발자국 찍기"
+   ]
+  },
+  "new_words": [
+   {
+    "word": "펄펄",
+    "meaning": "눈이나 먼지가 날려 내리는 모양",
+    "emoji": "❄️"
+   },
+   {
+    "word": "사르르",
+    "meaning": "눈이나 얼음이 살며시 녹는 모양",
+    "emoji": "🫠"
+   },
+   {
+    "word": "소복소복",
+    "meaning": "눈이 볼록하게 쌓인 모양",
+    "emoji": "⛄"
+   },
+   {
+    "word": "사박사박",
+    "meaning": "눈을 밟을 때 나는 소리",
+    "emoji": "👣"
+   },
+   {
+    "word": "알갱이",
+    "meaning": "아주 작고 동글동글한 조각",
+    "emoji": "🧊"
+   },
+   {
+    "word": "첫눈",
+    "meaning": "그해 겨울에 처음 내리는 눈",
+    "emoji": "🌨️"
+   }
+  ],
+  "hero": {
+   "photo": {
+    "src": "photos/2026-12-03-ko.jpg",
+    "caption_ko": "현미경으로 크게 본 눈 결정 (색을 입힌 사진)"
+   },
+   "scene": {
+    "bg": "snow",
+    "items": [
+     [
+      "⛄",
+      66,
+      62,
+      28
+     ],
+     [
+      "❄️",
+      20,
+      20,
+      10
+     ],
+     [
+      "❄️",
+      44,
+      12,
+      8
+     ],
+     [
+      "❄️",
+      84,
+      22,
+      9
+     ],
+     [
+      "👣",
+      28,
+      80,
+      12
+     ],
+     [
+      "🧒",
+      30,
+      62,
+      20
+     ]
+    ]
+   }
+  },
+  "passage": [
+   {
+    "text": "하늘에서 **펄펄** 하얀 나비가 내려와요.\n손바닥에 앉더니 **사르르** 사라져요."
+   },
+   {
+    "text": "**소복소복** 쌓인 눈 위에 **사박사박** 내 발자국.\n뒤돌아보니 나를 따라오는 작은 발자국.",
+    "scene": {
+     "bg": "snow",
+     "items": [
+      [
+       "🧒",
+       30,
+       64,
+       22
+      ],
+      [
+       "👣",
+       52,
+       78,
+       12
+      ],
+      [
+       "👣",
+       66,
+       72,
+       10
+      ],
+      [
+       "👣",
+       80,
+       78,
+       10
+      ]
+     ]
+    }
+   },
+   {
+    "text": "눈은 맑은 얼음 **알갱이**인데\n우리 눈에는 하얗게 보여요. 참 신기한 **첫눈**."
+   }
+  ],
+  "pop_quiz": {
+   "q": "눈이 쌓인 모양을 흉내 낸 말은 ___이에요.",
+   "answer": "소복소복"
+  },
+  "you_know": {
+   "emoji": "🔍",
+   "text": "눈 한 알갱이는 투명한 얼음이에요. 수많은 얼음 알갱이가 빛을 사방으로 흩어 보내서 우리 눈에는 하얗게 보여요."
+  },
+  "main_idea": {
+   "q": "이 시에서 말하는 것은 무엇인가요?",
+   "options": [
+    "첫눈이 오는 모습과 신기한 마음",
+    "여름 바닷가의 모습"
+   ],
+   "answer": 0
+  },
+  "check": [
+   {
+    "q": "눈을 밟을 때 나는 소리를 흉내 낸 말은?",
+    "options": [
+     [
+      "👣",
+      "사박사박"
+     ],
+     [
+      "🔔",
+      "딸랑딸랑"
+     ]
+    ],
+    "answer": 0
+   },
+   {
+    "q": "손바닥에 앉은 눈은 어떻게 되나요?",
+    "options": [
+     [
+      "🫠",
+      "사르르 사라져요"
+     ],
+     [
+      "🔥",
+      "활활 타올라요"
+     ]
+    ],
+    "answer": 0
+   }
+  ],
+  "choose": [
+   {
+    "q": "눈은 무엇처럼 내려온다고 했나요?",
+    "choices": [
+     "하얀 나비",
+     "빨간 풍선",
+     "노란 별"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "발자국은 누구를 따라오나요?",
+    "choices": [
+     "나",
+     "강아지",
+     "눈사람"
+    ],
+    "answer": 0
+   },
+   {
+    "q": "눈은 원래 어떤 알갱이인가요?",
+    "choices": [
+     "맑은 얼음 알갱이",
+     "하얀 가루",
+     "솜 알갱이"
+    ],
+    "answer": 0
+   }
+  ],
+  "word_zone": [
+   {
+    "emoji": "🍃",
+    "sentence": "낙엽이 ___ 떨어져요.",
+    "options": [
+     "펄펄",
+     "사르르"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🍦",
+    "sentence": "아이스크림이 입안에서 ___ 녹아요.",
+    "options": [
+     "사르르",
+     "소복소복"
+    ],
+    "answer": 0
+   },
+   {
+    "emoji": "🥾",
+    "sentence": "눈길을 ___ 걸어가요.",
+    "options": [
+     "사박사박",
+     "펄펄"
+    ],
+    "answer": 0
+   }
+  ],
+  "wrap_up": {
+   "title": "시의 장면",
+   "heads": [
+    "첫째 연",
+    "둘째 연",
+    "셋째 연"
+   ],
+   "choices": [
+    "하얀 눈이 펄펄 내려요.",
+    "눈 위에 내 발자국이 남아요.",
+    "얼음 알갱이가 하얗게 보여요."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ]
+  },
+  "talk": {
+   "q": "첫눈이 오는 모습을 흉내 내는 말로 한 줄 써 보세요.",
+   "frame": "첫눈이 ___ 내려요."
+  },
+  "dictation": [
+   "첫눈",
+   "펄펄",
+   "소복소복",
+   "사박사박",
+   "얼음 알갱이"
+  ],
+  "copy": "눈이 소복소복 쌓였어요.",
+  "parent_tip": "시를 소리 내어 읽으며 '사박사박'은 발소리 흉내를 함께 내 보세요.",
+  "sources": "직접 쓴 동시(소년한국일보 「시를 읽읍시다」 코너의 동시 형식을 참고) · 눈이 하얗게 보이는 까닭은 Live Science 자료 확인"
+ },
+ "write": {
+  "ref_ko": "요한복음 3장 16절",
+  "ref": "John 3:16",
+  "ko": "세상을 사랑하셨어요.",
+  "en": "For God so loved the world",
+  "words": [
+   "세상",
+   "사랑"
+  ],
+  "prompt": "내가 사랑하는 것들을 써 보세요."
+ }
+}
